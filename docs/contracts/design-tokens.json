@@ -1,0 +1,44 @@
+{
+  "version": "0.3",
+  "status": "PROPOSED",
+  "colors": {
+    "ink950": "#10212A",
+    "ink700": "#314953",
+    "paper": "#F6F8F7",
+    "white": "#FFFFFF",
+    "teal800": "#075A5A",
+    "danger": "#A12628",
+    "success": "#176638",
+    "warning": "#805000",
+    "info": "#235C91",
+    "darkSurface": "#10212A",
+    "darkText": "#F6F8F7",
+    "darkAction": "#79D6C8",
+    "focusLight": "#005FCC",
+    "focusDark": "#A9D5FF"
+  },
+  "space_px": [
+    4,
+    8,
+    12,
+    16,
+    24,
+    32,
+    48,
+    64,
+    96
+  ],
+  "breakpoints_px": [
+    600,
+    1024,
+    1440
+  ],
+  "content_max_px": 1280,
+  "motion_duration_ms": {
+    "instant": 0,
+    "quick": 120,
+    "standard": 180,
+    "emphasis": 240
+  },
+  "reduced_motion_translation_scale_ms": 0
+}

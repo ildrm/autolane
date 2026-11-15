@@ -1,0 +1,645 @@
+{
+  "scope": "Documentation schema fixtures; no runtime execution",
+  "fixtures": [
+    {
+      "id": "DOC-TST-001",
+      "name": "Integer bid accepted by schema",
+      "kind": "openapi",
+      "schema": "BidRequest",
+      "input": {
+        "amount_minor": 1250000,
+        "currency": "EUR"
+      },
+      "expected_valid": true
+    },
+    {
+      "id": "DOC-TST-002",
+      "name": "fractional amount",
+      "kind": "openapi",
+      "schema": "BidRequest",
+      "input": {
+        "amount_minor": 1.5,
+        "currency": "EUR"
+      },
+      "expected_valid": false
+    },
+    {
+      "id": "DOC-TST-003",
+      "name": "zero bid",
+      "kind": "openapi",
+      "schema": "BidRequest",
+      "input": {
+        "amount_minor": 0,
+        "currency": "EUR"
+      },
+      "expected_valid": false
+    },
+    {
+      "id": "DOC-TST-004",
+      "name": "overflow amount",
+      "kind": "openapi",
+      "schema": "BidRequest",
+      "input": {
+        "amount_minor": 9007199254740992,
+        "currency": "EUR"
+      },
+      "expected_valid": false
+    },
+    {
+      "id": "DOC-TST-005",
+      "name": "lowercase currency",
+      "kind": "openapi",
+      "schema": "BidRequest",
+      "input": {
+        "amount_minor": 100,
+        "currency": "eur"
+      },
+      "expected_valid": false
+    },
+    {
+      "id": "DOC-TST-006",
+      "name": "unexpected author",
+      "kind": "openapi",
+      "schema": "BidRequest",
+      "input": {
+        "amount_minor": 100,
+        "currency": "EUR",
+        "actor_id": "123e4567-e89b-42d3-a456-426614174000"
+      },
+      "expected_valid": false
+    },
+    {
+      "id": "DOC-TST-007",
+      "name": "Current offer has winner",
+      "kind": "openapi",
+      "schema": "AuctionResult",
+      "input": {
+        "id": "123e4567-e89b-42d3-a456-426614174000",
+        "auction_id": "123e4567-e89b-42d3-a456-426614174000",
+        "status": "pending_seller_decision",
+        "winning_bid_id": "123e4567-e89b-42d3-a456-426614174000",
+        "version": 1
+      },
+      "expected_valid": true
+    },
+    {
+      "id": "DOC-TST-008",
+      "name": "Current offer missing winner",
+      "kind": "openapi",
+      "schema": "AuctionResult",
+      "input": {
+        "id": "123e4567-e89b-42d3-a456-426614174000",
+        "auction_id": "123e4567-e89b-42d3-a456-426614174000",
+        "status": "pending_seller_decision",
+        "winning_bid_id": null,
+        "version": 1
+      },
+      "expected_valid": false
+    },
+    {
+      "id": "DOC-TST-009",
+      "name": "No-bid result has no winner",
+      "kind": "openapi",
+      "schema": "AuctionResult",
+      "input": {
+        "id": "123e4567-e89b-42d3-a456-426614174000",
+        "auction_id": "123e4567-e89b-42d3-a456-426614174000",
+        "status": "no_bid",
+        "winning_bid_id": null,
+        "version": 1
+      },
+      "expected_valid": true
+    },
+    {
+      "id": "DOC-TST-010",
+      "name": "No-bid result falsely supplies winner",
+      "kind": "openapi",
+      "schema": "AuctionResult",
+      "input": {
+        "id": "123e4567-e89b-42d3-a456-426614174000",
+        "auction_id": "123e4567-e89b-42d3-a456-426614174000",
+        "status": "no_bid",
+        "winning_bid_id": "123e4567-e89b-42d3-a456-426614174000",
+        "version": 1
+      },
+      "expected_valid": false
+    },
+    {
+      "id": "DOC-TST-011",
+      "name": "Pending estimate may abstain",
+      "kind": "openapi",
+      "schema": "Valuation",
+      "input": {
+        "id": "123e4567-e89b-42d3-a456-426614174000",
+        "status": "pending_review",
+        "policy_version_id": "123e4567-e89b-42d3-a456-426614174000"
+      },
+      "expected_valid": true
+    },
+    {
+      "id": "DOC-TST-012",
+      "name": "Approved estimate cannot omit range",
+      "kind": "openapi",
+      "schema": "Valuation",
+      "input": {
+        "id": "123e4567-e89b-42d3-a456-426614174000",
+        "status": "approved",
+        "policy_version_id": "123e4567-e89b-42d3-a456-426614174000"
+      },
+      "expected_valid": false
+    },
+    {
+      "id": "DOC-TST-013",
+      "name": "Range is complete and currency scoped",
+      "kind": "openapi",
+      "schema": "Valuation",
+      "input": {
+        "id": "123e4567-e89b-42d3-a456-426614174000",
+        "status": "approved",
+        "policy_version_id": "123e4567-e89b-42d3-a456-426614174000",
+        "low_minor": 100,
+        "high_minor": 200,
+        "currency": "EUR"
+      },
+      "expected_valid": true
+    },
+    {
+      "id": "DOC-TST-014",
+      "name": "Partial range invalid",
+      "kind": "openapi",
+      "schema": "Valuation",
+      "input": {
+        "id": "123e4567-e89b-42d3-a456-426614174000",
+        "status": "pending_review",
+        "policy_version_id": "123e4567-e89b-42d3-a456-426614174000",
+        "low_minor": 100
+      },
+      "expected_valid": false
+    },
+    {
+      "id": "DOC-TST-015",
+      "name": "Reschedule needs server slot",
+      "kind": "openapi",
+      "schema": "AppointmentTransition",
+      "input": {
+        "action": "reschedule",
+        "reason": "Customer requests another appointment"
+      },
+      "expected_valid": false
+    },
+    {
+      "id": "DOC-TST-016",
+      "name": "Reschedule includes slot",
+      "kind": "openapi",
+      "schema": "AppointmentTransition",
+      "input": {
+        "action": "reschedule",
+        "reason": "Customer requests another appointment",
+        "slot_id": "123e4567-e89b-42d3-a456-426614174000"
+      },
+      "expected_valid": true
+    },
+    {
+      "id": "DOC-TST-017",
+      "name": "Arbitrary state command rejected",
+      "kind": "openapi",
+      "schema": "AppointmentTransition",
+      "input": {
+        "action": "force-complete",
+        "reason": "test"
+      },
+      "expected_valid": false
+    },
+    {
+      "id": "DOC-TST-018",
+      "name": "Completed authenticated session",
+      "kind": "openapi",
+      "schema": "AuthSession",
+      "input": {
+        "user_id": "123e4567-e89b-42d3-a456-426614174000",
+        "expires_at": "2026-11-15T12:00:00Z",
+        "mfa_required": false,
+        "csrf_token": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      },
+      "expected_valid": true
+    },
+    {
+      "id": "DOC-TST-019",
+      "name": "MFA pending cannot be authorized session",
+      "kind": "openapi",
+      "schema": "AuthSession",
+      "input": {
+        "user_id": "123e4567-e89b-42d3-a456-426614174000",
+        "expires_at": "2026-11-15T12:00:00Z",
+        "mfa_required": true,
+        "csrf_token": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      },
+      "expected_valid": false
+    },
+    {
+      "id": "DOC-TST-020",
+      "name": "Privacy support does not require transaction",
+      "kind": "openapi",
+      "schema": "TicketCreate",
+      "input": {
+        "subject": "Data access",
+        "description": "Please review my rights request.",
+        "category": "privacy"
+      },
+      "expected_valid": true
+    },
+    {
+      "id": "DOC-TST-021",
+      "name": "Transaction support needs case",
+      "kind": "openapi",
+      "schema": "TicketCreate",
+      "input": {
+        "subject": "Data access",
+        "description": "Please review my rights request.",
+        "category": "transaction"
+      },
+      "expected_valid": false
+    },
+    {
+      "id": "DOC-TST-022",
+      "name": "Normalized provider evidence",
+      "kind": "openapi",
+      "schema": "ProviderEvent",
+      "input": {
+        "provider_id": "123e4567-e89b-42d3-a456-426614174000",
+        "provider_event_id": "external-123",
+        "kind": "payment_observed",
+        "occurred_at": "2026-11-15T12:00:00Z",
+        "resource_id": "123e4567-e89b-42d3-a456-426614174000",
+        "evidence_id": "123e4567-e89b-42d3-a456-426614174000",
+        "source_payload_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      },
+      "expected_valid": true
+    },
+    {
+      "id": "DOC-TST-023",
+      "name": "Provider UTC required",
+      "kind": "openapi",
+      "schema": "ProviderEvent",
+      "input": {
+        "provider_id": "123e4567-e89b-42d3-a456-426614174000",
+        "provider_event_id": "external-123",
+        "kind": "payment_observed",
+        "occurred_at": "2026-11-15T12:00:00+03:30",
+        "resource_id": "123e4567-e89b-42d3-a456-426614174000",
+        "evidence_id": "123e4567-e89b-42d3-a456-426614174000",
+        "source_payload_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      },
+      "expected_valid": false
+    },
+    {
+      "id": "DOC-TST-024",
+      "name": "Missing provider source hash",
+      "kind": "openapi",
+      "schema": "ProviderEvent",
+      "input": {
+        "provider_id": "123e4567-e89b-42d3-a456-426614174000",
+        "provider_event_id": "external-123",
+        "kind": "payment_observed",
+        "occurred_at": "2026-11-15T12:00:00Z",
+        "resource_id": "123e4567-e89b-42d3-a456-426614174000",
+        "evidence_id": "123e4567-e89b-42d3-a456-426614174000"
+      },
+      "expected_valid": false
+    },
+    {
+      "id": "DOC-TST-025",
+      "name": "N/A requires explanation",
+      "kind": "openapi",
+      "schema": "Finding",
+      "input": {
+        "point_id": "123e4567-e89b-42d3-a456-426614174000",
+        "result": "not_applicable"
+      },
+      "expected_valid": false
+    },
+    {
+      "id": "DOC-TST-026",
+      "name": "N/A explicitly justified",
+      "kind": "openapi",
+      "schema": "Finding",
+      "input": {
+        "point_id": "123e4567-e89b-42d3-a456-426614174000",
+        "result": "not_applicable",
+        "comment": "Not fitted to this model."
+      },
+      "expected_valid": true
+    },
+    {
+      "id": "DOC-TST-027",
+      "name": "Defect requires severity",
+      "kind": "openapi",
+      "schema": "Finding",
+      "input": {
+        "point_id": "123e4567-e89b-42d3-a456-426614174000",
+        "result": "defect"
+      },
+      "expected_valid": false
+    },
+    {
+      "id": "DOC-TST-028",
+      "name": "Defect with severity",
+      "kind": "openapi",
+      "schema": "Finding",
+      "input": {
+        "point_id": "123e4567-e89b-42d3-a456-426614174000",
+        "result": "defect",
+        "severity": "major"
+      },
+      "expected_valid": true
+    },
+    {
+      "id": "DOC-TST-029",
+      "name": "Human cannot approve external credit",
+      "kind": "openapi",
+      "schema": "FinancingApplicationTransition",
+      "input": {
+        "action": "approve",
+        "reason": "manual override"
+      },
+      "expected_valid": false
+    },
+    {
+      "id": "DOC-TST-030",
+      "name": "Typed editorial paragraph",
+      "kind": "openapi",
+      "schema": "ContentBlock",
+      "input": {
+        "kind": "paragraph",
+        "text": "Inspect a vehicle before committing."
+      },
+      "expected_valid": true
+    },
+    {
+      "id": "DOC-TST-031",
+      "name": "Script block is forbidden",
+      "kind": "openapi",
+      "schema": "ContentBlock",
+      "input": {
+        "kind": "script",
+        "text": "alert(1)"
+      },
+      "expected_valid": false
+    },
+    {
+      "id": "DOC-TST-032",
+      "name": "Image requires alt and approved media",
+      "kind": "openapi",
+      "schema": "ContentBlock",
+      "input": {
+        "kind": "image",
+        "media_id": "123e4567-e89b-42d3-a456-426614174000"
+      },
+      "expected_valid": false
+    },
+    {
+      "id": "DOC-TST-033",
+      "name": "Saved search currency pairing",
+      "kind": "openapi",
+      "schema": "SavedSearchCreate",
+      "input": {
+        "name": "Compact cars",
+        "filters": {
+          "price_max_minor": 1000000,
+          "currency": "EUR"
+        },
+        "notification_frequency": "none"
+      },
+      "expected_valid": true
+    },
+    {
+      "id": "DOC-TST-034",
+      "name": "Price filter requires currency",
+      "kind": "openapi",
+      "schema": "ListingFilters",
+      "input": {
+        "price_max_minor": 1000000
+      },
+      "expected_valid": false
+    },
+    {
+      "id": "DOC-TST-035",
+      "name": "Mileage filter requires unit",
+      "kind": "openapi",
+      "schema": "ListingFilters",
+      "input": {
+        "mileage_max": 50000
+      },
+      "expected_valid": false
+    },
+    {
+      "id": "DOC-TST-036",
+      "name": "Unknown search DSL forbidden",
+      "kind": "openapi",
+      "schema": "ListingFilters",
+      "input": {
+        "raw_query": "*:*"
+      },
+      "expected_valid": false
+    },
+    {
+      "id": "DOC-TST-037",
+      "name": "Unapproved arbitrary policy rejected",
+      "kind": "openapi",
+      "schema": "PolicyDraft",
+      "input": {
+        "type": "custody_override",
+        "content": {},
+        "reason": "test"
+      },
+      "expected_valid": false
+    },
+    {
+      "id": "DOC-TST-038",
+      "name": "Retention honors holds",
+      "kind": "openapi",
+      "schema": "RetentionPolicy",
+      "input": {
+        "jurisdiction": "EXAMPLE",
+        "data_class": "financial",
+        "retention_days": 30,
+        "honor_legal_hold": true,
+        "authority_reference": "Illustrative policy only"
+      },
+      "expected_valid": true
+    },
+    {
+      "id": "DOC-TST-039",
+      "name": "Hold bypass rejected",
+      "kind": "openapi",
+      "schema": "RetentionPolicy",
+      "input": {
+        "jurisdiction": "EXAMPLE",
+        "data_class": "financial",
+        "retention_days": 30,
+        "honor_legal_hold": false,
+        "authority_reference": "Illustrative policy only"
+      },
+      "expected_valid": false
+    },
+    {
+      "id": "DOC-TST-040",
+      "name": "Accepted offer response needs transaction",
+      "kind": "openapi",
+      "schema": "DecisionResult",
+      "input": {
+        "id": "123e4567-e89b-42d3-a456-426614174000",
+        "status": "accepted",
+        "recorded_at": "2026-11-15T12:00:00Z",
+        "version": 1
+      },
+      "expected_valid": false
+    },
+    {
+      "id": "DOC-TST-041",
+      "name": "Accepted offer returns canonical transaction",
+      "kind": "openapi",
+      "schema": "DecisionResult",
+      "input": {
+        "id": "123e4567-e89b-42d3-a456-426614174000",
+        "status": "accepted",
+        "recorded_at": "2026-11-15T12:00:00Z",
+        "version": 1,
+        "transaction_id": "123e4567-e89b-42d3-a456-426614174000"
+      },
+      "expected_valid": true
+    },
+    {
+      "id": "DOC-TST-042",
+      "name": "Public price abstention carries no invented amount",
+      "kind": "openapi",
+      "schema": "PublicValuation",
+      "input": {
+        "status": "insufficient_data",
+        "policy_version": "example-v1",
+        "as_of": "2026-11-15T12:00:00Z",
+        "disclaimer": "Indicative only."
+      },
+      "expected_valid": true
+    },
+    {
+      "id": "DOC-TST-043",
+      "name": "Public abstention with fabricated range rejected",
+      "kind": "openapi",
+      "schema": "PublicValuation",
+      "input": {
+        "status": "insufficient_data",
+        "policy_version": "example-v1",
+        "as_of": "2026-11-15T12:00:00Z",
+        "disclaimer": "Indicative only.",
+        "low_minor": 100
+      },
+      "expected_valid": false
+    },
+    {
+      "id": "DOC-TST-044",
+      "name": "Domain event typed payload",
+      "kind": "contract",
+      "schema": "domain-event.schema.json",
+      "input": {
+        "event_id": "123e4567-e89b-42d3-a456-426614174000",
+        "type": "auction.bid_accepted",
+        "schema_version": 1,
+        "occurred_at": "2026-11-15T12:00:00Z",
+        "aggregate_type": "Auction",
+        "aggregate_id": "123e4567-e89b-42d3-a456-426614174000",
+        "aggregate_sequence": 1,
+        "tenant_id": "123e4567-e89b-42d3-a456-426614174000",
+        "correlation_id": "123e4567-e89b-42d3-a456-426614174000",
+        "causation_id": null,
+        "payload": {
+          "auction_id": "123e4567-e89b-42d3-a456-426614174000",
+          "bid_id": "123e4567-e89b-42d3-a456-426614174000",
+          "amount_minor": 100,
+          "currency": "EUR",
+          "sequence": 1
+        }
+      },
+      "expected_valid": true
+    },
+    {
+      "id": "DOC-TST-045",
+      "name": "Domain event cannot carry direct contact",
+      "kind": "contract",
+      "schema": "domain-event.schema.json",
+      "input": {
+        "event_id": "123e4567-e89b-42d3-a456-426614174000",
+        "type": "auction.bid_accepted",
+        "schema_version": 1,
+        "occurred_at": "2026-11-15T12:00:00Z",
+        "aggregate_type": "Auction",
+        "aggregate_id": "123e4567-e89b-42d3-a456-426614174000",
+        "aggregate_sequence": 1,
+        "tenant_id": "123e4567-e89b-42d3-a456-426614174000",
+        "correlation_id": "123e4567-e89b-42d3-a456-426614174000",
+        "causation_id": null,
+        "payload": {
+          "auction_id": "123e4567-e89b-42d3-a456-426614174000",
+          "bid_id": "123e4567-e89b-42d3-a456-426614174000",
+          "amount_minor": 100,
+          "currency": "EUR",
+          "sequence": 1,
+          "phone": "+441234567890"
+        }
+      },
+      "expected_valid": false
+    },
+    {
+      "id": "DOC-TST-046",
+      "name": "Minimal workflow analytics",
+      "kind": "contract",
+      "schema": "workflow-analytics.schema.json",
+      "input": {
+        "event_id": "123e4567-e89b-42d3-a456-426614174000",
+        "event_name": "workflow_outcome_recorded",
+        "schema_version": 1,
+        "occurred_at": "2026-11-15T12:00:00Z",
+        "scenario_id": "SCN-01",
+        "outcome": "completed",
+        "purpose": "service_operations",
+        "environment": "staging"
+      },
+      "expected_valid": true
+    },
+    {
+      "id": "DOC-TST-047",
+      "name": "Analytics excludes bid amounts",
+      "kind": "contract",
+      "schema": "workflow-analytics.schema.json",
+      "input": {
+        "event_id": "123e4567-e89b-42d3-a456-426614174000",
+        "event_name": "workflow_outcome_recorded",
+        "schema_version": 1,
+        "occurred_at": "2026-11-15T12:00:00Z",
+        "scenario_id": "SCN-01",
+        "outcome": "completed",
+        "purpose": "service_operations",
+        "environment": "staging",
+        "bid_amount_minor": 100
+      },
+      "expected_valid": false
+    },
+    {
+      "id": "DOC-TST-048",
+      "name": "Analytics unknown scenario rejected",
+      "kind": "contract",
+      "schema": "workflow-analytics.schema.json",
+      "input": {
+        "event_id": "123e4567-e89b-42d3-a456-426614174000",
+        "event_name": "workflow_outcome_recorded",
+        "schema_version": 1,
+        "occurred_at": "2026-11-15T12:00:00Z",
+        "scenario_id": "SCN-999",
+        "outcome": "completed",
+        "purpose": "service_operations",
+        "environment": "staging"
+      },
+      "expected_valid": false
+    }
+  ]
+}

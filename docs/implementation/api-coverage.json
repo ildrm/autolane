@@ -1,0 +1,1034 @@
+[
+  {
+    "operation_id": "getAuctionSnapshot",
+    "method": "GET",
+    "path": "/auctions/{auctionId}",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "submitBid",
+    "method": "POST",
+    "path": "/auctions/{auctionId}/bids",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "createSession",
+    "method": "POST",
+    "path": "/auth/sessions",
+    "status": "external_dependency_or_adapter_incomplete",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "createSellerLead",
+    "method": "POST",
+    "path": "/seller-leads",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "listSellerLead",
+    "method": "GET",
+    "path": "/seller-leads",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "listBranches",
+    "method": "GET",
+    "path": "/branches",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "createAppointment",
+    "method": "POST",
+    "path": "/appointments",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "listAppointment",
+    "method": "GET",
+    "path": "/appointments",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "createInspectionRevision",
+    "method": "POST",
+    "path": "/inspections/{id}/revisions",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "publishInspection",
+    "method": "POST",
+    "path": "/inspections/{id}/publish",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "createValuation",
+    "method": "POST",
+    "path": "/valuations",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "listValuation",
+    "method": "GET",
+    "path": "/valuations",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "createAuction",
+    "method": "POST",
+    "path": "/auctions",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "listEligibleAuctions",
+    "method": "GET",
+    "path": "/auctions",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "closeAuction",
+    "method": "POST",
+    "path": "/auctions/{id}/close",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "recordSellerDecision",
+    "method": "POST",
+    "path": "/auction-results/{id}/seller-decision",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "decideDealerVerification",
+    "method": "POST",
+    "path": "/dealer-verifications/{id}/decision",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "listConsumerListings",
+    "method": "GET",
+    "path": "/listings",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "createVehicleListing",
+    "method": "POST",
+    "path": "/listings",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "createPurchaseRequest",
+    "method": "POST",
+    "path": "/purchase-requests",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "listPurchaseRequest",
+    "method": "GET",
+    "path": "/purchase-requests",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "recordSignatureEvidence",
+    "method": "POST",
+    "path": "/contracts/{id}/signatures",
+    "status": "partial_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "submitPaymentEvidence",
+    "method": "POST",
+    "path": "/obligations/{id}/evidence",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "approveReconciliation",
+    "method": "POST",
+    "path": "/reconciliations/{id}/approve",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "recordDeliveryHandover",
+    "method": "POST",
+    "path": "/deliveries/{id}/handover",
+    "status": "partial_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "createSupportTicket",
+    "method": "POST",
+    "path": "/support-tickets",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "listSupportTicket",
+    "method": "GET",
+    "path": "/support-tickets",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "createPolicyVersion",
+    "method": "POST",
+    "path": "/admin/policies/{id}/versions",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "getMetrics",
+    "method": "GET",
+    "path": "/analytics/metrics",
+    "status": "partial_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "readSellerLead",
+    "method": "GET",
+    "path": "/seller-leads/{id}",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "transitionSellerLead",
+    "method": "POST",
+    "path": "/seller-leads/{id}/transitions",
+    "status": "partial_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "readAppointment",
+    "method": "GET",
+    "path": "/appointments/{id}",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "transitionAppointment",
+    "method": "POST",
+    "path": "/appointments/{id}/transitions",
+    "status": "partial_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "readInspection",
+    "method": "GET",
+    "path": "/inspections/{id}",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "listInspection",
+    "method": "GET",
+    "path": "/inspections",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "createInspection",
+    "method": "POST",
+    "path": "/inspections",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "transitionInspection",
+    "method": "POST",
+    "path": "/inspections/{id}/transitions",
+    "status": "partial_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "readVehicleListing",
+    "method": "GET",
+    "path": "/listings/{id}",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "transitionVehicleListing",
+    "method": "POST",
+    "path": "/listings/{id}/transitions",
+    "status": "partial_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "readValuation",
+    "method": "GET",
+    "path": "/valuations/{id}",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "transitionValuation",
+    "method": "POST",
+    "path": "/valuations/{id}/transitions",
+    "status": "partial_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "transitionAuction",
+    "method": "POST",
+    "path": "/auctions/{auctionId}/transitions",
+    "status": "partial_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "readBidCommand",
+    "method": "GET",
+    "path": "/bid-commands/{id}",
+    "status": "partial_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "listBidCommand",
+    "method": "GET",
+    "path": "/bid-commands",
+    "status": "partial_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "readDealerVerification",
+    "method": "GET",
+    "path": "/dealer-verifications/{id}",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "listDealerVerification",
+    "method": "GET",
+    "path": "/dealer-verifications",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "createDealerVerification",
+    "method": "POST",
+    "path": "/dealer-verifications",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "transitionDealerVerification",
+    "method": "POST",
+    "path": "/dealer-verifications/{id}/transitions",
+    "status": "partial_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "readPurchaseRequest",
+    "method": "GET",
+    "path": "/purchase-requests/{id}",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "transitionPurchaseRequest",
+    "method": "POST",
+    "path": "/purchase-requests/{id}/transitions",
+    "status": "partial_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "readFinancingApplication",
+    "method": "GET",
+    "path": "/financing-applications/{id}",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "listFinancingApplication",
+    "method": "GET",
+    "path": "/financing-applications",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "createFinancingApplication",
+    "method": "POST",
+    "path": "/financing-applications",
+    "status": "external_dependency_or_adapter_incomplete",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "transitionFinancingApplication",
+    "method": "POST",
+    "path": "/financing-applications/{id}/transitions",
+    "status": "partial_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "readContract",
+    "method": "GET",
+    "path": "/contracts/{id}",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "listContract",
+    "method": "GET",
+    "path": "/contracts",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "createContract",
+    "method": "POST",
+    "path": "/contracts",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "transitionContract",
+    "method": "POST",
+    "path": "/contracts/{id}/transitions",
+    "status": "partial_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "readPaymentObligation",
+    "method": "GET",
+    "path": "/obligations/{id}",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "listPaymentObligation",
+    "method": "GET",
+    "path": "/obligations",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "createPaymentObligation",
+    "method": "POST",
+    "path": "/obligations",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "transitionPaymentObligation",
+    "method": "POST",
+    "path": "/obligations/{id}/transitions",
+    "status": "not_implemented",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "readDelivery",
+    "method": "GET",
+    "path": "/deliveries/{id}",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "listDelivery",
+    "method": "GET",
+    "path": "/deliveries",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "createDelivery",
+    "method": "POST",
+    "path": "/deliveries",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "transitionDelivery",
+    "method": "POST",
+    "path": "/deliveries/{id}/transitions",
+    "status": "partial_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "readWarrantyClaim",
+    "method": "GET",
+    "path": "/claims/{id}",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "listWarrantyClaim",
+    "method": "GET",
+    "path": "/claims",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "createWarrantyClaim",
+    "method": "POST",
+    "path": "/claims",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "transitionWarrantyClaim",
+    "method": "POST",
+    "path": "/claims/{id}/transitions",
+    "status": "partial_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "readSupportTicket",
+    "method": "GET",
+    "path": "/support-tickets/{id}",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "transitionSupportTicket",
+    "method": "POST",
+    "path": "/support-tickets/{id}/transitions",
+    "status": "partial_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "readResultRecord",
+    "method": "GET",
+    "path": "/auction-results/{id}",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "readReconciliationRecord",
+    "method": "GET",
+    "path": "/reconciliations/{id}",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "readPolicyRecord",
+    "method": "GET",
+    "path": "/admin/policies/{id}",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "readTransaction",
+    "method": "GET",
+    "path": "/transactions/{id}",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "closeTransaction",
+    "method": "POST",
+    "path": "/transactions/{id}/closure",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "readOwnershipTransfer",
+    "method": "GET",
+    "path": "/ownership-transfers/{id}",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "verifyOwnershipTransfer",
+    "method": "POST",
+    "path": "/ownership-transfers/{id}/verification",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "completeAuthChallenge",
+    "method": "POST",
+    "path": "/auth/challenges/complete",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "readCurrentSession",
+    "method": "GET",
+    "path": "/auth/session",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "revokeCurrentSession",
+    "method": "DELETE",
+    "path": "/auth/session",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "createStepUpChallenge",
+    "method": "POST",
+    "path": "/auth/step-up",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "requestAccountRecovery",
+    "method": "POST",
+    "path": "/auth/recovery",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "ingestProviderEvent",
+    "method": "POST",
+    "path": "/integration-events",
+    "status": "external_dependency_or_adapter_incomplete",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "completeStepUp",
+    "method": "POST",
+    "path": "/auth/step-up/complete",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "listVehicleTaxonomy",
+    "method": "GET",
+    "path": "/vehicle-taxonomy",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "listBranchSlots",
+    "method": "GET",
+    "path": "/branches/{id}/slots",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "createUploadGrant",
+    "method": "POST",
+    "path": "/files/upload-grants",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "readFileStatus",
+    "method": "GET",
+    "path": "/files/{id}",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "createDownloadGrant",
+    "method": "POST",
+    "path": "/files/{id}/download-grants",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "prepareReconciliation",
+    "method": "POST",
+    "path": "/reconciliations",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "readPreferences",
+    "method": "GET",
+    "path": "/me/preferences",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "changePreference",
+    "method": "POST",
+    "path": "/me/preferences",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "listSavedVehicles",
+    "method": "GET",
+    "path": "/me/saved-vehicles",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "setSavedVehicle",
+    "method": "POST",
+    "path": "/me/saved-vehicles",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "createProcurement",
+    "method": "POST",
+    "path": "/procurement-requests",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "readProcurement",
+    "method": "GET",
+    "path": "/procurement-requests/{id}",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "actOnProcurement",
+    "method": "POST",
+    "path": "/procurement-requests/{id}/actions",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "createPrivacyRequest",
+    "method": "POST",
+    "path": "/privacy-requests",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "readPrivacyRequest",
+    "method": "GET",
+    "path": "/privacy-requests/{id}",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "requestExport",
+    "method": "POST",
+    "path": "/exports",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "readExportJob",
+    "method": "GET",
+    "path": "/exports/{id}",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "downloadExport",
+    "method": "POST",
+    "path": "/exports/{id}/download-grants",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "readInventoryListing",
+    "method": "GET",
+    "path": "/inventory/listings/{id}",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "createContent",
+    "method": "POST",
+    "path": "/content-items",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "readContent",
+    "method": "GET",
+    "path": "/content-items/{id}",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "reviseContent",
+    "method": "POST",
+    "path": "/content-items/{id}/revisions",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "actOnContent",
+    "method": "POST",
+    "path": "/content-items/{id}/actions",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "createCampaign",
+    "method": "POST",
+    "path": "/campaigns",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "readCampaign",
+    "method": "GET",
+    "path": "/campaigns/{id}",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "actOnCampaign",
+    "method": "POST",
+    "path": "/campaigns/{id}/actions",
+    "status": "partial_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "approvePolicy",
+    "method": "POST",
+    "path": "/admin/policies/{id}/approvals",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "submitDealerApplication",
+    "method": "POST",
+    "path": "/dealer-applications",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "requestIntakeClaim",
+    "method": "POST",
+    "path": "/intake/claim-challenges",
+    "status": "not_implemented",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "claimIntake",
+    "method": "POST",
+    "path": "/intake/claims",
+    "status": "not_implemented",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "completeRecovery",
+    "method": "POST",
+    "path": "/auth/recovery/complete",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "createConsumerOffer",
+    "method": "POST",
+    "path": "/consumer-offers",
+    "status": "partial_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "readConsumerOffer",
+    "method": "GET",
+    "path": "/consumer-offers/{id}",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "acceptConsumerOffer",
+    "method": "POST",
+    "path": "/consumer-offers/{id}/acceptance",
+    "status": "partial_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "withdrawConsumerOffer",
+    "method": "POST",
+    "path": "/consumer-offers/{id}/withdrawal",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "readPublishedContent",
+    "method": "GET",
+    "path": "/published-content/{slug}",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "readListingBySlug",
+    "method": "GET",
+    "path": "/public-listings/{slug}",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "estimatePublicVehicle",
+    "method": "POST",
+    "path": "/valuation-estimates",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "readInspectionTemplate",
+    "method": "GET",
+    "path": "/inspection-templates/{id}",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "readInspectionRevision",
+    "method": "GET",
+    "path": "/inspection-revisions/{id}",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "createSavedSearch",
+    "method": "POST",
+    "path": "/me/saved-searches",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "listSavedSearches",
+    "method": "GET",
+    "path": "/me/saved-searches",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  },
+  {
+    "operation_id": "deleteSavedSearch",
+    "method": "DELETE",
+    "path": "/me/saved-searches/{id}",
+    "status": "implemented_path_unverified",
+    "source": "apps/api/marketplace/",
+    "evidence": []
+  }
+]

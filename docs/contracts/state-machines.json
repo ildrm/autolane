@@ -1,0 +1,1351 @@
+{
+  "version": "0.3",
+  "status": "PROPOSED",
+  "scope": "15 mandatory lifecycle families; no legal approval claimed",
+  "machines": [
+    {
+      "id": "SM-01",
+      "entity": "SellerLead",
+      "owner": "Acquisition",
+      "resource": "seller-leads",
+      "initial_state": "draft",
+      "terminal_states": [
+        "closed",
+        "cancelled",
+        "rejected"
+      ],
+      "transitions": [
+        {
+          "id": "SM-01-01",
+          "source_states": [
+            "draft"
+          ],
+          "action": "submit",
+          "destination": "submitted",
+          "actor": "ROLE-002",
+          "guard": "Verified contact, supported taxonomy, service notice acknowledged",
+          "effect": "Freeze intake revision; enqueue qualification",
+          "test_id": "SM-TST-SM-01-01",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-01-02",
+          "source_states": [
+            "submitted",
+            "review"
+          ],
+          "action": "qualify",
+          "destination": "eligible",
+          "actor": "ROLE-011",
+          "guard": "Authority and eligibility evidence checked under pinned policy",
+          "effect": "Record reviewer and eligibility reasons",
+          "test_id": "SM-TST-SM-01-02",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-01-03",
+          "source_states": [
+            "submitted",
+            "eligible"
+          ],
+          "action": "request-review",
+          "destination": "review",
+          "actor": "ROLE-011",
+          "guard": "Duplicate or authority conflict documented",
+          "effect": "Prevent booking/publication until resolved",
+          "test_id": "SM-TST-SM-01-03",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-01-04",
+          "source_states": [
+            "eligible"
+          ],
+          "action": "start-case",
+          "destination": "in_progress",
+          "actor": "ROLE-006",
+          "guard": "Confirmed appointment and verified seller scope",
+          "effect": "Link appointment and inspection work to the SellerLead; no TransactionCase exists until a current offer is accepted",
+          "test_id": "SM-TST-SM-01-04",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-01-05",
+          "source_states": [
+            "submitted",
+            "review"
+          ],
+          "action": "reject",
+          "destination": "rejected",
+          "actor": "ROLE-011",
+          "guard": "Reason and support route supplied",
+          "effect": "Notify owner without exposing duplicate identities",
+          "test_id": "SM-TST-SM-01-05",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-01-06",
+          "source_states": [
+            "draft",
+            "submitted",
+            "review",
+            "eligible"
+          ],
+          "action": "cancel",
+          "destination": "cancelled",
+          "actor": "ROLE-002",
+          "guard": "Own case and no live binding obligation",
+          "effect": "Release future booking through idempotent scheduling command",
+          "test_id": "SM-TST-SM-01-06",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-01-07",
+          "source_states": [
+            "in_progress"
+          ],
+          "action": "close",
+          "destination": "closed",
+          "actor": "ROLE-006",
+          "guard": "Verified completed transaction outcome or explicit unsuccessful/withdrawn selling outcome with no unresolved obligation",
+          "effect": "Record outcome, never infer financial success",
+          "test_id": "SM-TST-SM-01-07",
+          "event": "lifecycle.transition_recorded"
+        }
+      ],
+      "completed_but_revisitable_states": []
+    },
+    {
+      "id": "SM-02",
+      "entity": "Appointment",
+      "owner": "Scheduling",
+      "resource": "appointments",
+      "initial_state": "confirmed",
+      "terminal_states": [
+        "completed",
+        "cancelled",
+        "no_show"
+      ],
+      "transitions": [
+        {
+          "id": "SM-02-01",
+          "source_states": [
+            "confirmed"
+          ],
+          "action": "reschedule",
+          "destination": "confirmed",
+          "actor": "ROLE-002",
+          "guard": "Own case, new slot valid, capacity and notice policy checked",
+          "effect": "Lock old/new slots in sorted ID order and move reservation atomically",
+          "test_id": "SM-TST-SM-02-01",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-02-02",
+          "source_states": [
+            "confirmed"
+          ],
+          "action": "cancel",
+          "destination": "cancelled",
+          "actor": "ROLE-002",
+          "guard": "Own case and cancellation policy allows action",
+          "effect": "Release reservation exactly once; create notification intent",
+          "test_id": "SM-TST-SM-02-02",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-02-03",
+          "source_states": [
+            "confirmed"
+          ],
+          "action": "check-in",
+          "destination": "checked_in",
+          "actor": "ROLE-006",
+          "guard": "Assigned branch verifies booking, vehicle and arrival",
+          "effect": "Record check-in instant and queue position",
+          "test_id": "SM-TST-SM-02-03",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-02-04",
+          "source_states": [
+            "confirmed"
+          ],
+          "action": "mark-no-show",
+          "destination": "no_show",
+          "actor": "ROLE-006",
+          "guard": "Grace interval elapsed in branch calendar, branch was open",
+          "effect": "Record no-show reason; capacity/history retained",
+          "test_id": "SM-TST-SM-02-04",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-02-05",
+          "source_states": [
+            "checked_in"
+          ],
+          "action": "complete",
+          "destination": "completed",
+          "actor": "ROLE-006",
+          "guard": "Inspection handoff recorded",
+          "effect": "Complete visit without asserting sale or report approval",
+          "test_id": "SM-TST-SM-02-05",
+          "event": "lifecycle.transition_recorded"
+        }
+      ],
+      "completed_but_revisitable_states": []
+    },
+    {
+      "id": "SM-03",
+      "entity": "Inspection",
+      "owner": "Inspection",
+      "resource": "inspections",
+      "initial_state": "draft",
+      "terminal_states": [
+        "cancelled"
+      ],
+      "transitions": [
+        {
+          "id": "SM-03-01",
+          "source_states": [
+            "draft",
+            "returned"
+          ],
+          "action": "submit",
+          "destination": "submitted",
+          "actor": "ROLE-007",
+          "guard": "All required points explicitly answered; unknown and N/A have reasons; clean evidence",
+          "effect": "Freeze submitted revision and assign independent reviewer",
+          "test_id": "SM-TST-SM-03-01",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-03-02",
+          "source_states": [
+            "submitted"
+          ],
+          "action": "return",
+          "destination": "returned",
+          "actor": "ROLE-008",
+          "guard": "Reviewer differs from author and provides point-level reasons",
+          "effect": "Create correction task; no published content changes",
+          "test_id": "SM-TST-SM-03-02",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-03-03",
+          "source_states": [
+            "submitted"
+          ],
+          "action": "publish",
+          "destination": "published",
+          "actor": "ROLE-008",
+          "guard": "Mandatory coverage passes template; reviewer independent; clean immutable evidence",
+          "effect": "Publish revision and emit inspection.report_published",
+          "test_id": "SM-TST-SM-03-03",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-03-04",
+          "source_states": [
+            "published"
+          ],
+          "action": "correct",
+          "destination": "draft",
+          "actor": "ROLE-008",
+          "guard": "Reason, materiality and new revision recorded; existing report retained",
+          "effect": "Create successor revision; material change sets linked auction safety hold",
+          "test_id": "SM-TST-SM-03-04",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-03-05",
+          "source_states": [
+            "draft",
+            "returned"
+          ],
+          "action": "cancel",
+          "destination": "cancelled",
+          "actor": "ROLE-008",
+          "guard": "No active auction relies on draft; reason recorded",
+          "effect": "Retain audit and prevent publication",
+          "test_id": "SM-TST-SM-03-05",
+          "event": "lifecycle.transition_recorded"
+        }
+      ],
+      "completed_but_revisitable_states": [
+        "published"
+      ]
+    },
+    {
+      "id": "SM-04",
+      "entity": "VehicleListing",
+      "owner": "Consumer inventory",
+      "resource": "listings",
+      "initial_state": "draft",
+      "terminal_states": [
+        "sold",
+        "withdrawn"
+      ],
+      "transitions": [
+        {
+          "id": "SM-04-01",
+          "source_states": [
+            "draft"
+          ],
+          "action": "submit",
+          "destination": "review",
+          "actor": "ROLE-021",
+          "guard": "Seller authority, rights-cleared media, condition and price fields complete",
+          "effect": "Freeze publication candidate separate from dealer report",
+          "test_id": "SM-TST-SM-04-01",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-04-02",
+          "source_states": [
+            "review"
+          ],
+          "action": "publish",
+          "destination": "available",
+          "actor": "ROLE-021",
+          "guard": "Publication grant; no active dealer-auction channel conflict",
+          "effect": "Publish only approved projection and invalidate search",
+          "test_id": "SM-TST-SM-04-02",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-04-03",
+          "source_states": [
+            "available"
+          ],
+          "action": "suspend",
+          "destination": "unavailable",
+          "actor": "ROLE-021",
+          "guard": "Ownership, condition or availability question documented",
+          "effect": "Remove from active search; preserve buyer inquiries",
+          "test_id": "SM-TST-SM-04-03",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-04-04",
+          "source_states": [
+            "unavailable"
+          ],
+          "action": "restore",
+          "destination": "available",
+          "actor": "ROLE-021",
+          "guard": "Blocking issue resolved and authority still valid",
+          "effect": "Refresh public revision and searchable availability",
+          "test_id": "SM-TST-SM-04-04",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-04-05",
+          "source_states": [
+            "available",
+            "unavailable"
+          ],
+          "action": "mark-sold",
+          "destination": "sold",
+          "actor": "ROLE-021",
+          "guard": "Completed transaction or independently verified external disposition",
+          "effect": "Display sold status; remove inquiry CTA",
+          "test_id": "SM-TST-SM-04-05",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-04-06",
+          "source_states": [
+            "draft",
+            "review",
+            "available",
+            "unavailable"
+          ],
+          "action": "withdraw",
+          "destination": "withdrawn",
+          "actor": "ROLE-021",
+          "guard": "Authorized owner request or legal reason",
+          "effect": "Unpublish with lifecycle SEO policy; retain audit",
+          "test_id": "SM-TST-SM-04-06",
+          "event": "lifecycle.transition_recorded"
+        }
+      ],
+      "completed_but_revisitable_states": []
+    },
+    {
+      "id": "SM-05",
+      "entity": "Valuation",
+      "owner": "Pricing",
+      "resource": "valuations",
+      "initial_state": "pending_review",
+      "terminal_states": [
+        "rejected"
+      ],
+      "transitions": [
+        {
+          "id": "SM-05-01",
+          "source_states": [
+            "pending_review"
+          ],
+          "action": "approve",
+          "destination": "approved",
+          "actor": "ROLE-009",
+          "guard": "Approved source rights, currency-consistent range, sufficient data and independent override reviewer",
+          "effect": "Pin input/report/rule versions and explanation",
+          "test_id": "SM-TST-SM-05-01",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-05-02",
+          "source_states": [
+            "pending_review"
+          ],
+          "action": "reject",
+          "destination": "rejected",
+          "actor": "ROLE-009",
+          "guard": "Insufficient comparables or invalid inputs with reason",
+          "effect": "Publish abstention, never fabricate zero price",
+          "test_id": "SM-TST-SM-05-02",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-05-03",
+          "source_states": [
+            "approved"
+          ],
+          "action": "revise",
+          "destination": "pending_review",
+          "actor": "ROLE-009",
+          "guard": "New report/comparables or override reason; retain earlier valuation",
+          "effect": "Create successor valuation revision; active auctions unchanged",
+          "test_id": "SM-TST-SM-05-03",
+          "event": "lifecycle.transition_recorded"
+        }
+      ],
+      "completed_but_revisitable_states": [
+        "approved"
+      ]
+    },
+    {
+      "id": "SM-06",
+      "entity": "Auction",
+      "owner": "Auction",
+      "resource": "auctions",
+      "initial_state": "draft",
+      "terminal_states": [
+        "closed",
+        "cancelled"
+      ],
+      "transitions": [
+        {
+          "id": "SM-06-01",
+          "source_states": [
+            "draft"
+          ],
+          "action": "schedule",
+          "destination": "scheduled",
+          "actor": "ROLE-010",
+          "guard": "Published report, seller authority, approved pinned rules, valid time interval, exclusive vehicle channel",
+          "effect": "Freeze schedule/rules/report snapshot and audience",
+          "test_id": "SM-TST-SM-06-01",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-06-02",
+          "source_states": [
+            "scheduled"
+          ],
+          "action": "open",
+          "destination": "open",
+          "actor": "SYSTEM-AUCTION",
+          "guard": "Trusted DB time reaches starts_at; report, vehicle and policy still valid",
+          "effect": "Emit auction.opened after commit",
+          "test_id": "SM-TST-SM-06-02",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-06-03",
+          "source_states": [
+            "open"
+          ],
+          "action": "pause",
+          "destination": "paused",
+          "actor": "ROLE-010",
+          "guard": "Material safety issue or incident; recorded reason and case",
+          "effect": "Reject new bids, preserve deadline and bid history",
+          "test_id": "SM-TST-SM-06-03",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-06-04",
+          "source_states": [
+            "paused"
+          ],
+          "action": "resume",
+          "destination": "open",
+          "actor": "ROLE-010",
+          "guard": "Safety issue resolved, prepublished policy allows resume and original deadline not passed",
+          "effect": "Record review, never reset or extend deadline silently",
+          "test_id": "SM-TST-SM-06-04",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-06-05",
+          "source_states": [
+            "open",
+            "paused"
+          ],
+          "action": "close",
+          "destination": "closed",
+          "actor": "SYSTEM-AUCTION",
+          "guard": "DB time reaches deadline; same auction lock; paused/uncertain case yields pending_review result",
+          "effect": "Insert unique result and auction.closed atomically",
+          "test_id": "SM-TST-SM-06-05",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-06-06",
+          "source_states": [
+            "draft",
+            "scheduled",
+            "open",
+            "paused"
+          ],
+          "action": "cancel",
+          "destination": "cancelled",
+          "actor": "ROLE-010",
+          "guard": "Authorized reason and approvals per pinned policy",
+          "effect": "Preserve all bids, cancel without automatic financial penalty",
+          "test_id": "SM-TST-SM-06-06",
+          "event": "lifecycle.transition_recorded"
+        }
+      ],
+      "completed_but_revisitable_states": []
+    },
+    {
+      "id": "SM-07",
+      "entity": "BidCommand",
+      "owner": "Auction",
+      "resource": "bid-commands",
+      "initial_state": "received",
+      "terminal_states": [
+        "accepted",
+        "rejected"
+      ],
+      "transitions": [
+        {
+          "id": "SM-07-01",
+          "source_states": [
+            "received"
+          ],
+          "action": "accept",
+          "destination": "accepted",
+          "actor": "SYSTEM-AUCTION",
+          "guard": "Active organization/member/grant, open auction, post-lock DB time before cutoff, correct currency/increment",
+          "effect": "Append immutable Bid, sequence, receipt, audit and outbox atomically",
+          "test_id": "SM-TST-SM-07-01",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-07-02",
+          "source_states": [
+            "received"
+          ],
+          "action": "reject",
+          "destination": "rejected",
+          "actor": "SYSTEM-AUCTION",
+          "guard": "One eligibility, state, deadline or amount guard fails",
+          "effect": "Persist replayable decision code without changing leader",
+          "test_id": "SM-TST-SM-07-02",
+          "event": "lifecycle.transition_recorded"
+        }
+      ],
+      "completed_but_revisitable_states": []
+    },
+    {
+      "id": "SM-08",
+      "entity": "DealerVerification",
+      "owner": "Dealer",
+      "resource": "dealer-verifications",
+      "initial_state": "submitted",
+      "terminal_states": [
+        "rejected"
+      ],
+      "transitions": [
+        {
+          "id": "SM-08-01",
+          "source_states": [
+            "submitted"
+          ],
+          "action": "request-evidence",
+          "destination": "needs_evidence",
+          "actor": "ROLE-019",
+          "guard": "Missing verification item specified",
+          "effect": "Notify applicant, preserve received evidence",
+          "test_id": "SM-TST-SM-08-01",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-08-02",
+          "source_states": [
+            "needs_evidence"
+          ],
+          "action": "resubmit",
+          "destination": "submitted",
+          "actor": "ROLE-005",
+          "guard": "Authorized organization representative; clean evidence",
+          "effect": "Version submission and reset review assignment",
+          "test_id": "SM-TST-SM-08-02",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-08-03",
+          "source_states": [
+            "submitted"
+          ],
+          "action": "approve",
+          "destination": "approved",
+          "actor": "ROLE-019",
+          "guard": "Independent reviewer verifies business and representative authority",
+          "effect": "Activate dealer account; do not grant every member bid authority",
+          "test_id": "SM-TST-SM-08-03",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-08-04",
+          "source_states": [
+            "submitted"
+          ],
+          "action": "reject",
+          "destination": "rejected",
+          "actor": "ROLE-019",
+          "guard": "Evidence-based reason and appeal instructions",
+          "effect": "Disable auction access, retain decision",
+          "test_id": "SM-TST-SM-08-04",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-08-05",
+          "source_states": [
+            "approved"
+          ],
+          "action": "suspend",
+          "destination": "suspended",
+          "actor": "ROLE-019",
+          "guard": "Risk/contract reason and case; step-up required",
+          "effect": "Lock same eligibility record used by bidding; revoke active feed subscriptions",
+          "test_id": "SM-TST-SM-08-05",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-08-06",
+          "source_states": [
+            "suspended"
+          ],
+          "action": "reinstate",
+          "destination": "approved",
+          "actor": "ROLE-019",
+          "guard": "Independent risk review clears restriction",
+          "effect": "Restore eligible access prospectively; retain old decisions",
+          "test_id": "SM-TST-SM-08-06",
+          "event": "lifecycle.transition_recorded"
+        }
+      ],
+      "completed_but_revisitable_states": []
+    },
+    {
+      "id": "SM-09",
+      "entity": "PurchaseRequest",
+      "owner": "Consumer",
+      "resource": "purchase-requests",
+      "initial_state": "submitted",
+      "terminal_states": [
+        "closed",
+        "cancelled"
+      ],
+      "transitions": [
+        {
+          "id": "SM-09-01",
+          "source_states": [
+            "submitted"
+          ],
+          "action": "assign",
+          "destination": "assigned",
+          "actor": "ROLE-011",
+          "guard": "Available scoped advisor and authoritative listing check",
+          "effect": "Set owner and next contact due time",
+          "test_id": "SM-TST-SM-09-01",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-09-02",
+          "source_states": [
+            "assigned"
+          ],
+          "action": "qualify",
+          "destination": "qualified",
+          "actor": "ROLE-011",
+          "guard": "Buyer needs and availability confirmed",
+          "effect": "Record requirements and next action; no reservation implied",
+          "test_id": "SM-TST-SM-09-02",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-09-03",
+          "source_states": [
+            "qualified"
+          ],
+          "action": "coordinate",
+          "destination": "coordinating",
+          "actor": "ROLE-011",
+          "guard": "Buyer selects vehicle and appropriate contract path",
+          "effect": "Link transaction case; separate consumer/dealer paths",
+          "test_id": "SM-TST-SM-09-03",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-09-04",
+          "source_states": [
+            "submitted",
+            "assigned",
+            "qualified",
+            "coordinating"
+          ],
+          "action": "cancel",
+          "destination": "cancelled",
+          "actor": "ROLE-003",
+          "guard": "Own request and obligations handled by legal case if necessary",
+          "effect": "Stop further optional sourcing; retain lawful evidence",
+          "test_id": "SM-TST-SM-09-04",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-09-05",
+          "source_states": [
+            "coordinating"
+          ],
+          "action": "close",
+          "destination": "closed",
+          "actor": "ROLE-011",
+          "guard": "Transaction outcome or explicit unsuccessful disposition recorded",
+          "effect": "Record closure category; notify buyer",
+          "test_id": "SM-TST-SM-09-05",
+          "event": "lifecycle.transition_recorded"
+        }
+      ],
+      "completed_but_revisitable_states": []
+    },
+    {
+      "id": "SM-10",
+      "entity": "FinancingApplication",
+      "owner": "Financing",
+      "resource": "financing-applications",
+      "initial_state": "draft",
+      "terminal_states": [
+        "rejected",
+        "expired",
+        "withdrawn",
+        "funded"
+      ],
+      "transitions": [
+        {
+          "id": "SM-10-01",
+          "source_states": [
+            "draft"
+          ],
+          "action": "submit",
+          "destination": "submitted",
+          "actor": "ROLE-003",
+          "guard": "Approved lender, explicit sharing basis and required application fields",
+          "effect": "Create provider intent, not credit approval",
+          "test_id": "SM-TST-SM-10-01",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-10-02",
+          "source_states": [
+            "submitted"
+          ],
+          "action": "approve",
+          "destination": "approved",
+          "actor": "SYSTEM-PROVIDER",
+          "guard": "Authenticated correlated lender decision and current terms",
+          "effect": "Record exact offer, expiry and disclosures",
+          "test_id": "SM-TST-SM-10-02",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-10-03",
+          "source_states": [
+            "submitted"
+          ],
+          "action": "reject",
+          "destination": "rejected",
+          "actor": "SYSTEM-PROVIDER",
+          "guard": "Authenticated correlated lender rejection",
+          "effect": "Record decision and safe explanation; offer noncredit route",
+          "test_id": "SM-TST-SM-10-03",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-10-04",
+          "source_states": [
+            "approved"
+          ],
+          "action": "expire",
+          "destination": "expired",
+          "actor": "SYSTEM-FINANCE",
+          "guard": "Offer expiry passed and no accepted funding contract",
+          "effect": "Prevent use of stale terms; new application required",
+          "test_id": "SM-TST-SM-10-04",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-10-05",
+          "source_states": [
+            "approved"
+          ],
+          "action": "fund",
+          "destination": "funded",
+          "actor": "SYSTEM-PROVIDER",
+          "guard": "Independently matched disbursement evidence and legal conditions",
+          "effect": "Record external funding, not platform-created money",
+          "test_id": "SM-TST-SM-10-05",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-10-06",
+          "source_states": [
+            "draft",
+            "submitted",
+            "approved"
+          ],
+          "action": "withdraw",
+          "destination": "withdrawn",
+          "actor": "ROLE-003",
+          "guard": "Applicant request; contracted obligations escalated if already binding",
+          "effect": "Stop future optional sharing; retain required evidence",
+          "test_id": "SM-TST-SM-10-06",
+          "event": "lifecycle.transition_recorded"
+        }
+      ],
+      "completed_but_revisitable_states": []
+    },
+    {
+      "id": "SM-11",
+      "entity": "Contract",
+      "owner": "Legal",
+      "resource": "contracts",
+      "initial_state": "draft",
+      "terminal_states": [
+        "voided",
+        "superseded"
+      ],
+      "transitions": [
+        {
+          "id": "SM-11-01",
+          "source_states": [
+            "draft"
+          ],
+          "action": "review",
+          "destination": "reviewed",
+          "actor": "ROLE-012",
+          "guard": "Approved jurisdiction template, parties, amounts, fees and title process",
+          "effect": "Pin reviewed document checksum",
+          "test_id": "SM-TST-SM-11-01",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-11-02",
+          "source_states": [
+            "reviewed"
+          ],
+          "action": "issue",
+          "destination": "issued",
+          "actor": "ROLE-012",
+          "guard": "Required signers and authority verified; exact reviewed version unchanged",
+          "effect": "Issue signing invitations with expiring authorized access",
+          "test_id": "SM-TST-SM-11-02",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-11-03",
+          "source_states": [
+            "issued",
+            "partially_signed"
+          ],
+          "action": "record-signature",
+          "destination": "partially_signed",
+          "actor": "ROLE-012",
+          "guard": "One verified signer on exact document hash; other required signers outstanding",
+          "effect": "Append signature evidence; never overwrite document",
+          "test_id": "SM-TST-SM-11-03",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-11-04",
+          "source_states": [
+            "issued",
+            "partially_signed"
+          ],
+          "action": "complete-signatures",
+          "destination": "signed",
+          "actor": "ROLE-012",
+          "guard": "All required valid signatures refer to same document hash",
+          "effect": "Emit contract.signed; does not imply settlement",
+          "test_id": "SM-TST-SM-11-04",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-11-05",
+          "source_states": [
+            "draft",
+            "reviewed",
+            "issued",
+            "partially_signed"
+          ],
+          "action": "void",
+          "destination": "voided",
+          "actor": "ROLE-012",
+          "guard": "Approved legal basis and notice obligations recorded",
+          "effect": "Revoke unsigned invitations; preserve all signatures",
+          "test_id": "SM-TST-SM-11-05",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-11-06",
+          "source_states": [
+            "signed"
+          ],
+          "action": "amend",
+          "destination": "superseded",
+          "actor": "ROLE-012",
+          "guard": "Authorized amendment process and newly executed successor",
+          "effect": "Retain old agreement linked to replacement",
+          "test_id": "SM-TST-SM-11-06",
+          "event": "lifecycle.transition_recorded"
+        }
+      ],
+      "completed_but_revisitable_states": [
+        "signed"
+      ]
+    },
+    {
+      "id": "SM-12",
+      "entity": "PaymentObligation",
+      "owner": "Finance",
+      "resource": "obligations",
+      "initial_state": "outstanding",
+      "terminal_states": [
+        "voided"
+      ],
+      "transitions": [
+        {
+          "id": "SM-12-01",
+          "source_states": [
+            "outstanding",
+            "partially_satisfied",
+            "disputed"
+          ],
+          "action": "submit-evidence",
+          "destination": "evidence_pending",
+          "actor": "ROLE-013",
+          "guard": "Clean evidence references known payer/payee, source, amount and currency",
+          "effect": "Record claimed payment; no transfer or settled flag",
+          "test_id": "SM-TST-SM-12-01",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-12-02",
+          "source_states": [
+            "evidence_pending"
+          ],
+          "action": "record-partial",
+          "destination": "partially_satisfied",
+          "actor": "ROLE-014",
+          "guard": "Independent matching confirms part of exact obligation",
+          "effect": "Record matched allocation and remaining balance",
+          "test_id": "SM-TST-SM-12-02",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-12-03",
+          "source_states": [
+            "evidence_pending"
+          ],
+          "action": "dispute",
+          "destination": "disputed",
+          "actor": "ROLE-014",
+          "guard": "Mismatch, duplicate allocation or uncertain finality",
+          "effect": "Assign exception and prohibit closure",
+          "test_id": "SM-TST-SM-12-03",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-12-04",
+          "source_states": [
+            "evidence_pending",
+            "partially_satisfied"
+          ],
+          "action": "reconcile",
+          "destination": "reconciled",
+          "actor": "ROLE-014",
+          "guard": "Independent reviewer, exact approved total, authentic source, no unresolved reversal",
+          "effect": "Record reconciliation and settlement.reconciled",
+          "test_id": "SM-TST-SM-12-04",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-12-05",
+          "source_states": [
+            "reconciled"
+          ],
+          "action": "record-reversal",
+          "destination": "disputed",
+          "actor": "ROLE-014",
+          "guard": "New authenticated reversal evidence",
+          "effect": "Append compensating fact, reopen financial exception; never erase history",
+          "test_id": "SM-TST-SM-12-05",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-12-06",
+          "source_states": [
+            "outstanding"
+          ],
+          "action": "void",
+          "destination": "voided",
+          "actor": "ROLE-014",
+          "guard": "Underlying obligation legally cancelled; no unhandled payment",
+          "effect": "Preserve reason and source approval",
+          "test_id": "SM-TST-SM-12-06",
+          "event": "lifecycle.transition_recorded"
+        }
+      ],
+      "completed_but_revisitable_states": [
+        "reconciled"
+      ]
+    },
+    {
+      "id": "SM-13",
+      "entity": "Delivery",
+      "owner": "Logistics",
+      "resource": "deliveries",
+      "initial_state": "scheduled",
+      "terminal_states": [
+        "delivered",
+        "cancelled"
+      ],
+      "transitions": [
+        {
+          "id": "SM-13-01",
+          "source_states": [
+            "scheduled"
+          ],
+          "action": "assign",
+          "destination": "assigned",
+          "actor": "ROLE-020",
+          "guard": "Qualified carrier, coverage, window and pickup authority",
+          "effect": "Share minimal job information with assigned carrier",
+          "test_id": "SM-TST-SM-13-01",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-13-02",
+          "source_states": [
+            "assigned"
+          ],
+          "action": "collect",
+          "destination": "collected",
+          "actor": "ROLE-018",
+          "guard": "Pickup authority, condition, signed proof and custody verified",
+          "effect": "Append custody event and immutable condition evidence",
+          "test_id": "SM-TST-SM-13-02",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-13-03",
+          "source_states": [
+            "collected"
+          ],
+          "action": "dispatch",
+          "destination": "in_transit",
+          "actor": "ROLE-020",
+          "guard": "Carrier acceptance and destination details validated",
+          "effect": "Record dispatch and estimated window",
+          "test_id": "SM-TST-SM-13-03",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-13-04",
+          "source_states": [
+            "in_transit"
+          ],
+          "action": "deliver",
+          "destination": "delivered",
+          "actor": "ROLE-018",
+          "guard": "Authorized recipient proof, condition and time recorded",
+          "effect": "Record physical handover only",
+          "test_id": "SM-TST-SM-13-04",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-13-05",
+          "source_states": [
+            "assigned",
+            "collected",
+            "in_transit"
+          ],
+          "action": "report-exception",
+          "destination": "exception",
+          "actor": "ROLE-020",
+          "guard": "Delay, damage or failed attempt has evidence and current custodian",
+          "effect": "Assign claims/dispatch owner; preserve custody",
+          "test_id": "SM-TST-SM-13-05",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-13-06",
+          "source_states": [
+            "exception"
+          ],
+          "action": "reschedule",
+          "destination": "assigned",
+          "actor": "ROLE-020",
+          "guard": "New agreed window and verified custody/insurance",
+          "effect": "Create new attempt; retain failed attempt",
+          "test_id": "SM-TST-SM-13-06",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-13-07",
+          "source_states": [
+            "scheduled",
+            "assigned"
+          ],
+          "action": "cancel",
+          "destination": "cancelled",
+          "actor": "ROLE-020",
+          "guard": "Vehicle not collected and authorized cancellation",
+          "effect": "Notify participants; no implied fee refund",
+          "test_id": "SM-TST-SM-13-07",
+          "event": "lifecycle.transition_recorded"
+        }
+      ],
+      "completed_but_revisitable_states": []
+    },
+    {
+      "id": "SM-14",
+      "entity": "WarrantyClaim",
+      "owner": "Claims",
+      "resource": "claims",
+      "initial_state": "received",
+      "terminal_states": [
+        "closed"
+      ],
+      "transitions": [
+        {
+          "id": "SM-14-01",
+          "source_states": [
+            "received"
+          ],
+          "action": "request-evidence",
+          "destination": "needs_evidence",
+          "actor": "ROLE-022",
+          "guard": "Applicable policy/version and missing evidence identified",
+          "effect": "Record next action and notice; original claim time retained",
+          "test_id": "SM-TST-SM-14-01",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-14-02",
+          "source_states": [
+            "received",
+            "needs_evidence"
+          ],
+          "action": "review",
+          "destination": "under_review",
+          "actor": "ROLE-022",
+          "guard": "Required evidence available; independent reviewer assigned",
+          "effect": "Preserve report, policy and transaction snapshots",
+          "test_id": "SM-TST-SM-14-02",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-14-03",
+          "source_states": [
+            "under_review"
+          ],
+          "action": "approve",
+          "destination": "approved",
+          "actor": "ROLE-022",
+          "guard": "Coverage, liability and proposed remedy supported by approved policy",
+          "effect": "Create remedy proposal; finance separately authorizes money",
+          "test_id": "SM-TST-SM-14-03",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-14-04",
+          "source_states": [
+            "under_review"
+          ],
+          "action": "deny",
+          "destination": "denied",
+          "actor": "ROLE-022",
+          "guard": "Reason and applicable appeal path supplied",
+          "effect": "Record reasoned decision without deleting evidence",
+          "test_id": "SM-TST-SM-14-04",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-14-05",
+          "source_states": [
+            "approved"
+          ],
+          "action": "complete-remedy",
+          "destination": "closed",
+          "actor": "ROLE-022",
+          "guard": "Authorized remedy completion independently confirmed",
+          "effect": "Close with remedy evidence and notification",
+          "test_id": "SM-TST-SM-14-05",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-14-06",
+          "source_states": [
+            "denied"
+          ],
+          "action": "appeal",
+          "destination": "under_review",
+          "actor": "ROLE-022",
+          "guard": "Appeal admissible under policy; independent new reviewer",
+          "effect": "Create linked review cycle; prior decision remains",
+          "test_id": "SM-TST-SM-14-06",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-14-07",
+          "source_states": [
+            "denied"
+          ],
+          "action": "close",
+          "destination": "closed",
+          "actor": "ROLE-022",
+          "guard": "Applicable appeal handling completed",
+          "effect": "Record closure and evidence retention policy",
+          "test_id": "SM-TST-SM-14-07",
+          "event": "lifecycle.transition_recorded"
+        }
+      ],
+      "completed_but_revisitable_states": []
+    },
+    {
+      "id": "SM-15",
+      "entity": "SupportTicket",
+      "owner": "Support",
+      "resource": "support-tickets",
+      "initial_state": "open",
+      "terminal_states": [],
+      "transitions": [
+        {
+          "id": "SM-15-01",
+          "source_states": [
+            "open"
+          ],
+          "action": "assign",
+          "destination": "assigned",
+          "actor": "ROLE-011",
+          "guard": "Available authorized team member",
+          "effect": "Set owner and response target",
+          "test_id": "SM-TST-SM-15-01",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-15-02",
+          "source_states": [
+            "assigned"
+          ],
+          "action": "investigate",
+          "destination": "investigating",
+          "actor": "ROLE-011",
+          "guard": "Verified customer and minimum necessary case access",
+          "effect": "Record evidence request and investigation log",
+          "test_id": "SM-TST-SM-15-02",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-15-03",
+          "source_states": [
+            "investigating"
+          ],
+          "action": "wait-customer",
+          "destination": "awaiting_customer",
+          "actor": "ROLE-011",
+          "guard": "Specific information request and follow-up date",
+          "effect": "Pause only approved resolution clock; not initial response",
+          "test_id": "SM-TST-SM-15-03",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-15-04",
+          "source_states": [
+            "awaiting_customer"
+          ],
+          "action": "resume",
+          "destination": "investigating",
+          "actor": "ROLE-011",
+          "guard": "Customer evidence received or staff follow-up",
+          "effect": "Resume clock and preserve waiting interval",
+          "test_id": "SM-TST-SM-15-04",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-15-05",
+          "source_states": [
+            "assigned",
+            "investigating",
+            "awaiting_customer"
+          ],
+          "action": "resolve",
+          "destination": "resolved",
+          "actor": "ROLE-011",
+          "guard": "Reasoned resolution recorded; domain actions confirmed independently",
+          "effect": "Notify with appeal/reopen path",
+          "test_id": "SM-TST-SM-15-05",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-15-06",
+          "source_states": [
+            "resolved"
+          ],
+          "action": "close",
+          "destination": "closed",
+          "actor": "ROLE-011",
+          "guard": "Approved confirmation/closure policy satisfied",
+          "effect": "Record closure, no financial powers inferred",
+          "test_id": "SM-TST-SM-15-06",
+          "event": "lifecycle.transition_recorded"
+        },
+        {
+          "id": "SM-15-07",
+          "source_states": [
+            "resolved",
+            "closed"
+          ],
+          "action": "reopen",
+          "destination": "assigned",
+          "actor": "ROLE-011",
+          "guard": "New evidence or permitted customer request",
+          "effect": "Reopen with owner, preserve prior resolution",
+          "test_id": "SM-TST-SM-15-07",
+          "event": "lifecycle.transition_recorded"
+        }
+      ],
+      "completed_but_revisitable_states": [
+        "closed"
+      ]
+    }
+  ]
+}

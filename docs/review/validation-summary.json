@@ -1,0 +1,130 @@
+{
+  "checked_on": "2026-11-15",
+  "scope": "Documentation structure, cross references, schema fixtures and selected contrast only; no runtime/human sign-off",
+  "overall": "passed",
+  "counts": {
+    "canonical_artifacts": 199,
+    "documentation_files": 230,
+    "markdown_documents": 215,
+    "openapi_operations": 129,
+    "api_schemas": 168,
+    "panels": 20,
+    "screens": 48,
+    "scenarios": 120,
+    "lifecycle_families": 15,
+    "transitions": 84,
+    "specialist_roles": 144,
+    "schema_fixtures": 48
+  },
+  "checks": [
+    {
+      "check": "OpenAPI3.1 semantic validation",
+      "passed": true,
+      "details": "openapi-spec-validator0.9.0"
+    },
+    {
+      "check": "All168 API component schemas validate as Draft202012 schemas",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "All48 positive/negative documentation fixtures",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "All199 original canonical artifact pairs present",
+      "passed": true,
+      "details": {
+        "missing": [],
+        "extra": []
+      }
+    },
+    {
+      "check": "Canonical files exist and are nonempty",
+      "passed": true,
+      "details": []
+    },
+    {
+      "check": "Operation IDs unique and index exact",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "All OpenAPI local references resolve",
+      "passed": true,
+      "details": []
+    },
+    {
+      "check": "Path parameters match required declarations",
+      "passed": true,
+      "details": []
+    },
+    {
+      "check": "Cookie-auth mutations declare CSRF",
+      "passed": true,
+      "details": []
+    },
+    {
+      "check": "If-Match operations declare412",
+      "passed": true,
+      "details": []
+    },
+    {
+      "check": "Panel/screen/scenario operation, role and screen references resolve",
+      "passed": true,
+      "details": []
+    },
+    {
+      "check": "20 panels,48 screens,120 unique scenarios and test IDs",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "15 lifecycle families,84 unique reachable guarded transitions",
+      "passed": true,
+      "details": []
+    },
+    {
+      "check": "144 specialist roles in12 teams with existing artifacts",
+      "passed": true,
+      "details": []
+    },
+    {
+      "check": "12 solid token-pair contrast checks",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Local Markdown file targets resolve",
+      "passed": true,
+      "details": {
+        "targets_checked": 791,
+        "broken": [],
+        "limits": "External URL availability and rendered anchors are not asserted."
+      }
+    },
+    {
+      "check": "All JSON files parse",
+      "passed": true,
+      "details": {
+        "count": 14
+      }
+    }
+  ],
+  "failed_checks": [],
+  "scenario_delivery_modes": {
+    "proposed_contract_mapping": 106,
+    "governed_manual_workflow": 12,
+    "disabled_pending_policy": 1,
+    "provider_activation_dependency": 1
+  },
+  "not_executed": [
+    "Application unit/integration/E2E tests",
+    "Real concurrency/load/failover tests",
+    "Rendered accessibility/usability tests",
+    "Provider sandbox integration",
+    "Qualified legal/finance review",
+    "Deployment or live operational exercises"
+  ]
+}

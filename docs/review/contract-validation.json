@@ -1,0 +1,509 @@
+{
+  "checked_on": "2026-11-15",
+  "openapi_version": "3.1.0",
+  "document_version": "0.3.0",
+  "openapi_sha256": "897deb7fc3cc1cbf0dd36139f088c80e0c63b2acd7975143cf1aa917d8bed27b",
+  "validator": "openapi-spec-validator 0.9.0",
+  "fixture_validator": "jsonschema 4.26.0 Draft202012 with format checking",
+  "openapi_validation": "passed",
+  "schema_count": 168,
+  "operation_count": 129,
+  "test_type": "documentation schema fixtures, not runtime business tests",
+  "fixtures": [
+    {
+      "id": "DOC-TST-001",
+      "name": "Integer bid accepted by schema",
+      "schema": "BidRequest",
+      "expected_valid": true,
+      "actual_valid": true,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "id": "DOC-TST-002",
+      "name": "fractional amount",
+      "schema": "BidRequest",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "1.5 is not of type 'integer'"
+      ]
+    },
+    {
+      "id": "DOC-TST-003",
+      "name": "zero bid",
+      "schema": "BidRequest",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "0 is less than the minimum of 1"
+      ]
+    },
+    {
+      "id": "DOC-TST-004",
+      "name": "overflow amount",
+      "schema": "BidRequest",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "9007199254740992 is greater than the maximum of 9007199254740991"
+      ]
+    },
+    {
+      "id": "DOC-TST-005",
+      "name": "lowercase currency",
+      "schema": "BidRequest",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "'eur' does not match '^[A-Z]{3}$'"
+      ]
+    },
+    {
+      "id": "DOC-TST-006",
+      "name": "unexpected author",
+      "schema": "BidRequest",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "Additional properties are not allowed ('actor_id' was unexpected)"
+      ]
+    },
+    {
+      "id": "DOC-TST-007",
+      "name": "Current offer has winner",
+      "schema": "AuctionResult",
+      "expected_valid": true,
+      "actual_valid": true,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "id": "DOC-TST-008",
+      "name": "Current offer missing winner",
+      "schema": "AuctionResult",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "None is not of type 'string'"
+      ]
+    },
+    {
+      "id": "DOC-TST-009",
+      "name": "No-bid result has no winner",
+      "schema": "AuctionResult",
+      "expected_valid": true,
+      "actual_valid": true,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "id": "DOC-TST-010",
+      "name": "No-bid result falsely supplies winner",
+      "schema": "AuctionResult",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "'123e4567-e89b-42d3-a456-426614174000' is not of type 'null'"
+      ]
+    },
+    {
+      "id": "DOC-TST-011",
+      "name": "Pending estimate may abstain",
+      "schema": "Valuation",
+      "expected_valid": true,
+      "actual_valid": true,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "id": "DOC-TST-012",
+      "name": "Approved estimate cannot omit range",
+      "schema": "Valuation",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "'low_minor' is a required property",
+        "'high_minor' is a required property",
+        "'currency' is a required property"
+      ]
+    },
+    {
+      "id": "DOC-TST-013",
+      "name": "Range is complete and currency scoped",
+      "schema": "Valuation",
+      "expected_valid": true,
+      "actual_valid": true,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "id": "DOC-TST-014",
+      "name": "Partial range invalid",
+      "schema": "Valuation",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "'high_minor' is a dependency of 'low_minor'",
+        "'currency' is a dependency of 'low_minor'"
+      ]
+    },
+    {
+      "id": "DOC-TST-015",
+      "name": "Reschedule needs server slot",
+      "schema": "AppointmentTransition",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "{'action': 'reschedule', 'reason': 'Customer requests another appointment'} is not valid under any of the given schemas"
+      ]
+    },
+    {
+      "id": "DOC-TST-016",
+      "name": "Reschedule includes slot",
+      "schema": "AppointmentTransition",
+      "expected_valid": true,
+      "actual_valid": true,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "id": "DOC-TST-017",
+      "name": "Arbitrary state command rejected",
+      "schema": "AppointmentTransition",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "{'action': 'force-complete', 'reason': 'test'} is not valid under any of the given schemas"
+      ]
+    },
+    {
+      "id": "DOC-TST-018",
+      "name": "Completed authenticated session",
+      "schema": "AuthSession",
+      "expected_valid": true,
+      "actual_valid": true,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "id": "DOC-TST-019",
+      "name": "MFA pending cannot be authorized session",
+      "schema": "AuthSession",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "False was expected"
+      ]
+    },
+    {
+      "id": "DOC-TST-020",
+      "name": "Privacy support does not require transaction",
+      "schema": "TicketCreate",
+      "expected_valid": true,
+      "actual_valid": true,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "id": "DOC-TST-021",
+      "name": "Transaction support needs case",
+      "schema": "TicketCreate",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "'case_id' is a required property"
+      ]
+    },
+    {
+      "id": "DOC-TST-022",
+      "name": "Normalized provider evidence",
+      "schema": "ProviderEvent",
+      "expected_valid": true,
+      "actual_valid": true,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "id": "DOC-TST-023",
+      "name": "Provider UTC required",
+      "schema": "ProviderEvent",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "'2026-11-15T12:00:00+03:30' does not match 'Z$'"
+      ]
+    },
+    {
+      "id": "DOC-TST-024",
+      "name": "Missing provider source hash",
+      "schema": "ProviderEvent",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "'source_payload_hash' is a required property"
+      ]
+    },
+    {
+      "id": "DOC-TST-025",
+      "name": "N/A requires explanation",
+      "schema": "Finding",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "'comment' is a required property"
+      ]
+    },
+    {
+      "id": "DOC-TST-026",
+      "name": "N/A explicitly justified",
+      "schema": "Finding",
+      "expected_valid": true,
+      "actual_valid": true,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "id": "DOC-TST-027",
+      "name": "Defect requires severity",
+      "schema": "Finding",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "'severity' is a required property"
+      ]
+    },
+    {
+      "id": "DOC-TST-028",
+      "name": "Defect with severity",
+      "schema": "Finding",
+      "expected_valid": true,
+      "actual_valid": true,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "id": "DOC-TST-029",
+      "name": "Human cannot approve external credit",
+      "schema": "FinancingApplicationTransition",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "{'action': 'approve', 'reason': 'manual override'} is not valid under any of the given schemas"
+      ]
+    },
+    {
+      "id": "DOC-TST-030",
+      "name": "Typed editorial paragraph",
+      "schema": "ContentBlock",
+      "expected_valid": true,
+      "actual_valid": true,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "id": "DOC-TST-031",
+      "name": "Script block is forbidden",
+      "schema": "ContentBlock",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "'script' is not one of ['paragraph', 'heading', 'image', 'list']"
+      ]
+    },
+    {
+      "id": "DOC-TST-032",
+      "name": "Image requires alt and approved media",
+      "schema": "ContentBlock",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "'alt' is a required property"
+      ]
+    },
+    {
+      "id": "DOC-TST-033",
+      "name": "Saved search currency pairing",
+      "schema": "SavedSearchCreate",
+      "expected_valid": true,
+      "actual_valid": true,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "id": "DOC-TST-034",
+      "name": "Price filter requires currency",
+      "schema": "ListingFilters",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "'currency' is a dependency of 'price_max_minor'"
+      ]
+    },
+    {
+      "id": "DOC-TST-035",
+      "name": "Mileage filter requires unit",
+      "schema": "ListingFilters",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "'mileage_unit' is a dependency of 'mileage_max'"
+      ]
+    },
+    {
+      "id": "DOC-TST-036",
+      "name": "Unknown search DSL forbidden",
+      "schema": "ListingFilters",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "Additional properties are not allowed ('raw_query' was unexpected)"
+      ]
+    },
+    {
+      "id": "DOC-TST-037",
+      "name": "Unapproved arbitrary policy rejected",
+      "schema": "PolicyDraft",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "{'type': 'custody_override', 'content': {}, 'reason': 'test'} is not valid under any of the given schemas"
+      ]
+    },
+    {
+      "id": "DOC-TST-038",
+      "name": "Retention honors holds",
+      "schema": "RetentionPolicy",
+      "expected_valid": true,
+      "actual_valid": true,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "id": "DOC-TST-039",
+      "name": "Hold bypass rejected",
+      "schema": "RetentionPolicy",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "True was expected"
+      ]
+    },
+    {
+      "id": "DOC-TST-040",
+      "name": "Accepted offer response needs transaction",
+      "schema": "DecisionResult",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "'transaction_id' is a required property"
+      ]
+    },
+    {
+      "id": "DOC-TST-041",
+      "name": "Accepted offer returns canonical transaction",
+      "schema": "DecisionResult",
+      "expected_valid": true,
+      "actual_valid": true,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "id": "DOC-TST-042",
+      "name": "Public price abstention carries no invented amount",
+      "schema": "PublicValuation",
+      "expected_valid": true,
+      "actual_valid": true,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "id": "DOC-TST-043",
+      "name": "Public abstention with fabricated range rejected",
+      "schema": "PublicValuation",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "{'status': 'insufficient_data', 'policy_version': 'example-v1', 'as_of': '2026-11-15T12:00:00Z', 'disclaimer': 'Indicative only.', 'low_minor': 100} should not be valid under {'anyOf': [{'required': ['low_minor']}, {'required': ['high_minor']}]}"
+      ]
+    },
+    {
+      "id": "DOC-TST-044",
+      "name": "Domain event typed payload",
+      "schema": "domain-event.schema.json",
+      "expected_valid": true,
+      "actual_valid": true,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "id": "DOC-TST-045",
+      "name": "Domain event cannot carry direct contact",
+      "schema": "domain-event.schema.json",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "Additional properties are not allowed ('phone' was unexpected)"
+      ]
+    },
+    {
+      "id": "DOC-TST-046",
+      "name": "Minimal workflow analytics",
+      "schema": "workflow-analytics.schema.json",
+      "expected_valid": true,
+      "actual_valid": true,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "id": "DOC-TST-047",
+      "name": "Analytics excludes bid amounts",
+      "schema": "workflow-analytics.schema.json",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "Additional properties are not allowed ('bid_amount_minor' was unexpected)"
+      ]
+    },
+    {
+      "id": "DOC-TST-048",
+      "name": "Analytics unknown scenario rejected",
+      "schema": "workflow-analytics.schema.json",
+      "expected_valid": false,
+      "actual_valid": false,
+      "passed": true,
+      "errors": [
+        "'SCN-999' is not one of ['SCN-01', 'SCN-02', 'SCN-03', 'SCN-04', 'SCN-05', 'SCN-06', 'SCN-07', 'SCN-08', 'SCN-09', 'SCN-10', 'SCN-11', 'SCN-12', 'SCN-13', 'SCN-14', 'SCN-15', 'SCN-16', 'SCN-17', 'SCN-18', 'SCN-19', 'SCN-20', 'SCN-21', 'SCN-22', 'SCN-23', 'SCN-24', 'SCN-25', 'SCN-26', 'SCN-27', 'SCN-28', 'SCN-29', 'SCN-30', 'SCN-31', 'SCN-32', 'SCN-33', 'SCN-34', 'SCN-35', 'SCN-36', 'SCN-37', 'SCN-38', 'SCN-39', 'SCN-40', 'SCN-41', 'SCN-42', 'SCN-43', 'SCN-44', 'SCN-45', 'SCN-46', 'SCN-47', 'SCN-48', 'SCN-49', 'SCN-50', 'SCN-51', 'SCN-52', 'SCN-53', 'SCN-54', 'SCN-55', 'SCN-56', 'SCN-57', 'SCN-58', 'SCN-59', 'SCN-60', 'SCN-61', 'SCN-62', 'SCN-63', 'SCN-64', 'SCN-65', 'SCN-66', 'SCN-67', 'SCN-68', 'SCN-69', 'SCN-70', 'SCN-71', 'SCN-72', 'SCN-73', 'SCN-74', 'SCN-75', 'SCN-76', 'SCN-77', 'SCN-78', 'SCN-79', 'SCN-80', 'SCN-81', 'SCN-82', 'SCN-83', 'SCN-84', 'SCN-85', 'SCN-86', 'SCN-87', 'SCN-88', 'SCN-89', 'SCN-90', 'SCN-91', 'SCN-92', 'SCN-93', 'SCN-94', 'SCN-95', 'SCN-96', 'SCN-97', 'SCN-98', 'SCN-99', 'SCN-100', 'SCN-101', 'SCN-102', 'SCN-103', 'SCN-104', 'SCN-105', 'SCN-106', 'SCN-107', 'SCN-108', 'SCN-109', 'SCN-110', 'SCN-111', 'SCN-112', 'SCN-113', 'SCN-114', 'SCN-115', 'SCN-116', 'SCN-117', 'SCN-118', 'SCN-119', 'SCN-120']"
+      ]
+    }
+  ]
+}

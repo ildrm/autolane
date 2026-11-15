@@ -1,0 +1,90 @@
+{
+  "method": "sRGB relative luminance contrast formula",
+  "scope": "12 selected solid token pairs only; not rendered accessibility conformance",
+  "checks": [
+    {
+      "foreground": "ink950",
+      "background": "white",
+      "ratio": 16.496,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "foreground": "ink700",
+      "background": "white",
+      "ratio": 9.509,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "foreground": "ink950",
+      "background": "paper",
+      "ratio": 15.466,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "foreground": "white",
+      "background": "teal800",
+      "ratio": 8.018,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "foreground": "danger",
+      "background": "white",
+      "ratio": 7.438,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "foreground": "success",
+      "background": "white",
+      "ratio": 7.014,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "foreground": "warning",
+      "background": "white",
+      "ratio": 6.851,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "foreground": "info",
+      "background": "white",
+      "ratio": 6.974,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "foreground": "darkText",
+      "background": "darkSurface",
+      "ratio": 15.466,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "foreground": "darkSurface",
+      "background": "darkAction",
+      "ratio": 9.635,
+      "minimum": 4.5,
+      "passed": true
+    },
+    {
+      "foreground": "focusLight",
+      "background": "white",
+      "ratio": 5.985,
+      "minimum": 3,
+      "passed": true
+    },
+    {
+      "foreground": "focusDark",
+      "background": "darkSurface",
+      "ratio": 10.722,
+      "minimum": 3,
+      "passed": true
+    }
+  ]
+}

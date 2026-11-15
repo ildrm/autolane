@@ -1,0 +1,570 @@
+{
+  "version": "0.3",
+  "screens": [
+    {
+      "id": "SCR-001",
+      "route": "/",
+      "fields_and_behavior": "Approved value proposition, coverage and trust claims",
+      "operation_ids": [
+        "readPublishedContent",
+        "listBranches"
+      ],
+      "state_contract": "Shared screen/panel states, per-field schema validation, accessible success/error and scoped replay/ETag behavior",
+      "delivery_mode": "contract"
+    },
+    {
+      "id": "SCR-002",
+      "route": "/sell",
+      "fields_and_behavior": "Three sale steps, conditions, inspection scope and fees disclosure",
+      "operation_ids": [
+        "readPublishedContent"
+      ],
+      "state_contract": "Shared screen/panel states, per-field schema validation, accessible success/error and scoped replay/ETag behavior",
+      "delivery_mode": "contract"
+    },
+    {
+      "id": "SCR-003",
+      "route": "/sell/start",
+      "fields_and_behavior": "Make/model/year, mileage/unit and condition",
+      "operation_ids": [
+        "listVehicleTaxonomy",
+        "createSellerLead"
+      ],
+      "state_contract": "Shared screen/panel states, per-field schema validation, accessible success/error and scoped replay/ETag behavior",
+      "delivery_mode": "contract"
+    },
+    {
+      "id": "SCR-004",
+      "route": "/sell/contact",
+      "fields_and_behavior": "Contact, service notice, separate marketing choice and ownership proof",
+      "operation_ids": [
+        "requestIntakeClaim",
+        "claimIntake",
+        "transitionSellerLead"
+      ],
+      "state_contract": "Shared screen/panel states, per-field schema validation, accessible success/error and scoped replay/ETag behavior",
+      "delivery_mode": "contract"
+    },
+    {
+      "id": "SCR-005",
+      "route": "/sell/appointment",
+      "fields_and_behavior": "Branch, server slot, local date/time, offset and cancellation notice",
+      "operation_ids": [
+        "listBranches",
+        "listBranchSlots",
+        "createAppointment"
+      ],
+      "state_contract": "Shared screen/panel states, per-field schema validation, accessible success/error and scoped replay/ETag behavior",
+      "delivery_mode": "contract"
+    },
+    {
+      "id": "SCR-006",
+      "route": "/sell/confirmation",
+      "fields_and_behavior": "Persisted reference, branch, time, status and next step",
+      "operation_ids": [
+        "readAppointment"
+      ],
+      "state_contract": "Shared screen/panel states, per-field schema validation, accessible success/error and scoped replay/ETag behavior",
+      "delivery_mode": "contract"
+    },
+    {
+      "id": "SCR-007",
+      "route": "/account/sales/{id}",
+      "fields_and_behavior": "Lead status, appointment, inspection and current offer",
+      "operation_ids": [
+        "readSellerLead",
+        "readAppointment",
+        "readInspection",
+        "readResultRecord"
+      ],
+      "state_contract": "Shared screen/panel states, per-field schema validation, accessible success/error and scoped replay/ETag behavior",
+      "delivery_mode": "contract"
+    },
+    {
+      "id": "SCR-008",
+      "route": "/account/sales/{id}/offer",
+      "fields_and_behavior": "Amount/currency, terms version, expiry, decision and receipt",
+      "operation_ids": [
+        "readResultRecord",
+        "recordSellerDecision"
+      ],
+      "state_contract": "Shared screen/panel states, per-field schema validation, accessible success/error and scoped replay/ETag behavior",
+      "delivery_mode": "contract"
+    },
+    {
+      "id": "SCR-009",
+      "route": "/account/appointments/{id}",
+      "fields_and_behavior": "Current slot/version, new slot and reason",
+      "operation_ids": [
+        "readAppointment",
+        "listBranchSlots",
+        "transitionAppointment"
+      ],
+      "state_contract": "Shared screen/panel states, per-field schema validation, accessible success/error and scoped replay/ETag behavior",
+      "delivery_mode": "contract"
+    },
+    {
+      "id": "SCR-010",
+      "route": "/value",
+      "fields_and_behavior": "Public vehicle attributes, market, currency, dated range or abstention",
+      "operation_ids": [
+        "listVehicleTaxonomy",
+        "estimatePublicVehicle"
+      ],
+      "state_contract": "Shared screen/panel states, per-field schema validation, accessible success/error and scoped replay/ETag behavior",
+      "delivery_mode": "contract"
+    },
+    {
+      "id": "SCR-011",
+      "route": "/branches",
+      "fields_and_behavior": "Region, accessible branch list and map equivalent",
+      "operation_ids": [
+        "listBranches"
+      ],
+      "state_contract": "Shared screen/panel states, per-field schema validation, accessible success/error and scoped replay/ETag behavior",
+      "delivery_mode": "contract"
+    },
+    {
+      "id": "SCR-012",
+      "route": "/branches/{slug}",
+      "fields_and_behavior": "Approved address, timezone, accessibility and service status",
+      "operation_ids": [
+        "listBranches",
+        "listBranchSlots"
+      ],
+      "state_contract": "Shared screen/panel states, per-field schema validation, accessible success/error and scoped replay/ETag behavior",
+      "delivery_mode": "contract"
+    },
+    {
+      "id": "SCR-013",
+      "route": "/dealers",
+      "fields_and_behavior": "Dealer eligibility, verification expectations and application CTA",
+      "operation_ids": [
+        "readPublishedContent"
+      ],
+      "state_contract": "Shared screen/panel states, per-field schema validation, accessible success/error and scoped replay/ETag behavior",
+      "delivery_mode": "contract"
+    },
+    {
+      "id": "SCR-014",
+      "route": "/dealer/apply",
+      "fields_and_behavior": "Legal name, jurisdiction, registration, representative proof and notice",
+      "operation_ids": [
+        "createUploadGrant",
+        "submitDealerApplication"
+      ],
+      "state_contract": "Shared screen/panel states, per-field schema validation, accessible success/error and scoped replay/ETag behavior",
+      "delivery_mode": "contract"
+    },
+    {
+      "id": "SCR-015",
+      "route": "/dealer/application",
+      "fields_and_behavior": "Verification state, requested evidence and appeal/contact route",
+      "operation_ids": [
+        "readDealerVerification",
+        "transitionDealerVerification"
+      ],
+      "state_contract": "Shared screen/panel states, per-field schema validation, accessible success/error and scoped replay/ETag behavior",
+      "delivery_mode": "contract"
+    },
+    {
+      "id": "SCR-016",
+      "route": "/dealer/auctions",
+      "fields_and_behavior": "Eligible lot, vehicle facts, price, deadline and report version",
+      "operation_ids": [
+        "listEligibleAuctions"
+      ],
+      "state_contract": "Shared screen/panel states, per-field schema validation, accessible success/error and scoped replay/ETag behavior",
+      "delivery_mode": "contract"
+    },
+    {
+      "id": "SCR-017",
+      "route": "/dealer/auctions/{id}",
+      "fields_and_behavior": "Vehicle/gallery, pinned report, current/minimum amount, sequence and server time",
+      "operation_ids": [
+        "getAuctionSnapshot",
+        "readInspectionRevision",
+        "submitBid",
+        "readBidCommand"
+      ],
+      "state_contract": "Shared screen/panel states, per-field schema validation, accessible success/error and scoped replay/ETag behavior",
+      "delivery_mode": "contract"
+    },
+    {
+      "id": "SCR-018",
+      "route": "/dealer/bids",
+      "fields_and_behavior": "Own command receipt, accepted/rejected status, amount and sequence",
+      "operation_ids": [
+        "listBidCommand",
+        "readBidCommand"
+      ],
+      "state_contract": "Shared screen/panel states, per-field schema validation, accessible success/error and scoped replay/ETag behavior",
+      "delivery_mode": "contract"
+    },
+    {
+      "id": "SCR-019",
+      "route": "/dealer/purchases/{id}",
+      "fields_and_behavior": "Transaction milestones, own documents and current obligations",
+      "operation_ids": [
+        "readTransaction",
+        "readContract",
+        "readPaymentObligation"
+      ],
+      "state_contract": "Shared screen/panel states, per-field schema validation, accessible success/error and scoped replay/ETag behavior",
+      "delivery_mode": "contract"
+    },
+    {
+      "id": "SCR-020",
+      "route": "/ops/queue",
+      "fields_and_behavior": "Assigned queue, branch, due time, state and owner",
+      "operation_ids": [
+        "listSellerLead",
+        "listAppointment",
+        "listInspection",
+        "listSupportTicket"
+      ],
+      "state_contract": "Shared screen/panel states, per-field schema validation, accessible success/error and scoped replay/ETag behavior",
+      "delivery_mode": "contract"
+    },
+    {
+      "id": "SCR-021",
+      "route": "/ops/branches/{id}/schedule",
+      "fields_and_behavior": "Branch calendar, capacity, booking and check-in; calendar editing is governed branch administration until dedicated adapter is approved",
+      "operation_ids": [
+        "listBranchSlots",
+        "listAppointment",
+        "transitionAppointment"
+      ],
+      "state_contract": "Shared screen/panel states, per-field schema validation, accessible success/error and scoped replay/ETag behavior",
+      "delivery_mode": "contract"
+    },
+    {
+      "id": "SCR-022",
+      "route": "/ops/inspections/{id}",
+      "fields_and_behavior": "Pinned template/points, findings, severity, reason and evidence",
+      "operation_ids": [
+        "readInspectionTemplate",
+        "readInspection",
+        "readInspectionRevision",
+        "createUploadGrant",
+        "createInspectionRevision",
+        "transitionInspection"
+      ],
+      "state_contract": "Shared screen/panel states, per-field schema validation, accessible success/error and scoped replay/ETag behavior",
+      "delivery_mode": "contract"
+    },
+    {
+      "id": "SCR-023",
+      "route": "/ops/inspections/{id}/review",
+      "fields_and_behavior": "Exact revision, completeness, author/reviewer, differences and decision",
+      "operation_ids": [
+        "readInspectionRevision",
+        "publishInspection",
+        "transitionInspection"
+      ],
+      "state_contract": "Shared screen/panel states, per-field schema validation, accessible success/error and scoped replay/ETag behavior",
+      "delivery_mode": "contract"
+    },
+    {
+      "id": "SCR-024",
+      "route": "/ops/valuations/{id}",
+      "fields_and_behavior": "Inspection input, licensed comparables, range/currency, confidence and rationale",
+      "operation_ids": [
+        "readValuation",
+        "createValuation",
+        "transitionValuation"
+      ],
+      "state_contract": "Shared screen/panel states, per-field schema validation, accessible success/error and scoped replay/ETag behavior",
+      "delivery_mode": "contract"
+    },
+    {
+      "id": "SCR-025",
+      "route": "/ops/auctions/{id}",
+      "fields_and_behavior": "Lot policy/report/time, live state, commands and exception history",
+      "operation_ids": [
+        "getAuctionSnapshot",
+        "createAuction",
+        "transitionAuction",
+        "closeAuction"
+      ],
+      "state_contract": "Shared screen/panel states, per-field schema validation, accessible success/error and scoped replay/ETag behavior",
+      "delivery_mode": "contract"
+    },
+    {
+      "id": "SCR-026",
+      "route": "/ops/transactions/{id}",
+      "fields_and_behavior": "Separate origin, contract, obligations, title and custody milestone cards",
+      "operation_ids": [
+        "readTransaction",
+        "readContract",
+        "readPaymentObligation",
+        "readOwnershipTransfer",
+        "readDelivery",
+        "closeTransaction"
+      ],
+      "state_contract": "Shared screen/panel states, per-field schema validation, accessible success/error and scoped replay/ETag behavior",
+      "delivery_mode": "contract"
+    },
+    {
+      "id": "SCR-027",
+      "route": "/ops/support/{id}",
+      "fields_and_behavior": "Category, assigned case, response due, evidence and resolution",
+      "operation_ids": [
+        "readSupportTicket",
+        "transitionSupportTicket"
+      ],
+      "state_contract": "Shared screen/panel states, per-field schema validation, accessible success/error and scoped replay/ETag behavior",
+      "delivery_mode": "contract"
+    },
+    {
+      "id": "SCR-028",
+      "route": "/ops/admin/access",
+      "fields_and_behavior": "Actor, proposed role/scope/expiry, independent approver and audit; governed IAM console procedure",
+      "operation_ids": [],
+      "state_contract": "Shared screen/panel states, per-field schema validation, accessible success/error and scoped replay/ETag behavior",
+      "delivery_mode": "governed_manual_IAM_console"
+    },
+    {
+      "id": "SCR-029",
+      "route": "/buy",
+      "fields_and_behavior": "Taxonomy/price/year/mileage/region filters, result count and availability",
+      "operation_ids": [
+        "listConsumerListings",
+        "listVehicleTaxonomy"
+      ],
+      "state_contract": "Shared screen/panel states, per-field schema validation, accessible success/error and scoped replay/ETag behavior",
+      "delivery_mode": "contract"
+    },
+    {
+      "id": "SCR-030",
+      "route": "/cars/{slug}",
+      "fields_and_behavior": "Approved gallery, vehicle specification, condition, price and availability",
+      "operation_ids": [
+        "readListingBySlug",
+        "createPurchaseRequest",
+        "setSavedVehicle"
+      ],
+      "state_contract": "Shared screen/panel states, per-field schema validation, accessible success/error and scoped replay/ETag behavior",
+      "delivery_mode": "contract"
+    },
+    {
+      "id": "SCR-031",
+      "route": "/account/requests/new",
+      "fields_and_behavior": "Sourcing criteria, budget/currency, contact choice and consent",
+      "operation_ids": [
+        "createProcurement",
+        "readProcurement",
+        "actOnProcurement"
+      ],
+      "state_contract": "Shared screen/panel states, per-field schema validation, accessible success/error and scoped replay/ETag behavior",
+      "delivery_mode": "contract"
+    },
+    {
+      "id": "SCR-032",
+      "route": "/account/saved",
+      "fields_and_behavior": "Saved vehicles/search filters, frequency and suppression state",
+      "operation_ids": [
+        "listSavedVehicles",
+        "setSavedVehicle",
+        "createSavedSearch",
+        "listSavedSearches",
+        "deleteSavedSearch"
+      ],
+      "state_contract": "Shared screen/panel states, per-field schema validation, accessible success/error and scoped replay/ETag behavior",
+      "delivery_mode": "contract"
+    },
+    {
+      "id": "SCR-033",
+      "route": "/account/finance/{id}",
+      "fields_and_behavior": "Consent, lender/terms, status, expiry and external next action",
+      "operation_ids": [
+        "readFinancingApplication",
+        "transitionFinancingApplication"
+      ],
+      "state_contract": "Shared screen/panel states, per-field schema validation, accessible success/error and scoped replay/ETag behavior",
+      "delivery_mode": "contract"
+    },
+    {
+      "id": "SCR-034",
+      "route": "/ops/logistics/{id}",
+      "fields_and_behavior": "Assigned carrier, pickup/delivery window, custody and signed proof",
+      "operation_ids": [
+        "readDelivery",
+        "transitionDelivery",
+        "recordDeliveryHandover"
+      ],
+      "state_contract": "Shared screen/panel states, per-field schema validation, accessible success/error and scoped replay/ETag behavior",
+      "delivery_mode": "contract"
+    },
+    {
+      "id": "SCR-035",
+      "route": "/ops/claims/{id}",
+      "fields_and_behavior": "Policy, evidence, coverage decision, appeal and separate remedy approval",
+      "operation_ids": [
+        "readWarrantyClaim",
+        "transitionWarrantyClaim"
+      ],
+      "state_contract": "Shared screen/panel states, per-field schema validation, accessible success/error and scoped replay/ETag behavior",
+      "delivery_mode": "contract"
+    },
+    {
+      "id": "SCR-036",
+      "route": "/journal/{slug}",
+      "fields_and_behavior": "Approved title, author, reviewed date, article blocks and relevant next task",
+      "operation_ids": [
+        "readPublishedContent"
+      ],
+      "state_contract": "Shared screen/panel states, per-field schema validation, accessible success/error and scoped replay/ETag behavior",
+      "delivery_mode": "contract"
+    },
+    {
+      "id": "SCR-037",
+      "route": "/help",
+      "fields_and_behavior": "Approved help content, accessible contact and support request",
+      "operation_ids": [
+        "readPublishedContent",
+        "createSupportTicket"
+      ],
+      "state_contract": "Shared screen/panel states, per-field schema validation, accessible success/error and scoped replay/ETag behavior",
+      "delivery_mode": "contract"
+    },
+    {
+      "id": "SCR-038",
+      "route": "/sign-in",
+      "fields_and_behavior": "Identifier/password, non-authorized MFA challenge, recovery and step-up when requested",
+      "operation_ids": [
+        "createSession",
+        "completeAuthChallenge",
+        "readCurrentSession",
+        "revokeCurrentSession",
+        "requestAccountRecovery",
+        "completeRecovery"
+      ],
+      "state_contract": "Shared screen/panel states, per-field schema validation, accessible success/error and scoped replay/ETag behavior",
+      "delivery_mode": "contract"
+    },
+    {
+      "id": "SCR-039",
+      "route": "/ops/content/{id}",
+      "fields_and_behavior": "Typed content blocks, sources, claim review, exact revision and publish time",
+      "operation_ids": [
+        "createContent",
+        "readContent",
+        "reviseContent",
+        "actOnContent"
+      ],
+      "state_contract": "Shared screen/panel states, per-field schema validation, accessible success/error and scoped replay/ETag behavior",
+      "delivery_mode": "contract"
+    },
+    {
+      "id": "SCR-040",
+      "route": "/ops/reports",
+      "fields_and_behavior": "Metric definition/version, cohort, period, freshness, purpose and export status",
+      "operation_ids": [
+        "getMetrics",
+        "requestExport",
+        "readExportJob",
+        "downloadExport"
+      ],
+      "state_contract": "Shared screen/panel states, per-field schema validation, accessible success/error and scoped replay/ETag behavior",
+      "delivery_mode": "contract"
+    },
+    {
+      "id": "SCR-041",
+      "route": "/ops/inventory",
+      "fields_and_behavior": "Channel, price/currency, approved media and public projection preview",
+      "operation_ids": [
+        "readInventoryListing",
+        "createVehicleListing",
+        "transitionVehicleListing",
+        "createConsumerOffer"
+      ],
+      "state_contract": "Shared screen/panel states, per-field schema validation, accessible success/error and scoped replay/ETag behavior",
+      "delivery_mode": "contract"
+    },
+    {
+      "id": "SCR-042",
+      "route": "/ops/legal/transfers/{id}",
+      "fields_and_behavior": "Exact parties/vehicle, jurisdiction, external transfer proof and independent verification",
+      "operation_ids": [
+        "readOwnershipTransfer",
+        "verifyOwnershipTransfer"
+      ],
+      "state_contract": "Shared screen/panel states, per-field schema validation, accessible success/error and scoped replay/ETag behavior",
+      "delivery_mode": "contract"
+    },
+    {
+      "id": "SCR-043",
+      "route": "/ops/finance/reconciliations/{id}",
+      "fields_and_behavior": "Obligation, source allocation, residual difference, preparer and approver",
+      "operation_ids": [
+        "readPaymentObligation",
+        "readReconciliationRecord",
+        "prepareReconciliation",
+        "approveReconciliation"
+      ],
+      "state_contract": "Shared screen/panel states, per-field schema validation, accessible success/error and scoped replay/ETag behavior",
+      "delivery_mode": "contract"
+    },
+    {
+      "id": "SCR-044",
+      "route": "/ops/financing/{id}",
+      "fields_and_behavior": "Applicant sharing basis, provider correlation, exact offer/expiry and funding evidence",
+      "operation_ids": [
+        "readFinancingApplication",
+        "transitionFinancingApplication"
+      ],
+      "state_contract": "Shared screen/panel states, per-field schema validation, accessible success/error and scoped replay/ETag behavior",
+      "delivery_mode": "contract"
+    },
+    {
+      "id": "SCR-045",
+      "route": "/ops/growth",
+      "fields_and_behavior": "Purpose, audience, template, suppression, schedule and aggregate result",
+      "operation_ids": [
+        "createCampaign",
+        "readCampaign",
+        "actOnCampaign",
+        "getMetrics"
+      ],
+      "state_contract": "Shared screen/panel states, per-field schema validation, accessible success/error and scoped replay/ETag behavior",
+      "delivery_mode": "contract"
+    },
+    {
+      "id": "SCR-046",
+      "route": "/ops/admin/policies/{id}",
+      "fields_and_behavior": "Typed policy diff, business impact, independent review and effective time",
+      "operation_ids": [
+        "readPolicyRecord",
+        "createPolicyVersion",
+        "approvePolicy"
+      ],
+      "state_contract": "Shared screen/panel states, per-field schema validation, accessible success/error and scoped replay/ETag behavior",
+      "delivery_mode": "contract"
+    },
+    {
+      "id": "SCR-047",
+      "route": "/account/requests/{id}",
+      "fields_and_behavior": "Own request, current authorized offer, expiry, consent and transaction receipt",
+      "operation_ids": [
+        "readPurchaseRequest",
+        "readConsumerOffer",
+        "acceptConsumerOffer",
+        "readTransaction"
+      ],
+      "state_contract": "Shared screen/panel states, per-field schema validation, accessible success/error and scoped replay/ETag behavior",
+      "delivery_mode": "contract"
+    },
+    {
+      "id": "SCR-048",
+      "route": "/account/privacy/{id}",
+      "fields_and_behavior": "Verified rights request, identity state, due date, hold explanation and result",
+      "operation_ids": [
+        "createPrivacyRequest",
+        "readPrivacyRequest"
+      ],
+      "state_contract": "Shared screen/panel states, per-field schema validation, accessible success/error and scoped replay/ETag behavior",
+      "delivery_mode": "contract"
+    }
+  ]
+}

@@ -1,0 +1,4117 @@
+{
+  "version": "0.3",
+  "updated": "2026-11-15",
+  "status": "proposed_documentation_expanded_and_mechanically_validated",
+  "interpretation": "All199 requested canonical artifacts exist. Hashes identify the actual reviewed package content; structural/schema checks do not constitute stakeholder approval, runtime test results, finished visual assets or legal authorization. See FINAL_COMPLETENESS_AUDIT.md for review scope and limitations.",
+  "canonical_artifacts": [
+    {
+      "id": "00/00_MASTER_INDEX",
+      "title": "00 Master Index",
+      "section": "Governance",
+      "requested_filename": "00_MASTER_INDEX.md",
+      "path": "docs/00_MASTER_INDEX.md",
+      "version": "0.3",
+      "owner": "Governance",
+      "depends_on_sections": [],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 23135,
+      "sha256": "e172b6ad5889e9dc2d0069789c0d873cce1507b81139bb438b42c70a05238b33"
+    },
+    {
+      "id": "00/01_PROJECT_CHARTER",
+      "title": "01 Project Charter",
+      "section": "Governance",
+      "requested_filename": "01_PROJECT_CHARTER.md",
+      "path": "docs/00_GOVERNANCE/01_PROJECT_CHARTER.md",
+      "version": "0.1",
+      "owner": "Governance",
+      "depends_on_sections": [],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 3174,
+      "sha256": "d2aca40fc4d1553215122dd434f596cca0816885618c6244672b6ac1193a0f45"
+    },
+    {
+      "id": "00/02_DOCUMENTATION_STANDARDS",
+      "title": "02 Documentation Standards",
+      "section": "Governance",
+      "requested_filename": "02_DOCUMENTATION_STANDARDS.md",
+      "path": "docs/00_GOVERNANCE/02_DOCUMENTATION_STANDARDS.md",
+      "version": "0.1",
+      "owner": "Governance",
+      "depends_on_sections": [],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2663,
+      "sha256": "a4ef906af256227f5136104ce29de655b31fa585c360540b93cd8481b569efac"
+    },
+    {
+      "id": "00/03_GLOSSARY",
+      "title": "03 Glossary",
+      "section": "Governance",
+      "requested_filename": "03_GLOSSARY.md",
+      "path": "docs/00_GOVERNANCE/03_GLOSSARY.md",
+      "version": "0.1",
+      "owner": "Governance",
+      "depends_on_sections": [],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 3170,
+      "sha256": "e5688a8b0a6dca436cd0dc80daf61c2abd141758eef0d4a33d80d776bb133093"
+    },
+    {
+      "id": "00/04_SOURCE_AND_EVIDENCE_REGISTER",
+      "title": "04 Source And Evidence Register",
+      "section": "Governance",
+      "requested_filename": "04_SOURCE_AND_EVIDENCE_REGISTER.md",
+      "path": "docs/00_GOVERNANCE/04_SOURCE_AND_EVIDENCE_REGISTER.md",
+      "version": "0.1",
+      "owner": "Governance",
+      "depends_on_sections": [],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 3014,
+      "sha256": "944a8b4f37af72bbdf0713ff74b8ffab1101fc6a4b749023317afd5494cdb4f2"
+    },
+    {
+      "id": "00/05_ASSUMPTIONS_AND_DECISIONS",
+      "title": "05 Assumptions And Decisions",
+      "section": "Governance",
+      "requested_filename": "05_ASSUMPTIONS_AND_DECISIONS.md",
+      "path": "docs/00_GOVERNANCE/05_ASSUMPTIONS_AND_DECISIONS.md",
+      "version": "0.1",
+      "owner": "Governance",
+      "depends_on_sections": [],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2707,
+      "sha256": "d7fe40705faac7a3fe3e0e180b0acb41a2329ccbbe98c681cd760924d5d8b320"
+    },
+    {
+      "id": "00/06_RISK_REGISTER",
+      "title": "06 Risk Register",
+      "section": "Governance",
+      "requested_filename": "06_RISK_REGISTER.md",
+      "path": "docs/00_GOVERNANCE/06_RISK_REGISTER.md",
+      "version": "0.1",
+      "owner": "Governance",
+      "depends_on_sections": [],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2840,
+      "sha256": "2a070cc1b5e255532ce56e9c1efa1584a4f34b44dae44cec5cbaa10fad44c941"
+    },
+    {
+      "id": "00/07_REQUIREMENTS_TRACEABILITY",
+      "title": "07 Requirements Traceability",
+      "section": "Governance",
+      "requested_filename": "07_REQUIREMENTS_TRACEABILITY.md",
+      "path": "docs/00_GOVERNANCE/07_REQUIREMENTS_TRACEABILITY.md",
+      "version": "0.1",
+      "owner": "Governance",
+      "depends_on_sections": [],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 3436,
+      "sha256": "f6fdef2dd3a13932dd51a633bff1e283c97354d868eb8a2bc4e4237a08bbbe24"
+    },
+    {
+      "id": "01/01_REFERENCE_BUSINESS_ANALYSIS",
+      "title": "01 Reference Business Analysis",
+      "section": "Business Research",
+      "requested_filename": "01_REFERENCE_BUSINESS_ANALYSIS.md",
+      "path": "docs/01_BUSINESS_RESEARCH/01_REFERENCE_BUSINESS_ANALYSIS.md",
+      "version": "0.1",
+      "owner": "Research",
+      "depends_on_sections": [
+        "00"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2607,
+      "sha256": "b3067fc18774169dcd6638873d70ebf5e7ce1a72fca454023b2b505d94be147f"
+    },
+    {
+      "id": "01/02_COMPETITOR_RESEARCH",
+      "title": "02 Competitor Research",
+      "section": "Business Research",
+      "requested_filename": "02_COMPETITOR_RESEARCH.md",
+      "path": "docs/01_BUSINESS_RESEARCH/02_COMPETITOR_RESEARCH.md",
+      "version": "0.1",
+      "owner": "Research",
+      "depends_on_sections": [
+        "00"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2938,
+      "sha256": "9f4a9b91d95115c748af3143aec282f15b973a82c731c404223feb3ad2cc6f18"
+    },
+    {
+      "id": "01/03_MARKET_OPPORTUNITY",
+      "title": "03 Market Opportunity",
+      "section": "Business Research",
+      "requested_filename": "03_MARKET_OPPORTUNITY.md",
+      "path": "docs/01_BUSINESS_RESEARCH/03_MARKET_OPPORTUNITY.md",
+      "version": "0.1",
+      "owner": "Research",
+      "depends_on_sections": [
+        "00"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2727,
+      "sha256": "e7c9cda04ea00e7db766b7df8759eeee411b990b752066c654c3ec1e9882842d"
+    },
+    {
+      "id": "01/04_BUSINESS_MODEL_CANVAS",
+      "title": "04 Business Model Canvas",
+      "section": "Business Research",
+      "requested_filename": "04_BUSINESS_MODEL_CANVAS.md",
+      "path": "docs/01_BUSINESS_RESEARCH/04_BUSINESS_MODEL_CANVAS.md",
+      "version": "0.1",
+      "owner": "Research",
+      "depends_on_sections": [
+        "00"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2716,
+      "sha256": "b4fb8c2bce51b6540e6ccbb520d58076f5ba611c59efb03219a21aaac5aead13"
+    },
+    {
+      "id": "01/05_REVENUE_MODEL",
+      "title": "05 Revenue Model",
+      "section": "Business Research",
+      "requested_filename": "05_REVENUE_MODEL.md",
+      "path": "docs/01_BUSINESS_RESEARCH/05_REVENUE_MODEL.md",
+      "version": "0.1",
+      "owner": "Research",
+      "depends_on_sections": [
+        "00"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2749,
+      "sha256": "583771540c86dde2cbe20e46e41d1b66835c6d8210b5a56b3a505d4a3c1f977d"
+    },
+    {
+      "id": "01/06_OPERATIONAL_MODEL",
+      "title": "06 Operational Model",
+      "section": "Business Research",
+      "requested_filename": "06_OPERATIONAL_MODEL.md",
+      "path": "docs/01_BUSINESS_RESEARCH/06_OPERATIONAL_MODEL.md",
+      "version": "0.1",
+      "owner": "Research",
+      "depends_on_sections": [
+        "00"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2979,
+      "sha256": "e3dad1a66b58ac7b1daeeaccd2b1534ed4d4df8dbd56f01bc7d2cb854a3afa0d"
+    },
+    {
+      "id": "01/07_BUSINESS_RULES",
+      "title": "07 Business Rules",
+      "section": "Business Research",
+      "requested_filename": "07_BUSINESS_RULES.md",
+      "path": "docs/01_BUSINESS_RESEARCH/07_BUSINESS_RULES.md",
+      "version": "0.1",
+      "owner": "Research",
+      "depends_on_sections": [
+        "00"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 3172,
+      "sha256": "7e19d4c07f01ddcdc338e47fff1e5019dca86c6d874f0fff904d8ff714f092eb"
+    },
+    {
+      "id": "01/08_REGULATORY_DEPENDENCIES",
+      "title": "08 Regulatory Dependencies",
+      "section": "Business Research",
+      "requested_filename": "08_REGULATORY_DEPENDENCIES.md",
+      "path": "docs/01_BUSINESS_RESEARCH/08_REGULATORY_DEPENDENCIES.md",
+      "version": "0.1",
+      "owner": "Research",
+      "depends_on_sections": [
+        "00"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2800,
+      "sha256": "863c7cc592cebee1da2371bb71c68b5f25aadaedea6e275d71340d95c6842127"
+    },
+    {
+      "id": "02/01_PRODUCT_VISION",
+      "title": "01 Product Vision",
+      "section": "Product Strategy",
+      "requested_filename": "01_PRODUCT_VISION.md",
+      "path": "docs/02_PRODUCT_STRATEGY/01_PRODUCT_VISION.md",
+      "version": "0.1",
+      "owner": "Product",
+      "depends_on_sections": [
+        "00",
+        "01"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2360,
+      "sha256": "141c0b7d0591e773c5738891eab7b5cd2e1ccc3f28af3bd74f88a17c9aad715e"
+    },
+    {
+      "id": "02/02_PRODUCT_REQUIREMENTS_DOCUMENT",
+      "title": "02 Product Requirements Document",
+      "section": "Product Strategy",
+      "requested_filename": "02_PRODUCT_REQUIREMENTS_DOCUMENT.md",
+      "path": "docs/02_PRODUCT_STRATEGY/02_PRODUCT_REQUIREMENTS_DOCUMENT.md",
+      "version": "0.1",
+      "owner": "Product",
+      "depends_on_sections": [
+        "00",
+        "01"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 3238,
+      "sha256": "1173d5616dbcdfc2ecf5603f0e3f18efc8e3a11f7e96385260699404f04f3006"
+    },
+    {
+      "id": "02/03_PERSONAS",
+      "title": "03 Personas",
+      "section": "Product Strategy",
+      "requested_filename": "03_PERSONAS.md",
+      "path": "docs/02_PRODUCT_STRATEGY/03_PERSONAS.md",
+      "version": "0.1",
+      "owner": "Product",
+      "depends_on_sections": [
+        "00",
+        "01"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2652,
+      "sha256": "9eae5ab9311caa1386487ca21ad68f3b72180dbe1d826362b0ee80152df6bc7a"
+    },
+    {
+      "id": "02/04_JOBS_TO_BE_DONE",
+      "title": "04 Jobs To Be Done",
+      "section": "Product Strategy",
+      "requested_filename": "04_JOBS_TO_BE_DONE.md",
+      "path": "docs/02_PRODUCT_STRATEGY/04_JOBS_TO_BE_DONE.md",
+      "version": "0.1",
+      "owner": "Product",
+      "depends_on_sections": [
+        "00",
+        "01"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2366,
+      "sha256": "d5b5899858240ba9f6844d27cfe2b088c46b2d8523824a9a61d85055735eb8c1"
+    },
+    {
+      "id": "02/05_FEATURE_INVENTORY",
+      "title": "05 Feature Inventory",
+      "section": "Product Strategy",
+      "requested_filename": "05_FEATURE_INVENTORY.md",
+      "path": "docs/02_PRODUCT_STRATEGY/05_FEATURE_INVENTORY.md",
+      "version": "0.1",
+      "owner": "Product",
+      "depends_on_sections": [
+        "00",
+        "01"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2505,
+      "sha256": "e41ca89ad6062d130e94a4afd2cd5651fbc91cd7d879ae5706ba82dd5b9763dc"
+    },
+    {
+      "id": "02/06_PRODUCT_ROADMAP",
+      "title": "06 Product Roadmap",
+      "section": "Product Strategy",
+      "requested_filename": "06_PRODUCT_ROADMAP.md",
+      "path": "docs/02_PRODUCT_STRATEGY/06_PRODUCT_ROADMAP.md",
+      "version": "0.1",
+      "owner": "Product",
+      "depends_on_sections": [
+        "00",
+        "01"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2442,
+      "sha256": "ce03c8eec32fa9f2f52b2daeafa4ac1122e80a1cf2e2bbb19646274696ec400d"
+    },
+    {
+      "id": "02/07_SUCCESS_METRICS",
+      "title": "07 Success Metrics",
+      "section": "Product Strategy",
+      "requested_filename": "07_SUCCESS_METRICS.md",
+      "path": "docs/02_PRODUCT_STRATEGY/07_SUCCESS_METRICS.md",
+      "version": "0.1",
+      "owner": "Product",
+      "depends_on_sections": [
+        "00",
+        "01"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2614,
+      "sha256": "d1e12fcaf0aff3604031de745aa82cb4152311c3610982e94029e9e37c473bef"
+    },
+    {
+      "id": "02/08_SCOPE_AND_PRIORITIZATION",
+      "title": "08 Scope And Prioritization",
+      "section": "Product Strategy",
+      "requested_filename": "08_SCOPE_AND_PRIORITIZATION.md",
+      "path": "docs/02_PRODUCT_STRATEGY/08_SCOPE_AND_PRIORITIZATION.md",
+      "version": "0.1",
+      "owner": "Product",
+      "depends_on_sections": [
+        "00",
+        "01"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2278,
+      "sha256": "69927320d131451ea30842c2d2c8062a548bd8df62dc0b9ac0b189256e8ae5e3"
+    },
+    {
+      "id": "03/01_USER_JOURNEY_MAPS",
+      "title": "01 User Journey Maps",
+      "section": "User Journeys and Scenarios",
+      "requested_filename": "01_USER_JOURNEY_MAPS.md",
+      "path": "docs/03_USER_JOURNEYS_AND_SCENARIOS/01_USER_JOURNEY_MAPS.md",
+      "version": "0.1",
+      "owner": "Operations",
+      "depends_on_sections": [
+        "01",
+        "02"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2897,
+      "sha256": "1377be64d4a40f017c2c38d04cd2519802218b5ec573c040c28b7f694fea6a1e"
+    },
+    {
+      "id": "03/02_SERVICE_BLUEPRINTS",
+      "title": "02 Service Blueprints",
+      "section": "User Journeys and Scenarios",
+      "requested_filename": "02_SERVICE_BLUEPRINTS.md",
+      "path": "docs/03_USER_JOURNEYS_AND_SCENARIOS/02_SERVICE_BLUEPRINTS.md",
+      "version": "0.1",
+      "owner": "Operations",
+      "depends_on_sections": [
+        "01",
+        "02"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2664,
+      "sha256": "25ebb6c624985645261dba58344e650a850156e99cb2236f1accd557117f85a7"
+    },
+    {
+      "id": "03/03_COMPLETE_SCENARIO_CATALOG",
+      "title": "03 Complete Scenario Catalog",
+      "section": "User Journeys and Scenarios",
+      "requested_filename": "03_COMPLETE_SCENARIO_CATALOG.md",
+      "path": "docs/03_USER_JOURNEYS_AND_SCENARIOS/03_COMPLETE_SCENARIO_CATALOG.md",
+      "version": "0.2",
+      "owner": "Operations",
+      "depends_on_sections": [
+        "01",
+        "02"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 56822,
+      "sha256": "d5ac8b2301f5bd037998da66b9db9f422239a78b154be7e7e4cebd8600049117"
+    },
+    {
+      "id": "03/04_BUSINESS_PROCESS_FLOWS",
+      "title": "04 Business Process Flows",
+      "section": "User Journeys and Scenarios",
+      "requested_filename": "04_BUSINESS_PROCESS_FLOWS.md",
+      "path": "docs/03_USER_JOURNEYS_AND_SCENARIOS/04_BUSINESS_PROCESS_FLOWS.md",
+      "version": "0.1",
+      "owner": "Operations",
+      "depends_on_sections": [
+        "01",
+        "02"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2388,
+      "sha256": "cdc66615b4dd340e9b492a12978c817086f605013ec664ac051b24d0f7ab9621"
+    },
+    {
+      "id": "03/05_STATE_MACHINE_CATALOG",
+      "title": "05 State Machine Catalog",
+      "section": "User Journeys and Scenarios",
+      "requested_filename": "05_STATE_MACHINE_CATALOG.md",
+      "path": "docs/03_USER_JOURNEYS_AND_SCENARIOS/05_STATE_MACHINE_CATALOG.md",
+      "version": "0.3",
+      "owner": "Operations",
+      "depends_on_sections": [
+        "01",
+        "02"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 23667,
+      "sha256": "f2d11f9f1787b72ba42fc9ba450b14b144c7df290b09201c4a6981c2c7931f52"
+    },
+    {
+      "id": "03/06_EDGE_CASE_MATRIX",
+      "title": "06 Edge Case Matrix",
+      "section": "User Journeys and Scenarios",
+      "requested_filename": "06_EDGE_CASE_MATRIX.md",
+      "path": "docs/03_USER_JOURNEYS_AND_SCENARIOS/06_EDGE_CASE_MATRIX.md",
+      "version": "0.1",
+      "owner": "Operations",
+      "depends_on_sections": [
+        "01",
+        "02"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 3651,
+      "sha256": "094f2774e30fcbbc8ef31c26a986408e5ea96e2f1e09258f96391177e24383f8"
+    },
+    {
+      "id": "03/07_EXCEPTION_HANDLING",
+      "title": "07 Exception Handling",
+      "section": "User Journeys and Scenarios",
+      "requested_filename": "07_EXCEPTION_HANDLING.md",
+      "path": "docs/03_USER_JOURNEYS_AND_SCENARIOS/07_EXCEPTION_HANDLING.md",
+      "version": "0.1",
+      "owner": "Operations",
+      "depends_on_sections": [
+        "01",
+        "02"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2822,
+      "sha256": "865d596fd4de0cb5cf3b38933aea199a102c6183303d9a25e8cd8f040bff591a"
+    },
+    {
+      "id": "03/08_OPERATIONAL_RECOVERY",
+      "title": "08 Operational Recovery",
+      "section": "User Journeys and Scenarios",
+      "requested_filename": "08_OPERATIONAL_RECOVERY.md",
+      "path": "docs/03_USER_JOURNEYS_AND_SCENARIOS/08_OPERATIONAL_RECOVERY.md",
+      "version": "0.1",
+      "owner": "Operations",
+      "depends_on_sections": [
+        "01",
+        "02"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 3003,
+      "sha256": "b71eddf6fc0c85fdf442d9e09db682e990b5a624206ff1a64f1546edcf7ad3d0"
+    },
+    {
+      "id": "04/01_USER_ROLES",
+      "title": "01 User Roles",
+      "section": "Roles and Panels",
+      "requested_filename": "01_USER_ROLES.md",
+      "path": "docs/04_ROLES_AND_PANELS/01_USER_ROLES.md",
+      "version": "0.1",
+      "owner": "Product design",
+      "depends_on_sections": [
+        "02",
+        "03"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 6207,
+      "sha256": "31c2c5cb5ec221e3299f9d31801de1416060194bc31c02b4b323b54b2ebaf838"
+    },
+    {
+      "id": "04/02_ROLE_PERMISSION_MATRIX",
+      "title": "02 Role Permission Matrix",
+      "section": "Roles and Panels",
+      "requested_filename": "02_ROLE_PERMISSION_MATRIX.md",
+      "path": "docs/04_ROLES_AND_PANELS/02_ROLE_PERMISSION_MATRIX.md",
+      "version": "0.1",
+      "owner": "Product design",
+      "depends_on_sections": [
+        "02",
+        "03"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 4559,
+      "sha256": "eb8a1103879394a69d371b0e3dd464c1ca26e8c079764586639a62eb063596ce"
+    },
+    {
+      "id": "04/03_PANEL_ARCHITECTURE",
+      "title": "03 Panel Architecture",
+      "section": "Roles and Panels",
+      "requested_filename": "03_PANEL_ARCHITECTURE.md",
+      "path": "docs/04_ROLES_AND_PANELS/03_PANEL_ARCHITECTURE.md",
+      "version": "0.1",
+      "owner": "Product design",
+      "depends_on_sections": [
+        "02",
+        "03"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2814,
+      "sha256": "81cea50305410891dc3d37213543eed9d5f4c7730aa436b30ca08fdd5d9fa7cc"
+    },
+    {
+      "id": "04/04_PUBLIC_SITE_SPECIFICATION",
+      "title": "04 Public Site Specification",
+      "section": "Roles and Panels",
+      "requested_filename": "04_PUBLIC_SITE_SPECIFICATION.md",
+      "path": "docs/04_ROLES_AND_PANELS/04_PUBLIC_SITE_SPECIFICATION.md",
+      "version": "0.1",
+      "owner": "Product design",
+      "depends_on_sections": [
+        "02",
+        "03"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2580,
+      "sha256": "5f5945258478676a2b9b15afbaaa29848a7950633f6b6a990a26fcb3fdc81246"
+    },
+    {
+      "id": "04/05_SELLER_PORTAL_SPECIFICATION",
+      "title": "05 Seller Portal Specification",
+      "section": "Roles and Panels",
+      "requested_filename": "05_SELLER_PORTAL_SPECIFICATION.md",
+      "path": "docs/04_ROLES_AND_PANELS/05_SELLER_PORTAL_SPECIFICATION.md",
+      "version": "0.1",
+      "owner": "Product design",
+      "depends_on_sections": [
+        "02",
+        "03"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2599,
+      "sha256": "7420a244b9f1032c8139a8e9c4b5284da8f3525fb4df46f929423ea45fad641f"
+    },
+    {
+      "id": "04/06_CONSUMER_BUYER_PORTAL",
+      "title": "06 Consumer Buyer Portal",
+      "section": "Roles and Panels",
+      "requested_filename": "06_CONSUMER_BUYER_PORTAL.md",
+      "path": "docs/04_ROLES_AND_PANELS/06_CONSUMER_BUYER_PORTAL.md",
+      "version": "0.1",
+      "owner": "Product design",
+      "depends_on_sections": [
+        "02",
+        "03"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2379,
+      "sha256": "477fbd2289d4eb83acee3ea42ff7ebbbd1a04abdda4eb40a3e5beca6dc42078a"
+    },
+    {
+      "id": "04/07_DEALER_PORTAL_SPECIFICATION",
+      "title": "07 Dealer Portal Specification",
+      "section": "Roles and Panels",
+      "requested_filename": "07_DEALER_PORTAL_SPECIFICATION.md",
+      "path": "docs/04_ROLES_AND_PANELS/07_DEALER_PORTAL_SPECIFICATION.md",
+      "version": "0.1",
+      "owner": "Product design",
+      "depends_on_sections": [
+        "02",
+        "03"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2661,
+      "sha256": "c98596d482c2661e3b041b551b8627f8b669877bfb50736829cf278edd9f0de2"
+    },
+    {
+      "id": "04/08_OPERATIONS_PANELS",
+      "title": "08 Operations Panels",
+      "section": "Roles and Panels",
+      "requested_filename": "08_OPERATIONS_PANELS.md",
+      "path": "docs/04_ROLES_AND_PANELS/08_OPERATIONS_PANELS.md",
+      "version": "0.1",
+      "owner": "Product design",
+      "depends_on_sections": [
+        "02",
+        "03"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2514,
+      "sha256": "50a0fc11eceff96a6551adb004e407c8bc89f20aa574b4bf7e9f078ed18c7790"
+    },
+    {
+      "id": "04/09_FINANCE_AND_LEGAL_PANELS",
+      "title": "09 Finance And Legal Panels",
+      "section": "Roles and Panels",
+      "requested_filename": "09_FINANCE_AND_LEGAL_PANELS.md",
+      "path": "docs/04_ROLES_AND_PANELS/09_FINANCE_AND_LEGAL_PANELS.md",
+      "version": "0.1",
+      "owner": "Product design",
+      "depends_on_sections": [
+        "02",
+        "03"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2456,
+      "sha256": "755ccd80e8437d9570cb1521cfee8b7406614623cdfcebb30e0657917c199581"
+    },
+    {
+      "id": "04/10_ADMINISTRATION_SPECIFICATION",
+      "title": "10 Administration Specification",
+      "section": "Roles and Panels",
+      "requested_filename": "10_ADMINISTRATION_SPECIFICATION.md",
+      "path": "docs/04_ROLES_AND_PANELS/10_ADMINISTRATION_SPECIFICATION.md",
+      "version": "0.1",
+      "owner": "Product design",
+      "depends_on_sections": [
+        "02",
+        "03"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2456,
+      "sha256": "4f3fe241b576864991ecae4def61b0a81f9d63b0ae83bec684f6e6ebbc7f48aa"
+    },
+    {
+      "id": "04/11_SCREEN_ACTION_MATRIX",
+      "title": "11 Screen Action Matrix",
+      "section": "Roles and Panels",
+      "requested_filename": "11_SCREEN_ACTION_MATRIX.md",
+      "path": "docs/04_ROLES_AND_PANELS/11_SCREEN_ACTION_MATRIX.md",
+      "version": "0.1",
+      "owner": "Product design",
+      "depends_on_sections": [
+        "02",
+        "03"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 3708,
+      "sha256": "f1c41537a99d92a92ba732883b65415ba280d3f3aa8aff0e9f3c2ad7fa1b982b"
+    },
+    {
+      "id": "05/01_UX_RESEARCH_PLAN",
+      "title": "01 Ux Research Plan",
+      "section": "UX Research and Information Architecture",
+      "requested_filename": "01_UX_RESEARCH_PLAN.md",
+      "path": "docs/05_UX_RESEARCH_AND_INFORMATION_ARCHITECTURE/01_UX_RESEARCH_PLAN.md",
+      "version": "0.1",
+      "owner": "UX research",
+      "depends_on_sections": [
+        "02",
+        "03",
+        "04"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 4113,
+      "sha256": "ff4002bb1031b607a27e3cffc59179869545a3e91958f24afe368355945833b9"
+    },
+    {
+      "id": "05/02_INFORMATION_ARCHITECTURE",
+      "title": "02 Information Architecture",
+      "section": "UX Research and Information Architecture",
+      "requested_filename": "02_INFORMATION_ARCHITECTURE.md",
+      "path": "docs/05_UX_RESEARCH_AND_INFORMATION_ARCHITECTURE/02_INFORMATION_ARCHITECTURE.md",
+      "version": "0.1",
+      "owner": "UX research",
+      "depends_on_sections": [
+        "02",
+        "03",
+        "04"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2913,
+      "sha256": "82e8d763cf77e478a09f6554f4b0f8b0ade5d02ba514800bc75a3c8200c568ec"
+    },
+    {
+      "id": "05/03_NAVIGATION_SYSTEM",
+      "title": "03 Navigation System",
+      "section": "UX Research and Information Architecture",
+      "requested_filename": "03_NAVIGATION_SYSTEM.md",
+      "path": "docs/05_UX_RESEARCH_AND_INFORMATION_ARCHITECTURE/03_NAVIGATION_SYSTEM.md",
+      "version": "0.1",
+      "owner": "UX research",
+      "depends_on_sections": [
+        "02",
+        "03",
+        "04"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2614,
+      "sha256": "b92584a685d8e76ed9d0a8afeb709262dfaaf9f552a53941e32b8f1eaed7a9f3"
+    },
+    {
+      "id": "05/04_SCREEN_INVENTORY",
+      "title": "04 Screen Inventory",
+      "section": "UX Research and Information Architecture",
+      "requested_filename": "04_SCREEN_INVENTORY.md",
+      "path": "docs/05_UX_RESEARCH_AND_INFORMATION_ARCHITECTURE/04_SCREEN_INVENTORY.md",
+      "version": "0.1",
+      "owner": "UX research",
+      "depends_on_sections": [
+        "02",
+        "03",
+        "04"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 10252,
+      "sha256": "cf22f2774ad1f8a9209bb22155d9581182119a1a52bc2d1fa092ee037b42146b"
+    },
+    {
+      "id": "05/05_WIREFRAME_SPECIFICATIONS",
+      "title": "05 Wireframe Specifications",
+      "section": "UX Research and Information Architecture",
+      "requested_filename": "05_WIREFRAME_SPECIFICATIONS.md",
+      "path": "docs/05_UX_RESEARCH_AND_INFORMATION_ARCHITECTURE/05_WIREFRAME_SPECIFICATIONS.md",
+      "version": "0.1",
+      "owner": "UX research",
+      "depends_on_sections": [
+        "02",
+        "03",
+        "04"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 6399,
+      "sha256": "015f709f1c2835e34337228d2b62400ddda2fec5907de48bee96ae16d86072f9"
+    },
+    {
+      "id": "05/06_FORM_UX",
+      "title": "06 Form Ux",
+      "section": "UX Research and Information Architecture",
+      "requested_filename": "06_FORM_UX.md",
+      "path": "docs/05_UX_RESEARCH_AND_INFORMATION_ARCHITECTURE/06_FORM_UX.md",
+      "version": "0.1",
+      "owner": "UX research",
+      "depends_on_sections": [
+        "02",
+        "03",
+        "04"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 3373,
+      "sha256": "aebf50b02d0b8e0fd17ef047df32afeeb46444b26a0258d7bc4e7720d1bcdeec"
+    },
+    {
+      "id": "05/07_RESPONSIVE_UX",
+      "title": "07 Responsive Ux",
+      "section": "UX Research and Information Architecture",
+      "requested_filename": "07_RESPONSIVE_UX.md",
+      "path": "docs/05_UX_RESEARCH_AND_INFORMATION_ARCHITECTURE/07_RESPONSIVE_UX.md",
+      "version": "0.1",
+      "owner": "UX research",
+      "depends_on_sections": [
+        "02",
+        "03",
+        "04"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2297,
+      "sha256": "35ec05865e5a99712585fa7e061de96c0bfcf00a89b07a6fe7e1f55650dc251d"
+    },
+    {
+      "id": "05/08_ACCESSIBILITY_UX",
+      "title": "08 Accessibility Ux",
+      "section": "UX Research and Information Architecture",
+      "requested_filename": "08_ACCESSIBILITY_UX.md",
+      "path": "docs/05_UX_RESEARCH_AND_INFORMATION_ARCHITECTURE/08_ACCESSIBILITY_UX.md",
+      "version": "0.1",
+      "owner": "UX research",
+      "depends_on_sections": [
+        "02",
+        "03",
+        "04"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2538,
+      "sha256": "7d021a7f8c45282450b7e9fbfdd47eb14a53e1ce28e9b66e970108a218a83d03"
+    },
+    {
+      "id": "05/09_UX_CONTENT_GUIDE",
+      "title": "09 Ux Content Guide",
+      "section": "UX Research and Information Architecture",
+      "requested_filename": "09_UX_CONTENT_GUIDE.md",
+      "path": "docs/05_UX_RESEARCH_AND_INFORMATION_ARCHITECTURE/09_UX_CONTENT_GUIDE.md",
+      "version": "0.1",
+      "owner": "UX research",
+      "depends_on_sections": [
+        "02",
+        "03",
+        "04"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2986,
+      "sha256": "d19d2b04d6636c993a695c038d754bf32e64255393ff3caf0302f03efb740f17"
+    },
+    {
+      "id": "06/01_CREATIVE_DIRECTION",
+      "title": "01 Creative Direction",
+      "section": "Visual Design System",
+      "requested_filename": "01_CREATIVE_DIRECTION.md",
+      "path": "docs/06_VISUAL_DESIGN_SYSTEM/01_CREATIVE_DIRECTION.md",
+      "version": "0.1",
+      "owner": "Design systems",
+      "depends_on_sections": [
+        "04",
+        "05"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2832,
+      "sha256": "4b1d98604c849fa2acfa702ac8169db205ac63807f993b188e63eb9d3b683c9e"
+    },
+    {
+      "id": "06/02_BRAND_VISUAL_LANGUAGE",
+      "title": "02 Brand Visual Language",
+      "section": "Visual Design System",
+      "requested_filename": "02_BRAND_VISUAL_LANGUAGE.md",
+      "path": "docs/06_VISUAL_DESIGN_SYSTEM/02_BRAND_VISUAL_LANGUAGE.md",
+      "version": "0.1",
+      "owner": "Design systems",
+      "depends_on_sections": [
+        "04",
+        "05"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2532,
+      "sha256": "11f1d52cdf4594d2e8acb0f0cb49a95056d8a550804dd35293dd3ba82c079e7c"
+    },
+    {
+      "id": "06/03_DESIGN_TOKENS",
+      "title": "03 Design Tokens",
+      "section": "Visual Design System",
+      "requested_filename": "03_DESIGN_TOKENS.md",
+      "path": "docs/06_VISUAL_DESIGN_SYSTEM/03_DESIGN_TOKENS.md",
+      "version": "0.1",
+      "owner": "Design systems",
+      "depends_on_sections": [
+        "04",
+        "05"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 3381,
+      "sha256": "1f0f81e150efd0e9c8acb85d37be48ebb3357413bbb1b1a2bb87a2f4f6561190"
+    },
+    {
+      "id": "06/04_TYPOGRAPHY",
+      "title": "04 Typography",
+      "section": "Visual Design System",
+      "requested_filename": "04_TYPOGRAPHY.md",
+      "path": "docs/06_VISUAL_DESIGN_SYSTEM/04_TYPOGRAPHY.md",
+      "version": "0.1",
+      "owner": "Design systems",
+      "depends_on_sections": [
+        "04",
+        "05"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 1868,
+      "sha256": "0c38891c0bfb11fcc1dfca85bd8f6de8a1015a6608acb6a03c0b7409f5e8157d"
+    },
+    {
+      "id": "06/05_COLOR_SYSTEM",
+      "title": "05 Color System",
+      "section": "Visual Design System",
+      "requested_filename": "05_COLOR_SYSTEM.md",
+      "path": "docs/06_VISUAL_DESIGN_SYSTEM/05_COLOR_SYSTEM.md",
+      "version": "0.1",
+      "owner": "Design systems",
+      "depends_on_sections": [
+        "04",
+        "05"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2251,
+      "sha256": "f7c28c501666b4082c9c5e7eff5bcd3d55cf7b202baf040a59e40a35092cd7b2"
+    },
+    {
+      "id": "06/06_LAYOUT_AND_SPACING",
+      "title": "06 Layout And Spacing",
+      "section": "Visual Design System",
+      "requested_filename": "06_LAYOUT_AND_SPACING.md",
+      "path": "docs/06_VISUAL_DESIGN_SYSTEM/06_LAYOUT_AND_SPACING.md",
+      "version": "0.1",
+      "owner": "Design systems",
+      "depends_on_sections": [
+        "04",
+        "05"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 1779,
+      "sha256": "9e20bf87784940e6fc6ab5d707bcd04cc51c3b5ebf72bb8368654b3566a79fff"
+    },
+    {
+      "id": "06/07_COMPONENT_LIBRARY",
+      "title": "07 Component Library",
+      "section": "Visual Design System",
+      "requested_filename": "07_COMPONENT_LIBRARY.md",
+      "path": "docs/06_VISUAL_DESIGN_SYSTEM/07_COMPONENT_LIBRARY.md",
+      "version": "0.1",
+      "owner": "Design systems",
+      "depends_on_sections": [
+        "04",
+        "05"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 4645,
+      "sha256": "f490fc32ded8a3be3cde01d1aed7e3ac49a6ec4d89aa64379e1346c10180cca4"
+    },
+    {
+      "id": "06/08_COMPONENT_STATES",
+      "title": "08 Component States",
+      "section": "Visual Design System",
+      "requested_filename": "08_COMPONENT_STATES.md",
+      "path": "docs/06_VISUAL_DESIGN_SYSTEM/08_COMPONENT_STATES.md",
+      "version": "0.1",
+      "owner": "Design systems",
+      "depends_on_sections": [
+        "04",
+        "05"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2426,
+      "sha256": "a6a084c014e05b9fc47a3a6e6d3fcfb9cab62295dc4dda77f423d6968e6b596f"
+    },
+    {
+      "id": "06/09_DASHBOARD_DESIGN_SYSTEM",
+      "title": "09 Dashboard Design System",
+      "section": "Visual Design System",
+      "requested_filename": "09_DASHBOARD_DESIGN_SYSTEM.md",
+      "path": "docs/06_VISUAL_DESIGN_SYSTEM/09_DASHBOARD_DESIGN_SYSTEM.md",
+      "version": "0.1",
+      "owner": "Design systems",
+      "depends_on_sections": [
+        "04",
+        "05"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2209,
+      "sha256": "25503fb5745cf2321682a57b4912ebddc6b03e637d049b319639446be99637af"
+    },
+    {
+      "id": "06/10_DESIGN_TO_DEV_HANDOFF",
+      "title": "10 Design To Dev Handoff",
+      "section": "Visual Design System",
+      "requested_filename": "10_DESIGN_TO_DEV_HANDOFF.md",
+      "path": "docs/06_VISUAL_DESIGN_SYSTEM/10_DESIGN_TO_DEV_HANDOFF.md",
+      "version": "0.1",
+      "owner": "Design systems",
+      "depends_on_sections": [
+        "04",
+        "05"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2069,
+      "sha256": "230214a22871c0413f1fe99b3f41edbce12520bf1ffdbda85ca95c9c8fb2068d"
+    },
+    {
+      "id": "07/01_MOTION_DESIGN_LANGUAGE",
+      "title": "01 Motion Design Language",
+      "section": "Animation, 3D, and Graphics",
+      "requested_filename": "01_MOTION_DESIGN_LANGUAGE.md",
+      "path": "docs/07_ANIMATION_3D_AND_GRAPHICS/01_MOTION_DESIGN_LANGUAGE.md",
+      "version": "0.1",
+      "owner": "Creative",
+      "depends_on_sections": [
+        "05",
+        "06"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2392,
+      "sha256": "1a76d641d7c80291628588fae8db6f18e42ce1ae5efedd9414a3e8ddda4f0fc1"
+    },
+    {
+      "id": "07/02_ANIMATION_INVENTORY",
+      "title": "02 Animation Inventory",
+      "section": "Animation, 3D, and Graphics",
+      "requested_filename": "02_ANIMATION_INVENTORY.md",
+      "path": "docs/07_ANIMATION_3D_AND_GRAPHICS/02_ANIMATION_INVENTORY.md",
+      "version": "0.1",
+      "owner": "Creative",
+      "depends_on_sections": [
+        "05",
+        "06"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 4408,
+      "sha256": "2d12650807c9f407ef62064e64019c483c54f7d88d2016766a70b54ef542d088"
+    },
+    {
+      "id": "07/03_MICROINTERACTIONS",
+      "title": "03 Microinteractions",
+      "section": "Animation, 3D, and Graphics",
+      "requested_filename": "03_MICROINTERACTIONS.md",
+      "path": "docs/07_ANIMATION_3D_AND_GRAPHICS/03_MICROINTERACTIONS.md",
+      "version": "0.1",
+      "owner": "Creative",
+      "depends_on_sections": [
+        "05",
+        "06"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2576,
+      "sha256": "f3d360e9120e8052e530bfe7341e14ad782ee8144b39044858c1e81ab8b30ab0"
+    },
+    {
+      "id": "07/04_PAGE_TRANSITIONS",
+      "title": "04 Page Transitions",
+      "section": "Animation, 3D, and Graphics",
+      "requested_filename": "04_PAGE_TRANSITIONS.md",
+      "path": "docs/07_ANIMATION_3D_AND_GRAPHICS/04_PAGE_TRANSITIONS.md",
+      "version": "0.1",
+      "owner": "Creative",
+      "depends_on_sections": [
+        "05",
+        "06"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2112,
+      "sha256": "6b96526d50d7313f9de1ca3768880bbda6cdafb778219f9c49730584e4e7dc2b"
+    },
+    {
+      "id": "07/05_3D_AUTOMOTIVE_EXPERIENCES",
+      "title": "05 3D Automotive Experiences",
+      "section": "Animation, 3D, and Graphics",
+      "requested_filename": "05_3D_AUTOMOTIVE_EXPERIENCES.md",
+      "path": "docs/07_ANIMATION_3D_AND_GRAPHICS/05_3D_AUTOMOTIVE_EXPERIENCES.md",
+      "version": "0.1",
+      "owner": "Creative",
+      "depends_on_sections": [
+        "05",
+        "06"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 3365,
+      "sha256": "cc1336acdf8115d3a3da43cf034e202ab42a9814ead39efba226746f3d409f07"
+    },
+    {
+      "id": "07/06_GRAPHIC_ASSET_SPECIFICATIONS",
+      "title": "06 Graphic Asset Specifications",
+      "section": "Animation, 3D, and Graphics",
+      "requested_filename": "06_GRAPHIC_ASSET_SPECIFICATIONS.md",
+      "path": "docs/07_ANIMATION_3D_AND_GRAPHICS/06_GRAPHIC_ASSET_SPECIFICATIONS.md",
+      "version": "0.1",
+      "owner": "Creative",
+      "depends_on_sections": [
+        "05",
+        "06"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2765,
+      "sha256": "6b9eb21d3cb2762d6a08bbe779fc688fe80846723948e4bfc6b8ca3b90dc37ac"
+    },
+    {
+      "id": "07/07_MOTION_PERFORMANCE_BUDGET",
+      "title": "07 Motion Performance Budget",
+      "section": "Animation, 3D, and Graphics",
+      "requested_filename": "07_MOTION_PERFORMANCE_BUDGET.md",
+      "path": "docs/07_ANIMATION_3D_AND_GRAPHICS/07_MOTION_PERFORMANCE_BUDGET.md",
+      "version": "0.1",
+      "owner": "Creative",
+      "depends_on_sections": [
+        "05",
+        "06"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2499,
+      "sha256": "73784d0789995372cce81f89c4a78ca1c826008015e853adcbd8187e3b4e38bb"
+    },
+    {
+      "id": "07/08_ANIMATION_ACCESSIBILITY",
+      "title": "08 Animation Accessibility",
+      "section": "Animation, 3D, and Graphics",
+      "requested_filename": "08_ANIMATION_ACCESSIBILITY.md",
+      "path": "docs/07_ANIMATION_3D_AND_GRAPHICS/08_ANIMATION_ACCESSIBILITY.md",
+      "version": "0.1",
+      "owner": "Creative",
+      "depends_on_sections": [
+        "05",
+        "06"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2089,
+      "sha256": "c1bc4748d008328d300f2314d550f3b644455691957acb872644b836114992f3"
+    },
+    {
+      "id": "07/09_CREATIVE_PRODUCTION_PIPELINE",
+      "title": "09 Creative Production Pipeline",
+      "section": "Animation, 3D, and Graphics",
+      "requested_filename": "09_CREATIVE_PRODUCTION_PIPELINE.md",
+      "path": "docs/07_ANIMATION_3D_AND_GRAPHICS/09_CREATIVE_PRODUCTION_PIPELINE.md",
+      "version": "0.1",
+      "owner": "Creative",
+      "depends_on_sections": [
+        "05",
+        "06"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 3940,
+      "sha256": "b1ead258dbeef029a68c65c45353e787a8c90f5c16b7616777099e48ff843132"
+    },
+    {
+      "id": "08/01_ARCHITECTURE_OVERVIEW",
+      "title": "01 Architecture Overview",
+      "section": "Software Architecture",
+      "requested_filename": "01_ARCHITECTURE_OVERVIEW.md",
+      "path": "docs/08_SOFTWARE_ARCHITECTURE/01_ARCHITECTURE_OVERVIEW.md",
+      "version": "0.1",
+      "owner": "Architecture",
+      "depends_on_sections": [
+        "01",
+        "02",
+        "03"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2712,
+      "sha256": "a78f414dc71c8c1205888d211cfdfa8a9a62d06433ab880ffd7f817112595872"
+    },
+    {
+      "id": "08/02_TECH_STACK_DECISIONS",
+      "title": "02 Tech Stack Decisions",
+      "section": "Software Architecture",
+      "requested_filename": "02_TECH_STACK_DECISIONS.md",
+      "path": "docs/08_SOFTWARE_ARCHITECTURE/02_TECH_STACK_DECISIONS.md",
+      "version": "0.1",
+      "owner": "Architecture",
+      "depends_on_sections": [
+        "01",
+        "02",
+        "03"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 3123,
+      "sha256": "0579cef184b856b0dee3c2e97b59dc89fed9155b90bd70b233a1020af2e5484b"
+    },
+    {
+      "id": "08/03_C4_DIAGRAMS",
+      "title": "03 C4 Diagrams",
+      "section": "Software Architecture",
+      "requested_filename": "03_C4_DIAGRAMS.md",
+      "path": "docs/08_SOFTWARE_ARCHITECTURE/03_C4_DIAGRAMS.md",
+      "version": "0.3",
+      "owner": "Architecture",
+      "depends_on_sections": [
+        "01",
+        "02",
+        "03"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 6825,
+      "sha256": "7f6345d4d5efedad01b58b938b9ebfc50a2ae51dad38386f6246d30135d7ef4d"
+    },
+    {
+      "id": "08/04_DOMAIN_BOUNDARIES",
+      "title": "04 Domain Boundaries",
+      "section": "Software Architecture",
+      "requested_filename": "04_DOMAIN_BOUNDARIES.md",
+      "path": "docs/08_SOFTWARE_ARCHITECTURE/04_DOMAIN_BOUNDARIES.md",
+      "version": "0.1",
+      "owner": "Architecture",
+      "depends_on_sections": [
+        "01",
+        "02",
+        "03"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 3273,
+      "sha256": "81ec9afd47951367dd9416ea8a5b85bce689825212fc768f4508ed21c504d8b8"
+    },
+    {
+      "id": "08/05_SYSTEM_COMPONENTS",
+      "title": "05 System Components",
+      "section": "Software Architecture",
+      "requested_filename": "05_SYSTEM_COMPONENTS.md",
+      "path": "docs/08_SOFTWARE_ARCHITECTURE/05_SYSTEM_COMPONENTS.md",
+      "version": "0.1",
+      "owner": "Architecture",
+      "depends_on_sections": [
+        "01",
+        "02",
+        "03"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 1936,
+      "sha256": "f43aaaf403581a569db8a292bbd2864e342f4395f7d2ec74b7b641696f3ef506"
+    },
+    {
+      "id": "08/06_INTEGRATION_ARCHITECTURE",
+      "title": "06 Integration Architecture",
+      "section": "Software Architecture",
+      "requested_filename": "06_INTEGRATION_ARCHITECTURE.md",
+      "path": "docs/08_SOFTWARE_ARCHITECTURE/06_INTEGRATION_ARCHITECTURE.md",
+      "version": "0.1",
+      "owner": "Architecture",
+      "depends_on_sections": [
+        "01",
+        "02",
+        "03"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2174,
+      "sha256": "d7303860288843ccc1cf3161d984f6829f0e0585a5269ecb820af51dea63d56c"
+    },
+    {
+      "id": "08/07_EVENT_DRIVEN_ARCHITECTURE",
+      "title": "07 Event Driven Architecture",
+      "section": "Software Architecture",
+      "requested_filename": "07_EVENT_DRIVEN_ARCHITECTURE.md",
+      "path": "docs/08_SOFTWARE_ARCHITECTURE/07_EVENT_DRIVEN_ARCHITECTURE.md",
+      "version": "0.1",
+      "owner": "Architecture",
+      "depends_on_sections": [
+        "01",
+        "02",
+        "03"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2087,
+      "sha256": "a335df18b8c06ec5eb07e20c2861d4478ac8985dd08122affb4cce9d9647f2ec"
+    },
+    {
+      "id": "08/08_REALTIME_ARCHITECTURE",
+      "title": "08 Realtime Architecture",
+      "section": "Software Architecture",
+      "requested_filename": "08_REALTIME_ARCHITECTURE.md",
+      "path": "docs/08_SOFTWARE_ARCHITECTURE/08_REALTIME_ARCHITECTURE.md",
+      "version": "0.1",
+      "owner": "Architecture",
+      "depends_on_sections": [
+        "01",
+        "02",
+        "03"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 1862,
+      "sha256": "fb332838027c8d3e426f3284067926fd7decc185a57d267fdc99226e02abc85a"
+    },
+    {
+      "id": "08/09_FAILURE_RECOVERY_ARCHITECTURE",
+      "title": "09 Failure Recovery Architecture",
+      "section": "Software Architecture",
+      "requested_filename": "09_FAILURE_RECOVERY_ARCHITECTURE.md",
+      "path": "docs/08_SOFTWARE_ARCHITECTURE/09_FAILURE_RECOVERY_ARCHITECTURE.md",
+      "version": "0.1",
+      "owner": "Architecture",
+      "depends_on_sections": [
+        "01",
+        "02",
+        "03"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2093,
+      "sha256": "55a5a4c1056ba394e7c9286cd67c4061d13a452dcd0ec60e216c03a308995982"
+    },
+    {
+      "id": "08/10_ARCHITECTURE_DECISION_RECORDS",
+      "title": "10 Architecture Decision Records",
+      "section": "Software Architecture",
+      "requested_filename": "10_ARCHITECTURE_DECISION_RECORDS.md",
+      "path": "docs/08_SOFTWARE_ARCHITECTURE/10_ARCHITECTURE_DECISION_RECORDS.md",
+      "version": "0.1",
+      "owner": "Architecture",
+      "depends_on_sections": [
+        "01",
+        "02",
+        "03"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2271,
+      "sha256": "f80b782692363eec2c476df506555ea915aaa841c857022b0dcb606d34780842"
+    },
+    {
+      "id": "09/01_DATA_MODEL",
+      "title": "01 Data Model",
+      "section": "Data Architecture",
+      "requested_filename": "01_DATA_MODEL.md",
+      "path": "docs/09_DATA_ARCHITECTURE/01_DATA_MODEL.md",
+      "version": "0.1",
+      "owner": "Data architecture",
+      "depends_on_sections": [
+        "03",
+        "08"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 3755,
+      "sha256": "195036ca25028992193cf94a3b56befdaef5d90bce32cc05a6f1340bcee90241"
+    },
+    {
+      "id": "09/02_ENTITY_RELATIONSHIP_DIAGRAM",
+      "title": "02 Entity Relationship Diagram",
+      "section": "Data Architecture",
+      "requested_filename": "02_ENTITY_RELATIONSHIP_DIAGRAM.md",
+      "path": "docs/09_DATA_ARCHITECTURE/02_ENTITY_RELATIONSHIP_DIAGRAM.md",
+      "version": "0.1",
+      "owner": "Data architecture",
+      "depends_on_sections": [
+        "03",
+        "08"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2669,
+      "sha256": "6922f1241bd9b3bdd06dbcac3d4322acd554705185e6541025af885007e7ff9a"
+    },
+    {
+      "id": "09/03_DATA_DICTIONARY",
+      "title": "03 Data Dictionary",
+      "section": "Data Architecture",
+      "requested_filename": "03_DATA_DICTIONARY.md",
+      "path": "docs/09_DATA_ARCHITECTURE/03_DATA_DICTIONARY.md",
+      "version": "0.1",
+      "owner": "Data architecture",
+      "depends_on_sections": [
+        "03",
+        "08"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 16958,
+      "sha256": "4867481ac68e9d09d3170bd3a0ab7d60ebed84b5a300381a8012fdf9f8f648d9"
+    },
+    {
+      "id": "09/04_DATABASE_DESIGN",
+      "title": "04 Database Design",
+      "section": "Data Architecture",
+      "requested_filename": "04_DATABASE_DESIGN.md",
+      "path": "docs/09_DATA_ARCHITECTURE/04_DATABASE_DESIGN.md",
+      "version": "0.3",
+      "owner": "Data architecture",
+      "depends_on_sections": [
+        "03",
+        "08"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 4651,
+      "sha256": "11b61d3f281e14ad405bd9481adb3f21fe012264cf0784f16fcec3965ca15619"
+    },
+    {
+      "id": "09/05_INDEXING_STRATEGY",
+      "title": "05 Indexing Strategy",
+      "section": "Data Architecture",
+      "requested_filename": "05_INDEXING_STRATEGY.md",
+      "path": "docs/09_DATA_ARCHITECTURE/05_INDEXING_STRATEGY.md",
+      "version": "0.3",
+      "owner": "Data architecture",
+      "depends_on_sections": [
+        "03",
+        "08"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 3649,
+      "sha256": "209b069df86f31241c4f7a97fa0bda9f2d193f2e25e4bdcbf7eff4c88663b811"
+    },
+    {
+      "id": "09/06_DATA_CONSISTENCY",
+      "title": "06 Data Consistency",
+      "section": "Data Architecture",
+      "requested_filename": "06_DATA_CONSISTENCY.md",
+      "path": "docs/09_DATA_ARCHITECTURE/06_DATA_CONSISTENCY.md",
+      "version": "0.1",
+      "owner": "Data architecture",
+      "depends_on_sections": [
+        "03",
+        "08"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 1759,
+      "sha256": "977550088a12eeb962a1231a30087808e2761e69ea7617fbdb8e568a11a55c11"
+    },
+    {
+      "id": "09/07_DATA_RETENTION",
+      "title": "07 Data Retention",
+      "section": "Data Architecture",
+      "requested_filename": "07_DATA_RETENTION.md",
+      "path": "docs/09_DATA_ARCHITECTURE/07_DATA_RETENTION.md",
+      "version": "0.3",
+      "owner": "Data architecture",
+      "depends_on_sections": [
+        "03",
+        "08"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 3786,
+      "sha256": "e12c53eb08b2ae9c0ca8005bdc98dd330e2d217037622ff69a817fefeece0a6f"
+    },
+    {
+      "id": "09/08_SEARCH_DATA_MODEL",
+      "title": "08 Search Data Model",
+      "section": "Data Architecture",
+      "requested_filename": "08_SEARCH_DATA_MODEL.md",
+      "path": "docs/09_DATA_ARCHITECTURE/08_SEARCH_DATA_MODEL.md",
+      "version": "0.3",
+      "owner": "Data architecture",
+      "depends_on_sections": [
+        "03",
+        "08"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 3099,
+      "sha256": "b8c0640e10beb933ef768896633eb4af8ee06172b66f26b6f9972a6e6e436f38"
+    },
+    {
+      "id": "09/09_ANALYTICAL_DATA_MODEL",
+      "title": "09 Analytical Data Model",
+      "section": "Data Architecture",
+      "requested_filename": "09_ANALYTICAL_DATA_MODEL.md",
+      "path": "docs/09_DATA_ARCHITECTURE/09_ANALYTICAL_DATA_MODEL.md",
+      "version": "0.3",
+      "owner": "Data architecture",
+      "depends_on_sections": [
+        "03",
+        "08"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 3382,
+      "sha256": "5ba8225c44d512b74283dc5daaaa89ae77494932ff405b1aaea818cc38239220"
+    },
+    {
+      "id": "10/01_BACKEND_MODULE_SPECIFICATIONS",
+      "title": "01 Backend Module Specifications",
+      "section": "Backend and APIs",
+      "requested_filename": "01_BACKEND_MODULE_SPECIFICATIONS.md",
+      "path": "docs/10_BACKEND_AND_APIS/01_BACKEND_MODULE_SPECIFICATIONS.md",
+      "version": "0.1",
+      "owner": "Backend architecture",
+      "depends_on_sections": [
+        "04",
+        "08",
+        "09",
+        "12"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2817,
+      "sha256": "474da0f62c602d0ece43c150b674099b004d77a528bd7c051b10ccf2010e51b8"
+    },
+    {
+      "id": "10/02_API_CATALOG",
+      "title": "02 Api Catalog",
+      "section": "Backend and APIs",
+      "requested_filename": "02_API_CATALOG.md",
+      "path": "docs/10_BACKEND_AND_APIS/02_API_CATALOG.md",
+      "version": "0.1",
+      "owner": "Backend architecture",
+      "depends_on_sections": [
+        "04",
+        "08",
+        "09",
+        "12"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 5979,
+      "sha256": "60892e076c6e597e03d7af3083abab783a2df4706a11cba3f1398b5bc0ae61c0"
+    },
+    {
+      "id": "10/03_AUTHENTICATION_API",
+      "title": "03 Authentication Api",
+      "section": "Backend and APIs",
+      "requested_filename": "03_AUTHENTICATION_API.md",
+      "path": "docs/10_BACKEND_AND_APIS/03_AUTHENTICATION_API.md",
+      "version": "0.1",
+      "owner": "Backend architecture",
+      "depends_on_sections": [
+        "04",
+        "08",
+        "09",
+        "12"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2781,
+      "sha256": "2164d06a3998d499e46c96544e377f671b7a14779ba0d428bacd3270e97f80b8"
+    },
+    {
+      "id": "10/04_AUCTION_API",
+      "title": "04 Auction Api",
+      "section": "Backend and APIs",
+      "requested_filename": "04_AUCTION_API.md",
+      "path": "docs/10_BACKEND_AND_APIS/04_AUCTION_API.md",
+      "version": "0.1",
+      "owner": "Backend architecture",
+      "depends_on_sections": [
+        "04",
+        "08",
+        "09",
+        "12"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2722,
+      "sha256": "dd89fe4a659310b8cf3f5a6e2b8775bb1005b98d6ad89f1146fe3d11e6f11302"
+    },
+    {
+      "id": "10/05_VEHICLE_AND_INSPECTION_API",
+      "title": "05 Vehicle And Inspection Api",
+      "section": "Backend and APIs",
+      "requested_filename": "05_VEHICLE_AND_INSPECTION_API.md",
+      "path": "docs/10_BACKEND_AND_APIS/05_VEHICLE_AND_INSPECTION_API.md",
+      "version": "0.1",
+      "owner": "Backend architecture",
+      "depends_on_sections": [
+        "04",
+        "08",
+        "09",
+        "12"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 1948,
+      "sha256": "f78aa9cbddbcd1ae5d8aa727f3087bd0c0d7913686fa11ea27b04b60b5e1aa5b"
+    },
+    {
+      "id": "10/06_FINANCIAL_API",
+      "title": "06 Financial Api",
+      "section": "Backend and APIs",
+      "requested_filename": "06_FINANCIAL_API.md",
+      "path": "docs/10_BACKEND_AND_APIS/06_FINANCIAL_API.md",
+      "version": "0.1",
+      "owner": "Backend architecture",
+      "depends_on_sections": [
+        "04",
+        "08",
+        "09",
+        "12"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 1989,
+      "sha256": "cb493a4a917e49438b82e08883e68aa4aa167c0d3faacae153410bb826d911c4"
+    },
+    {
+      "id": "10/07_ADMIN_API",
+      "title": "07 Admin Api",
+      "section": "Backend and APIs",
+      "requested_filename": "07_ADMIN_API.md",
+      "path": "docs/10_BACKEND_AND_APIS/07_ADMIN_API.md",
+      "version": "0.1",
+      "owner": "Backend architecture",
+      "depends_on_sections": [
+        "04",
+        "08",
+        "09",
+        "12"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 1645,
+      "sha256": "d1ccfd3256fe308f3a061b334db720e21f7cc0a3586136e0590bf8cbc5dadaeb"
+    },
+    {
+      "id": "10/08_EVENT_CONTRACTS",
+      "title": "08 Event Contracts",
+      "section": "Backend and APIs",
+      "requested_filename": "08_EVENT_CONTRACTS.md",
+      "path": "docs/10_BACKEND_AND_APIS/08_EVENT_CONTRACTS.md",
+      "version": "0.1",
+      "owner": "Backend architecture",
+      "depends_on_sections": [
+        "04",
+        "08",
+        "09",
+        "12"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 5341,
+      "sha256": "8a0e21e67ed422260198636b3e903bdb36b54474c8876f71d9522147ea4324bd"
+    },
+    {
+      "id": "10/09_INTEGRATION_CONTRACTS",
+      "title": "09 Integration Contracts",
+      "section": "Backend and APIs",
+      "requested_filename": "09_INTEGRATION_CONTRACTS.md",
+      "path": "docs/10_BACKEND_AND_APIS/09_INTEGRATION_CONTRACTS.md",
+      "version": "0.1",
+      "owner": "Backend architecture",
+      "depends_on_sections": [
+        "04",
+        "08",
+        "09",
+        "12"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2300,
+      "sha256": "e3de9d279ec2079e3ac41de28be99172bd4588a4c2e8e9f316718c0b5dd3d24e"
+    },
+    {
+      "id": "10/10_ERROR_HANDLING_STANDARDS",
+      "title": "10 Error Handling Standards",
+      "section": "Backend and APIs",
+      "requested_filename": "10_ERROR_HANDLING_STANDARDS.md",
+      "path": "docs/10_BACKEND_AND_APIS/10_ERROR_HANDLING_STANDARDS.md",
+      "version": "0.1",
+      "owner": "Backend architecture",
+      "depends_on_sections": [
+        "04",
+        "08",
+        "09",
+        "12"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2057,
+      "sha256": "466dbd335368889f7bdf78bee7c3dc2893bb75713c27a911bafb27eda85b4d26"
+    },
+    {
+      "id": "10/11_OPENAPI_SPECIFICATION",
+      "title": "11 Openapi Specification",
+      "section": "Backend and APIs",
+      "requested_filename": "11_OPENAPI_SPECIFICATION.yaml",
+      "owner": "Backend architecture",
+      "depends_on_sections": [
+        "08",
+        "09",
+        "12"
+      ],
+      "path": "docs/10_BACKEND_AND_APIS/11_OPENAPI_SPECIFICATION.yaml",
+      "version": "0.3.0",
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 556158,
+      "sha256": "897deb7fc3cc1cbf0dd36139f088c80e0c63b2acd7975143cf1aa917d8bed27b"
+    },
+    {
+      "id": "11/01_FRONTEND_ARCHITECTURE",
+      "title": "01 Frontend Architecture",
+      "section": "Frontend Engineering",
+      "requested_filename": "01_FRONTEND_ARCHITECTURE.md",
+      "path": "docs/11_FRONTEND_ENGINEERING/01_FRONTEND_ARCHITECTURE.md",
+      "version": "0.3",
+      "owner": "Frontend architecture",
+      "depends_on_sections": [
+        "04",
+        "05",
+        "06",
+        "08",
+        "10"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 3655,
+      "sha256": "22a6a8a25f4093d6ec6225aa7e91ad567087b08d5414237d780a3d14ed83d07c"
+    },
+    {
+      "id": "11/02_APPLICATION_ROUTING",
+      "title": "02 Application Routing",
+      "section": "Frontend Engineering",
+      "requested_filename": "02_APPLICATION_ROUTING.md",
+      "path": "docs/11_FRONTEND_ENGINEERING/02_APPLICATION_ROUTING.md",
+      "version": "0.3",
+      "owner": "Frontend architecture",
+      "depends_on_sections": [
+        "04",
+        "05",
+        "06",
+        "08",
+        "10"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 3917,
+      "sha256": "514ac9ea6772ca8336d73c43aafe349724bff27affa0644d2ff32a6df077bf57"
+    },
+    {
+      "id": "11/03_STATE_MANAGEMENT",
+      "title": "03 State Management",
+      "section": "Frontend Engineering",
+      "requested_filename": "03_STATE_MANAGEMENT.md",
+      "path": "docs/11_FRONTEND_ENGINEERING/03_STATE_MANAGEMENT.md",
+      "version": "0.3",
+      "owner": "Frontend architecture",
+      "depends_on_sections": [
+        "04",
+        "05",
+        "06",
+        "08",
+        "10"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 3038,
+      "sha256": "dea3d42e9acfaa0c96622a1bc9b81a62e3a520ad626a0e6c77869aaa4b4b8996"
+    },
+    {
+      "id": "11/04_DATA_FETCHING",
+      "title": "04 Data Fetching",
+      "section": "Frontend Engineering",
+      "requested_filename": "04_DATA_FETCHING.md",
+      "path": "docs/11_FRONTEND_ENGINEERING/04_DATA_FETCHING.md",
+      "version": "0.3",
+      "owner": "Frontend architecture",
+      "depends_on_sections": [
+        "04",
+        "05",
+        "06",
+        "08",
+        "10"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 3340,
+      "sha256": "dc0c6361421929fa2195bf1a61f4a84648998230215470997be37680404be473"
+    },
+    {
+      "id": "11/05_COMPONENT_ARCHITECTURE",
+      "title": "05 Component Architecture",
+      "section": "Frontend Engineering",
+      "requested_filename": "05_COMPONENT_ARCHITECTURE.md",
+      "path": "docs/11_FRONTEND_ENGINEERING/05_COMPONENT_ARCHITECTURE.md",
+      "version": "0.3",
+      "owner": "Frontend architecture",
+      "depends_on_sections": [
+        "04",
+        "05",
+        "06",
+        "08",
+        "10"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 3601,
+      "sha256": "9fe1ce612a90d5df1384abeb52037840e82d081959a1380106d57ec48f55c1f1"
+    },
+    {
+      "id": "11/06_FORM_IMPLEMENTATION_SPEC",
+      "title": "06 Form Implementation Spec",
+      "section": "Frontend Engineering",
+      "requested_filename": "06_FORM_IMPLEMENTATION_SPEC.md",
+      "path": "docs/11_FRONTEND_ENGINEERING/06_FORM_IMPLEMENTATION_SPEC.md",
+      "version": "0.3",
+      "owner": "Frontend architecture",
+      "depends_on_sections": [
+        "04",
+        "05",
+        "06",
+        "08",
+        "10"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 3327,
+      "sha256": "8a196d46d86aace90fe82edd5cfaf05712c3d9fcc43086a3e93cb59f61ee41d1"
+    },
+    {
+      "id": "11/07_REALTIME_UI",
+      "title": "07 Realtime Ui",
+      "section": "Frontend Engineering",
+      "requested_filename": "07_REALTIME_UI.md",
+      "path": "docs/11_FRONTEND_ENGINEERING/07_REALTIME_UI.md",
+      "version": "0.3",
+      "owner": "Frontend architecture",
+      "depends_on_sections": [
+        "04",
+        "05",
+        "06",
+        "08",
+        "10"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 3015,
+      "sha256": "bfdff0810c3ae9f15a0177afd0f635f77b71b7385ffa4ef96db6a17a461435fa"
+    },
+    {
+      "id": "11/08_FRONTEND_PERFORMANCE",
+      "title": "08 Frontend Performance",
+      "section": "Frontend Engineering",
+      "requested_filename": "08_FRONTEND_PERFORMANCE.md",
+      "path": "docs/11_FRONTEND_ENGINEERING/08_FRONTEND_PERFORMANCE.md",
+      "version": "0.3",
+      "owner": "Frontend architecture",
+      "depends_on_sections": [
+        "04",
+        "05",
+        "06",
+        "08",
+        "10"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2886,
+      "sha256": "c60b9d479998363e1ec0df39fe5272d50902a171394e764df8e161a581ca0fd0"
+    },
+    {
+      "id": "11/09_FRONTEND_ACCESSIBILITY",
+      "title": "09 Frontend Accessibility",
+      "section": "Frontend Engineering",
+      "requested_filename": "09_FRONTEND_ACCESSIBILITY.md",
+      "path": "docs/11_FRONTEND_ENGINEERING/09_FRONTEND_ACCESSIBILITY.md",
+      "version": "0.3",
+      "owner": "Frontend architecture",
+      "depends_on_sections": [
+        "04",
+        "05",
+        "06",
+        "08",
+        "10"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 3283,
+      "sha256": "940d0c8cfab2edf01d8dba921dfe5015fe4490f78d4e325637dbc975536491c0"
+    },
+    {
+      "id": "11/10_MOBILE_WEB_STRATEGY",
+      "title": "10 Mobile Web Strategy",
+      "section": "Frontend Engineering",
+      "requested_filename": "10_MOBILE_WEB_STRATEGY.md",
+      "path": "docs/11_FRONTEND_ENGINEERING/10_MOBILE_WEB_STRATEGY.md",
+      "version": "0.3",
+      "owner": "Frontend architecture",
+      "depends_on_sections": [
+        "04",
+        "05",
+        "06",
+        "08",
+        "10"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2918,
+      "sha256": "39a6cf81cf5562c895c61b635530365467834e517a71e1e837a12072519597a1"
+    },
+    {
+      "id": "12/01_AUCTION_ENGINE_SPEC",
+      "title": "01 Auction Engine Spec",
+      "section": "Auction and Transaction Systems",
+      "requested_filename": "01_AUCTION_ENGINE_SPEC.md",
+      "path": "docs/12_AUCTION_AND_TRANSACTION_SYSTEMS/01_AUCTION_ENGINE_SPEC.md",
+      "version": "0.1",
+      "owner": "Auction operations",
+      "depends_on_sections": [
+        "01",
+        "03",
+        "08",
+        "09"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2434,
+      "sha256": "6b1de394d430e6cb93cf4c31784545838a962c7d7e704de6d2d572815f69453d"
+    },
+    {
+      "id": "12/02_BIDDING_RULES",
+      "title": "02 Bidding Rules",
+      "section": "Auction and Transaction Systems",
+      "requested_filename": "02_BIDDING_RULES.md",
+      "path": "docs/12_AUCTION_AND_TRANSACTION_SYSTEMS/02_BIDDING_RULES.md",
+      "version": "0.1",
+      "owner": "Auction operations",
+      "depends_on_sections": [
+        "01",
+        "03",
+        "08",
+        "09"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2580,
+      "sha256": "7120f275aa3ef4c643433acec02aeaa8f1120b70b80a5b4900fe587a75c8c458"
+    },
+    {
+      "id": "12/03_AUCTION_CONCURRENCY",
+      "title": "03 Auction Concurrency",
+      "section": "Auction and Transaction Systems",
+      "requested_filename": "03_AUCTION_CONCURRENCY.md",
+      "path": "docs/12_AUCTION_AND_TRANSACTION_SYSTEMS/03_AUCTION_CONCURRENCY.md",
+      "version": "0.1",
+      "owner": "Auction operations",
+      "depends_on_sections": [
+        "01",
+        "03",
+        "08",
+        "09"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 5403,
+      "sha256": "cbc65abf46f40fcb7438adc6be376b9a776d308d546605d31a0335df48e11dbc"
+    },
+    {
+      "id": "12/04_SELLER_ACCEPTANCE_WORKFLOW",
+      "title": "04 Seller Acceptance Workflow",
+      "section": "Auction and Transaction Systems",
+      "requested_filename": "04_SELLER_ACCEPTANCE_WORKFLOW.md",
+      "path": "docs/12_AUCTION_AND_TRANSACTION_SYSTEMS/04_SELLER_ACCEPTANCE_WORKFLOW.md",
+      "version": "0.1",
+      "owner": "Auction operations",
+      "depends_on_sections": [
+        "01",
+        "03",
+        "08",
+        "09"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2629,
+      "sha256": "907b5333ea1fae33549482e33c3d7b5a9303ce23ff91dca7155e5d4fc9d89201"
+    },
+    {
+      "id": "12/05_DEALER_CREDIT_POLICY",
+      "title": "05 Dealer Credit Policy",
+      "section": "Auction and Transaction Systems",
+      "requested_filename": "05_DEALER_CREDIT_POLICY.md",
+      "path": "docs/12_AUCTION_AND_TRANSACTION_SYSTEMS/05_DEALER_CREDIT_POLICY.md",
+      "version": "0.1",
+      "owner": "Auction operations",
+      "depends_on_sections": [
+        "01",
+        "03",
+        "08",
+        "09"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 1872,
+      "sha256": "0fea83155b6855596926149d3354e0411ef3e907f9696867064a36038f38c4b4"
+    },
+    {
+      "id": "12/06_TRANSACTION_LIFECYCLE",
+      "title": "06 Transaction Lifecycle",
+      "section": "Auction and Transaction Systems",
+      "requested_filename": "06_TRANSACTION_LIFECYCLE.md",
+      "path": "docs/12_AUCTION_AND_TRANSACTION_SYSTEMS/06_TRANSACTION_LIFECYCLE.md",
+      "version": "0.1",
+      "owner": "Auction operations",
+      "depends_on_sections": [
+        "01",
+        "03",
+        "08",
+        "09"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2194,
+      "sha256": "30c37ed91d4ff803938a1ea9dead3e76db1ac849180625f92ddf65ce6f0ad4bf"
+    },
+    {
+      "id": "12/07_CONTRACT_WORKFLOW",
+      "title": "07 Contract Workflow",
+      "section": "Auction and Transaction Systems",
+      "requested_filename": "07_CONTRACT_WORKFLOW.md",
+      "path": "docs/12_AUCTION_AND_TRANSACTION_SYSTEMS/07_CONTRACT_WORKFLOW.md",
+      "version": "0.1",
+      "owner": "Auction operations",
+      "depends_on_sections": [
+        "01",
+        "03",
+        "08",
+        "09"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 3985,
+      "sha256": "ae4ed3aa0b041d478ac85a90d22e57deb59a72feb14c02f67cadca5d2e899a27"
+    },
+    {
+      "id": "12/08_SETTLEMENT_MODEL",
+      "title": "08 Settlement Model",
+      "section": "Auction and Transaction Systems",
+      "requested_filename": "08_SETTLEMENT_MODEL.md",
+      "path": "docs/12_AUCTION_AND_TRANSACTION_SYSTEMS/08_SETTLEMENT_MODEL.md",
+      "version": "0.1",
+      "owner": "Auction operations",
+      "depends_on_sections": [
+        "01",
+        "03",
+        "08",
+        "09"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2080,
+      "sha256": "c5e8a11f9c22e68a1f6d80e6b13016da4caa75531fa7a9db830842387e496532"
+    },
+    {
+      "id": "12/09_FINANCIAL_LEDGER",
+      "title": "09 Financial Ledger",
+      "section": "Auction and Transaction Systems",
+      "requested_filename": "09_FINANCIAL_LEDGER.md",
+      "path": "docs/12_AUCTION_AND_TRANSACTION_SYSTEMS/09_FINANCIAL_LEDGER.md",
+      "version": "0.3",
+      "owner": "Auction operations",
+      "depends_on_sections": [
+        "01",
+        "03",
+        "08",
+        "09"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 3900,
+      "sha256": "a8950caa80f913626b728453ebf9bbd24e6b51a2239c853d472601343d429271"
+    },
+    {
+      "id": "12/10_RECONCILIATION",
+      "title": "10 Reconciliation",
+      "section": "Auction and Transaction Systems",
+      "requested_filename": "10_RECONCILIATION.md",
+      "path": "docs/12_AUCTION_AND_TRANSACTION_SYSTEMS/10_RECONCILIATION.md",
+      "version": "0.1",
+      "owner": "Auction operations",
+      "depends_on_sections": [
+        "01",
+        "03",
+        "08",
+        "09"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2107,
+      "sha256": "f2aad3f15fd5501503ddc682b8a3f32958f73389ef72a35444ae241dab8472fe"
+    },
+    {
+      "id": "13/01_BRANCH_OPERATIONS",
+      "title": "01 Branch Operations",
+      "section": "Operational Systems",
+      "requested_filename": "01_BRANCH_OPERATIONS.md",
+      "path": "docs/13_OPERATIONAL_SYSTEMS/01_BRANCH_OPERATIONS.md",
+      "version": "0.1",
+      "owner": "Operations",
+      "depends_on_sections": [
+        "03",
+        "04",
+        "12"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2998,
+      "sha256": "41e94f7cb2f6d3919b75c408133a7c27d99966258dfc279ba861cc3ff05182b0"
+    },
+    {
+      "id": "13/02_INSPECTION_OPERATIONS",
+      "title": "02 Inspection Operations",
+      "section": "Operational Systems",
+      "requested_filename": "02_INSPECTION_OPERATIONS.md",
+      "path": "docs/13_OPERATIONAL_SYSTEMS/02_INSPECTION_OPERATIONS.md",
+      "version": "0.1",
+      "owner": "Operations",
+      "depends_on_sections": [
+        "03",
+        "04",
+        "12"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2965,
+      "sha256": "68100588de4f18b9817771c192c0bb415c70ce407b903efd2359f449fa601f7f"
+    },
+    {
+      "id": "13/03_CRM_OPERATIONS",
+      "title": "03 Crm Operations",
+      "section": "Operational Systems",
+      "requested_filename": "03_CRM_OPERATIONS.md",
+      "path": "docs/13_OPERATIONAL_SYSTEMS/03_CRM_OPERATIONS.md",
+      "version": "0.1",
+      "owner": "Operations",
+      "depends_on_sections": [
+        "03",
+        "04",
+        "12"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2680,
+      "sha256": "ec88e895b97c0466324b04ea16a33cb6b8f667652486b98d724818aa3c08a72e"
+    },
+    {
+      "id": "13/04_LOGISTICS_OPERATIONS",
+      "title": "04 Logistics Operations",
+      "section": "Operational Systems",
+      "requested_filename": "04_LOGISTICS_OPERATIONS.md",
+      "path": "docs/13_OPERATIONAL_SYSTEMS/04_LOGISTICS_OPERATIONS.md",
+      "version": "0.1",
+      "owner": "Operations",
+      "depends_on_sections": [
+        "03",
+        "04",
+        "12"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2417,
+      "sha256": "18dc5677fe39cdc4296f104d99a38d0d989666e44c75101f402669c41f022415"
+    },
+    {
+      "id": "13/05_SUPPORT_OPERATIONS",
+      "title": "05 Support Operations",
+      "section": "Operational Systems",
+      "requested_filename": "05_SUPPORT_OPERATIONS.md",
+      "path": "docs/13_OPERATIONAL_SYSTEMS/05_SUPPORT_OPERATIONS.md",
+      "version": "0.1",
+      "owner": "Operations",
+      "depends_on_sections": [
+        "03",
+        "04",
+        "12"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2470,
+      "sha256": "5119c1c157f36f2d2644916434fc51bb6debdebd330796f9d9d43a99073f6e9c"
+    },
+    {
+      "id": "13/06_WARRANTY_AND_DISPUTES",
+      "title": "06 Warranty And Disputes",
+      "section": "Operational Systems",
+      "requested_filename": "06_WARRANTY_AND_DISPUTES.md",
+      "path": "docs/13_OPERATIONAL_SYSTEMS/06_WARRANTY_AND_DISPUTES.md",
+      "version": "0.1",
+      "owner": "Operations",
+      "depends_on_sections": [
+        "03",
+        "04",
+        "12"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2550,
+      "sha256": "dceb3079c53d64bdc5069cf20578e6d16bbd530032f75bb7a395f5d7b5058499"
+    },
+    {
+      "id": "13/07_NOTIFICATION_WORKFLOWS",
+      "title": "07 Notification Workflows",
+      "section": "Operational Systems",
+      "requested_filename": "07_NOTIFICATION_WORKFLOWS.md",
+      "path": "docs/13_OPERATIONAL_SYSTEMS/07_NOTIFICATION_WORKFLOWS.md",
+      "version": "0.1",
+      "owner": "Operations",
+      "depends_on_sections": [
+        "03",
+        "04",
+        "12"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2747,
+      "sha256": "319abfa537d09f5026cdbec251debf6e9e01811fc0cc96f11b13da7547c71842"
+    },
+    {
+      "id": "13/08_OPERATIONS_SLA",
+      "title": "08 Operations Sla",
+      "section": "Operational Systems",
+      "requested_filename": "08_OPERATIONS_SLA.md",
+      "path": "docs/13_OPERATIONAL_SYSTEMS/08_OPERATIONS_SLA.md",
+      "version": "0.1",
+      "owner": "Operations",
+      "depends_on_sections": [
+        "03",
+        "04",
+        "12"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 3008,
+      "sha256": "f69bd01a941de1fead4b81f18285ea3f003f8cbaa865cabfef39e73c4cacb1ad"
+    },
+    {
+      "id": "14/01_SECURITY_ARCHITECTURE",
+      "title": "01 Security Architecture",
+      "section": "Security and Compliance",
+      "requested_filename": "01_SECURITY_ARCHITECTURE.md",
+      "path": "docs/14_SECURITY_AND_COMPLIANCE/01_SECURITY_ARCHITECTURE.md",
+      "version": "0.1",
+      "owner": "Security",
+      "depends_on_sections": [
+        "08",
+        "09",
+        "10",
+        "12"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2628,
+      "sha256": "8265cdb47816544a01aa6f5f593908b4cd0714b13131079c6784680da4399fa9"
+    },
+    {
+      "id": "14/02_THREAT_MODEL",
+      "title": "02 Threat Model",
+      "section": "Security and Compliance",
+      "requested_filename": "02_THREAT_MODEL.md",
+      "path": "docs/14_SECURITY_AND_COMPLIANCE/02_THREAT_MODEL.md",
+      "version": "0.3",
+      "owner": "Security",
+      "depends_on_sections": [
+        "08",
+        "09",
+        "10",
+        "12"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 5864,
+      "sha256": "886e3ad4d20cf481acda10b157b23242cb6a2fb1eae2f307990d7693250a8c92"
+    },
+    {
+      "id": "14/03_IDENTITY_AND_ACCESS",
+      "title": "03 Identity And Access",
+      "section": "Security and Compliance",
+      "requested_filename": "03_IDENTITY_AND_ACCESS.md",
+      "path": "docs/14_SECURITY_AND_COMPLIANCE/03_IDENTITY_AND_ACCESS.md",
+      "version": "0.3",
+      "owner": "Security",
+      "depends_on_sections": [
+        "08",
+        "09",
+        "10",
+        "12"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 5042,
+      "sha256": "79b565e62d6091c2de463c4934f4b2736f32c1698d5f13e3eb036293c1c58143"
+    },
+    {
+      "id": "14/04_DATA_PROTECTION",
+      "title": "04 Data Protection",
+      "section": "Security and Compliance",
+      "requested_filename": "04_DATA_PROTECTION.md",
+      "path": "docs/14_SECURITY_AND_COMPLIANCE/04_DATA_PROTECTION.md",
+      "version": "0.1",
+      "owner": "Security",
+      "depends_on_sections": [
+        "08",
+        "09",
+        "10",
+        "12"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2336,
+      "sha256": "d4fca7df555304c6db7af84efbfaf72f7df03e298134d35dc8b1384493c422fe"
+    },
+    {
+      "id": "14/05_SECURE_FILE_HANDLING",
+      "title": "05 Secure File Handling",
+      "section": "Security and Compliance",
+      "requested_filename": "05_SECURE_FILE_HANDLING.md",
+      "path": "docs/14_SECURITY_AND_COMPLIANCE/05_SECURE_FILE_HANDLING.md",
+      "version": "0.3",
+      "owner": "Security",
+      "depends_on_sections": [
+        "08",
+        "09",
+        "10",
+        "12"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 3881,
+      "sha256": "9301ceb7e072bf3f9f7fce5f75a36ffaf0083c9e0af034fea4f5aa21e22905b8"
+    },
+    {
+      "id": "14/06_AUCTION_SECURITY",
+      "title": "06 Auction Security",
+      "section": "Security and Compliance",
+      "requested_filename": "06_AUCTION_SECURITY.md",
+      "path": "docs/14_SECURITY_AND_COMPLIANCE/06_AUCTION_SECURITY.md",
+      "version": "0.1",
+      "owner": "Security",
+      "depends_on_sections": [
+        "08",
+        "09",
+        "10",
+        "12"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2476,
+      "sha256": "972c6f0524c702e826d149049919744d91a9f8f37f9f3e130b4a1f9c41103f1d"
+    },
+    {
+      "id": "14/07_FINANCIAL_SECURITY",
+      "title": "07 Financial Security",
+      "section": "Security and Compliance",
+      "requested_filename": "07_FINANCIAL_SECURITY.md",
+      "path": "docs/14_SECURITY_AND_COMPLIANCE/07_FINANCIAL_SECURITY.md",
+      "version": "0.1",
+      "owner": "Security",
+      "depends_on_sections": [
+        "08",
+        "09",
+        "10",
+        "12"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2347,
+      "sha256": "f19d771534191c525d61dd204c227d33125382f0ee8e8fdece5d8de5a71000c3"
+    },
+    {
+      "id": "14/08_PRIVACY_AND_CONSENT",
+      "title": "08 Privacy And Consent",
+      "section": "Security and Compliance",
+      "requested_filename": "08_PRIVACY_AND_CONSENT.md",
+      "path": "docs/14_SECURITY_AND_COMPLIANCE/08_PRIVACY_AND_CONSENT.md",
+      "version": "0.1",
+      "owner": "Security",
+      "depends_on_sections": [
+        "08",
+        "09",
+        "10",
+        "12"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2208,
+      "sha256": "cbbb68e321444cd9113ec0a65aea1bd97468717339356127622442d87799678d"
+    },
+    {
+      "id": "14/09_SECURITY_TESTING",
+      "title": "09 Security Testing",
+      "section": "Security and Compliance",
+      "requested_filename": "09_SECURITY_TESTING.md",
+      "path": "docs/14_SECURITY_AND_COMPLIANCE/09_SECURITY_TESTING.md",
+      "version": "0.1",
+      "owner": "Security",
+      "depends_on_sections": [
+        "08",
+        "09",
+        "10",
+        "12"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2405,
+      "sha256": "f078d5218583cef8ce38a2d137c517959f22ecb3d0503db0e6e31886ef817dcf"
+    },
+    {
+      "id": "14/10_INCIDENT_RESPONSE",
+      "title": "10 Incident Response",
+      "section": "Security and Compliance",
+      "requested_filename": "10_INCIDENT_RESPONSE.md",
+      "path": "docs/14_SECURITY_AND_COMPLIANCE/10_INCIDENT_RESPONSE.md",
+      "version": "0.1",
+      "owner": "Security",
+      "depends_on_sections": [
+        "08",
+        "09",
+        "10",
+        "12"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2557,
+      "sha256": "015fc732ecfc1ece0d011753285ec9c0199b1b3256e08b503012c3a802f0caf4"
+    },
+    {
+      "id": "14/11_COMPLIANCE_MATRIX",
+      "title": "11 Compliance Matrix",
+      "section": "Security and Compliance",
+      "requested_filename": "11_COMPLIANCE_MATRIX.md",
+      "path": "docs/14_SECURITY_AND_COMPLIANCE/11_COMPLIANCE_MATRIX.md",
+      "version": "0.1",
+      "owner": "Security",
+      "depends_on_sections": [
+        "08",
+        "09",
+        "10",
+        "12"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2980,
+      "sha256": "48e56f5f419c701612450e994162b41a41657dab6702815dbc156fc6a0779bb3"
+    },
+    {
+      "id": "15/01_MASTER_TEST_STRATEGY",
+      "title": "01 Master Test Strategy",
+      "section": "Quality Assurance",
+      "requested_filename": "01_MASTER_TEST_STRATEGY.md",
+      "path": "docs/15_QUALITY_ASSURANCE/01_MASTER_TEST_STRATEGY.md",
+      "version": "0.1",
+      "owner": "Quality",
+      "depends_on_sections": [
+        "02",
+        "03",
+        "04",
+        "08",
+        "10",
+        "14"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2607,
+      "sha256": "2205c1782647422fb33b6fe4991e0bf9951068af2879882ff65f1d43970619a9"
+    },
+    {
+      "id": "15/02_TEST_CASE_CATALOG",
+      "title": "02 Test Case Catalog",
+      "section": "Quality Assurance",
+      "requested_filename": "02_TEST_CASE_CATALOG.md",
+      "path": "docs/15_QUALITY_ASSURANCE/02_TEST_CASE_CATALOG.md",
+      "version": "0.1",
+      "owner": "Quality",
+      "depends_on_sections": [
+        "02",
+        "03",
+        "04",
+        "08",
+        "10",
+        "14"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 4404,
+      "sha256": "0942ec7eda879bc077c45bd69bc4ad2b19bf207c0af3961b29ba4a65111c1ed4"
+    },
+    {
+      "id": "15/03_API_TEST_PLAN",
+      "title": "03 Api Test Plan",
+      "section": "Quality Assurance",
+      "requested_filename": "03_API_TEST_PLAN.md",
+      "path": "docs/15_QUALITY_ASSURANCE/03_API_TEST_PLAN.md",
+      "version": "0.1",
+      "owner": "Quality",
+      "depends_on_sections": [
+        "02",
+        "03",
+        "04",
+        "08",
+        "10",
+        "14"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2290,
+      "sha256": "672ae8b0ada0175a9de6993307504a873d34e43e28c6e70aea575258c55dc86a"
+    },
+    {
+      "id": "15/04_E2E_TEST_PLAN",
+      "title": "04 E2E Test Plan",
+      "section": "Quality Assurance",
+      "requested_filename": "04_E2E_TEST_PLAN.md",
+      "path": "docs/15_QUALITY_ASSURANCE/04_E2E_TEST_PLAN.md",
+      "version": "0.1",
+      "owner": "Quality",
+      "depends_on_sections": [
+        "02",
+        "03",
+        "04",
+        "08",
+        "10",
+        "14"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2257,
+      "sha256": "3bd52e9368cd954a16d7d57713db02d13766cfd3329607f36df3a3b9fe48e27b"
+    },
+    {
+      "id": "15/05_PERFORMANCE_TEST_PLAN",
+      "title": "05 Performance Test Plan",
+      "section": "Quality Assurance",
+      "requested_filename": "05_PERFORMANCE_TEST_PLAN.md",
+      "path": "docs/15_QUALITY_ASSURANCE/05_PERFORMANCE_TEST_PLAN.md",
+      "version": "0.1",
+      "owner": "Quality",
+      "depends_on_sections": [
+        "02",
+        "03",
+        "04",
+        "08",
+        "10",
+        "14"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2396,
+      "sha256": "c9532a618f1207d9e2d7af3c4a7b77aeb2c88a08231d7b69347e10888dac7187"
+    },
+    {
+      "id": "15/06_SECURITY_TEST_PLAN",
+      "title": "06 Security Test Plan",
+      "section": "Quality Assurance",
+      "requested_filename": "06_SECURITY_TEST_PLAN.md",
+      "path": "docs/15_QUALITY_ASSURANCE/06_SECURITY_TEST_PLAN.md",
+      "version": "0.1",
+      "owner": "Quality",
+      "depends_on_sections": [
+        "02",
+        "03",
+        "04",
+        "08",
+        "10",
+        "14"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2048,
+      "sha256": "a3b1d84e7d37dbcd7978c59b8955290c72afdd557c57a0773f1a01773e7f9710"
+    },
+    {
+      "id": "15/07_ACCESSIBILITY_TEST_PLAN",
+      "title": "07 Accessibility Test Plan",
+      "section": "Quality Assurance",
+      "requested_filename": "07_ACCESSIBILITY_TEST_PLAN.md",
+      "path": "docs/15_QUALITY_ASSURANCE/07_ACCESSIBILITY_TEST_PLAN.md",
+      "version": "0.1",
+      "owner": "Quality",
+      "depends_on_sections": [
+        "02",
+        "03",
+        "04",
+        "08",
+        "10",
+        "14"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2206,
+      "sha256": "03e8e3a54feee9a7e39fc7e0407269dd62ac9cd2e4970605ffc90e52e9b77f3e"
+    },
+    {
+      "id": "15/08_VISUAL_REGRESSION_PLAN",
+      "title": "08 Visual Regression Plan",
+      "section": "Quality Assurance",
+      "requested_filename": "08_VISUAL_REGRESSION_PLAN.md",
+      "path": "docs/15_QUALITY_ASSURANCE/08_VISUAL_REGRESSION_PLAN.md",
+      "version": "0.1",
+      "owner": "Quality",
+      "depends_on_sections": [
+        "02",
+        "03",
+        "04",
+        "08",
+        "10",
+        "14"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 1780,
+      "sha256": "f72b44b4880860ef01ef1bc466c48ccc60c7e81b0742aa79dfa758c1441563fb"
+    },
+    {
+      "id": "15/09_UAT_PLAN",
+      "title": "09 Uat Plan",
+      "section": "Quality Assurance",
+      "requested_filename": "09_UAT_PLAN.md",
+      "path": "docs/15_QUALITY_ASSURANCE/09_UAT_PLAN.md",
+      "version": "0.1",
+      "owner": "Quality",
+      "depends_on_sections": [
+        "02",
+        "03",
+        "04",
+        "08",
+        "10",
+        "14"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2284,
+      "sha256": "30b98b84096af78fa4feac9ddaaa18f076dce652d64e9d9fdf96e57f315c808d"
+    },
+    {
+      "id": "15/10_RELEASE_QUALITY_GATES",
+      "title": "10 Release Quality Gates",
+      "section": "Quality Assurance",
+      "requested_filename": "10_RELEASE_QUALITY_GATES.md",
+      "path": "docs/15_QUALITY_ASSURANCE/10_RELEASE_QUALITY_GATES.md",
+      "version": "0.1",
+      "owner": "Quality",
+      "depends_on_sections": [
+        "02",
+        "03",
+        "04",
+        "08",
+        "10",
+        "14"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2428,
+      "sha256": "c7a7f4c52f7e69135bd93cba3451b4d1fea084722f7e0ec80f02a79c9da0398c"
+    },
+    {
+      "id": "16/01_SEO_STRATEGY",
+      "title": "01 Seo Strategy",
+      "section": "SEO and Content",
+      "requested_filename": "01_SEO_STRATEGY.md",
+      "path": "docs/16_SEO_AND_CONTENT/01_SEO_STRATEGY.md",
+      "version": "0.1",
+      "owner": "SEO",
+      "depends_on_sections": [
+        "05",
+        "08",
+        "11"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 3050,
+      "sha256": "e847d36072a250b3edc79742a8b80697f99d7f4a4a56d57e6562ed6dd85d41b1"
+    },
+    {
+      "id": "16/02_TECHNICAL_SEO",
+      "title": "02 Technical Seo",
+      "section": "SEO and Content",
+      "requested_filename": "02_TECHNICAL_SEO.md",
+      "path": "docs/16_SEO_AND_CONTENT/02_TECHNICAL_SEO.md",
+      "version": "0.1",
+      "owner": "SEO",
+      "depends_on_sections": [
+        "05",
+        "08",
+        "11"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 3045,
+      "sha256": "da1be5998fe3dd636b807fea2f2a1c305059b022ba302b3f9d132e754ca32c85"
+    },
+    {
+      "id": "16/03_PROGRAMMATIC_SEO",
+      "title": "03 Programmatic Seo",
+      "section": "SEO and Content",
+      "requested_filename": "03_PROGRAMMATIC_SEO.md",
+      "path": "docs/16_SEO_AND_CONTENT/03_PROGRAMMATIC_SEO.md",
+      "version": "0.1",
+      "owner": "SEO",
+      "depends_on_sections": [
+        "05",
+        "08",
+        "11"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2426,
+      "sha256": "d8fd6440c96b3949b5248dfe06c11387a22d67f18a3ad470eaa4f8acb6ba5945"
+    },
+    {
+      "id": "16/04_URL_ARCHITECTURE",
+      "title": "04 Url Architecture",
+      "section": "SEO and Content",
+      "requested_filename": "04_URL_ARCHITECTURE.md",
+      "path": "docs/16_SEO_AND_CONTENT/04_URL_ARCHITECTURE.md",
+      "version": "0.1",
+      "owner": "SEO",
+      "depends_on_sections": [
+        "05",
+        "08",
+        "11"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2624,
+      "sha256": "1c4026b625dcb5b3755ca5f16dbf853216d69b111de3d5682272b25a9f0f7cbd"
+    },
+    {
+      "id": "16/05_CONTENT_STRATEGY",
+      "title": "05 Content Strategy",
+      "section": "SEO and Content",
+      "requested_filename": "05_CONTENT_STRATEGY.md",
+      "path": "docs/16_SEO_AND_CONTENT/05_CONTENT_STRATEGY.md",
+      "version": "0.1",
+      "owner": "SEO",
+      "depends_on_sections": [
+        "05",
+        "08",
+        "11"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2443,
+      "sha256": "1c3189f95e1b4cc219a6809a2a6872407af6d3e548a6b198e5a8f53fee3ee38e"
+    },
+    {
+      "id": "16/06_CMS_ARCHITECTURE",
+      "title": "06 Cms Architecture",
+      "section": "SEO and Content",
+      "requested_filename": "06_CMS_ARCHITECTURE.md",
+      "path": "docs/16_SEO_AND_CONTENT/06_CMS_ARCHITECTURE.md",
+      "version": "0.1",
+      "owner": "SEO",
+      "depends_on_sections": [
+        "05",
+        "08",
+        "11"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2247,
+      "sha256": "b6cd8c267d737e70b9937b886af2380d1823024ae31b33da35628a6f2580f082"
+    },
+    {
+      "id": "16/07_STRUCTURED_DATA",
+      "title": "07 Structured Data",
+      "section": "SEO and Content",
+      "requested_filename": "07_STRUCTURED_DATA.md",
+      "path": "docs/16_SEO_AND_CONTENT/07_STRUCTURED_DATA.md",
+      "version": "0.1",
+      "owner": "SEO",
+      "depends_on_sections": [
+        "05",
+        "08",
+        "11"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2079,
+      "sha256": "f40ab1631bf761dc6e6f78eec13e03d22024db11d2edf00f31237ba3bd0a40d4"
+    },
+    {
+      "id": "16/08_INTERNAL_LINKING",
+      "title": "08 Internal Linking",
+      "section": "SEO and Content",
+      "requested_filename": "08_INTERNAL_LINKING.md",
+      "path": "docs/16_SEO_AND_CONTENT/08_INTERNAL_LINKING.md",
+      "version": "0.1",
+      "owner": "SEO",
+      "depends_on_sections": [
+        "05",
+        "08",
+        "11"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 1895,
+      "sha256": "a94e484b007fd11709424e73e5bf32a3326e06d95ddbad206b86c311c490b1c5"
+    },
+    {
+      "id": "16/09_INDEXATION_RULES",
+      "title": "09 Indexation Rules",
+      "section": "SEO and Content",
+      "requested_filename": "09_INDEXATION_RULES.md",
+      "path": "docs/16_SEO_AND_CONTENT/09_INDEXATION_RULES.md",
+      "version": "0.1",
+      "owner": "SEO",
+      "depends_on_sections": [
+        "05",
+        "08",
+        "11"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2525,
+      "sha256": "1ec436ca8ed802e15bd7b5c180d159256b99eecdeedc8ca7391e9f1f4e6c3b28"
+    },
+    {
+      "id": "16/10_SEO_MEASUREMENT",
+      "title": "10 Seo Measurement",
+      "section": "SEO and Content",
+      "requested_filename": "10_SEO_MEASUREMENT.md",
+      "path": "docs/16_SEO_AND_CONTENT/10_SEO_MEASUREMENT.md",
+      "version": "0.1",
+      "owner": "SEO",
+      "depends_on_sections": [
+        "05",
+        "08",
+        "11"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2535,
+      "sha256": "5577f83acce36695c202096229abc9dfd3048ab32b9b71e0796e66fcefcea4b1"
+    },
+    {
+      "id": "17/01_ANALYTICS_ARCHITECTURE",
+      "title": "01 Analytics Architecture",
+      "section": "Analytics and Intelligence",
+      "requested_filename": "01_ANALYTICS_ARCHITECTURE.md",
+      "path": "docs/17_ANALYTICS_AND_INTELLIGENCE/01_ANALYTICS_ARCHITECTURE.md",
+      "version": "0.1",
+      "owner": "Data science",
+      "depends_on_sections": [
+        "02",
+        "03",
+        "09"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 3215,
+      "sha256": "4d6ca0c0a02402ba66f76d2ec568bbd3bd157ec9ea92895d89a9570235125967"
+    },
+    {
+      "id": "17/02_EVENT_TRACKING_PLAN",
+      "title": "02 Event Tracking Plan",
+      "section": "Analytics and Intelligence",
+      "requested_filename": "02_EVENT_TRACKING_PLAN.md",
+      "path": "docs/17_ANALYTICS_AND_INTELLIGENCE/02_EVENT_TRACKING_PLAN.md",
+      "version": "0.1",
+      "owner": "Data science",
+      "depends_on_sections": [
+        "02",
+        "03",
+        "09"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 7579,
+      "sha256": "743b9809dc1dfd1c553699e4778d975c8af459376938a41d6128e31452cbcf51"
+    },
+    {
+      "id": "17/03_KPI_DICTIONARY",
+      "title": "03 Kpi Dictionary",
+      "section": "Analytics and Intelligence",
+      "requested_filename": "03_KPI_DICTIONARY.md",
+      "path": "docs/17_ANALYTICS_AND_INTELLIGENCE/03_KPI_DICTIONARY.md",
+      "version": "0.1",
+      "owner": "Data science",
+      "depends_on_sections": [
+        "02",
+        "03",
+        "09"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 8454,
+      "sha256": "0ea11210bf7612b1683a61baf459851d69838aecb1eac80131982d771d55cba5"
+    },
+    {
+      "id": "17/04_DASHBOARD_CATALOG",
+      "title": "04 Dashboard Catalog",
+      "section": "Analytics and Intelligence",
+      "requested_filename": "04_DASHBOARD_CATALOG.md",
+      "path": "docs/17_ANALYTICS_AND_INTELLIGENCE/04_DASHBOARD_CATALOG.md",
+      "version": "0.1",
+      "owner": "Data science",
+      "depends_on_sections": [
+        "02",
+        "03",
+        "09"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2872,
+      "sha256": "27074c4465481592ec709d8e025393900600658ef99104e28a017270efe7f93f"
+    },
+    {
+      "id": "17/05_FUNNEL_ANALYSIS",
+      "title": "05 Funnel Analysis",
+      "section": "Analytics and Intelligence",
+      "requested_filename": "05_FUNNEL_ANALYSIS.md",
+      "path": "docs/17_ANALYTICS_AND_INTELLIGENCE/05_FUNNEL_ANALYSIS.md",
+      "version": "0.1",
+      "owner": "Data science",
+      "depends_on_sections": [
+        "02",
+        "03",
+        "09"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2896,
+      "sha256": "505142262bb3bcf594f71441023bb00da57050a8e8da45cafbef97aa761ebcb5"
+    },
+    {
+      "id": "17/06_EXPERIMENTATION_PLAN",
+      "title": "06 Experimentation Plan",
+      "section": "Analytics and Intelligence",
+      "requested_filename": "06_EXPERIMENTATION_PLAN.md",
+      "path": "docs/17_ANALYTICS_AND_INTELLIGENCE/06_EXPERIMENTATION_PLAN.md",
+      "version": "0.1",
+      "owner": "Data science",
+      "depends_on_sections": [
+        "02",
+        "03",
+        "09"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2371,
+      "sha256": "2c868a8f48107d7200c291008aca1755e34cf240c8731c89847864c8e7b8470b"
+    },
+    {
+      "id": "17/07_VEHICLE_PRICING_MODELS",
+      "title": "07 Vehicle Pricing Models",
+      "section": "Analytics and Intelligence",
+      "requested_filename": "07_VEHICLE_PRICING_MODELS.md",
+      "path": "docs/17_ANALYTICS_AND_INTELLIGENCE/07_VEHICLE_PRICING_MODELS.md",
+      "version": "0.1",
+      "owner": "Data science",
+      "depends_on_sections": [
+        "02",
+        "03",
+        "09"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2901,
+      "sha256": "2369a0467728381fbb85397295a49dfba64b47eb0f45d7c88475e49adeb99bf3"
+    },
+    {
+      "id": "17/08_DATA_QUALITY",
+      "title": "08 Data Quality",
+      "section": "Analytics and Intelligence",
+      "requested_filename": "08_DATA_QUALITY.md",
+      "path": "docs/17_ANALYTICS_AND_INTELLIGENCE/08_DATA_QUALITY.md",
+      "version": "0.1",
+      "owner": "Data science",
+      "depends_on_sections": [
+        "02",
+        "03",
+        "09"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2669,
+      "sha256": "2bc50af01aa6cbe3b0f0ccbf53f9c9aba790b44f1725916275873ab2dd900e19"
+    },
+    {
+      "id": "17/09_MODEL_GOVERNANCE",
+      "title": "09 Model Governance",
+      "section": "Analytics and Intelligence",
+      "requested_filename": "09_MODEL_GOVERNANCE.md",
+      "path": "docs/17_ANALYTICS_AND_INTELLIGENCE/09_MODEL_GOVERNANCE.md",
+      "version": "0.1",
+      "owner": "Data science",
+      "depends_on_sections": [
+        "02",
+        "03",
+        "09"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2696,
+      "sha256": "0b3398d0df1d71f0fb9168a0eb6e9e3c8223ced7393061220cfc687ab58a65db"
+    },
+    {
+      "id": "18/01_INFRASTRUCTURE_ARCHITECTURE",
+      "title": "01 Infrastructure Architecture",
+      "section": "Infrastructure and DevOps",
+      "requested_filename": "01_INFRASTRUCTURE_ARCHITECTURE.md",
+      "path": "docs/18_INFRASTRUCTURE_AND_DEVOPS/01_INFRASTRUCTURE_ARCHITECTURE.md",
+      "version": "0.1",
+      "owner": "SRE",
+      "depends_on_sections": [
+        "08",
+        "10",
+        "14"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2544,
+      "sha256": "852d1a8db2de680d357f9c40406c65216bf90187db2900f9cbabd6a86f263cad"
+    },
+    {
+      "id": "18/02_ENVIRONMENT_STRATEGY",
+      "title": "02 Environment Strategy",
+      "section": "Infrastructure and DevOps",
+      "requested_filename": "02_ENVIRONMENT_STRATEGY.md",
+      "path": "docs/18_INFRASTRUCTURE_AND_DEVOPS/02_ENVIRONMENT_STRATEGY.md",
+      "version": "0.1",
+      "owner": "SRE",
+      "depends_on_sections": [
+        "08",
+        "10",
+        "14"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2019,
+      "sha256": "ab3632f1b7603308ff1bd57e539d056cca8dcdb5f6c04b64881b6c9218495bb0"
+    },
+    {
+      "id": "18/03_CICD_STRATEGY",
+      "title": "03 Cicd Strategy",
+      "section": "Infrastructure and DevOps",
+      "requested_filename": "03_CICD_STRATEGY.md",
+      "path": "docs/18_INFRASTRUCTURE_AND_DEVOPS/03_CICD_STRATEGY.md",
+      "version": "0.3",
+      "owner": "SRE",
+      "depends_on_sections": [
+        "08",
+        "10",
+        "14"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 3398,
+      "sha256": "ef8f8aa41f00f51982a7d06ffdfa4d30b7147636474b9736e5e022c3baf60276"
+    },
+    {
+      "id": "18/04_OBSERVABILITY",
+      "title": "04 Observability",
+      "section": "Infrastructure and DevOps",
+      "requested_filename": "04_OBSERVABILITY.md",
+      "path": "docs/18_INFRASTRUCTURE_AND_DEVOPS/04_OBSERVABILITY.md",
+      "version": "0.3",
+      "owner": "SRE",
+      "depends_on_sections": [
+        "08",
+        "10",
+        "14"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 4449,
+      "sha256": "10565e1f65ab1078c25ea00617d45b332aa42b4a0b1ef16b89ea502d63da80da"
+    },
+    {
+      "id": "18/05_CAPACITY_PLANNING",
+      "title": "05 Capacity Planning",
+      "section": "Infrastructure and DevOps",
+      "requested_filename": "05_CAPACITY_PLANNING.md",
+      "path": "docs/18_INFRASTRUCTURE_AND_DEVOPS/05_CAPACITY_PLANNING.md",
+      "version": "0.1",
+      "owner": "SRE",
+      "depends_on_sections": [
+        "08",
+        "10",
+        "14"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2395,
+      "sha256": "bc49d029c85dfcef606878dc295d75dfdfde6531fa35ab72bde983dec27fdef9"
+    },
+    {
+      "id": "18/06_SCALABILITY",
+      "title": "06 Scalability",
+      "section": "Infrastructure and DevOps",
+      "requested_filename": "06_SCALABILITY.md",
+      "path": "docs/18_INFRASTRUCTURE_AND_DEVOPS/06_SCALABILITY.md",
+      "version": "0.1",
+      "owner": "SRE",
+      "depends_on_sections": [
+        "08",
+        "10",
+        "14"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2050,
+      "sha256": "b361ef1f9ae381defb6442019d46bd43e25baa199aac41f9e60d16a17de6e8d6"
+    },
+    {
+      "id": "18/07_BACKUP_AND_RECOVERY",
+      "title": "07 Backup And Recovery",
+      "section": "Infrastructure and DevOps",
+      "requested_filename": "07_BACKUP_AND_RECOVERY.md",
+      "path": "docs/18_INFRASTRUCTURE_AND_DEVOPS/07_BACKUP_AND_RECOVERY.md",
+      "version": "0.3",
+      "owner": "SRE",
+      "depends_on_sections": [
+        "08",
+        "10",
+        "14"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 4340,
+      "sha256": "25df3a60f5d6e551752d1f9e6468650f8b7de19651378bc612d4935b05ff0d1a"
+    },
+    {
+      "id": "18/08_INCIDENT_MANAGEMENT",
+      "title": "08 Incident Management",
+      "section": "Infrastructure and DevOps",
+      "requested_filename": "08_INCIDENT_MANAGEMENT.md",
+      "path": "docs/18_INFRASTRUCTURE_AND_DEVOPS/08_INCIDENT_MANAGEMENT.md",
+      "version": "0.1",
+      "owner": "SRE",
+      "depends_on_sections": [
+        "08",
+        "10",
+        "14"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2221,
+      "sha256": "248008fc92b5ad627f4b895cd06e6787bea0a3330812dffb22090c65fe12efe8"
+    },
+    {
+      "id": "18/09_INFRASTRUCTURE_COSTS",
+      "title": "09 Infrastructure Costs",
+      "section": "Infrastructure and DevOps",
+      "requested_filename": "09_INFRASTRUCTURE_COSTS.md",
+      "path": "docs/18_INFRASTRUCTURE_AND_DEVOPS/09_INFRASTRUCTURE_COSTS.md",
+      "version": "0.1",
+      "owner": "SRE",
+      "depends_on_sections": [
+        "08",
+        "10",
+        "14"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2047,
+      "sha256": "cb37723fbf6c820da6c4b3b9e3cf2ebe7dcac7f4d8e74264800a9677a5099c9a"
+    },
+    {
+      "id": "18/10_OPERATIONS_RUNBOOKS",
+      "title": "10 Operations Runbooks",
+      "section": "Infrastructure and DevOps",
+      "requested_filename": "10_OPERATIONS_RUNBOOKS.md",
+      "path": "docs/18_INFRASTRUCTURE_AND_DEVOPS/10_OPERATIONS_RUNBOOKS.md",
+      "version": "0.3",
+      "owner": "SRE",
+      "depends_on_sections": [
+        "08",
+        "10",
+        "14"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 5194,
+      "sha256": "6878afcee6ad07b327c314d9d07f701c8817df12c57ec99922828ecce1812062"
+    },
+    {
+      "id": "19/01_TEAM_STRUCTURE",
+      "title": "01 Team Structure",
+      "section": "Delivery and Organization",
+      "requested_filename": "01_TEAM_STRUCTURE.md",
+      "path": "docs/19_DELIVERY_AND_ORGANIZATION/01_TEAM_STRUCTURE.md",
+      "version": "0.1",
+      "owner": "Delivery",
+      "depends_on_sections": [
+        "02",
+        "03",
+        "08",
+        "15"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 4727,
+      "sha256": "59a4275a7878dc6248205b6352cb03c944a98df214bbe95af8f1d54000e567c8"
+    },
+    {
+      "id": "19/02_RACI_MATRIX",
+      "title": "02 Raci Matrix",
+      "section": "Delivery and Organization",
+      "requested_filename": "02_RACI_MATRIX.md",
+      "path": "docs/19_DELIVERY_AND_ORGANIZATION/02_RACI_MATRIX.md",
+      "version": "0.1",
+      "owner": "Delivery",
+      "depends_on_sections": [
+        "02",
+        "03",
+        "08",
+        "15"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2258,
+      "sha256": "e3442a08b9448c6afdd00cf9675e9a10e4ba8ee5bc223d0f31b25e3bdd7442a5"
+    },
+    {
+      "id": "19/03_IMPLEMENTATION_WORK_BREAKDOWN",
+      "title": "03 Implementation Work Breakdown",
+      "section": "Delivery and Organization",
+      "requested_filename": "03_IMPLEMENTATION_WORK_BREAKDOWN.md",
+      "path": "docs/19_DELIVERY_AND_ORGANIZATION/03_IMPLEMENTATION_WORK_BREAKDOWN.md",
+      "version": "0.1",
+      "owner": "Delivery",
+      "depends_on_sections": [
+        "02",
+        "03",
+        "08",
+        "15"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 3012,
+      "sha256": "757690473f9ec5eea4e024b834310ae718e636f9745cb39e108fb859e790ebda"
+    },
+    {
+      "id": "19/04_DEPENDENCY_MAP",
+      "title": "04 Dependency Map",
+      "section": "Delivery and Organization",
+      "requested_filename": "04_DEPENDENCY_MAP.md",
+      "path": "docs/19_DELIVERY_AND_ORGANIZATION/04_DEPENDENCY_MAP.md",
+      "version": "0.1",
+      "owner": "Delivery",
+      "depends_on_sections": [
+        "02",
+        "03",
+        "08",
+        "15"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2472,
+      "sha256": "e9269bfa9672d895c7e787989c575bea37705286f5edac5091dd320d5b6d197f"
+    },
+    {
+      "id": "19/05_MVP_PLAN",
+      "title": "05 Mvp Plan",
+      "section": "Delivery and Organization",
+      "requested_filename": "05_MVP_PLAN.md",
+      "path": "docs/19_DELIVERY_AND_ORGANIZATION/05_MVP_PLAN.md",
+      "version": "0.1",
+      "owner": "Delivery",
+      "depends_on_sections": [
+        "02",
+        "03",
+        "08",
+        "15"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2946,
+      "sha256": "26037a802b2a76d1ee7cd91822e5f515176a25c363dab73f082d6a1643804fa9"
+    },
+    {
+      "id": "19/06_FULL_PRODUCT_ROADMAP",
+      "title": "06 Full Product Roadmap",
+      "section": "Delivery and Organization",
+      "requested_filename": "06_FULL_PRODUCT_ROADMAP.md",
+      "path": "docs/19_DELIVERY_AND_ORGANIZATION/06_FULL_PRODUCT_ROADMAP.md",
+      "version": "0.1",
+      "owner": "Delivery",
+      "depends_on_sections": [
+        "02",
+        "03",
+        "08",
+        "15"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2947,
+      "sha256": "d9b8f8d22a7b532aadd705aa270ca91aefdc6f46299277cd0b51096cd7a71af4"
+    },
+    {
+      "id": "19/07_RESOURCE_AND_COST_ESTIMATES",
+      "title": "07 Resource And Cost Estimates",
+      "section": "Delivery and Organization",
+      "requested_filename": "07_RESOURCE_AND_COST_ESTIMATES.md",
+      "path": "docs/19_DELIVERY_AND_ORGANIZATION/07_RESOURCE_AND_COST_ESTIMATES.md",
+      "version": "0.1",
+      "owner": "Delivery",
+      "depends_on_sections": [
+        "02",
+        "03",
+        "08",
+        "15"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 3026,
+      "sha256": "24b8a5a0b44e1a13764f5199f4f4fef7496cfd8cd7c78147b3ec7b594868d7cb"
+    },
+    {
+      "id": "19/08_RISK_MITIGATION_PLAN",
+      "title": "08 Risk Mitigation Plan",
+      "section": "Delivery and Organization",
+      "requested_filename": "08_RISK_MITIGATION_PLAN.md",
+      "path": "docs/19_DELIVERY_AND_ORGANIZATION/08_RISK_MITIGATION_PLAN.md",
+      "version": "0.1",
+      "owner": "Delivery",
+      "depends_on_sections": [
+        "02",
+        "03",
+        "08",
+        "15"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2415,
+      "sha256": "ea620f966f59b386fbb88c83381f1c434f287472e89c403cb0a02673bf9e9684"
+    },
+    {
+      "id": "19/09_RELEASE_STRATEGY",
+      "title": "09 Release Strategy",
+      "section": "Delivery and Organization",
+      "requested_filename": "09_RELEASE_STRATEGY.md",
+      "path": "docs/19_DELIVERY_AND_ORGANIZATION/09_RELEASE_STRATEGY.md",
+      "version": "0.1",
+      "owner": "Delivery",
+      "depends_on_sections": [
+        "02",
+        "03",
+        "08",
+        "15"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 1991,
+      "sha256": "74337e7049ce1c93bdaea88ceae0f64b1bb01dcb1bed0a6e57a56058d313ebe8"
+    },
+    {
+      "id": "19/10_DEFINITION_OF_DONE",
+      "title": "10 Definition Of Done",
+      "section": "Delivery and Organization",
+      "requested_filename": "10_DEFINITION_OF_DONE.md",
+      "path": "docs/19_DELIVERY_AND_ORGANIZATION/10_DEFINITION_OF_DONE.md",
+      "version": "0.1",
+      "owner": "Delivery",
+      "depends_on_sections": [
+        "02",
+        "03",
+        "08",
+        "15"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2226,
+      "sha256": "d0a7c21daf525cb92cac394499c9e9985778970405b6bfa57be929bf449e70be"
+    },
+    {
+      "id": "20/01_IMPLEMENTATION_READINESS",
+      "title": "01 Implementation Readiness",
+      "section": "Implementation Handoff",
+      "requested_filename": "01_IMPLEMENTATION_READINESS.md",
+      "path": "docs/20_IMPLEMENTATION_HANDOFF/01_IMPLEMENTATION_READINESS.md",
+      "version": "0.3",
+      "owner": "Documentation architect",
+      "depends_on_sections": [
+        "00",
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 3146,
+      "sha256": "261a628c6c39c2e40f9efe9c8b887033b533cb171677fd3e20d620d7d2699494"
+    },
+    {
+      "id": "20/02_FINAL_REQUIREMENTS_BASELINE",
+      "title": "02 Final Requirements Baseline",
+      "section": "Implementation Handoff",
+      "requested_filename": "02_FINAL_REQUIREMENTS_BASELINE.md",
+      "path": "docs/20_IMPLEMENTATION_HANDOFF/02_FINAL_REQUIREMENTS_BASELINE.md",
+      "version": "0.3",
+      "owner": "Documentation architect",
+      "depends_on_sections": [
+        "00",
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 4115,
+      "sha256": "8908cb105946903a14a6e6ee72cdba0f867aa30c737597a321c45502453e2a57"
+    },
+    {
+      "id": "20/03_IMPLEMENTATION_READING_ORDER",
+      "title": "03 Implementation Reading Order",
+      "section": "Implementation Handoff",
+      "requested_filename": "03_IMPLEMENTATION_READING_ORDER.md",
+      "path": "docs/20_IMPLEMENTATION_HANDOFF/03_IMPLEMENTATION_READING_ORDER.md",
+      "version": "0.1",
+      "owner": "Documentation architect",
+      "depends_on_sections": [
+        "00",
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 3451,
+      "sha256": "c628078d9bc1965eff1342744d9ac0dcb54b74360c39e8b3e5d80eb4e5183a24"
+    },
+    {
+      "id": "20/04_MODULE_DEPENDENCY_ORDER",
+      "title": "04 Module Dependency Order",
+      "section": "Implementation Handoff",
+      "requested_filename": "04_MODULE_DEPENDENCY_ORDER.md",
+      "path": "docs/20_IMPLEMENTATION_HANDOFF/04_MODULE_DEPENDENCY_ORDER.md",
+      "version": "0.1",
+      "owner": "Documentation architect",
+      "depends_on_sections": [
+        "00",
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2946,
+      "sha256": "1fec704042e50b8c1463bb61a567948ebc56e519dce5197daaaf19bf9e656e57"
+    },
+    {
+      "id": "20/05_API_AND_SCHEMA_CONTRACTS",
+      "title": "05 Api And Schema Contracts",
+      "section": "Implementation Handoff",
+      "requested_filename": "05_API_AND_SCHEMA_CONTRACTS.md",
+      "path": "docs/20_IMPLEMENTATION_HANDOFF/05_API_AND_SCHEMA_CONTRACTS.md",
+      "version": "0.3",
+      "owner": "Documentation architect",
+      "depends_on_sections": [
+        "00",
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2184,
+      "sha256": "af74afc12d3d33eed64b8d545eaa6aa889a4d9fb8f1a29654ecb91a77516e61b"
+    },
+    {
+      "id": "20/06_DESIGN_ASSET_MANIFEST",
+      "title": "06 Design Asset Manifest",
+      "section": "Implementation Handoff",
+      "requested_filename": "06_DESIGN_ASSET_MANIFEST.md",
+      "path": "docs/20_IMPLEMENTATION_HANDOFF/06_DESIGN_ASSET_MANIFEST.md",
+      "version": "0.1",
+      "owner": "Documentation architect",
+      "depends_on_sections": [
+        "00",
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 2989,
+      "sha256": "a3400281c6b2676daeb2f09c1aad2800619933e118b858133ca1fb74c35464bb"
+    },
+    {
+      "id": "20/07_CONFIGURATION_CATALOG",
+      "title": "07 Configuration Catalog",
+      "section": "Implementation Handoff",
+      "requested_filename": "07_CONFIGURATION_CATALOG.md",
+      "path": "docs/20_IMPLEMENTATION_HANDOFF/07_CONFIGURATION_CATALOG.md",
+      "version": "0.1",
+      "owner": "Documentation architect",
+      "depends_on_sections": [
+        "00",
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 3707,
+      "sha256": "6faabc8019911f3f7ac86fe7af2b084c57d1034865a89872f80b55130915c92e"
+    },
+    {
+      "id": "20/08_ACCEPTANCE_GATE_CHECKLIST",
+      "title": "08 Acceptance Gate Checklist",
+      "section": "Implementation Handoff",
+      "requested_filename": "08_ACCEPTANCE_GATE_CHECKLIST.md",
+      "path": "docs/20_IMPLEMENTATION_HANDOFF/08_ACCEPTANCE_GATE_CHECKLIST.md",
+      "version": "0.1",
+      "owner": "Documentation architect",
+      "depends_on_sections": [
+        "00",
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 3133,
+      "sha256": "4cd2302f8a28832e3c6272b5aa037202a1fd837b04024461fb3ff9887da2ec3a"
+    },
+    {
+      "id": "20/09_UNRESOLVED_DECISIONS",
+      "title": "09 Unresolved Decisions",
+      "section": "Implementation Handoff",
+      "requested_filename": "09_UNRESOLVED_DECISIONS.md",
+      "path": "docs/20_IMPLEMENTATION_HANDOFF/09_UNRESOLVED_DECISIONS.md",
+      "version": "0.3",
+      "owner": "Documentation architect",
+      "depends_on_sections": [
+        "00",
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 3625,
+      "sha256": "0282d28363416eb1942ac01679365d0c43590e69a99d7e613a4beec588e03798"
+    },
+    {
+      "id": "20/10_IMPLEMENTATION_CONTEXT",
+      "title": "10 Implementation Context",
+      "section": "Implementation Handoff",
+      "requested_filename": "10_IMPLEMENTATION_CONTEXT.md",
+      "path": "docs/20_IMPLEMENTATION_HANDOFF/10_IMPLEMENTATION_CONTEXT.md",
+      "version": "0.3",
+      "owner": "Documentation architect",
+      "depends_on_sections": [
+        "00",
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19"
+      ],
+      "status": "proposed_documentation_pending_domain_approval",
+      "package_revision": "0.3",
+      "bytes": 5642,
+      "sha256": "3478f956f0010209bc86a112c988cf8b97d5fc062d4fad4a967acfa5085dc6b8"
+    }
+  ],
+  "supporting_artifacts": [
+    {
+      "id": "RESEARCH-00",
+      "path": "docs/00_RESEARCH_EVIDENCE.md",
+      "owner": "Research",
+      "version": "0.1",
+      "status": "proposed_documentation_pending_domain_approval",
+      "dependencies": [],
+      "package_revision": "0.3",
+      "bytes": 18405,
+      "sha256": "b4659bc698018833b8a410a87ca1a1b982a1960d6edf77b106a516b6b7b726e3"
+    },
+    {
+      "id": "BM-00",
+      "path": "docs/01_BUSINESS_MODEL_AND_OPERATIONS.md",
+      "owner": "Product and operations",
+      "version": "0.1",
+      "status": "proposed_documentation_pending_domain_approval",
+      "dependencies": [
+        "RESEARCH-00"
+      ],
+      "package_revision": "0.3",
+      "bytes": 32406,
+      "sha256": "3a2f5adcd4d93bfd256c8840cb134fbaeea7c5281ab7ca2ebda787523ff17a83"
+    },
+    {
+      "id": "DISC-02",
+      "path": "docs/02_PRODUCT_AND_PANEL_INVENTORY.md",
+      "owner": "Product and design",
+      "version": "0.1",
+      "status": "proposed_documentation_pending_domain_approval",
+      "dependencies": [
+        "RESEARCH-00",
+        "BM-00"
+      ],
+      "package_revision": "0.3",
+      "bytes": 24505,
+      "sha256": "07c9137a71c55eac2987cb09822d8fd5dca4d53121cb7d582e2498c9f22c8568"
+    },
+    {
+      "id": "DISC-AUDIT",
+      "path": "docs/03_BATCH_AUDIT_AND_CHECKPOINT.md",
+      "owner": "Documentation architect",
+      "version": "0.1",
+      "status": "proposed_documentation_pending_domain_approval",
+      "dependencies": [
+        "RESEARCH-00",
+        "BM-00",
+        "DISC-02"
+      ],
+      "package_revision": "0.3",
+      "bytes": 7047,
+      "sha256": "72905acbae348c060daa530a168786d111bc52df911644827a18a6e91c45ecbe"
+    },
+    {
+      "id": "SUP-04_ROLES_AND_PANELS-12_PANEL_CONTRACTS-md",
+      "title": "12 PANEL CONTRACTS",
+      "path": "docs/04_ROLES_AND_PANELS/12_PANEL_CONTRACTS.md",
+      "owner": "Documentation architect with owning domain reviewers",
+      "depends_on_sections": [],
+      "version": "0.3",
+      "package_revision": "0.3",
+      "bytes": 43499,
+      "sha256": "16c16a732123d17a3f0561a6284331f7d75eaf791ae29d2414c41de385ba8cb6",
+      "status": "proposed_documentation_pending_domain_approval"
+    },
+    {
+      "id": "SUP-05_UX_RESEARCH_AND_INFORMATION_ARCHITECTURE-10_SCREEN_CONTRACT_BINDINGS-md",
+      "title": "10 SCREEN CONTRACT BINDINGS",
+      "path": "docs/05_UX_RESEARCH_AND_INFORMATION_ARCHITECTURE/10_SCREEN_CONTRACT_BINDINGS.md",
+      "owner": "Documentation architect with owning domain reviewers",
+      "depends_on_sections": [],
+      "version": "0.3",
+      "package_revision": "0.3",
+      "bytes": 8831,
+      "sha256": "69e9cbad4c7158a40a9671017575fee5b10264538d82f6bfadb5e7ac01628ada",
+      "status": "proposed_documentation_pending_domain_approval"
+    },
+    {
+      "id": "SUP-09_DATA_ARCHITECTURE-10_FIELD_CONSTRAINTS-md",
+      "title": "10 FIELD CONSTRAINTS",
+      "path": "docs/09_DATA_ARCHITECTURE/10_FIELD_CONSTRAINTS.md",
+      "owner": "Documentation architect with owning domain reviewers",
+      "depends_on_sections": [],
+      "version": "0.3",
+      "package_revision": "0.3",
+      "bytes": 6325,
+      "sha256": "5832c8540d8eb415e5b89dbd0a7f0e79385b70ee7974235168e9a0d69bb9f674",
+      "status": "proposed_documentation_pending_domain_approval"
+    },
+    {
+      "id": "SUP-10_BACKEND_AND_APIS-12_OPERATION_INDEX-md",
+      "title": "12 OPERATION INDEX",
+      "path": "docs/10_BACKEND_AND_APIS/12_OPERATION_INDEX.md",
+      "owner": "Documentation architect with owning domain reviewers",
+      "depends_on_sections": [],
+      "version": "0.3",
+      "package_revision": "0.3",
+      "bytes": 11868,
+      "sha256": "71ef05b2dd048de0915386610f8c859f78398dfb83531013c80a7a20855f09d6",
+      "status": "proposed_documentation_pending_domain_approval"
+    },
+    {
+      "id": "SUP-10_BACKEND_AND_APIS-13_SCHEMA_FIELD_REFERENCE-md",
+      "title": "13 SCHEMA FIELD REFERENCE",
+      "path": "docs/10_BACKEND_AND_APIS/13_SCHEMA_FIELD_REFERENCE.md",
+      "owner": "Documentation architect with owning domain reviewers",
+      "depends_on_sections": [],
+      "version": "0.3",
+      "package_revision": "0.3",
+      "bytes": 158036,
+      "sha256": "09b5a1c6580a089bc4860191a37c8023833ead62d5bf8769d7456cafdaed617e",
+      "status": "proposed_documentation_pending_domain_approval"
+    },
+    {
+      "id": "SUP-19_DELIVERY_AND_ORGANIZATION-11_SPECIALIST_ROSTER-md",
+      "title": "11 SPECIALIST ROSTER",
+      "path": "docs/19_DELIVERY_AND_ORGANIZATION/11_SPECIALIST_ROSTER.md",
+      "owner": "Documentation architect with owning domain reviewers",
+      "depends_on_sections": [],
+      "version": "0.3",
+      "package_revision": "0.3",
+      "bytes": 83527,
+      "sha256": "c065f04c67b6a5b4eb3d34550c26004c5d3cc282da8cde9135dab0d9890b455b",
+      "status": "proposed_documentation_pending_domain_approval"
+    },
+    {
+      "id": "AUDIT-DESIGN-01",
+      "path": "docs/CROSS_DOMAIN_DESIGN_AUDIT.md",
+      "owner": "Design systems lead",
+      "version": "0.1",
+      "status": "proposed_documentation_pending_domain_approval",
+      "dependencies": [],
+      "package_revision": "0.3",
+      "bytes": 7680,
+      "sha256": "37a9f46101e88992cda90f62cb73808770dbd0c7d63bca2435dd71864fa3048e"
+    },
+    {
+      "id": "AUDIT-ALL-01",
+      "path": "docs/FINAL_COMPLETENESS_AUDIT.md",
+      "owner": "Documentation architect",
+      "version": "0.3",
+      "status": "proposed_documentation_pending_domain_approval",
+      "dependencies": [],
+      "package_revision": "0.3",
+      "bytes": 10196,
+      "sha256": "abd4cac0b9c63544a5c9ee12de67cc65540b6d3d9c492e6c679c39e3c0956a03"
+    },
+    {
+      "id": "NFR-BASELINE",
+      "path": "docs/NFR_MEASURABLE_BASELINE.md",
+      "owner": "Architecture and SRE",
+      "version": "0.1",
+      "status": "proposed_documentation_pending_domain_approval",
+      "dependencies": [],
+      "package_revision": "0.3",
+      "bytes": 10525,
+      "sha256": "27c65ff88bc284b9a2d61b0ebfaa056d430d007f8119d1f2f004f9a5d8a0f843"
+    },
+    {
+      "id": "SUP-POLICY_BASELINE-md",
+      "title": "POLICY BASELINE",
+      "path": "docs/POLICY_BASELINE.md",
+      "owner": "Documentation architect with owning domain reviewers",
+      "depends_on_sections": [],
+      "version": "0.3",
+      "package_revision": "0.3",
+      "bytes": 4977,
+      "sha256": "e7695d374c0a12cc8e0bd9c23377f7399d1c7bc571520321845cb4232c5fb1a7",
+      "status": "proposed_documentation_pending_domain_approval"
+    },
+    {
+      "id": "SUP-SCENARIO_TRACEABILITY-md",
+      "title": "SCENARIO TRACEABILITY",
+      "path": "docs/SCENARIO_TRACEABILITY.md",
+      "owner": "Documentation architect with owning domain reviewers",
+      "depends_on_sections": [],
+      "version": "0.3",
+      "package_revision": "0.3",
+      "bytes": 147979,
+      "sha256": "aa4f48f97a52e571931800fb607491044afcb02e244765df6b465202634b7523",
+      "status": "proposed_documentation_pending_domain_approval"
+    },
+    {
+      "id": "TRACE-01",
+      "path": "docs/TRACEABILITY_CROSSWALK.md",
+      "owner": "Requirements lead",
+      "version": "0.3",
+      "status": "proposed_documentation_pending_domain_approval",
+      "dependencies": [],
+      "package_revision": "0.3",
+      "bytes": 4994,
+      "sha256": "d80e1c01188353c31428da8a0facd09fbfa01899e608334206a9c68efdb3c96d"
+    },
+    {
+      "id": "SUP-contracts-api-operation-index-json",
+      "title": "api-operation-index",
+      "path": "docs/contracts/api-operation-index.json",
+      "owner": "Documentation architect with owning domain reviewers",
+      "depends_on_sections": [],
+      "version": "0.3",
+      "package_revision": "0.3",
+      "bytes": 55072,
+      "sha256": "fbe1978b3294518b00e36b0f3b5794ce252d6d31464a40fbc32bf262f17adf7a",
+      "status": "proposed_documentation_pending_domain_approval"
+    },
+    {
+      "id": "SUP-contracts-design-tokens-json",
+      "title": "design-tokens",
+      "path": "docs/contracts/design-tokens.json",
+      "owner": "Documentation architect with owning domain reviewers",
+      "depends_on_sections": [],
+      "version": "0.3",
+      "package_revision": "0.3",
+      "bytes": 755,
+      "sha256": "0019077df3e838c0783983a1f5d48f410d5b14b38b290f4d938bb4fa7ab82664",
+      "status": "proposed_documentation_pending_domain_approval"
+    },
+    {
+      "id": "SUP-contracts-domain-event-schema-json",
+      "title": "domain-event.schema",
+      "path": "docs/contracts/domain-event.schema.json",
+      "owner": "Documentation architect with owning domain reviewers",
+      "depends_on_sections": [],
+      "version": "0.3",
+      "package_revision": "0.3",
+      "bytes": 14448,
+      "sha256": "0887360875289887f985642393a9ea719790080d7cf68e30152c8da2951ea27d",
+      "status": "proposed_documentation_pending_domain_approval"
+    },
+    {
+      "id": "SUP-contracts-panel-index-json",
+      "title": "panel-index",
+      "path": "docs/contracts/panel-index.json",
+      "owner": "Documentation architect with owning domain reviewers",
+      "depends_on_sections": [],
+      "version": "0.3",
+      "package_revision": "0.3",
+      "bytes": 11546,
+      "sha256": "a21c5237bdcc2240bdd2bdda9a813c760d59c14f708cd216c3b1c4e56fd179c4",
+      "status": "proposed_documentation_pending_domain_approval"
+    },
+    {
+      "id": "SUP-contracts-scenario-traceability-json",
+      "title": "scenario-traceability",
+      "path": "docs/contracts/scenario-traceability.json",
+      "owner": "Documentation architect with owning domain reviewers",
+      "depends_on_sections": [],
+      "version": "0.3",
+      "package_revision": "0.3",
+      "bytes": 236286,
+      "sha256": "88b036d1974d857ab3330abfcfd680a7e24532e0a1e8a090ca738b1b53a46e29",
+      "status": "proposed_documentation_pending_domain_approval"
+    },
+    {
+      "id": "SUP-contracts-screen-index-json",
+      "title": "screen-index",
+      "path": "docs/contracts/screen-index.json",
+      "owner": "Documentation architect with owning domain reviewers",
+      "depends_on_sections": [],
+      "version": "0.3",
+      "package_revision": "0.3",
+      "bytes": 22313,
+      "sha256": "517fefb0e4229c496e71c9d146e805e7a1d19637ee4b77062c716c8c3e986415",
+      "status": "proposed_documentation_pending_domain_approval"
+    },
+    {
+      "id": "SUP-contracts-specialist-roster-json",
+      "title": "specialist-roster",
+      "path": "docs/contracts/specialist-roster.json",
+      "owner": "Documentation architect with owning domain reviewers",
+      "depends_on_sections": [],
+      "version": "0.3",
+      "package_revision": "0.3",
+      "bytes": 79981,
+      "sha256": "897e0d51c90713df52e9dc741db90f84b12f2ffe5862b598fa7d6d0cdeba665c",
+      "status": "proposed_documentation_pending_domain_approval"
+    },
+    {
+      "id": "SUP-contracts-state-machines-json",
+      "title": "state-machines",
+      "path": "docs/contracts/state-machines.json",
+      "owner": "Documentation architect with owning domain reviewers",
+      "depends_on_sections": [],
+      "version": "0.3",
+      "package_revision": "0.3",
+      "bytes": 44693,
+      "sha256": "5088cf45b2bd13951118e47d9a6bdce2286625c360235a5bae980c79f7ea0429",
+      "status": "proposed_documentation_pending_domain_approval"
+    },
+    {
+      "id": "SUP-contracts-workflow-analytics-schema-json",
+      "title": "workflow-analytics.schema",
+      "path": "docs/contracts/workflow-analytics.schema.json",
+      "owner": "Documentation architect with owning domain reviewers",
+      "depends_on_sections": [],
+      "version": "0.3",
+      "package_revision": "0.3",
+      "bytes": 3198,
+      "sha256": "89f184a75b8cd041c4f48fb4d97c044f94301cd8e3620e000534b55b83bb95cc",
+      "status": "proposed_documentation_pending_domain_approval"
+    },
+    {
+      "id": "SUP-review-PROMPT_COVERAGE-md",
+      "title": "PROMPT COVERAGE",
+      "path": "docs/review/PROMPT_COVERAGE.md",
+      "owner": "Documentation architect with owning domain reviewers",
+      "depends_on_sections": [],
+      "version": "0.3",
+      "package_revision": "0.3",
+      "bytes": 9559,
+      "sha256": "69e5fdb30e276095a249df2bce685f8a8fafda4b0f421c0fae7ffd54c92376e1",
+      "status": "documentation_validation_evidence"
+    },
+    {
+      "id": "SUP-review-contract-fixtures-json",
+      "title": "contract-fixtures",
+      "path": "docs/review/contract-fixtures.json",
+      "owner": "Documentation architect with owning domain reviewers",
+      "depends_on_sections": [],
+      "version": "0.3",
+      "package_revision": "0.3",
+      "bytes": 18533,
+      "sha256": "9ac003e5f1c7bb5595fa493c6f11f076736556145634d037d88219760f72e35f",
+      "status": "documentation_validation_evidence"
+    },
+    {
+      "id": "SUP-review-contract-validation-json",
+      "title": "contract-validation",
+      "path": "docs/review/contract-validation.json",
+      "owner": "Documentation architect with owning domain reviewers",
+      "depends_on_sections": [],
+      "version": "0.3",
+      "package_revision": "0.3",
+      "bytes": 14741,
+      "sha256": "9071e07ede6ca0e404eca5138b9a711828b5f9bd27e8faa54059d2768d9eef94",
+      "status": "documentation_validation_evidence"
+    },
+    {
+      "id": "SUP-review-contrast-validation-json",
+      "title": "contrast-validation",
+      "path": "docs/review/contrast-validation.json",
+      "owner": "Documentation architect with owning domain reviewers",
+      "depends_on_sections": [],
+      "version": "0.3",
+      "package_revision": "0.3",
+      "bytes": 1842,
+      "sha256": "f7327e724c87fecd9d88d1764555ed00185c1a2416fb29d384073fb34be178bb",
+      "status": "documentation_validation_evidence"
+    },
+    {
+      "id": "SUP-review-validation-summary-json",
+      "title": "validation-summary",
+      "path": "docs/review/validation-summary.json",
+      "owner": "Documentation architect with owning domain reviewers",
+      "depends_on_sections": [],
+      "version": "0.3",
+      "package_revision": "0.3",
+      "bytes": 3272,
+      "sha256": "287ee6a3bc09deba08241b912e86b3fa0d8bdc2dd5f99617b575419156e21a61",
+      "status": "documentation_validation_evidence"
+    }
+  ],
+  "counts": {
+    "canonical": 199,
+    "supporting": 30,
+    "total_excluding_manifest": 229
+  },
+  "validation_summary": "docs/review/validation-summary.json"
+}

@@ -1,0 +1,7 @@
+Recorded from the executed npm run test:e2e output:
+Running 4 tests using 1 worker
+PASS public marketplace renders real inventory and works at mobile width (2.9s)
+PASS seller signs in, submits a car and reads persisted CRM state (2.5s)
+PASS dealer opens an authorized report and places a persisted bid (1.2s)
+PASS private APIs and workspaces reject unauthenticated users (404ms)
+4 passed (14.7s)

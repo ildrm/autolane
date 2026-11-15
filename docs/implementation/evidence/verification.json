@@ -1,0 +1,138 @@
+{
+  "checked_at": "2026-11-15T09:02:06.016991+00:00",
+  "checks": [
+    {
+      "check": "python-lint",
+      "command": [
+        ".venv/bin/ruff",
+        "check",
+        "apps/api",
+        "scripts/local.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.08,
+      "log": "docs/implementation/evidence/python-lint.log"
+    },
+    {
+      "check": "database-migrations",
+      "command": [
+        ".venv/bin/python",
+        "apps/api/manage.py",
+        "makemigrations",
+        "--check",
+        "--dry-run"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.6,
+      "log": "docs/implementation/evidence/database-migrations.log"
+    },
+    {
+      "check": "database-tests",
+      "command": [
+        ".venv/bin/python",
+        "apps/api/manage.py",
+        "test",
+        "marketplace.tests",
+        "--noinput",
+        "--parallel=1"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 4.453,
+      "log": "docs/implementation/evidence/database-tests.log",
+      "evidence_recording": "Recorded from final tool result"
+    },
+    {
+      "check": "typescript",
+      "command": [
+        "npm",
+        "run",
+        "typecheck"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.5,
+      "log": "docs/implementation/evidence/typescript.log"
+    },
+    {
+      "check": "browser-e2e",
+      "command": [
+        "npm",
+        "run",
+        "test:e2e"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 14.7,
+      "log": "docs/implementation/evidence/browser-e2e.log",
+      "evidence_recording": "Recorded from final tool result"
+    }
+  ],
+  "production_build": {
+    "exit_code": 0,
+    "build_id": "Tyd7ZKwhKfaNufZmC-HvK",
+    "evidence_source": "Observed latest successful next build: compiled in1157ms; TypeScript1919ms; one page-data/static worker; traces completed."
+  },
+  "npm_production_dependency_audit": {
+    "exit_code": 0,
+    "reported_vulnerabilities": 0,
+    "scope": "npm audit --omit=dev --audit-level=high; backend and dev dependencies not scanned by this check"
+  },
+  "readiness": "NOT READY \u2014 complete specification scope remains in progress",
+  "checks_scope": {
+    "backend_tests": 33,
+    "browser_tests": 4,
+    "full_scenarios_verified": 0,
+    "documented_scenarios": 120,
+    "native_migrations_applied": [
+      "0001_initial",
+      "0002_transactioncase_branch"
+    ]
+  },
+  "source_hashes": {
+    "apps/api/config/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "apps/api/config/asgi.py": "e49a3a79cddfa0654d6c6aaa1919db371e89bc0eeb8c121d84c7d3b828a0485b",
+    "apps/api/config/settings.py": "1d7ef2afa2f655565d2bb9794f01db948619125e76742b6f3bd8fc4bd59b3dd0",
+    "apps/api/config/urls.py": "8db238fdbdb3bf4712dcd4d9ac36da0d38de09792e5740cf4fb54b40dafb80a7",
+    "apps/api/manage.py": "0724df81c4baa11aba05ad89bd5be56907b6a867086af28bdbd3a095990f7c20",
+    "apps/api/marketplace/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "apps/api/marketplace/admin.py": "c3f8904f85d412e649b3dfb2e3e40ca3e61a96cccd7614173a67a2219267c046",
+    "apps/api/marketplace/authentication.py": "8662f68782964f82fdfcfebe8508d57df642de5b2a28ec246322089272d187a9",
+    "apps/api/marketplace/contracts.py": "63986d63836b71ede15988d612d699827c65a6587e9a2e66732c95272f05ce34",
+    "apps/api/marketplace/domain.py": "da03139c91fc25dfb5e1cd71737334787109eff17a255a442b3b44d8ad3ec87f",
+    "apps/api/marketplace/exports.py": "2c73cda272632c3035d326dd94fbe7f2ae1af0d981e4dfb7738454fb0283ab53",
+    "apps/api/marketplace/files.py": "b74c60dda62e1ce06d80c4ec3d61bbc185f2e837bfd219ad6fdb06b52f14202d",
+    "apps/api/marketplace/management/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "apps/api/marketplace/management/commands/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "apps/api/marketplace/management/commands/seed_development.py": "da4c38123ad1ee4ddf4b21823c0b412e42a319430a470c8a7cd5ef6118c0d9f8",
+    "apps/api/marketplace/management/commands/work_events.py": "f898528dc673a418068ff6965945f9eaa0aaa5449119c8c0a709785a7848571b",
+    "apps/api/marketplace/middleware.py": "1bfcb13e1f03ab624b86c2b6c1623f1fc24e1cb9b363dee3600ea355f6e6deef",
+    "apps/api/marketplace/migrations/0001_initial.py": "61f2fa044854a25c1ea7c700ff57d641b497340a62a93ea08e708ae74da8e0a0",
+    "apps/api/marketplace/migrations/0002_transactioncase_branch.py": "cff8c7cebc4d04cd1ecc4171ec36ed31b440849a289e3963730e8e72eb9ccb59",
+    "apps/api/marketplace/migrations/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "apps/api/marketplace/models.py": "e92e0a58997ec73618a3ca5285d99f13dc3f993093fc270a03570c078540dadd",
+    "apps/api/marketplace/operations.py": "6473b57fddeeb2ea577e0404a089ce846603068def5ce09d66f6999d56591783",
+    "apps/api/marketplace/permissions.py": "bdcc30feb97ebc01948644d2372bb8740545eb5f2081870bbb6c16cb5bb4537a",
+    "apps/api/marketplace/services.py": "a522107ee67552f89385bb7bdac847e78337a9ad3374a425ea50939d18ae814f",
+    "apps/api/marketplace/tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "apps/api/marketplace/tests/test_contracts.py": "d6edf7fa94682d9987f44dd5ecb72045da89743e5e838fe236d2fdf7a45a7ff1",
+    "apps/api/marketplace/tests/test_core.py": "314743ba83154148b5249095567c40e9b377f94e7accc26726507e733114f7f5",
+    "apps/api/marketplace/tests/test_files.py": "78b1741bd938ef6135522d82565f8195a3b07e27681fec241ae4f9b18f04ea59",
+    "apps/api/marketplace/tests/test_finance.py": "a92618f249a91139861c105dd681b50375c6ff8c2ddbd0ddd671f0ac60af885a",
+    "apps/api/marketplace/tests/test_operations.py": "5cd5651e8cabaad790ada7b685dd1c06d20b2e753c4e7f821f39138842f7fe22",
+    "apps/api/marketplace/views.py": "ce34a39a79e1c4120984ca27585d49136ac5e1d2bedb3057889c438772c93059",
+    "apps/web/src/app/[[...path]]/page.tsx": "1935c06da126804b02300f5619fdf5ecfd949802aa170677d673a0333a2c37f9",
+    "apps/web/src/app/layout.tsx": "eed7a794fdebdc1924cc3fdc8fb5ebc8e39554e0cdfdc40eee5807759eafd7f5",
+    "apps/web/src/app/not-found.tsx": "f646c9e3275048b35882d9b0486105b858fe86f51bf831c5e8edf68e6375e689",
+    "apps/web/src/app/robots.ts": "5ecd674ed61d4242b9a85cbff9f4f24416ca7a63da9fe59d27dc4204dc92d148",
+    "apps/web/src/components/evidence.tsx": "4060ef8d855b15b8824ef300803c0d09ac734fa6d8c346d36bc77e88bc9a6a67",
+    "apps/web/src/components/forms.tsx": "1b1a2862c95b99ac53dfd3a32f0e7918fc8d9fef266a7f0d2371bb4d43a0dc75",
+    "apps/web/src/components/marketplace.tsx": "efbfc9cbfc7fee298761d07444e80c3eb317b56134611b584c93b39a7c3de20a",
+    "apps/web/src/components/workspace.tsx": "5a7472499bb26c7cca8e53f7b6e82d64c4ccbbb186df1342bb8767c587818926",
+    "apps/web/src/lib/api.ts": "aa814fef1e874cb6c78cafb598a9d2bf4f40d60c241f49dc3b9e6885f17d1c65",
+    "scripts/coverage.py": "d6bf40cf277f7d009be65907a7024c0381aef1dbd118d4e2f4856499dc71b2e5",
+    "scripts/local.py": "6d1d340678ca8034bc116fd5041b0f00670c1cf1a1a2d339f17b2d82a3baae28"
+  },
+  "local_services_running_after_checks": {
+    "3000": false,
+    "8000": false,
+    "55432": false
+  }
+}

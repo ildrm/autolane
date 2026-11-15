@@ -1,0 +1,630 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://spec.example.invalid/marketplace/domain-event.v1.schema.json",
+  "title": "Internal domain event v1; no public or analytics delivery without explicit projection",
+  "type": "object",
+  "properties": {
+    "event_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "type": {
+      "enum": [
+        "appointment.confirmed",
+        "inspection.report_published",
+        "auction.bid_accepted",
+        "auction.closed",
+        "seller.decision_recorded",
+        "contract.signed",
+        "settlement.reconciled",
+        "vehicle.handover_recorded",
+        "lifecycle.transition_recorded",
+        "consumer.offer_accepted",
+        "ownership.transfer_verified",
+        "content.published",
+        "privacy.request_completed"
+      ]
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "occurred_at": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "Z$"
+    },
+    "aggregate_type": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 64
+    },
+    "aggregate_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "aggregate_sequence": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 9007199254740991
+    },
+    "tenant_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "uuid"
+    },
+    "correlation_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "causation_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "uuid"
+    },
+    "payload": {}
+  },
+  "required": [
+    "event_id",
+    "type",
+    "schema_version",
+    "occurred_at",
+    "aggregate_type",
+    "aggregate_id",
+    "aggregate_sequence",
+    "tenant_id",
+    "correlation_id",
+    "causation_id",
+    "payload"
+  ],
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "appointment.confirmed"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "properties": {
+              "appointment_id": {
+                "type": "string",
+                "format": "uuid"
+              },
+              "branch_id": {
+                "type": "string",
+                "format": "uuid"
+              },
+              "starts_at": {
+                "type": "string",
+                "format": "date-time",
+                "pattern": "Z$"
+              },
+              "version": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 9007199254740991
+              }
+            },
+            "required": [
+              "appointment_id",
+              "branch_id",
+              "starts_at",
+              "version"
+            ],
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "inspection.report_published"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "properties": {
+              "inspection_id": {
+                "type": "string",
+                "format": "uuid"
+              },
+              "revision_id": {
+                "type": "string",
+                "format": "uuid"
+              },
+              "vehicle_id": {
+                "type": "string",
+                "format": "uuid"
+              }
+            },
+            "required": [
+              "inspection_id",
+              "revision_id",
+              "vehicle_id"
+            ],
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "auction.bid_accepted"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "properties": {
+              "auction_id": {
+                "type": "string",
+                "format": "uuid"
+              },
+              "bid_id": {
+                "type": "string",
+                "format": "uuid"
+              },
+              "amount_minor": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 9007199254740991
+              },
+              "currency": {
+                "type": "string",
+                "pattern": "^[A-Z]{3}$"
+              },
+              "sequence": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 9007199254740991
+              }
+            },
+            "required": [
+              "auction_id",
+              "bid_id",
+              "amount_minor",
+              "currency",
+              "sequence"
+            ],
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "auction.closed"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "properties": {
+              "auction_id": {
+                "type": "string",
+                "format": "uuid"
+              },
+              "result_id": {
+                "type": "string",
+                "format": "uuid"
+              },
+              "outcome": {
+                "enum": [
+                  "no_bid",
+                  "no_qualifying_bid",
+                  "pending_seller_decision",
+                  "pending_review"
+                ]
+              },
+              "sequence": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 9007199254740991
+              }
+            },
+            "required": [
+              "auction_id",
+              "result_id",
+              "outcome",
+              "sequence"
+            ],
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "seller.decision_recorded"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "properties": {
+              "result_id": {
+                "type": "string",
+                "format": "uuid"
+              },
+              "decision": {
+                "enum": [
+                  "accept",
+                  "reject"
+                ]
+              },
+              "decision_version": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 9007199254740991
+              }
+            },
+            "required": [
+              "result_id",
+              "decision",
+              "decision_version"
+            ],
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "contract.signed"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "properties": {
+              "contract_id": {
+                "type": "string",
+                "format": "uuid"
+              },
+              "signed_version": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 9007199254740991
+              }
+            },
+            "required": [
+              "contract_id",
+              "signed_version"
+            ],
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "settlement.reconciled"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "properties": {
+              "obligation_id": {
+                "type": "string",
+                "format": "uuid"
+              },
+              "reconciliation_id": {
+                "type": "string",
+                "format": "uuid"
+              },
+              "currency": {
+                "type": "string",
+                "pattern": "^[A-Z]{3}$"
+              }
+            },
+            "required": [
+              "obligation_id",
+              "reconciliation_id",
+              "currency"
+            ],
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "vehicle.handover_recorded"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "properties": {
+              "transaction_id": {
+                "type": "string",
+                "format": "uuid"
+              },
+              "handover_id": {
+                "type": "string",
+                "format": "uuid"
+              }
+            },
+            "required": [
+              "transaction_id",
+              "handover_id"
+            ],
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "lifecycle.transition_recorded"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "properties": {
+              "transition_id": {
+                "type": "string",
+                "pattern": "^SM-[0-9]{2}-[0-9]{2}$"
+              },
+              "from_state": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 64
+              },
+              "to_state": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 64
+              },
+              "aggregate_version": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 9007199254740991
+              }
+            },
+            "required": [
+              "transition_id",
+              "from_state",
+              "to_state",
+              "aggregate_version"
+            ],
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "consumer.offer_accepted"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "properties": {
+              "offer_id": {
+                "type": "string",
+                "format": "uuid"
+              },
+              "transaction_id": {
+                "type": "string",
+                "format": "uuid"
+              },
+              "listing_id": {
+                "type": "string",
+                "format": "uuid"
+              },
+              "offer_version": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 9007199254740991
+              }
+            },
+            "required": [
+              "offer_id",
+              "transaction_id",
+              "listing_id",
+              "offer_version"
+            ],
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "ownership.transfer_verified"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "properties": {
+              "transfer_id": {
+                "type": "string",
+                "format": "uuid"
+              },
+              "transaction_id": {
+                "type": "string",
+                "format": "uuid"
+              },
+              "evidence_id": {
+                "type": "string",
+                "format": "uuid"
+              }
+            },
+            "required": [
+              "transfer_id",
+              "transaction_id",
+              "evidence_id"
+            ],
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "content.published"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "properties": {
+              "content_id": {
+                "type": "string",
+                "format": "uuid"
+              },
+              "revision": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 9007199254740991
+              },
+              "slug": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 200
+              }
+            },
+            "required": [
+              "content_id",
+              "revision",
+              "slug"
+            ],
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "privacy.request_completed"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "properties": {
+              "request_id": {
+                "type": "string",
+                "format": "uuid"
+              },
+              "outcome": {
+                "enum": [
+                  "fulfilled",
+                  "partially_fulfilled",
+                  "denied"
+                ]
+              }
+            },
+            "required": [
+              "request_id",
+              "outcome"
+            ],
+            "additionalProperties": false
+          }
+        }
+      }
+    }
+  ]
+}

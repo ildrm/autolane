@@ -1,0 +1,538 @@
+{
+  "version": "0.3",
+  "panels": [
+    {
+      "id": "PNL-01",
+      "name": "Public website",
+      "roles": [
+        "ROLE-001"
+      ],
+      "route": "/",
+      "screen_ids": [
+        "SCR-001",
+        "SCR-002",
+        "SCR-010",
+        "SCR-011",
+        "SCR-012",
+        "SCR-013",
+        "SCR-036",
+        "SCR-037"
+      ],
+      "operations": [
+        "listVehicleTaxonomy",
+        "listBranches",
+        "listBranchSlots",
+        "listConsumerListings",
+        "readPublishedContent",
+        "readListingBySlug",
+        "estimatePublicVehicle"
+      ],
+      "entities": [
+        "CMSArticle",
+        "SEOPage",
+        "Branch",
+        "VehicleListing"
+      ],
+      "integration_dependency": false
+    },
+    {
+      "id": "PNL-02",
+      "name": "Seller dashboard",
+      "roles": [
+        "ROLE-002"
+      ],
+      "route": "/account/sales/{id}",
+      "screen_ids": [
+        "SCR-003",
+        "SCR-004",
+        "SCR-005",
+        "SCR-006",
+        "SCR-007",
+        "SCR-008",
+        "SCR-009"
+      ],
+      "operations": [
+        "createSellerLead",
+        "readSellerLead",
+        "createAppointment",
+        "transitionAppointment",
+        "readResultRecord",
+        "recordSellerDecision",
+        "readTransaction",
+        "requestIntakeClaim",
+        "claimIntake",
+        "readInspectionRevision"
+      ],
+      "entities": [
+        "SellerLead",
+        "Vehicle",
+        "Appointment",
+        "InspectionReport",
+        "AuctionResult",
+        "SellerDecision",
+        "TransactionCase"
+      ],
+      "integration_dependency": false
+    },
+    {
+      "id": "PNL-03",
+      "name": "Consumer buyer",
+      "roles": [
+        "ROLE-003"
+      ],
+      "route": "/account/requests",
+      "screen_ids": [
+        "SCR-029",
+        "SCR-030",
+        "SCR-031",
+        "SCR-032"
+      ],
+      "operations": [
+        "listConsumerListings",
+        "createPurchaseRequest",
+        "readPurchaseRequest",
+        "transitionPurchaseRequest",
+        "readConsumerOffer",
+        "acceptConsumerOffer",
+        "createProcurement",
+        "readProcurement",
+        "actOnProcurement",
+        "createSavedSearch",
+        "listSavedSearches",
+        "deleteSavedSearch"
+      ],
+      "entities": [
+        "VehicleListing",
+        "PurchaseRequest",
+        "ProcurementRequest"
+      ],
+      "integration_dependency": false
+    },
+    {
+      "id": "PNL-04",
+      "name": "Dealer portal",
+      "roles": [
+        "ROLE-004",
+        "ROLE-005"
+      ],
+      "route": "/dealer/auctions",
+      "screen_ids": [
+        "SCR-014",
+        "SCR-015",
+        "SCR-016",
+        "SCR-017",
+        "SCR-018",
+        "SCR-019"
+      ],
+      "operations": [
+        "createDealerVerification",
+        "readDealerVerification",
+        "listEligibleAuctions",
+        "getAuctionSnapshot",
+        "submitBid",
+        "readBidCommand",
+        "readTransaction",
+        "submitDealerApplication"
+      ],
+      "entities": [
+        "DealerVerification",
+        "OrganizationMember",
+        "Auction",
+        "Bid",
+        "AuctionResult"
+      ],
+      "integration_dependency": false
+    },
+    {
+      "id": "PNL-05",
+      "name": "Auction operations",
+      "roles": [
+        "ROLE-010"
+      ],
+      "route": "/ops/auctions",
+      "screen_ids": [
+        "SCR-025"
+      ],
+      "operations": [
+        "createAuction",
+        "getAuctionSnapshot",
+        "listEligibleAuctions",
+        "transitionAuction",
+        "closeAuction"
+      ],
+      "entities": [
+        "Auction",
+        "AuctionParticipant",
+        "Bid",
+        "AuctionResult",
+        "AuctionDispute"
+      ],
+      "integration_dependency": false
+    },
+    {
+      "id": "PNL-06",
+      "name": "Inspection management",
+      "roles": [
+        "ROLE-007",
+        "ROLE-008"
+      ],
+      "route": "/ops/inspections",
+      "screen_ids": [
+        "SCR-022",
+        "SCR-023"
+      ],
+      "operations": [
+        "createInspection",
+        "readInspection",
+        "createInspectionRevision",
+        "transitionInspection",
+        "publishInspection",
+        "createUploadGrant",
+        "readFileStatus",
+        "readInspectionTemplate",
+        "readInspectionRevision"
+      ],
+      "entities": [
+        "Inspection",
+        "InspectionItem",
+        "InspectionFinding",
+        "InspectionRevision",
+        "VehicleDocument"
+      ],
+      "integration_dependency": false
+    },
+    {
+      "id": "PNL-07",
+      "name": "Branch operations",
+      "roles": [
+        "ROLE-006"
+      ],
+      "route": "/ops/branches/{id}/schedule",
+      "screen_ids": [
+        "SCR-021"
+      ],
+      "operations": [
+        "listBranchSlots",
+        "createAppointment",
+        "readAppointment",
+        "transitionAppointment"
+      ],
+      "entities": [
+        "Branch",
+        "BranchSchedule",
+        "AppointmentSlot",
+        "Appointment",
+        "BranchEmployee"
+      ],
+      "integration_dependency": false
+    },
+    {
+      "id": "PNL-08",
+      "name": "CRM and call center",
+      "roles": [
+        "ROLE-011"
+      ],
+      "route": "/ops/leads",
+      "screen_ids": [
+        "SCR-020"
+      ],
+      "operations": [
+        "listSellerLead",
+        "readSellerLead",
+        "transitionSellerLead",
+        "readSupportTicket"
+      ],
+      "entities": [
+        "SellerLead",
+        "UserProfile",
+        "SupportTicket",
+        "Notification"
+      ],
+      "integration_dependency": false
+    },
+    {
+      "id": "PNL-09",
+      "name": "Inventory management",
+      "roles": [
+        "ROLE-021"
+      ],
+      "route": "/ops/inventory",
+      "screen_ids": [
+        "SCR-041"
+      ],
+      "operations": [
+        "createVehicleListing",
+        "readVehicleListing",
+        "transitionVehicleListing",
+        "createConsumerOffer"
+      ],
+      "entities": [
+        "Vehicle",
+        "VehicleListing",
+        "VehicleMedia",
+        "VehicleOwnership"
+      ],
+      "integration_dependency": false
+    },
+    {
+      "id": "PNL-10",
+      "name": "Pricing and valuation",
+      "roles": [
+        "ROLE-009"
+      ],
+      "route": "/ops/valuations",
+      "screen_ids": [
+        "SCR-024"
+      ],
+      "operations": [
+        "createValuation",
+        "readValuation",
+        "transitionValuation"
+      ],
+      "entities": [
+        "Valuation",
+        "ValuationAdjustment",
+        "MarketPriceRecord"
+      ],
+      "integration_dependency": false
+    },
+    {
+      "id": "PNL-11",
+      "name": "Contracts and legal",
+      "roles": [
+        "ROLE-012"
+      ],
+      "route": "/ops/legal",
+      "screen_ids": [
+        "SCR-026",
+        "SCR-042"
+      ],
+      "operations": [
+        "createContract",
+        "readContract",
+        "transitionContract",
+        "recordSignatureEvidence",
+        "readOwnershipTransfer",
+        "verifyOwnershipTransfer"
+      ],
+      "entities": [
+        "Contract",
+        "ContractDocument",
+        "ContractSignature",
+        "OwnershipTransfer"
+      ],
+      "integration_dependency": false
+    },
+    {
+      "id": "PNL-12",
+      "name": "Finance operations",
+      "roles": [
+        "ROLE-013",
+        "ROLE-014"
+      ],
+      "route": "/ops/finance",
+      "screen_ids": [
+        "SCR-026",
+        "SCR-043"
+      ],
+      "operations": [
+        "createPaymentObligation",
+        "readPaymentObligation",
+        "submitPaymentEvidence",
+        "prepareReconciliation",
+        "readReconciliationRecord",
+        "approveReconciliation"
+      ],
+      "entities": [
+        "PaymentObligation",
+        "PaymentTransaction",
+        "ReconciliationRecord",
+        "LedgerEntry"
+      ],
+      "integration_dependency": false
+    },
+    {
+      "id": "PNL-13",
+      "name": "Credit operations",
+      "roles": [
+        "ROLE-024"
+      ],
+      "route": "/ops/financing",
+      "screen_ids": [
+        "SCR-033",
+        "SCR-044"
+      ],
+      "operations": [
+        "createFinancingApplication",
+        "readFinancingApplication",
+        "transitionFinancingApplication",
+        "ingestProviderEvent"
+      ],
+      "entities": [
+        "FinancingApplication",
+        "FinancingOffer"
+      ],
+      "integration_dependency": false
+    },
+    {
+      "id": "PNL-14",
+      "name": "Logistics management",
+      "roles": [
+        "ROLE-020",
+        "ROLE-018"
+      ],
+      "route": "/ops/logistics",
+      "screen_ids": [
+        "SCR-034"
+      ],
+      "operations": [
+        "createDelivery",
+        "readDelivery",
+        "transitionDelivery",
+        "recordDeliveryHandover"
+      ],
+      "entities": [
+        "Delivery",
+        "LogisticsOrder",
+        "VehicleHandover"
+      ],
+      "integration_dependency": false
+    },
+    {
+      "id": "PNL-15",
+      "name": "Customer support",
+      "roles": [
+        "ROLE-011"
+      ],
+      "route": "/ops/support",
+      "screen_ids": [
+        "SCR-027"
+      ],
+      "operations": [
+        "createSupportTicket",
+        "readSupportTicket",
+        "transitionSupportTicket"
+      ],
+      "entities": [
+        "SupportTicket",
+        "Notification",
+        "TransactionCase"
+      ],
+      "integration_dependency": false
+    },
+    {
+      "id": "PNL-16",
+      "name": "Warranty and disputes",
+      "roles": [
+        "ROLE-022"
+      ],
+      "route": "/ops/claims",
+      "screen_ids": [
+        "SCR-035"
+      ],
+      "operations": [
+        "createWarrantyClaim",
+        "readWarrantyClaim",
+        "transitionWarrantyClaim"
+      ],
+      "entities": [
+        "WarrantyClaim",
+        "WarrantyPolicy",
+        "InspectionRevision"
+      ],
+      "integration_dependency": false
+    },
+    {
+      "id": "PNL-17",
+      "name": "Content and SEO",
+      "roles": [
+        "ROLE-015"
+      ],
+      "route": "/ops/content",
+      "screen_ids": [
+        "SCR-039"
+      ],
+      "operations": [
+        "createContent",
+        "readContent",
+        "reviseContent",
+        "actOnContent"
+      ],
+      "entities": [
+        "CMSArticle",
+        "SEOPage",
+        "VehicleMedia"
+      ],
+      "integration_dependency": true
+    },
+    {
+      "id": "PNL-18",
+      "name": "Marketing and growth",
+      "roles": [
+        "ROLE-025"
+      ],
+      "route": "/ops/growth",
+      "screen_ids": [
+        "SCR-045"
+      ],
+      "operations": [
+        "createCampaign",
+        "readCampaign",
+        "actOnCampaign",
+        "getMetrics"
+      ],
+      "entities": [
+        "NotificationTemplate",
+        "AnalyticsEvent",
+        "ConsentRecord"
+      ],
+      "integration_dependency": true
+    },
+    {
+      "id": "PNL-19",
+      "name": "Analytics and BI",
+      "roles": [
+        "ROLE-017"
+      ],
+      "route": "/ops/reports",
+      "screen_ids": [
+        "SCR-040"
+      ],
+      "operations": [
+        "getMetrics"
+      ],
+      "entities": [
+        "AnalyticsEvent",
+        "ReconciliationRecord",
+        "AggregateMetric"
+      ],
+      "integration_dependency": false
+    },
+    {
+      "id": "PNL-20",
+      "name": "Super administration",
+      "roles": [
+        "ROLE-016",
+        "ROLE-026"
+      ],
+      "route": "/ops/admin/access",
+      "screen_ids": [
+        "SCR-028",
+        "SCR-046"
+      ],
+      "operations": [
+        "readPolicyRecord",
+        "createPolicyVersion",
+        "approvePolicy"
+      ],
+      "entities": [
+        "Role",
+        "Permission",
+        "OrganizationMember",
+        "FeatureFlag",
+        "AuditLog"
+      ],
+      "integration_dependency": false
+    }
+  ]
+}

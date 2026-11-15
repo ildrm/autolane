@@ -1,0 +1,2553 @@
+[
+  {
+    "id": "FR-SCN-001",
+    "scenario": "SCN-01",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "Appointment",
+    "priority": "P0",
+    "related_api": [
+      "createAppointment",
+      "readAppointment",
+      "transitionAppointment"
+    ],
+    "related_ui": "SCR-005",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-002",
+    "scenario": "SCN-02",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "Inspection",
+    "priority": "P0",
+    "related_api": [
+      "readInspection",
+      "createInspectionRevision",
+      "transitionInspection",
+      "publishInspection"
+    ],
+    "related_ui": "SCR-022",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-003",
+    "scenario": "SCN-03",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "Auction",
+    "priority": "P0",
+    "related_api": [
+      "getAuctionSnapshot",
+      "submitBid",
+      "readBidCommand",
+      "closeAuction",
+      "transitionAuction"
+    ],
+    "related_ui": "SCR-017",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-004",
+    "scenario": "SCN-04",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "SellerDecision",
+    "priority": "P0",
+    "related_api": [
+      "readResultRecord",
+      "recordSellerDecision"
+    ],
+    "related_ui": "SCR-008",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-005",
+    "scenario": "SCN-05",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "Transaction",
+    "priority": "P0",
+    "related_api": [
+      "readTransaction",
+      "closeTransaction"
+    ],
+    "related_ui": "SCR-026",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-006",
+    "scenario": "SCN-06",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "SellerLead",
+    "priority": "P0",
+    "related_api": [
+      "readSellerLead",
+      "createSellerLead",
+      "transitionSellerLead"
+    ],
+    "related_ui": "SCR-007",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-007",
+    "scenario": "SCN-07",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "Appointment",
+    "priority": "P1",
+    "related_api": [
+      "createAppointment",
+      "readAppointment",
+      "transitionAppointment"
+    ],
+    "related_ui": "SCR-005",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-008",
+    "scenario": "SCN-08",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "Inspection",
+    "priority": "P0",
+    "related_api": [
+      "readInspection",
+      "createInspectionRevision",
+      "transitionInspection",
+      "publishInspection"
+    ],
+    "related_ui": "SCR-022",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-009",
+    "scenario": "SCN-09",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "DealerVerification",
+    "priority": "P0",
+    "related_api": [
+      "readDealerVerification",
+      "transitionDealerVerification"
+    ],
+    "related_ui": "SCR-015",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-010",
+    "scenario": "SCN-10",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "Auction",
+    "priority": "P0",
+    "related_api": [
+      "getAuctionSnapshot",
+      "submitBid",
+      "readBidCommand",
+      "closeAuction",
+      "transitionAuction"
+    ],
+    "related_ui": "SCR-017",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-011",
+    "scenario": "SCN-11",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "Auction",
+    "priority": "P0",
+    "related_api": [
+      "getAuctionSnapshot",
+      "submitBid",
+      "readBidCommand",
+      "closeAuction",
+      "transitionAuction"
+    ],
+    "related_ui": "SCR-017",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-012",
+    "scenario": "SCN-12",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "Auction",
+    "priority": "P1",
+    "related_api": [
+      "getAuctionSnapshot",
+      "submitBid",
+      "readBidCommand",
+      "closeAuction",
+      "transitionAuction"
+    ],
+    "related_ui": "SCR-017",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-013",
+    "scenario": "SCN-13",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "SellerDecision",
+    "priority": "P1",
+    "related_api": [
+      "readResultRecord",
+      "recordSellerDecision"
+    ],
+    "related_ui": "SCR-008",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-014",
+    "scenario": "SCN-14",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "SupportTicket",
+    "priority": "P0",
+    "related_api": [
+      "createSupportTicket",
+      "readSupportTicket",
+      "transitionSupportTicket"
+    ],
+    "related_ui": "SCR-027",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "ROLE-012 opens a default matter from the support case, preserves accepted terms and notices, records an independently approved disposition; no auto-penalty or next-bidder award. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-015",
+    "scenario": "SCN-15",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "PaymentObligation",
+    "priority": "P0",
+    "related_api": [
+      "readPaymentObligation",
+      "submitPaymentEvidence",
+      "prepareReconciliation",
+      "approveReconciliation",
+      "transitionPaymentObligation"
+    ],
+    "related_ui": "SCR-043",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-016",
+    "scenario": "SCN-16",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "OwnershipTransfer",
+    "priority": "P0",
+    "related_api": [
+      "readOwnershipTransfer",
+      "verifyOwnershipTransfer"
+    ],
+    "related_ui": "SCR-042",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-017",
+    "scenario": "SCN-17",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "Inspection",
+    "priority": "P0",
+    "related_api": [
+      "readInspection",
+      "createInspectionRevision",
+      "transitionInspection",
+      "publishInspection"
+    ],
+    "related_ui": "SCR-022",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-018",
+    "scenario": "SCN-18",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "SupportTicket",
+    "priority": "P0",
+    "related_api": [
+      "createSupportTicket",
+      "readSupportTicket",
+      "transitionSupportTicket"
+    ],
+    "related_ui": "SCR-027",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-019",
+    "scenario": "SCN-19",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "Authorization",
+    "priority": "P0",
+    "related_api": [
+      "readPolicyRecord",
+      "createPolicyVersion"
+    ],
+    "related_ui": "SCR-028",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-020",
+    "scenario": "SCN-20",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "SupportTicket",
+    "priority": "P0",
+    "related_api": [
+      "createPrivacyRequest",
+      "readPrivacyRequest"
+    ],
+    "related_ui": "SCR-027",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Typed request and authorized status contracts exist. Processor/external fulfillment remains an assigned review workflow and must not be marked complete before evidence. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-021",
+    "scenario": "SCN-21",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "VehicleListing",
+    "priority": "P1",
+    "related_api": [
+      "listConsumerListings",
+      "readVehicleListing",
+      "transitionVehicleListing"
+    ],
+    "related_ui": "SCR-030",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-022",
+    "scenario": "SCN-22",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "Delivery",
+    "priority": "P0",
+    "related_api": [
+      "createDelivery",
+      "readDelivery",
+      "transitionDelivery",
+      "recordDeliveryHandover"
+    ],
+    "related_ui": "SCR-034",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-023",
+    "scenario": "SCN-23",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "SellerLead",
+    "priority": "P1",
+    "related_api": [
+      "readSellerLead",
+      "createSellerLead",
+      "transitionSellerLead"
+    ],
+    "related_ui": "SCR-007",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-024",
+    "scenario": "SCN-24",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "SellerLead",
+    "priority": "P1",
+    "related_api": [
+      "readSellerLead",
+      "createSellerLead",
+      "transitionSellerLead"
+    ],
+    "related_ui": "SCR-007",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-025",
+    "scenario": "SCN-25",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "SellerLead",
+    "priority": "P1",
+    "related_api": [
+      "readSellerLead",
+      "createSellerLead",
+      "transitionSellerLead"
+    ],
+    "related_ui": "SCR-007",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-026",
+    "scenario": "SCN-26",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "SellerLead",
+    "priority": "P1",
+    "related_api": [
+      "readSellerLead",
+      "createSellerLead",
+      "transitionSellerLead"
+    ],
+    "related_ui": "SCR-007",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-027",
+    "scenario": "SCN-27",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "SellerLead",
+    "priority": "P1",
+    "related_api": [
+      "readSellerLead",
+      "createSellerLead",
+      "transitionSellerLead"
+    ],
+    "related_ui": "SCR-007",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-028",
+    "scenario": "SCN-28",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "SellerLead",
+    "priority": "P0",
+    "related_api": [
+      "readSellerLead",
+      "createSellerLead",
+      "transitionSellerLead"
+    ],
+    "related_ui": "SCR-007",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "ROLE-011 reviews assigned lead evidence, requests additional identity proof, links a reviewed duplicate case reference without deleting or merging original records; ambiguous match remains on hold. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-029",
+    "scenario": "SCN-29",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "SellerLead",
+    "priority": "P1",
+    "related_api": [
+      "readSellerLead",
+      "createSellerLead",
+      "transitionSellerLead"
+    ],
+    "related_ui": "SCR-007",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-030",
+    "scenario": "SCN-30",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "Authentication",
+    "priority": "P0",
+    "related_api": [
+      "createSession",
+      "completeAuthChallenge",
+      "requestAccountRecovery",
+      "createStepUpChallenge",
+      "completeStepUp"
+    ],
+    "related_ui": "SCR-038",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-031",
+    "scenario": "SCN-31",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "Appointment",
+    "priority": "P1",
+    "related_api": [
+      "createAppointment",
+      "readAppointment",
+      "transitionAppointment"
+    ],
+    "related_ui": "SCR-005",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-032",
+    "scenario": "SCN-32",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "Appointment",
+    "priority": "P1",
+    "related_api": [
+      "createAppointment",
+      "readAppointment",
+      "transitionAppointment"
+    ],
+    "related_ui": "SCR-005",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-033",
+    "scenario": "SCN-33",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "Appointment",
+    "priority": "P1",
+    "related_api": [
+      "createAppointment",
+      "readAppointment",
+      "transitionAppointment"
+    ],
+    "related_ui": "SCR-005",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-034",
+    "scenario": "SCN-34",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "Appointment",
+    "priority": "P1",
+    "related_api": [
+      "createAppointment",
+      "readAppointment",
+      "transitionAppointment"
+    ],
+    "related_ui": "SCR-005",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-035",
+    "scenario": "SCN-35",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "Appointment",
+    "priority": "P1",
+    "related_api": [
+      "createAppointment",
+      "readAppointment",
+      "transitionAppointment"
+    ],
+    "related_ui": "SCR-005",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-036",
+    "scenario": "SCN-36",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "SellerLead",
+    "priority": "P0",
+    "related_api": [
+      "readSellerLead",
+      "createSellerLead",
+      "transitionSellerLead"
+    ],
+    "related_ui": "SCR-007",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-037",
+    "scenario": "SCN-37",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "Inspection",
+    "priority": "P1",
+    "related_api": [
+      "readInspection",
+      "createInspectionRevision",
+      "transitionInspection",
+      "publishInspection"
+    ],
+    "related_ui": "SCR-022",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-038",
+    "scenario": "SCN-38",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "SellerLead",
+    "priority": "P0",
+    "related_api": [
+      "readSellerLead",
+      "createSellerLead",
+      "transitionSellerLead"
+    ],
+    "related_ui": "SCR-007",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-039",
+    "scenario": "SCN-39",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "SupportTicket",
+    "priority": "P0",
+    "related_api": [
+      "createSupportTicket",
+      "readSupportTicket",
+      "transitionSupportTicket"
+    ],
+    "related_ui": "SCR-027",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "ROLE-012 reviews the challenged document hash and instructions, records a legal hold and uses the contract void/amend path only after authority is established; finance remains separate. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-040",
+    "scenario": "SCN-40",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "PaymentObligation",
+    "priority": "P0",
+    "related_api": [
+      "readPaymentObligation",
+      "submitPaymentEvidence",
+      "prepareReconciliation",
+      "approveReconciliation",
+      "transitionPaymentObligation"
+    ],
+    "related_ui": "SCR-043",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "ROLE-013 records a proposed counterparty-detail change; ROLE-014 independently verifies through a known channel and retains prior evidence. External counterparty executes any real payment under approved process. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-041",
+    "scenario": "SCN-41",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "PaymentObligation",
+    "priority": "P1",
+    "related_api": [
+      "readPaymentObligation",
+      "submitPaymentEvidence",
+      "prepareReconciliation",
+      "approveReconciliation",
+      "transitionPaymentObligation"
+    ],
+    "related_ui": "SCR-043",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-042",
+    "scenario": "SCN-42",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "SellerLead",
+    "priority": "P1",
+    "related_api": [
+      "readSellerLead",
+      "createSellerLead",
+      "transitionSellerLead"
+    ],
+    "related_ui": "SCR-007",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-043",
+    "scenario": "SCN-43",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "SupportTicket",
+    "priority": "P1",
+    "related_api": [
+      "changePreference",
+      "readPreferences"
+    ],
+    "related_ui": "SCR-027",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Typed request and authorized status contracts exist. Processor/external fulfillment remains an assigned review workflow and must not be marked complete before evidence. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-044",
+    "scenario": "SCN-44",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "Authentication",
+    "priority": "P0",
+    "related_api": [
+      "createSession",
+      "completeAuthChallenge",
+      "requestAccountRecovery",
+      "createStepUpChallenge",
+      "completeStepUp"
+    ],
+    "related_ui": "SCR-038",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-045",
+    "scenario": "SCN-45",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "PaymentObligation",
+    "priority": "P1",
+    "related_api": [
+      "readPaymentObligation",
+      "submitPaymentEvidence",
+      "prepareReconciliation",
+      "approveReconciliation",
+      "transitionPaymentObligation"
+    ],
+    "related_ui": "SCR-043",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-046",
+    "scenario": "SCN-46",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "SupportTicket",
+    "priority": "P0",
+    "related_api": [
+      "createSupportTicket",
+      "readSupportTicket",
+      "transitionSupportTicket"
+    ],
+    "related_ui": "SCR-027",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-047",
+    "scenario": "SCN-47",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "AuctionPreparation",
+    "priority": "P0",
+    "related_api": [
+      "createAuction",
+      "transitionAuction"
+    ],
+    "related_ui": "SCR-025",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-048",
+    "scenario": "SCN-48",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "AuctionPreparation",
+    "priority": "P1",
+    "related_api": [
+      "createAuction",
+      "transitionAuction"
+    ],
+    "related_ui": "SCR-025",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-049",
+    "scenario": "SCN-49",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "AuctionPreparation",
+    "priority": "P0",
+    "related_api": [
+      "createAuction",
+      "transitionAuction"
+    ],
+    "related_ui": "SCR-025",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-050",
+    "scenario": "SCN-50",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "Auction",
+    "priority": "P1",
+    "related_api": [
+      "getAuctionSnapshot",
+      "submitBid",
+      "readBidCommand",
+      "closeAuction",
+      "transitionAuction"
+    ],
+    "related_ui": "SCR-017",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-051",
+    "scenario": "SCN-51",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "Auction",
+    "priority": "P0",
+    "related_api": [
+      "getAuctionSnapshot",
+      "submitBid",
+      "readBidCommand",
+      "closeAuction",
+      "transitionAuction"
+    ],
+    "related_ui": "SCR-017",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-052",
+    "scenario": "SCN-52",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "Auction",
+    "priority": "P0",
+    "related_api": [
+      "getAuctionSnapshot",
+      "submitBid",
+      "readBidCommand",
+      "closeAuction",
+      "transitionAuction"
+    ],
+    "related_ui": "SCR-017",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-053",
+    "scenario": "SCN-53",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "Auction",
+    "priority": "P0",
+    "related_api": [
+      "getAuctionSnapshot",
+      "submitBid",
+      "readBidCommand",
+      "closeAuction",
+      "transitionAuction"
+    ],
+    "related_ui": "SCR-017",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-054",
+    "scenario": "SCN-54",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "Auction",
+    "priority": "P0",
+    "related_api": [
+      "getAuctionSnapshot",
+      "submitBid",
+      "readBidCommand",
+      "closeAuction",
+      "transitionAuction"
+    ],
+    "related_ui": "SCR-017",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-055",
+    "scenario": "SCN-55",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "Auction",
+    "priority": "P0",
+    "related_api": [
+      "getAuctionSnapshot",
+      "submitBid",
+      "readBidCommand",
+      "closeAuction",
+      "transitionAuction"
+    ],
+    "related_ui": "SCR-017",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-056",
+    "scenario": "SCN-56",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "Auction",
+    "priority": "P0",
+    "related_api": [
+      "getAuctionSnapshot",
+      "submitBid",
+      "readBidCommand",
+      "closeAuction",
+      "transitionAuction"
+    ],
+    "related_ui": "SCR-017",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-057",
+    "scenario": "SCN-57",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "Auction",
+    "priority": "P0",
+    "related_api": [
+      "getAuctionSnapshot",
+      "submitBid",
+      "readBidCommand",
+      "closeAuction",
+      "transitionAuction"
+    ],
+    "related_ui": "SCR-017",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-058",
+    "scenario": "SCN-58",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "Auction",
+    "priority": "P0",
+    "related_api": [
+      "getAuctionSnapshot",
+      "submitBid",
+      "readBidCommand",
+      "closeAuction",
+      "transitionAuction"
+    ],
+    "related_ui": "SCR-017",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-059",
+    "scenario": "SCN-59",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "FinancingApplication",
+    "priority": "P1",
+    "related_api": [
+      "readFinancingApplication",
+      "createFinancingApplication",
+      "transitionFinancingApplication",
+      "ingestProviderEvent"
+    ],
+    "related_ui": "SCR-033",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Credit-backed bids are disabled by default. Reject an attempted credit path without changing auction state; activate only after approved credit policy, lender contracts and a separately reviewed exposure-reservation design. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-060",
+    "scenario": "SCN-60",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "Auction",
+    "priority": "P0",
+    "related_api": [
+      "getAuctionSnapshot",
+      "submitBid",
+      "readBidCommand",
+      "closeAuction",
+      "transitionAuction"
+    ],
+    "related_ui": "SCR-017",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-061",
+    "scenario": "SCN-61",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "AuctionPreparation",
+    "priority": "P1",
+    "related_api": [
+      "createAuction",
+      "transitionAuction"
+    ],
+    "related_ui": "SCR-025",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-062",
+    "scenario": "SCN-62",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "SupportTicket",
+    "priority": "P0",
+    "related_api": [
+      "createSupportTicket",
+      "readSupportTicket",
+      "transitionSupportTicket"
+    ],
+    "related_ui": "SCR-027",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "ROLE-019 opens a restricted risk review, preserves bid sequence and explanation, and uses the suspension transition only with authorized evidence. A signal alone is not a finding of fraud. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-063",
+    "scenario": "SCN-63",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "SupportTicket",
+    "priority": "P0",
+    "related_api": [
+      "createSupportTicket",
+      "readSupportTicket",
+      "transitionSupportTicket"
+    ],
+    "related_ui": "SCR-027",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-064",
+    "scenario": "SCN-64",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "Auction",
+    "priority": "P0",
+    "related_api": [
+      "getAuctionSnapshot",
+      "submitBid",
+      "readBidCommand",
+      "closeAuction",
+      "transitionAuction"
+    ],
+    "related_ui": "SCR-017",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-065",
+    "scenario": "SCN-65",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "Auction",
+    "priority": "P1",
+    "related_api": [
+      "getAuctionSnapshot",
+      "submitBid",
+      "readBidCommand",
+      "closeAuction",
+      "transitionAuction"
+    ],
+    "related_ui": "SCR-017",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-066",
+    "scenario": "SCN-66",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "Auction",
+    "priority": "P0",
+    "related_api": [
+      "getAuctionSnapshot",
+      "submitBid",
+      "readBidCommand",
+      "closeAuction",
+      "transitionAuction"
+    ],
+    "related_ui": "SCR-017",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-067",
+    "scenario": "SCN-67",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "SupportTicket",
+    "priority": "P1",
+    "related_api": [
+      "createSupportTicket",
+      "readSupportTicket",
+      "transitionSupportTicket"
+    ],
+    "related_ui": "SCR-027",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Notification worker retries same intent within configured budget; ROLE-011 owns exhausted delivery in the operations queue and verifies current contact preference before an approved alternate channel. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-068",
+    "scenario": "SCN-68",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "Auction",
+    "priority": "P0",
+    "related_api": [
+      "getAuctionSnapshot",
+      "submitBid",
+      "readBidCommand",
+      "closeAuction",
+      "transitionAuction"
+    ],
+    "related_ui": "SCR-017",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-069",
+    "scenario": "SCN-69",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "VehicleListing",
+    "priority": "P1",
+    "related_api": [
+      "listConsumerListings",
+      "readVehicleListing",
+      "transitionVehicleListing"
+    ],
+    "related_ui": "SCR-030",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-070",
+    "scenario": "SCN-70",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "VehicleListing",
+    "priority": "P1",
+    "related_api": [
+      "listConsumerListings",
+      "readVehicleListing",
+      "transitionVehicleListing"
+    ],
+    "related_ui": "SCR-030",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-071",
+    "scenario": "SCN-71",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "VehicleListing",
+    "priority": "P1",
+    "related_api": [
+      "listConsumerListings",
+      "readVehicleListing",
+      "transitionVehicleListing"
+    ],
+    "related_ui": "SCR-030",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-072",
+    "scenario": "SCN-72",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "VehicleListing",
+    "priority": "P1",
+    "related_api": [
+      "listConsumerListings",
+      "readVehicleListing",
+      "transitionVehicleListing"
+    ],
+    "related_ui": "SCR-030",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-073",
+    "scenario": "SCN-73",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "VehicleListing",
+    "priority": "P1",
+    "related_api": [
+      "setSavedVehicle",
+      "listSavedVehicles"
+    ],
+    "related_ui": "SCR-030",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Typed request and authorized status contracts exist. Processor/external fulfillment remains an assigned review workflow and must not be marked complete before evidence. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-074",
+    "scenario": "SCN-74",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "PurchaseRequest",
+    "priority": "P1",
+    "related_api": [
+      "createPurchaseRequest",
+      "readPurchaseRequest",
+      "transitionPurchaseRequest"
+    ],
+    "related_ui": "SCR-031",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-075",
+    "scenario": "SCN-75",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "PurchaseRequest",
+    "priority": "P1",
+    "related_api": [
+      "createPurchaseRequest",
+      "readPurchaseRequest",
+      "transitionPurchaseRequest"
+    ],
+    "related_ui": "SCR-031",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-076",
+    "scenario": "SCN-76",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "FinancingApplication",
+    "priority": "P0",
+    "related_api": [
+      "readFinancingApplication",
+      "createFinancingApplication",
+      "transitionFinancingApplication",
+      "ingestProviderEvent"
+    ],
+    "related_ui": "SCR-033",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-077",
+    "scenario": "SCN-77",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "FinancingApplication",
+    "priority": "P0",
+    "related_api": [
+      "readFinancingApplication",
+      "createFinancingApplication",
+      "transitionFinancingApplication",
+      "ingestProviderEvent"
+    ],
+    "related_ui": "SCR-033",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-078",
+    "scenario": "SCN-78",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "FinancingApplication",
+    "priority": "P0",
+    "related_api": [
+      "readFinancingApplication",
+      "createFinancingApplication",
+      "transitionFinancingApplication",
+      "ingestProviderEvent"
+    ],
+    "related_ui": "SCR-033",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-079",
+    "scenario": "SCN-79",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "Contract",
+    "priority": "P0",
+    "related_api": [
+      "readContract",
+      "transitionContract",
+      "recordSignatureEvidence"
+    ],
+    "related_ui": "SCR-026",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-080",
+    "scenario": "SCN-80",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "Delivery",
+    "priority": "P1",
+    "related_api": [
+      "createDelivery",
+      "readDelivery",
+      "transitionDelivery",
+      "recordDeliveryHandover"
+    ],
+    "related_ui": "SCR-034",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-081",
+    "scenario": "SCN-81",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "Delivery",
+    "priority": "P1",
+    "related_api": [
+      "createDelivery",
+      "readDelivery",
+      "transitionDelivery",
+      "recordDeliveryHandover"
+    ],
+    "related_ui": "SCR-034",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-082",
+    "scenario": "SCN-82",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "WarrantyClaim",
+    "priority": "P0",
+    "related_api": [
+      "createWarrantyClaim",
+      "readWarrantyClaim",
+      "transitionWarrantyClaim"
+    ],
+    "related_ui": "SCR-035",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-083",
+    "scenario": "SCN-83",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "PurchaseRequest",
+    "priority": "P1",
+    "related_api": [
+      "actOnProcurement",
+      "readProcurement"
+    ],
+    "related_ui": "SCR-031",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Typed request and authorized status contracts exist. Processor/external fulfillment remains an assigned review workflow and must not be marked complete before evidence. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-084",
+    "scenario": "SCN-84",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "VehicleListing",
+    "priority": "P1",
+    "related_api": [
+      "listSavedVehicles",
+      "readVehicleListing"
+    ],
+    "related_ui": "SCR-030",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Typed request and authorized status contracts exist. Processor/external fulfillment remains an assigned review workflow and must not be marked complete before evidence. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-085",
+    "scenario": "SCN-85",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "VehicleListing",
+    "priority": "P1",
+    "related_api": [
+      "listConsumerListings",
+      "readVehicleListing",
+      "transitionVehicleListing"
+    ],
+    "related_ui": "SCR-030",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-086",
+    "scenario": "SCN-86",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "PurchaseRequest",
+    "priority": "P1",
+    "related_api": [
+      "createPrivacyRequest",
+      "readPrivacyRequest"
+    ],
+    "related_ui": "SCR-031",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Typed request and authorized status contracts exist. Processor/external fulfillment remains an assigned review workflow and must not be marked complete before evidence. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-087",
+    "scenario": "SCN-87",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "FinancingApplication",
+    "priority": "P1",
+    "related_api": [
+      "readFinancingApplication",
+      "createFinancingApplication",
+      "transitionFinancingApplication",
+      "ingestProviderEvent"
+    ],
+    "related_ui": "SCR-033",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-088",
+    "scenario": "SCN-88",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "PurchaseRequest",
+    "priority": "P1",
+    "related_api": [
+      "createPurchaseRequest",
+      "readPurchaseRequest",
+      "transitionPurchaseRequest"
+    ],
+    "related_ui": "SCR-031",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-089",
+    "scenario": "SCN-89",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "Appointment",
+    "priority": "P0",
+    "related_api": [
+      "createAppointment",
+      "readAppointment",
+      "transitionAppointment"
+    ],
+    "related_ui": "SCR-005",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-090",
+    "scenario": "SCN-90",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "Appointment",
+    "priority": "P1",
+    "related_api": [
+      "createAppointment",
+      "readAppointment",
+      "transitionAppointment"
+    ],
+    "related_ui": "SCR-005",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-091",
+    "scenario": "SCN-91",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "Inspection",
+    "priority": "P0",
+    "related_api": [
+      "readInspection",
+      "createInspectionRevision",
+      "transitionInspection",
+      "publishInspection"
+    ],
+    "related_ui": "SCR-022",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-092",
+    "scenario": "SCN-92",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "File",
+    "priority": "P1",
+    "related_api": [
+      "createUploadGrant",
+      "readFileStatus",
+      "createDownloadGrant"
+    ],
+    "related_ui": "SCR-022",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-093",
+    "scenario": "SCN-93",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "Valuation",
+    "priority": "P0",
+    "related_api": [
+      "createValuation",
+      "readValuation",
+      "transitionValuation"
+    ],
+    "related_ui": "SCR-024",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-094",
+    "scenario": "SCN-94",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "VehicleListing",
+    "priority": "P1",
+    "related_api": [
+      "listConsumerListings",
+      "readVehicleListing",
+      "transitionVehicleListing"
+    ],
+    "related_ui": "SCR-030",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-095",
+    "scenario": "SCN-95",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "Contract",
+    "priority": "P0",
+    "related_api": [
+      "readContract",
+      "transitionContract",
+      "recordSignatureEvidence"
+    ],
+    "related_ui": "SCR-026",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-096",
+    "scenario": "SCN-96",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "Integration",
+    "priority": "P0",
+    "related_api": [
+      "ingestProviderEvent",
+      "readPaymentObligation"
+    ],
+    "related_ui": "SCR-043",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Adapter retains intent and correlation, marks unknown, queries contracted provider status before retry. Internal normalized inbox is specified; external provider protocol is selected and tested during onboarding. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-097",
+    "scenario": "SCN-97",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "PaymentObligation",
+    "priority": "P0",
+    "related_api": [
+      "readPaymentObligation",
+      "submitPaymentEvidence",
+      "prepareReconciliation",
+      "approveReconciliation",
+      "transitionPaymentObligation"
+    ],
+    "related_ui": "SCR-043",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-098",
+    "scenario": "SCN-98",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "PaymentObligation",
+    "priority": "P0",
+    "related_api": [
+      "readPaymentObligation",
+      "submitPaymentEvidence",
+      "prepareReconciliation",
+      "approveReconciliation",
+      "transitionPaymentObligation"
+    ],
+    "related_ui": "SCR-043",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-099",
+    "scenario": "SCN-99",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "Delivery",
+    "priority": "P1",
+    "related_api": [
+      "createDelivery",
+      "readDelivery",
+      "transitionDelivery",
+      "recordDeliveryHandover"
+    ],
+    "related_ui": "SCR-034",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-100",
+    "scenario": "SCN-100",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "SupportTicket",
+    "priority": "P1",
+    "related_api": [
+      "createSupportTicket",
+      "readSupportTicket",
+      "transitionSupportTicket"
+    ],
+    "related_ui": "SCR-027",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-101",
+    "scenario": "SCN-101",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "SellerLead",
+    "priority": "P1",
+    "related_api": [
+      "readSellerLead",
+      "createSellerLead",
+      "transitionSellerLead"
+    ],
+    "related_ui": "SCR-007",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Privacy/IAM specialist reviews identity evidence in a restricted case, links records with provenance and access review. Destructive identity merge is disabled until a separately approved reversible merge specification exists. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-102",
+    "scenario": "SCN-102",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "DealerVerification",
+    "priority": "P0",
+    "related_api": [
+      "readDealerVerification",
+      "transitionDealerVerification"
+    ],
+    "related_ui": "SCR-015",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-103",
+    "scenario": "SCN-103",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "Authorization",
+    "priority": "P0",
+    "related_api": [
+      "readPolicyRecord",
+      "createPolicyVersion"
+    ],
+    "related_ui": "SCR-028",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-104",
+    "scenario": "SCN-104",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "AuditAndRecovery",
+    "priority": "P0",
+    "related_api": [],
+    "related_ui": "SCR-040",
+    "status": "Not started",
+    "implementation": [],
+    "tests": [],
+    "evidence": [],
+    "notes": "Security auditor uses restricted audit tooling under a purpose-bound grant, records query scope and evidence checksum, and obtains independent approval for export. Metrics API is not an audit-log API."
+  },
+  {
+    "id": "FR-SCN-105",
+    "scenario": "SCN-105",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "AuditAndRecovery",
+    "priority": "P0",
+    "related_api": [],
+    "related_ui": "SCR-040",
+    "status": "Not started",
+    "implementation": [],
+    "tests": [],
+    "evidence": [],
+    "notes": "SRE follows RB-01 and isolated restore procedure; verifies critical receipt, object and finance manifests; domain owners authorize reopening with measured recovery evidence."
+  },
+  {
+    "id": "FR-SCN-106",
+    "scenario": "SCN-106",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "File",
+    "priority": "P0",
+    "related_api": [
+      "createUploadGrant",
+      "readFileStatus",
+      "createDownloadGrant"
+    ],
+    "related_ui": "SCR-022",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-107",
+    "scenario": "SCN-107",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "SellerLead",
+    "priority": "P0",
+    "related_api": [
+      "readSellerLead",
+      "createSellerLead",
+      "transitionSellerLead"
+    ],
+    "related_ui": "SCR-007",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-108",
+    "scenario": "SCN-108",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "Inspection",
+    "priority": "P0",
+    "related_api": [
+      "readInspection",
+      "createInspectionRevision",
+      "transitionInspection",
+      "publishInspection"
+    ],
+    "related_ui": "SCR-022",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-109",
+    "scenario": "SCN-109",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "Inspection",
+    "priority": "P0",
+    "related_api": [
+      "readInspection",
+      "createInspectionRevision",
+      "transitionInspection",
+      "publishInspection"
+    ],
+    "related_ui": "SCR-022",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-110",
+    "scenario": "SCN-110",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "Valuation",
+    "priority": "P1",
+    "related_api": [
+      "createValuation",
+      "readValuation",
+      "transitionValuation"
+    ],
+    "related_ui": "SCR-024",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-111",
+    "scenario": "SCN-111",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "SupportTicket",
+    "priority": "P1",
+    "related_api": [
+      "createSupportTicket",
+      "readSupportTicket",
+      "transitionSupportTicket"
+    ],
+    "related_ui": "SCR-027",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "ROLE-023/011 halts affected sends, verifies recipient/channel and preference, assesses exposure, records response and independently approves any resend; do not repeat the wrong message automatically. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-112",
+    "scenario": "SCN-112",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "Contract",
+    "priority": "P0",
+    "related_api": [
+      "readContract",
+      "transitionContract",
+      "recordSignatureEvidence"
+    ],
+    "related_ui": "SCR-026",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-113",
+    "scenario": "SCN-113",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "PaymentObligation",
+    "priority": "P0",
+    "related_api": [
+      "readPaymentObligation",
+      "submitPaymentEvidence",
+      "prepareReconciliation",
+      "approveReconciliation",
+      "transitionPaymentObligation"
+    ],
+    "related_ui": "SCR-043",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-114",
+    "scenario": "SCN-114",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "PaymentObligation",
+    "priority": "P0",
+    "related_api": [
+      "readPaymentObligation",
+      "submitPaymentEvidence",
+      "prepareReconciliation",
+      "approveReconciliation",
+      "transitionPaymentObligation"
+    ],
+    "related_ui": "SCR-043",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Finance preparer records remedy request and evidence, independent finance approver confirms allowable amount/basis, approved external counterparty executes if applicable; match external result before closure. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-115",
+    "scenario": "SCN-115",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "Transaction",
+    "priority": "P0",
+    "related_api": [
+      "readTransaction",
+      "closeTransaction"
+    ],
+    "related_ui": "SCR-026",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-116",
+    "scenario": "SCN-116",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "DealerVerification",
+    "priority": "P0",
+    "related_api": [
+      "readDealerVerification",
+      "transitionDealerVerification"
+    ],
+    "related_ui": "SCR-015",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-117",
+    "scenario": "SCN-117",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "AuditAndRecovery",
+    "priority": "P0",
+    "related_api": [
+      "requestExport",
+      "readExportJob",
+      "downloadExport"
+    ],
+    "related_ui": "SCR-040",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Typed request and authorized status contracts exist. Processor/external fulfillment remains an assigned review workflow and must not be marked complete before evidence. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-118",
+    "scenario": "SCN-118",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "AuditAndRecovery",
+    "priority": "P0",
+    "related_api": [],
+    "related_ui": "SCR-040",
+    "status": "Not started",
+    "implementation": [],
+    "tests": [],
+    "evidence": [],
+    "notes": "Worker owner compares source/outbox/inbox sequences, obtains scoped replay authority and replays original event IDs; consumers deduplicate and no provider financial action is repeated automatically."
+  },
+  {
+    "id": "FR-SCN-119",
+    "scenario": "SCN-119",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "Authentication",
+    "priority": "P0",
+    "related_api": [
+      "createSession",
+      "completeAuthChallenge",
+      "requestAccountRecovery",
+      "createStepUpChallenge",
+      "completeStepUp"
+    ],
+    "related_ui": "SCR-038",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Supporting staff operations do not confer permissions on the customer; use only the action authorized by the state catalog. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  },
+  {
+    "id": "FR-SCN-120",
+    "scenario": "SCN-120",
+    "source": "docs/contracts/scenario-traceability.json",
+    "module": "SupportTicket",
+    "priority": "P0",
+    "related_api": [
+      "createPrivacyRequest",
+      "readPrivacyRequest"
+    ],
+    "related_ui": "SCR-027",
+    "status": "In progress",
+    "implementation": [
+      "apps/api/marketplace/",
+      "apps/web/src/components/"
+    ],
+    "tests": [],
+    "evidence": [],
+    "notes": "Typed request and authorized status contracts exist. Processor/external fulfillment remains an assigned review workflow and must not be marked complete before evidence. Related code paths exist; full scenario acceptance and failure branches are not yet verified."
+  }
+]

@@ -1,0 +1,24 @@
+[project]
+name = "open-autolane"
+version = "0.1.0"
+description = "Open automotive marketplace and operations platform"
+requires-python = ">=3.12"
+dependencies = [
+  "Django>=5.2.9,<5.3",
+  "djangorestframework>=3.16,<3.17",
+  "psycopg[binary]>=3.2,<4",
+  "jsonschema>=4.26,<5",
+  "uvicorn>=0.35,<1",
+  "pyotp>=2.9,<3",
+  "Pillow>=12,<13",
+]
+
+[dependency-groups]
+dev = ["ruff>=0.14", "openapi-spec-validator>=0.9,<1"]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F"]

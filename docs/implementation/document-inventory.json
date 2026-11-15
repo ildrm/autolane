@@ -1,0 +1,1152 @@
+[
+  {
+    "path": "docs/00_GOVERNANCE/01_PROJECT_CHARTER.md",
+    "bytes": 3174,
+    "sha256": "d2aca40fc4d1553215122dd434f596cca0816885618c6244672b6ac1193a0f45"
+  },
+  {
+    "path": "docs/00_GOVERNANCE/02_DOCUMENTATION_STANDARDS.md",
+    "bytes": 2663,
+    "sha256": "a4ef906af256227f5136104ce29de655b31fa585c360540b93cd8481b569efac"
+  },
+  {
+    "path": "docs/00_GOVERNANCE/03_GLOSSARY.md",
+    "bytes": 3170,
+    "sha256": "e5688a8b0a6dca436cd0dc80daf61c2abd141758eef0d4a33d80d776bb133093"
+  },
+  {
+    "path": "docs/00_GOVERNANCE/04_SOURCE_AND_EVIDENCE_REGISTER.md",
+    "bytes": 3014,
+    "sha256": "944a8b4f37af72bbdf0713ff74b8ffab1101fc6a4b749023317afd5494cdb4f2"
+  },
+  {
+    "path": "docs/00_GOVERNANCE/05_ASSUMPTIONS_AND_DECISIONS.md",
+    "bytes": 2707,
+    "sha256": "d7fe40705faac7a3fe3e0e180b0acb41a2329ccbbe98c681cd760924d5d8b320"
+  },
+  {
+    "path": "docs/00_GOVERNANCE/06_RISK_REGISTER.md",
+    "bytes": 2840,
+    "sha256": "2a070cc1b5e255532ce56e9c1efa1584a4f34b44dae44cec5cbaa10fad44c941"
+  },
+  {
+    "path": "docs/00_GOVERNANCE/07_REQUIREMENTS_TRACEABILITY.md",
+    "bytes": 3436,
+    "sha256": "f6fdef2dd3a13932dd51a633bff1e283c97354d868eb8a2bc4e4237a08bbbe24"
+  },
+  {
+    "path": "docs/00_MASTER_INDEX.md",
+    "bytes": 23135,
+    "sha256": "e172b6ad5889e9dc2d0069789c0d873cce1507b81139bb438b42c70a05238b33"
+  },
+  {
+    "path": "docs/00_RESEARCH_EVIDENCE.md",
+    "bytes": 18405,
+    "sha256": "b4659bc698018833b8a410a87ca1a1b982a1960d6edf77b106a516b6b7b726e3"
+  },
+  {
+    "path": "docs/01_BUSINESS_MODEL_AND_OPERATIONS.md",
+    "bytes": 32406,
+    "sha256": "3a2f5adcd4d93bfd256c8840cb134fbaeea7c5281ab7ca2ebda787523ff17a83"
+  },
+  {
+    "path": "docs/01_BUSINESS_RESEARCH/01_REFERENCE_BUSINESS_ANALYSIS.md",
+    "bytes": 2607,
+    "sha256": "b3067fc18774169dcd6638873d70ebf5e7ce1a72fca454023b2b505d94be147f"
+  },
+  {
+    "path": "docs/01_BUSINESS_RESEARCH/02_COMPETITOR_RESEARCH.md",
+    "bytes": 2938,
+    "sha256": "9f4a9b91d95115c748af3143aec282f15b973a82c731c404223feb3ad2cc6f18"
+  },
+  {
+    "path": "docs/01_BUSINESS_RESEARCH/03_MARKET_OPPORTUNITY.md",
+    "bytes": 2727,
+    "sha256": "e7c9cda04ea00e7db766b7df8759eeee411b990b752066c654c3ec1e9882842d"
+  },
+  {
+    "path": "docs/01_BUSINESS_RESEARCH/04_BUSINESS_MODEL_CANVAS.md",
+    "bytes": 2716,
+    "sha256": "b4fb8c2bce51b6540e6ccbb520d58076f5ba611c59efb03219a21aaac5aead13"
+  },
+  {
+    "path": "docs/01_BUSINESS_RESEARCH/05_REVENUE_MODEL.md",
+    "bytes": 2749,
+    "sha256": "583771540c86dde2cbe20e46e41d1b66835c6d8210b5a56b3a505d4a3c1f977d"
+  },
+  {
+    "path": "docs/01_BUSINESS_RESEARCH/06_OPERATIONAL_MODEL.md",
+    "bytes": 2979,
+    "sha256": "e3dad1a66b58ac7b1daeeaccd2b1534ed4d4df8dbd56f01bc7d2cb854a3afa0d"
+  },
+  {
+    "path": "docs/01_BUSINESS_RESEARCH/07_BUSINESS_RULES.md",
+    "bytes": 3172,
+    "sha256": "7e19d4c07f01ddcdc338e47fff1e5019dca86c6d874f0fff904d8ff714f092eb"
+  },
+  {
+    "path": "docs/01_BUSINESS_RESEARCH/08_REGULATORY_DEPENDENCIES.md",
+    "bytes": 2800,
+    "sha256": "863c7cc592cebee1da2371bb71c68b5f25aadaedea6e275d71340d95c6842127"
+  },
+  {
+    "path": "docs/02_PRODUCT_AND_PANEL_INVENTORY.md",
+    "bytes": 24505,
+    "sha256": "07c9137a71c55eac2987cb09822d8fd5dca4d53121cb7d582e2498c9f22c8568"
+  },
+  {
+    "path": "docs/02_PRODUCT_STRATEGY/01_PRODUCT_VISION.md",
+    "bytes": 2360,
+    "sha256": "141c0b7d0591e773c5738891eab7b5cd2e1ccc3f28af3bd74f88a17c9aad715e"
+  },
+  {
+    "path": "docs/02_PRODUCT_STRATEGY/02_PRODUCT_REQUIREMENTS_DOCUMENT.md",
+    "bytes": 3238,
+    "sha256": "1173d5616dbcdfc2ecf5603f0e3f18efc8e3a11f7e96385260699404f04f3006"
+  },
+  {
+    "path": "docs/02_PRODUCT_STRATEGY/03_PERSONAS.md",
+    "bytes": 2652,
+    "sha256": "9eae5ab9311caa1386487ca21ad68f3b72180dbe1d826362b0ee80152df6bc7a"
+  },
+  {
+    "path": "docs/02_PRODUCT_STRATEGY/04_JOBS_TO_BE_DONE.md",
+    "bytes": 2366,
+    "sha256": "d5b5899858240ba9f6844d27cfe2b088c46b2d8523824a9a61d85055735eb8c1"
+  },
+  {
+    "path": "docs/02_PRODUCT_STRATEGY/05_FEATURE_INVENTORY.md",
+    "bytes": 2505,
+    "sha256": "e41ca89ad6062d130e94a4afd2cd5651fbc91cd7d879ae5706ba82dd5b9763dc"
+  },
+  {
+    "path": "docs/02_PRODUCT_STRATEGY/06_PRODUCT_ROADMAP.md",
+    "bytes": 2442,
+    "sha256": "ce03c8eec32fa9f2f52b2daeafa4ac1122e80a1cf2e2bbb19646274696ec400d"
+  },
+  {
+    "path": "docs/02_PRODUCT_STRATEGY/07_SUCCESS_METRICS.md",
+    "bytes": 2614,
+    "sha256": "d1e12fcaf0aff3604031de745aa82cb4152311c3610982e94029e9e37c473bef"
+  },
+  {
+    "path": "docs/02_PRODUCT_STRATEGY/08_SCOPE_AND_PRIORITIZATION.md",
+    "bytes": 2278,
+    "sha256": "69927320d131451ea30842c2d2c8062a548bd8df62dc0b9ac0b189256e8ae5e3"
+  },
+  {
+    "path": "docs/03_BATCH_AUDIT_AND_CHECKPOINT.md",
+    "bytes": 7047,
+    "sha256": "72905acbae348c060daa530a168786d111bc52df911644827a18a6e91c45ecbe"
+  },
+  {
+    "path": "docs/03_USER_JOURNEYS_AND_SCENARIOS/01_USER_JOURNEY_MAPS.md",
+    "bytes": 2897,
+    "sha256": "1377be64d4a40f017c2c38d04cd2519802218b5ec573c040c28b7f694fea6a1e"
+  },
+  {
+    "path": "docs/03_USER_JOURNEYS_AND_SCENARIOS/02_SERVICE_BLUEPRINTS.md",
+    "bytes": 2664,
+    "sha256": "25ebb6c624985645261dba58344e650a850156e99cb2236f1accd557117f85a7"
+  },
+  {
+    "path": "docs/03_USER_JOURNEYS_AND_SCENARIOS/03_COMPLETE_SCENARIO_CATALOG.md",
+    "bytes": 56822,
+    "sha256": "d5ac8b2301f5bd037998da66b9db9f422239a78b154be7e7e4cebd8600049117"
+  },
+  {
+    "path": "docs/03_USER_JOURNEYS_AND_SCENARIOS/04_BUSINESS_PROCESS_FLOWS.md",
+    "bytes": 2388,
+    "sha256": "cdc66615b4dd340e9b492a12978c817086f605013ec664ac051b24d0f7ab9621"
+  },
+  {
+    "path": "docs/03_USER_JOURNEYS_AND_SCENARIOS/05_STATE_MACHINE_CATALOG.md",
+    "bytes": 23667,
+    "sha256": "f2d11f9f1787b72ba42fc9ba450b14b144c7df290b09201c4a6981c2c7931f52"
+  },
+  {
+    "path": "docs/03_USER_JOURNEYS_AND_SCENARIOS/06_EDGE_CASE_MATRIX.md",
+    "bytes": 3651,
+    "sha256": "094f2774e30fcbbc8ef31c26a986408e5ea96e2f1e09258f96391177e24383f8"
+  },
+  {
+    "path": "docs/03_USER_JOURNEYS_AND_SCENARIOS/07_EXCEPTION_HANDLING.md",
+    "bytes": 2822,
+    "sha256": "865d596fd4de0cb5cf3b38933aea199a102c6183303d9a25e8cd8f040bff591a"
+  },
+  {
+    "path": "docs/03_USER_JOURNEYS_AND_SCENARIOS/08_OPERATIONAL_RECOVERY.md",
+    "bytes": 3003,
+    "sha256": "b71eddf6fc0c85fdf442d9e09db682e990b5a624206ff1a64f1546edcf7ad3d0"
+  },
+  {
+    "path": "docs/04_ROLES_AND_PANELS/01_USER_ROLES.md",
+    "bytes": 6207,
+    "sha256": "31c2c5cb5ec221e3299f9d31801de1416060194bc31c02b4b323b54b2ebaf838"
+  },
+  {
+    "path": "docs/04_ROLES_AND_PANELS/02_ROLE_PERMISSION_MATRIX.md",
+    "bytes": 4559,
+    "sha256": "eb8a1103879394a69d371b0e3dd464c1ca26e8c079764586639a62eb063596ce"
+  },
+  {
+    "path": "docs/04_ROLES_AND_PANELS/03_PANEL_ARCHITECTURE.md",
+    "bytes": 2814,
+    "sha256": "81cea50305410891dc3d37213543eed9d5f4c7730aa436b30ca08fdd5d9fa7cc"
+  },
+  {
+    "path": "docs/04_ROLES_AND_PANELS/04_PUBLIC_SITE_SPECIFICATION.md",
+    "bytes": 2580,
+    "sha256": "5f5945258478676a2b9b15afbaaa29848a7950633f6b6a990a26fcb3fdc81246"
+  },
+  {
+    "path": "docs/04_ROLES_AND_PANELS/05_SELLER_PORTAL_SPECIFICATION.md",
+    "bytes": 2599,
+    "sha256": "7420a244b9f1032c8139a8e9c4b5284da8f3525fb4df46f929423ea45fad641f"
+  },
+  {
+    "path": "docs/04_ROLES_AND_PANELS/06_CONSUMER_BUYER_PORTAL.md",
+    "bytes": 2379,
+    "sha256": "477fbd2289d4eb83acee3ea42ff7ebbbd1a04abdda4eb40a3e5beca6dc42078a"
+  },
+  {
+    "path": "docs/04_ROLES_AND_PANELS/07_DEALER_PORTAL_SPECIFICATION.md",
+    "bytes": 2661,
+    "sha256": "c98596d482c2661e3b041b551b8627f8b669877bfb50736829cf278edd9f0de2"
+  },
+  {
+    "path": "docs/04_ROLES_AND_PANELS/08_OPERATIONS_PANELS.md",
+    "bytes": 2514,
+    "sha256": "50a0fc11eceff96a6551adb004e407c8bc89f20aa574b4bf7e9f078ed18c7790"
+  },
+  {
+    "path": "docs/04_ROLES_AND_PANELS/09_FINANCE_AND_LEGAL_PANELS.md",
+    "bytes": 2456,
+    "sha256": "755ccd80e8437d9570cb1521cfee8b7406614623cdfcebb30e0657917c199581"
+  },
+  {
+    "path": "docs/04_ROLES_AND_PANELS/10_ADMINISTRATION_SPECIFICATION.md",
+    "bytes": 2456,
+    "sha256": "4f3fe241b576864991ecae4def61b0a81f9d63b0ae83bec684f6e6ebbc7f48aa"
+  },
+  {
+    "path": "docs/04_ROLES_AND_PANELS/11_SCREEN_ACTION_MATRIX.md",
+    "bytes": 3708,
+    "sha256": "f1c41537a99d92a92ba732883b65415ba280d3f3aa8aff0e9f3c2ad7fa1b982b"
+  },
+  {
+    "path": "docs/04_ROLES_AND_PANELS/12_PANEL_CONTRACTS.md",
+    "bytes": 43499,
+    "sha256": "16c16a732123d17a3f0561a6284331f7d75eaf791ae29d2414c41de385ba8cb6"
+  },
+  {
+    "path": "docs/05_UX_RESEARCH_AND_INFORMATION_ARCHITECTURE/01_UX_RESEARCH_PLAN.md",
+    "bytes": 4113,
+    "sha256": "ff4002bb1031b607a27e3cffc59179869545a3e91958f24afe368355945833b9"
+  },
+  {
+    "path": "docs/05_UX_RESEARCH_AND_INFORMATION_ARCHITECTURE/02_INFORMATION_ARCHITECTURE.md",
+    "bytes": 2913,
+    "sha256": "82e8d763cf77e478a09f6554f4b0f8b0ade5d02ba514800bc75a3c8200c568ec"
+  },
+  {
+    "path": "docs/05_UX_RESEARCH_AND_INFORMATION_ARCHITECTURE/03_NAVIGATION_SYSTEM.md",
+    "bytes": 2614,
+    "sha256": "b92584a685d8e76ed9d0a8afeb709262dfaaf9f552a53941e32b8f1eaed7a9f3"
+  },
+  {
+    "path": "docs/05_UX_RESEARCH_AND_INFORMATION_ARCHITECTURE/04_SCREEN_INVENTORY.md",
+    "bytes": 10252,
+    "sha256": "cf22f2774ad1f8a9209bb22155d9581182119a1a52bc2d1fa092ee037b42146b"
+  },
+  {
+    "path": "docs/05_UX_RESEARCH_AND_INFORMATION_ARCHITECTURE/05_WIREFRAME_SPECIFICATIONS.md",
+    "bytes": 6399,
+    "sha256": "015f709f1c2835e34337228d2b62400ddda2fec5907de48bee96ae16d86072f9"
+  },
+  {
+    "path": "docs/05_UX_RESEARCH_AND_INFORMATION_ARCHITECTURE/06_FORM_UX.md",
+    "bytes": 3373,
+    "sha256": "aebf50b02d0b8e0fd17ef047df32afeeb46444b26a0258d7bc4e7720d1bcdeec"
+  },
+  {
+    "path": "docs/05_UX_RESEARCH_AND_INFORMATION_ARCHITECTURE/07_RESPONSIVE_UX.md",
+    "bytes": 2297,
+    "sha256": "35ec05865e5a99712585fa7e061de96c0bfcf00a89b07a6fe7e1f55650dc251d"
+  },
+  {
+    "path": "docs/05_UX_RESEARCH_AND_INFORMATION_ARCHITECTURE/08_ACCESSIBILITY_UX.md",
+    "bytes": 2538,
+    "sha256": "7d021a7f8c45282450b7e9fbfdd47eb14a53e1ce28e9b66e970108a218a83d03"
+  },
+  {
+    "path": "docs/05_UX_RESEARCH_AND_INFORMATION_ARCHITECTURE/09_UX_CONTENT_GUIDE.md",
+    "bytes": 2986,
+    "sha256": "d19d2b04d6636c993a695c038d754bf32e64255393ff3caf0302f03efb740f17"
+  },
+  {
+    "path": "docs/05_UX_RESEARCH_AND_INFORMATION_ARCHITECTURE/10_SCREEN_CONTRACT_BINDINGS.md",
+    "bytes": 8831,
+    "sha256": "69e9cbad4c7158a40a9671017575fee5b10264538d82f6bfadb5e7ac01628ada"
+  },
+  {
+    "path": "docs/06_VISUAL_DESIGN_SYSTEM/01_CREATIVE_DIRECTION.md",
+    "bytes": 2832,
+    "sha256": "4b1d98604c849fa2acfa702ac8169db205ac63807f993b188e63eb9d3b683c9e"
+  },
+  {
+    "path": "docs/06_VISUAL_DESIGN_SYSTEM/02_BRAND_VISUAL_LANGUAGE.md",
+    "bytes": 2532,
+    "sha256": "11f1d52cdf4594d2e8acb0f0cb49a95056d8a550804dd35293dd3ba82c079e7c"
+  },
+  {
+    "path": "docs/06_VISUAL_DESIGN_SYSTEM/03_DESIGN_TOKENS.md",
+    "bytes": 3381,
+    "sha256": "1f0f81e150efd0e9c8acb85d37be48ebb3357413bbb1b1a2bb87a2f4f6561190"
+  },
+  {
+    "path": "docs/06_VISUAL_DESIGN_SYSTEM/04_TYPOGRAPHY.md",
+    "bytes": 1868,
+    "sha256": "0c38891c0bfb11fcc1dfca85bd8f6de8a1015a6608acb6a03c0b7409f5e8157d"
+  },
+  {
+    "path": "docs/06_VISUAL_DESIGN_SYSTEM/05_COLOR_SYSTEM.md",
+    "bytes": 2251,
+    "sha256": "f7c28c501666b4082c9c5e7eff5bcd3d55cf7b202baf040a59e40a35092cd7b2"
+  },
+  {
+    "path": "docs/06_VISUAL_DESIGN_SYSTEM/06_LAYOUT_AND_SPACING.md",
+    "bytes": 1779,
+    "sha256": "9e20bf87784940e6fc6ab5d707bcd04cc51c3b5ebf72bb8368654b3566a79fff"
+  },
+  {
+    "path": "docs/06_VISUAL_DESIGN_SYSTEM/07_COMPONENT_LIBRARY.md",
+    "bytes": 4645,
+    "sha256": "f490fc32ded8a3be3cde01d1aed7e3ac49a6ec4d89aa64379e1346c10180cca4"
+  },
+  {
+    "path": "docs/06_VISUAL_DESIGN_SYSTEM/08_COMPONENT_STATES.md",
+    "bytes": 2426,
+    "sha256": "a6a084c014e05b9fc47a3a6e6d3fcfb9cab62295dc4dda77f423d6968e6b596f"
+  },
+  {
+    "path": "docs/06_VISUAL_DESIGN_SYSTEM/09_DASHBOARD_DESIGN_SYSTEM.md",
+    "bytes": 2209,
+    "sha256": "25503fb5745cf2321682a57b4912ebddc6b03e637d049b319639446be99637af"
+  },
+  {
+    "path": "docs/06_VISUAL_DESIGN_SYSTEM/10_DESIGN_TO_DEV_HANDOFF.md",
+    "bytes": 2069,
+    "sha256": "230214a22871c0413f1fe99b3f41edbce12520bf1ffdbda85ca95c9c8fb2068d"
+  },
+  {
+    "path": "docs/07_ANIMATION_3D_AND_GRAPHICS/01_MOTION_DESIGN_LANGUAGE.md",
+    "bytes": 2392,
+    "sha256": "1a76d641d7c80291628588fae8db6f18e42ce1ae5efedd9414a3e8ddda4f0fc1"
+  },
+  {
+    "path": "docs/07_ANIMATION_3D_AND_GRAPHICS/02_ANIMATION_INVENTORY.md",
+    "bytes": 4408,
+    "sha256": "2d12650807c9f407ef62064e64019c483c54f7d88d2016766a70b54ef542d088"
+  },
+  {
+    "path": "docs/07_ANIMATION_3D_AND_GRAPHICS/03_MICROINTERACTIONS.md",
+    "bytes": 2576,
+    "sha256": "f3d360e9120e8052e530bfe7341e14ad782ee8144b39044858c1e81ab8b30ab0"
+  },
+  {
+    "path": "docs/07_ANIMATION_3D_AND_GRAPHICS/04_PAGE_TRANSITIONS.md",
+    "bytes": 2112,
+    "sha256": "6b96526d50d7313f9de1ca3768880bbda6cdafb778219f9c49730584e4e7dc2b"
+  },
+  {
+    "path": "docs/07_ANIMATION_3D_AND_GRAPHICS/05_3D_AUTOMOTIVE_EXPERIENCES.md",
+    "bytes": 3365,
+    "sha256": "cc1336acdf8115d3a3da43cf034e202ab42a9814ead39efba226746f3d409f07"
+  },
+  {
+    "path": "docs/07_ANIMATION_3D_AND_GRAPHICS/06_GRAPHIC_ASSET_SPECIFICATIONS.md",
+    "bytes": 2765,
+    "sha256": "6b9eb21d3cb2762d6a08bbe779fc688fe80846723948e4bfc6b8ca3b90dc37ac"
+  },
+  {
+    "path": "docs/07_ANIMATION_3D_AND_GRAPHICS/07_MOTION_PERFORMANCE_BUDGET.md",
+    "bytes": 2499,
+    "sha256": "73784d0789995372cce81f89c4a78ca1c826008015e853adcbd8187e3b4e38bb"
+  },
+  {
+    "path": "docs/07_ANIMATION_3D_AND_GRAPHICS/08_ANIMATION_ACCESSIBILITY.md",
+    "bytes": 2089,
+    "sha256": "c1bc4748d008328d300f2314d550f3b644455691957acb872644b836114992f3"
+  },
+  {
+    "path": "docs/07_ANIMATION_3D_AND_GRAPHICS/09_CREATIVE_PRODUCTION_PIPELINE.md",
+    "bytes": 3940,
+    "sha256": "b1ead258dbeef029a68c65c45353e787a8c90f5c16b7616777099e48ff843132"
+  },
+  {
+    "path": "docs/08_SOFTWARE_ARCHITECTURE/01_ARCHITECTURE_OVERVIEW.md",
+    "bytes": 2712,
+    "sha256": "a78f414dc71c8c1205888d211cfdfa8a9a62d06433ab880ffd7f817112595872"
+  },
+  {
+    "path": "docs/08_SOFTWARE_ARCHITECTURE/02_TECH_STACK_DECISIONS.md",
+    "bytes": 3123,
+    "sha256": "0579cef184b856b0dee3c2e97b59dc89fed9155b90bd70b233a1020af2e5484b"
+  },
+  {
+    "path": "docs/08_SOFTWARE_ARCHITECTURE/03_C4_DIAGRAMS.md",
+    "bytes": 6825,
+    "sha256": "7f6345d4d5efedad01b58b938b9ebfc50a2ae51dad38386f6246d30135d7ef4d"
+  },
+  {
+    "path": "docs/08_SOFTWARE_ARCHITECTURE/04_DOMAIN_BOUNDARIES.md",
+    "bytes": 3273,
+    "sha256": "81ec9afd47951367dd9416ea8a5b85bce689825212fc768f4508ed21c504d8b8"
+  },
+  {
+    "path": "docs/08_SOFTWARE_ARCHITECTURE/05_SYSTEM_COMPONENTS.md",
+    "bytes": 1936,
+    "sha256": "f43aaaf403581a569db8a292bbd2864e342f4395f7d2ec74b7b641696f3ef506"
+  },
+  {
+    "path": "docs/08_SOFTWARE_ARCHITECTURE/06_INTEGRATION_ARCHITECTURE.md",
+    "bytes": 2174,
+    "sha256": "d7303860288843ccc1cf3161d984f6829f0e0585a5269ecb820af51dea63d56c"
+  },
+  {
+    "path": "docs/08_SOFTWARE_ARCHITECTURE/07_EVENT_DRIVEN_ARCHITECTURE.md",
+    "bytes": 2087,
+    "sha256": "a335df18b8c06ec5eb07e20c2861d4478ac8985dd08122affb4cce9d9647f2ec"
+  },
+  {
+    "path": "docs/08_SOFTWARE_ARCHITECTURE/08_REALTIME_ARCHITECTURE.md",
+    "bytes": 1862,
+    "sha256": "fb332838027c8d3e426f3284067926fd7decc185a57d267fdc99226e02abc85a"
+  },
+  {
+    "path": "docs/08_SOFTWARE_ARCHITECTURE/09_FAILURE_RECOVERY_ARCHITECTURE.md",
+    "bytes": 2093,
+    "sha256": "55a5a4c1056ba394e7c9286cd67c4061d13a452dcd0ec60e216c03a308995982"
+  },
+  {
+    "path": "docs/08_SOFTWARE_ARCHITECTURE/10_ARCHITECTURE_DECISION_RECORDS.md",
+    "bytes": 2271,
+    "sha256": "f80b782692363eec2c476df506555ea915aaa841c857022b0dcb606d34780842"
+  },
+  {
+    "path": "docs/09_DATA_ARCHITECTURE/01_DATA_MODEL.md",
+    "bytes": 3755,
+    "sha256": "195036ca25028992193cf94a3b56befdaef5d90bce32cc05a6f1340bcee90241"
+  },
+  {
+    "path": "docs/09_DATA_ARCHITECTURE/02_ENTITY_RELATIONSHIP_DIAGRAM.md",
+    "bytes": 2669,
+    "sha256": "6922f1241bd9b3bdd06dbcac3d4322acd554705185e6541025af885007e7ff9a"
+  },
+  {
+    "path": "docs/09_DATA_ARCHITECTURE/03_DATA_DICTIONARY.md",
+    "bytes": 16958,
+    "sha256": "4867481ac68e9d09d3170bd3a0ab7d60ebed84b5a300381a8012fdf9f8f648d9"
+  },
+  {
+    "path": "docs/09_DATA_ARCHITECTURE/04_DATABASE_DESIGN.md",
+    "bytes": 4651,
+    "sha256": "11b61d3f281e14ad405bd9481adb3f21fe012264cf0784f16fcec3965ca15619"
+  },
+  {
+    "path": "docs/09_DATA_ARCHITECTURE/05_INDEXING_STRATEGY.md",
+    "bytes": 3649,
+    "sha256": "209b069df86f31241c4f7a97fa0bda9f2d193f2e25e4bdcbf7eff4c88663b811"
+  },
+  {
+    "path": "docs/09_DATA_ARCHITECTURE/06_DATA_CONSISTENCY.md",
+    "bytes": 1759,
+    "sha256": "977550088a12eeb962a1231a30087808e2761e69ea7617fbdb8e568a11a55c11"
+  },
+  {
+    "path": "docs/09_DATA_ARCHITECTURE/07_DATA_RETENTION.md",
+    "bytes": 3786,
+    "sha256": "e12c53eb08b2ae9c0ca8005bdc98dd330e2d217037622ff69a817fefeece0a6f"
+  },
+  {
+    "path": "docs/09_DATA_ARCHITECTURE/08_SEARCH_DATA_MODEL.md",
+    "bytes": 3099,
+    "sha256": "b8c0640e10beb933ef768896633eb4af8ee06172b66f26b6f9972a6e6e436f38"
+  },
+  {
+    "path": "docs/09_DATA_ARCHITECTURE/09_ANALYTICAL_DATA_MODEL.md",
+    "bytes": 3382,
+    "sha256": "5ba8225c44d512b74283dc5daaaa89ae77494932ff405b1aaea818cc38239220"
+  },
+  {
+    "path": "docs/09_DATA_ARCHITECTURE/10_FIELD_CONSTRAINTS.md",
+    "bytes": 6325,
+    "sha256": "5832c8540d8eb415e5b89dbd0a7f0e79385b70ee7974235168e9a0d69bb9f674"
+  },
+  {
+    "path": "docs/10_BACKEND_AND_APIS/01_BACKEND_MODULE_SPECIFICATIONS.md",
+    "bytes": 2817,
+    "sha256": "474da0f62c602d0ece43c150b674099b004d77a528bd7c051b10ccf2010e51b8"
+  },
+  {
+    "path": "docs/10_BACKEND_AND_APIS/02_API_CATALOG.md",
+    "bytes": 5979,
+    "sha256": "60892e076c6e597e03d7af3083abab783a2df4706a11cba3f1398b5bc0ae61c0"
+  },
+  {
+    "path": "docs/10_BACKEND_AND_APIS/03_AUTHENTICATION_API.md",
+    "bytes": 2781,
+    "sha256": "2164d06a3998d499e46c96544e377f671b7a14779ba0d428bacd3270e97f80b8"
+  },
+  {
+    "path": "docs/10_BACKEND_AND_APIS/04_AUCTION_API.md",
+    "bytes": 2722,
+    "sha256": "dd89fe4a659310b8cf3f5a6e2b8775bb1005b98d6ad89f1146fe3d11e6f11302"
+  },
+  {
+    "path": "docs/10_BACKEND_AND_APIS/05_VEHICLE_AND_INSPECTION_API.md",
+    "bytes": 1948,
+    "sha256": "f78aa9cbddbcd1ae5d8aa727f3087bd0c0d7913686fa11ea27b04b60b5e1aa5b"
+  },
+  {
+    "path": "docs/10_BACKEND_AND_APIS/06_FINANCIAL_API.md",
+    "bytes": 1989,
+    "sha256": "cb493a4a917e49438b82e08883e68aa4aa167c0d3faacae153410bb826d911c4"
+  },
+  {
+    "path": "docs/10_BACKEND_AND_APIS/07_ADMIN_API.md",
+    "bytes": 1645,
+    "sha256": "d1ccfd3256fe308f3a061b334db720e21f7cc0a3586136e0590bf8cbc5dadaeb"
+  },
+  {
+    "path": "docs/10_BACKEND_AND_APIS/08_EVENT_CONTRACTS.md",
+    "bytes": 5341,
+    "sha256": "8a0e21e67ed422260198636b3e903bdb36b54474c8876f71d9522147ea4324bd"
+  },
+  {
+    "path": "docs/10_BACKEND_AND_APIS/09_INTEGRATION_CONTRACTS.md",
+    "bytes": 2300,
+    "sha256": "e3de9d279ec2079e3ac41de28be99172bd4588a4c2e8e9f316718c0b5dd3d24e"
+  },
+  {
+    "path": "docs/10_BACKEND_AND_APIS/10_ERROR_HANDLING_STANDARDS.md",
+    "bytes": 2057,
+    "sha256": "466dbd335368889f7bdf78bee7c3dc2893bb75713c27a911bafb27eda85b4d26"
+  },
+  {
+    "path": "docs/10_BACKEND_AND_APIS/11_OPENAPI_SPECIFICATION.yaml",
+    "bytes": 556158,
+    "sha256": "897deb7fc3cc1cbf0dd36139f088c80e0c63b2acd7975143cf1aa917d8bed27b"
+  },
+  {
+    "path": "docs/10_BACKEND_AND_APIS/12_OPERATION_INDEX.md",
+    "bytes": 11868,
+    "sha256": "71ef05b2dd048de0915386610f8c859f78398dfb83531013c80a7a20855f09d6"
+  },
+  {
+    "path": "docs/10_BACKEND_AND_APIS/13_SCHEMA_FIELD_REFERENCE.md",
+    "bytes": 158036,
+    "sha256": "09b5a1c6580a089bc4860191a37c8023833ead62d5bf8769d7456cafdaed617e"
+  },
+  {
+    "path": "docs/11_FRONTEND_ENGINEERING/01_FRONTEND_ARCHITECTURE.md",
+    "bytes": 3655,
+    "sha256": "22a6a8a25f4093d6ec6225aa7e91ad567087b08d5414237d780a3d14ed83d07c"
+  },
+  {
+    "path": "docs/11_FRONTEND_ENGINEERING/02_APPLICATION_ROUTING.md",
+    "bytes": 3917,
+    "sha256": "514ac9ea6772ca8336d73c43aafe349724bff27affa0644d2ff32a6df077bf57"
+  },
+  {
+    "path": "docs/11_FRONTEND_ENGINEERING/03_STATE_MANAGEMENT.md",
+    "bytes": 3038,
+    "sha256": "dea3d42e9acfaa0c96622a1bc9b81a62e3a520ad626a0e6c77869aaa4b4b8996"
+  },
+  {
+    "path": "docs/11_FRONTEND_ENGINEERING/04_DATA_FETCHING.md",
+    "bytes": 3340,
+    "sha256": "dc0c6361421929fa2195bf1a61f4a84648998230215470997be37680404be473"
+  },
+  {
+    "path": "docs/11_FRONTEND_ENGINEERING/05_COMPONENT_ARCHITECTURE.md",
+    "bytes": 3601,
+    "sha256": "9fe1ce612a90d5df1384abeb52037840e82d081959a1380106d57ec48f55c1f1"
+  },
+  {
+    "path": "docs/11_FRONTEND_ENGINEERING/06_FORM_IMPLEMENTATION_SPEC.md",
+    "bytes": 3327,
+    "sha256": "8a196d46d86aace90fe82edd5cfaf05712c3d9fcc43086a3e93cb59f61ee41d1"
+  },
+  {
+    "path": "docs/11_FRONTEND_ENGINEERING/07_REALTIME_UI.md",
+    "bytes": 3015,
+    "sha256": "bfdff0810c3ae9f15a0177afd0f635f77b71b7385ffa4ef96db6a17a461435fa"
+  },
+  {
+    "path": "docs/11_FRONTEND_ENGINEERING/08_FRONTEND_PERFORMANCE.md",
+    "bytes": 2886,
+    "sha256": "c60b9d479998363e1ec0df39fe5272d50902a171394e764df8e161a581ca0fd0"
+  },
+  {
+    "path": "docs/11_FRONTEND_ENGINEERING/09_FRONTEND_ACCESSIBILITY.md",
+    "bytes": 3283,
+    "sha256": "940d0c8cfab2edf01d8dba921dfe5015fe4490f78d4e325637dbc975536491c0"
+  },
+  {
+    "path": "docs/11_FRONTEND_ENGINEERING/10_MOBILE_WEB_STRATEGY.md",
+    "bytes": 2918,
+    "sha256": "39a6cf81cf5562c895c61b635530365467834e517a71e1e837a12072519597a1"
+  },
+  {
+    "path": "docs/12_AUCTION_AND_TRANSACTION_SYSTEMS/01_AUCTION_ENGINE_SPEC.md",
+    "bytes": 2434,
+    "sha256": "6b1de394d430e6cb93cf4c31784545838a962c7d7e704de6d2d572815f69453d"
+  },
+  {
+    "path": "docs/12_AUCTION_AND_TRANSACTION_SYSTEMS/02_BIDDING_RULES.md",
+    "bytes": 2580,
+    "sha256": "7120f275aa3ef4c643433acec02aeaa8f1120b70b80a5b4900fe587a75c8c458"
+  },
+  {
+    "path": "docs/12_AUCTION_AND_TRANSACTION_SYSTEMS/03_AUCTION_CONCURRENCY.md",
+    "bytes": 5403,
+    "sha256": "cbc65abf46f40fcb7438adc6be376b9a776d308d546605d31a0335df48e11dbc"
+  },
+  {
+    "path": "docs/12_AUCTION_AND_TRANSACTION_SYSTEMS/04_SELLER_ACCEPTANCE_WORKFLOW.md",
+    "bytes": 2629,
+    "sha256": "907b5333ea1fae33549482e33c3d7b5a9303ce23ff91dca7155e5d4fc9d89201"
+  },
+  {
+    "path": "docs/12_AUCTION_AND_TRANSACTION_SYSTEMS/05_DEALER_CREDIT_POLICY.md",
+    "bytes": 1872,
+    "sha256": "0fea83155b6855596926149d3354e0411ef3e907f9696867064a36038f38c4b4"
+  },
+  {
+    "path": "docs/12_AUCTION_AND_TRANSACTION_SYSTEMS/06_TRANSACTION_LIFECYCLE.md",
+    "bytes": 2194,
+    "sha256": "30c37ed91d4ff803938a1ea9dead3e76db1ac849180625f92ddf65ce6f0ad4bf"
+  },
+  {
+    "path": "docs/12_AUCTION_AND_TRANSACTION_SYSTEMS/07_CONTRACT_WORKFLOW.md",
+    "bytes": 3985,
+    "sha256": "ae4ed3aa0b041d478ac85a90d22e57deb59a72feb14c02f67cadca5d2e899a27"
+  },
+  {
+    "path": "docs/12_AUCTION_AND_TRANSACTION_SYSTEMS/08_SETTLEMENT_MODEL.md",
+    "bytes": 2080,
+    "sha256": "c5e8a11f9c22e68a1f6d80e6b13016da4caa75531fa7a9db830842387e496532"
+  },
+  {
+    "path": "docs/12_AUCTION_AND_TRANSACTION_SYSTEMS/09_FINANCIAL_LEDGER.md",
+    "bytes": 3900,
+    "sha256": "a8950caa80f913626b728453ebf9bbd24e6b51a2239c853d472601343d429271"
+  },
+  {
+    "path": "docs/12_AUCTION_AND_TRANSACTION_SYSTEMS/10_RECONCILIATION.md",
+    "bytes": 2107,
+    "sha256": "f2aad3f15fd5501503ddc682b8a3f32958f73389ef72a35444ae241dab8472fe"
+  },
+  {
+    "path": "docs/13_OPERATIONAL_SYSTEMS/01_BRANCH_OPERATIONS.md",
+    "bytes": 2998,
+    "sha256": "41e94f7cb2f6d3919b75c408133a7c27d99966258dfc279ba861cc3ff05182b0"
+  },
+  {
+    "path": "docs/13_OPERATIONAL_SYSTEMS/02_INSPECTION_OPERATIONS.md",
+    "bytes": 2965,
+    "sha256": "68100588de4f18b9817771c192c0bb415c70ce407b903efd2359f449fa601f7f"
+  },
+  {
+    "path": "docs/13_OPERATIONAL_SYSTEMS/03_CRM_OPERATIONS.md",
+    "bytes": 2680,
+    "sha256": "ec88e895b97c0466324b04ea16a33cb6b8f667652486b98d724818aa3c08a72e"
+  },
+  {
+    "path": "docs/13_OPERATIONAL_SYSTEMS/04_LOGISTICS_OPERATIONS.md",
+    "bytes": 2417,
+    "sha256": "18dc5677fe39cdc4296f104d99a38d0d989666e44c75101f402669c41f022415"
+  },
+  {
+    "path": "docs/13_OPERATIONAL_SYSTEMS/05_SUPPORT_OPERATIONS.md",
+    "bytes": 2470,
+    "sha256": "5119c1c157f36f2d2644916434fc51bb6debdebd330796f9d9d43a99073f6e9c"
+  },
+  {
+    "path": "docs/13_OPERATIONAL_SYSTEMS/06_WARRANTY_AND_DISPUTES.md",
+    "bytes": 2550,
+    "sha256": "dceb3079c53d64bdc5069cf20578e6d16bbd530032f75bb7a395f5d7b5058499"
+  },
+  {
+    "path": "docs/13_OPERATIONAL_SYSTEMS/07_NOTIFICATION_WORKFLOWS.md",
+    "bytes": 2747,
+    "sha256": "319abfa537d09f5026cdbec251debf6e9e01811fc0cc96f11b13da7547c71842"
+  },
+  {
+    "path": "docs/13_OPERATIONAL_SYSTEMS/08_OPERATIONS_SLA.md",
+    "bytes": 3008,
+    "sha256": "f69bd01a941de1fead4b81f18285ea3f003f8cbaa865cabfef39e73c4cacb1ad"
+  },
+  {
+    "path": "docs/14_SECURITY_AND_COMPLIANCE/01_SECURITY_ARCHITECTURE.md",
+    "bytes": 2628,
+    "sha256": "8265cdb47816544a01aa6f5f593908b4cd0714b13131079c6784680da4399fa9"
+  },
+  {
+    "path": "docs/14_SECURITY_AND_COMPLIANCE/02_THREAT_MODEL.md",
+    "bytes": 5864,
+    "sha256": "886e3ad4d20cf481acda10b157b23242cb6a2fb1eae2f307990d7693250a8c92"
+  },
+  {
+    "path": "docs/14_SECURITY_AND_COMPLIANCE/03_IDENTITY_AND_ACCESS.md",
+    "bytes": 5042,
+    "sha256": "79b565e62d6091c2de463c4934f4b2736f32c1698d5f13e3eb036293c1c58143"
+  },
+  {
+    "path": "docs/14_SECURITY_AND_COMPLIANCE/04_DATA_PROTECTION.md",
+    "bytes": 2336,
+    "sha256": "d4fca7df555304c6db7af84efbfaf72f7df03e298134d35dc8b1384493c422fe"
+  },
+  {
+    "path": "docs/14_SECURITY_AND_COMPLIANCE/05_SECURE_FILE_HANDLING.md",
+    "bytes": 3881,
+    "sha256": "9301ceb7e072bf3f9f7fce5f75a36ffaf0083c9e0af034fea4f5aa21e22905b8"
+  },
+  {
+    "path": "docs/14_SECURITY_AND_COMPLIANCE/06_AUCTION_SECURITY.md",
+    "bytes": 2476,
+    "sha256": "972c6f0524c702e826d149049919744d91a9f8f37f9f3e130b4a1f9c41103f1d"
+  },
+  {
+    "path": "docs/14_SECURITY_AND_COMPLIANCE/07_FINANCIAL_SECURITY.md",
+    "bytes": 2347,
+    "sha256": "f19d771534191c525d61dd204c227d33125382f0ee8e8fdece5d8de5a71000c3"
+  },
+  {
+    "path": "docs/14_SECURITY_AND_COMPLIANCE/08_PRIVACY_AND_CONSENT.md",
+    "bytes": 2208,
+    "sha256": "cbbb68e321444cd9113ec0a65aea1bd97468717339356127622442d87799678d"
+  },
+  {
+    "path": "docs/14_SECURITY_AND_COMPLIANCE/09_SECURITY_TESTING.md",
+    "bytes": 2405,
+    "sha256": "f078d5218583cef8ce38a2d137c517959f22ecb3d0503db0e6e31886ef817dcf"
+  },
+  {
+    "path": "docs/14_SECURITY_AND_COMPLIANCE/10_INCIDENT_RESPONSE.md",
+    "bytes": 2557,
+    "sha256": "015fc732ecfc1ece0d011753285ec9c0199b1b3256e08b503012c3a802f0caf4"
+  },
+  {
+    "path": "docs/14_SECURITY_AND_COMPLIANCE/11_COMPLIANCE_MATRIX.md",
+    "bytes": 2980,
+    "sha256": "48e56f5f419c701612450e994162b41a41657dab6702815dbc156fc6a0779bb3"
+  },
+  {
+    "path": "docs/15_QUALITY_ASSURANCE/01_MASTER_TEST_STRATEGY.md",
+    "bytes": 2607,
+    "sha256": "2205c1782647422fb33b6fe4991e0bf9951068af2879882ff65f1d43970619a9"
+  },
+  {
+    "path": "docs/15_QUALITY_ASSURANCE/02_TEST_CASE_CATALOG.md",
+    "bytes": 4404,
+    "sha256": "0942ec7eda879bc077c45bd69bc4ad2b19bf207c0af3961b29ba4a65111c1ed4"
+  },
+  {
+    "path": "docs/15_QUALITY_ASSURANCE/03_API_TEST_PLAN.md",
+    "bytes": 2290,
+    "sha256": "672ae8b0ada0175a9de6993307504a873d34e43e28c6e70aea575258c55dc86a"
+  },
+  {
+    "path": "docs/15_QUALITY_ASSURANCE/04_E2E_TEST_PLAN.md",
+    "bytes": 2257,
+    "sha256": "3bd52e9368cd954a16d7d57713db02d13766cfd3329607f36df3a3b9fe48e27b"
+  },
+  {
+    "path": "docs/15_QUALITY_ASSURANCE/05_PERFORMANCE_TEST_PLAN.md",
+    "bytes": 2396,
+    "sha256": "c9532a618f1207d9e2d7af3c4a7b77aeb2c88a08231d7b69347e10888dac7187"
+  },
+  {
+    "path": "docs/15_QUALITY_ASSURANCE/06_SECURITY_TEST_PLAN.md",
+    "bytes": 2048,
+    "sha256": "a3b1d84e7d37dbcd7978c59b8955290c72afdd557c57a0773f1a01773e7f9710"
+  },
+  {
+    "path": "docs/15_QUALITY_ASSURANCE/07_ACCESSIBILITY_TEST_PLAN.md",
+    "bytes": 2206,
+    "sha256": "03e8e3a54feee9a7e39fc7e0407269dd62ac9cd2e4970605ffc90e52e9b77f3e"
+  },
+  {
+    "path": "docs/15_QUALITY_ASSURANCE/08_VISUAL_REGRESSION_PLAN.md",
+    "bytes": 1780,
+    "sha256": "f72b44b4880860ef01ef1bc466c48ccc60c7e81b0742aa79dfa758c1441563fb"
+  },
+  {
+    "path": "docs/15_QUALITY_ASSURANCE/09_UAT_PLAN.md",
+    "bytes": 2284,
+    "sha256": "30b98b84096af78fa4feac9ddaaa18f076dce652d64e9d9fdf96e57f315c808d"
+  },
+  {
+    "path": "docs/15_QUALITY_ASSURANCE/10_RELEASE_QUALITY_GATES.md",
+    "bytes": 2428,
+    "sha256": "c7a7f4c52f7e69135bd93cba3451b4d1fea084722f7e0ec80f02a79c9da0398c"
+  },
+  {
+    "path": "docs/16_SEO_AND_CONTENT/01_SEO_STRATEGY.md",
+    "bytes": 3050,
+    "sha256": "e847d36072a250b3edc79742a8b80697f99d7f4a4a56d57e6562ed6dd85d41b1"
+  },
+  {
+    "path": "docs/16_SEO_AND_CONTENT/02_TECHNICAL_SEO.md",
+    "bytes": 3045,
+    "sha256": "da1be5998fe3dd636b807fea2f2a1c305059b022ba302b3f9d132e754ca32c85"
+  },
+  {
+    "path": "docs/16_SEO_AND_CONTENT/03_PROGRAMMATIC_SEO.md",
+    "bytes": 2426,
+    "sha256": "d8fd6440c96b3949b5248dfe06c11387a22d67f18a3ad470eaa4f8acb6ba5945"
+  },
+  {
+    "path": "docs/16_SEO_AND_CONTENT/04_URL_ARCHITECTURE.md",
+    "bytes": 2624,
+    "sha256": "1c4026b625dcb5b3755ca5f16dbf853216d69b111de3d5682272b25a9f0f7cbd"
+  },
+  {
+    "path": "docs/16_SEO_AND_CONTENT/05_CONTENT_STRATEGY.md",
+    "bytes": 2443,
+    "sha256": "1c3189f95e1b4cc219a6809a2a6872407af6d3e548a6b198e5a8f53fee3ee38e"
+  },
+  {
+    "path": "docs/16_SEO_AND_CONTENT/06_CMS_ARCHITECTURE.md",
+    "bytes": 2247,
+    "sha256": "b6cd8c267d737e70b9937b886af2380d1823024ae31b33da35628a6f2580f082"
+  },
+  {
+    "path": "docs/16_SEO_AND_CONTENT/07_STRUCTURED_DATA.md",
+    "bytes": 2079,
+    "sha256": "f40ab1631bf761dc6e6f78eec13e03d22024db11d2edf00f31237ba3bd0a40d4"
+  },
+  {
+    "path": "docs/16_SEO_AND_CONTENT/08_INTERNAL_LINKING.md",
+    "bytes": 1895,
+    "sha256": "a94e484b007fd11709424e73e5bf32a3326e06d95ddbad206b86c311c490b1c5"
+  },
+  {
+    "path": "docs/16_SEO_AND_CONTENT/09_INDEXATION_RULES.md",
+    "bytes": 2525,
+    "sha256": "1ec436ca8ed802e15bd7b5c180d159256b99eecdeedc8ca7391e9f1f4e6c3b28"
+  },
+  {
+    "path": "docs/16_SEO_AND_CONTENT/10_SEO_MEASUREMENT.md",
+    "bytes": 2535,
+    "sha256": "5577f83acce36695c202096229abc9dfd3048ab32b9b71e0796e66fcefcea4b1"
+  },
+  {
+    "path": "docs/17_ANALYTICS_AND_INTELLIGENCE/01_ANALYTICS_ARCHITECTURE.md",
+    "bytes": 3215,
+    "sha256": "4d6ca0c0a02402ba66f76d2ec568bbd3bd157ec9ea92895d89a9570235125967"
+  },
+  {
+    "path": "docs/17_ANALYTICS_AND_INTELLIGENCE/02_EVENT_TRACKING_PLAN.md",
+    "bytes": 7579,
+    "sha256": "743b9809dc1dfd1c553699e4778d975c8af459376938a41d6128e31452cbcf51"
+  },
+  {
+    "path": "docs/17_ANALYTICS_AND_INTELLIGENCE/03_KPI_DICTIONARY.md",
+    "bytes": 8454,
+    "sha256": "0ea11210bf7612b1683a61baf459851d69838aecb1eac80131982d771d55cba5"
+  },
+  {
+    "path": "docs/17_ANALYTICS_AND_INTELLIGENCE/04_DASHBOARD_CATALOG.md",
+    "bytes": 2872,
+    "sha256": "27074c4465481592ec709d8e025393900600658ef99104e28a017270efe7f93f"
+  },
+  {
+    "path": "docs/17_ANALYTICS_AND_INTELLIGENCE/05_FUNNEL_ANALYSIS.md",
+    "bytes": 2896,
+    "sha256": "505142262bb3bcf594f71441023bb00da57050a8e8da45cafbef97aa761ebcb5"
+  },
+  {
+    "path": "docs/17_ANALYTICS_AND_INTELLIGENCE/06_EXPERIMENTATION_PLAN.md",
+    "bytes": 2371,
+    "sha256": "2c868a8f48107d7200c291008aca1755e34cf240c8731c89847864c8e7b8470b"
+  },
+  {
+    "path": "docs/17_ANALYTICS_AND_INTELLIGENCE/07_VEHICLE_PRICING_MODELS.md",
+    "bytes": 2901,
+    "sha256": "2369a0467728381fbb85397295a49dfba64b47eb0f45d7c88475e49adeb99bf3"
+  },
+  {
+    "path": "docs/17_ANALYTICS_AND_INTELLIGENCE/08_DATA_QUALITY.md",
+    "bytes": 2669,
+    "sha256": "2bc50af01aa6cbe3b0f0ccbf53f9c9aba790b44f1725916275873ab2dd900e19"
+  },
+  {
+    "path": "docs/17_ANALYTICS_AND_INTELLIGENCE/09_MODEL_GOVERNANCE.md",
+    "bytes": 2696,
+    "sha256": "0b3398d0df1d71f0fb9168a0eb6e9e3c8223ced7393061220cfc687ab58a65db"
+  },
+  {
+    "path": "docs/18_INFRASTRUCTURE_AND_DEVOPS/01_INFRASTRUCTURE_ARCHITECTURE.md",
+    "bytes": 2544,
+    "sha256": "852d1a8db2de680d357f9c40406c65216bf90187db2900f9cbabd6a86f263cad"
+  },
+  {
+    "path": "docs/18_INFRASTRUCTURE_AND_DEVOPS/02_ENVIRONMENT_STRATEGY.md",
+    "bytes": 2019,
+    "sha256": "ab3632f1b7603308ff1bd57e539d056cca8dcdb5f6c04b64881b6c9218495bb0"
+  },
+  {
+    "path": "docs/18_INFRASTRUCTURE_AND_DEVOPS/03_CICD_STRATEGY.md",
+    "bytes": 3398,
+    "sha256": "ef8f8aa41f00f51982a7d06ffdfa4d30b7147636474b9736e5e022c3baf60276"
+  },
+  {
+    "path": "docs/18_INFRASTRUCTURE_AND_DEVOPS/04_OBSERVABILITY.md",
+    "bytes": 4449,
+    "sha256": "10565e1f65ab1078c25ea00617d45b332aa42b4a0b1ef16b89ea502d63da80da"
+  },
+  {
+    "path": "docs/18_INFRASTRUCTURE_AND_DEVOPS/05_CAPACITY_PLANNING.md",
+    "bytes": 2395,
+    "sha256": "bc49d029c85dfcef606878dc295d75dfdfde6531fa35ab72bde983dec27fdef9"
+  },
+  {
+    "path": "docs/18_INFRASTRUCTURE_AND_DEVOPS/06_SCALABILITY.md",
+    "bytes": 2050,
+    "sha256": "b361ef1f9ae381defb6442019d46bd43e25baa199aac41f9e60d16a17de6e8d6"
+  },
+  {
+    "path": "docs/18_INFRASTRUCTURE_AND_DEVOPS/07_BACKUP_AND_RECOVERY.md",
+    "bytes": 4340,
+    "sha256": "25df3a60f5d6e551752d1f9e6468650f8b7de19651378bc612d4935b05ff0d1a"
+  },
+  {
+    "path": "docs/18_INFRASTRUCTURE_AND_DEVOPS/08_INCIDENT_MANAGEMENT.md",
+    "bytes": 2221,
+    "sha256": "248008fc92b5ad627f4b895cd06e6787bea0a3330812dffb22090c65fe12efe8"
+  },
+  {
+    "path": "docs/18_INFRASTRUCTURE_AND_DEVOPS/09_INFRASTRUCTURE_COSTS.md",
+    "bytes": 2047,
+    "sha256": "cb37723fbf6c820da6c4b3b9e3cf2ebe7dcac7f4d8e74264800a9677a5099c9a"
+  },
+  {
+    "path": "docs/18_INFRASTRUCTURE_AND_DEVOPS/10_OPERATIONS_RUNBOOKS.md",
+    "bytes": 5194,
+    "sha256": "6878afcee6ad07b327c314d9d07f701c8817df12c57ec99922828ecce1812062"
+  },
+  {
+    "path": "docs/19_DELIVERY_AND_ORGANIZATION/01_TEAM_STRUCTURE.md",
+    "bytes": 4727,
+    "sha256": "59a4275a7878dc6248205b6352cb03c944a98df214bbe95af8f1d54000e567c8"
+  },
+  {
+    "path": "docs/19_DELIVERY_AND_ORGANIZATION/02_RACI_MATRIX.md",
+    "bytes": 2258,
+    "sha256": "e3442a08b9448c6afdd00cf9675e9a10e4ba8ee5bc223d0f31b25e3bdd7442a5"
+  },
+  {
+    "path": "docs/19_DELIVERY_AND_ORGANIZATION/03_IMPLEMENTATION_WORK_BREAKDOWN.md",
+    "bytes": 3012,
+    "sha256": "757690473f9ec5eea4e024b834310ae718e636f9745cb39e108fb859e790ebda"
+  },
+  {
+    "path": "docs/19_DELIVERY_AND_ORGANIZATION/04_DEPENDENCY_MAP.md",
+    "bytes": 2472,
+    "sha256": "e9269bfa9672d895c7e787989c575bea37705286f5edac5091dd320d5b6d197f"
+  },
+  {
+    "path": "docs/19_DELIVERY_AND_ORGANIZATION/05_MVP_PLAN.md",
+    "bytes": 2946,
+    "sha256": "26037a802b2a76d1ee7cd91822e5f515176a25c363dab73f082d6a1643804fa9"
+  },
+  {
+    "path": "docs/19_DELIVERY_AND_ORGANIZATION/06_FULL_PRODUCT_ROADMAP.md",
+    "bytes": 2947,
+    "sha256": "d9b8f8d22a7b532aadd705aa270ca91aefdc6f46299277cd0b51096cd7a71af4"
+  },
+  {
+    "path": "docs/19_DELIVERY_AND_ORGANIZATION/07_RESOURCE_AND_COST_ESTIMATES.md",
+    "bytes": 3026,
+    "sha256": "24b8a5a0b44e1a13764f5199f4f4fef7496cfd8cd7c78147b3ec7b594868d7cb"
+  },
+  {
+    "path": "docs/19_DELIVERY_AND_ORGANIZATION/08_RISK_MITIGATION_PLAN.md",
+    "bytes": 2415,
+    "sha256": "ea620f966f59b386fbb88c83381f1c434f287472e89c403cb0a02673bf9e9684"
+  },
+  {
+    "path": "docs/19_DELIVERY_AND_ORGANIZATION/09_RELEASE_STRATEGY.md",
+    "bytes": 1991,
+    "sha256": "74337e7049ce1c93bdaea88ceae0f64b1bb01dcb1bed0a6e57a56058d313ebe8"
+  },
+  {
+    "path": "docs/19_DELIVERY_AND_ORGANIZATION/10_DEFINITION_OF_DONE.md",
+    "bytes": 2226,
+    "sha256": "d0a7c21daf525cb92cac394499c9e9985778970405b6bfa57be929bf449e70be"
+  },
+  {
+    "path": "docs/19_DELIVERY_AND_ORGANIZATION/11_SPECIALIST_ROSTER.md",
+    "bytes": 83527,
+    "sha256": "c065f04c67b6a5b4eb3d34550c26004c5d3cc282da8cde9135dab0d9890b455b"
+  },
+  {
+    "path": "docs/20_IMPLEMENTATION_HANDOFF/01_IMPLEMENTATION_READINESS.md",
+    "bytes": 3146,
+    "sha256": "261a628c6c39c2e40f9efe9c8b887033b533cb171677fd3e20d620d7d2699494"
+  },
+  {
+    "path": "docs/20_IMPLEMENTATION_HANDOFF/02_FINAL_REQUIREMENTS_BASELINE.md",
+    "bytes": 4115,
+    "sha256": "8908cb105946903a14a6e6ee72cdba0f867aa30c737597a321c45502453e2a57"
+  },
+  {
+    "path": "docs/20_IMPLEMENTATION_HANDOFF/03_IMPLEMENTATION_READING_ORDER.md",
+    "bytes": 3451,
+    "sha256": "c628078d9bc1965eff1342744d9ac0dcb54b74360c39e8b3e5d80eb4e5183a24"
+  },
+  {
+    "path": "docs/20_IMPLEMENTATION_HANDOFF/04_MODULE_DEPENDENCY_ORDER.md",
+    "bytes": 2946,
+    "sha256": "1fec704042e50b8c1463bb61a567948ebc56e519dce5197daaaf19bf9e656e57"
+  },
+  {
+    "path": "docs/20_IMPLEMENTATION_HANDOFF/05_API_AND_SCHEMA_CONTRACTS.md",
+    "bytes": 2184,
+    "sha256": "af74afc12d3d33eed64b8d545eaa6aa889a4d9fb8f1a29654ecb91a77516e61b"
+  },
+  {
+    "path": "docs/20_IMPLEMENTATION_HANDOFF/06_DESIGN_ASSET_MANIFEST.md",
+    "bytes": 2989,
+    "sha256": "a3400281c6b2676daeb2f09c1aad2800619933e118b858133ca1fb74c35464bb"
+  },
+  {
+    "path": "docs/20_IMPLEMENTATION_HANDOFF/07_CONFIGURATION_CATALOG.md",
+    "bytes": 3707,
+    "sha256": "6faabc8019911f3f7ac86fe7af2b084c57d1034865a89872f80b55130915c92e"
+  },
+  {
+    "path": "docs/20_IMPLEMENTATION_HANDOFF/08_ACCEPTANCE_GATE_CHECKLIST.md",
+    "bytes": 3133,
+    "sha256": "4cd2302f8a28832e3c6272b5aa037202a1fd837b04024461fb3ff9887da2ec3a"
+  },
+  {
+    "path": "docs/20_IMPLEMENTATION_HANDOFF/09_UNRESOLVED_DECISIONS.md",
+    "bytes": 3625,
+    "sha256": "0282d28363416eb1942ac01679365d0c43590e69a99d7e613a4beec588e03798"
+  },
+  {
+    "path": "docs/20_IMPLEMENTATION_HANDOFF/10_IMPLEMENTATION_CONTEXT.md",
+    "bytes": 5642,
+    "sha256": "3478f956f0010209bc86a112c988cf8b97d5fc062d4fad4a967acfa5085dc6b8"
+  },
+  {
+    "path": "docs/CROSS_DOMAIN_DESIGN_AUDIT.md",
+    "bytes": 7680,
+    "sha256": "37a9f46101e88992cda90f62cb73808770dbd0c7d63bca2435dd71864fa3048e"
+  },
+  {
+    "path": "docs/FINAL_COMPLETENESS_AUDIT.md",
+    "bytes": 10196,
+    "sha256": "abd4cac0b9c63544a5c9ee12de67cc65540b6d3d9c492e6c679c39e3c0956a03"
+  },
+  {
+    "path": "docs/NFR_MEASURABLE_BASELINE.md",
+    "bytes": 10525,
+    "sha256": "27c65ff88bc284b9a2d61b0ebfaa056d430d007f8119d1f2f004f9a5d8a0f843"
+  },
+  {
+    "path": "docs/POLICY_BASELINE.md",
+    "bytes": 4977,
+    "sha256": "e7695d374c0a12cc8e0bd9c23377f7399d1c7bc571520321845cb4232c5fb1a7"
+  },
+  {
+    "path": "docs/SCENARIO_TRACEABILITY.md",
+    "bytes": 147979,
+    "sha256": "aa4f48f97a52e571931800fb607491044afcb02e244765df6b465202634b7523"
+  },
+  {
+    "path": "docs/TRACEABILITY_CROSSWALK.md",
+    "bytes": 4994,
+    "sha256": "d80e1c01188353c31428da8a0facd09fbfa01899e608334206a9c68efdb3c96d"
+  },
+  {
+    "path": "docs/contracts/api-operation-index.json",
+    "bytes": 55072,
+    "sha256": "fbe1978b3294518b00e36b0f3b5794ce252d6d31464a40fbc32bf262f17adf7a"
+  },
+  {
+    "path": "docs/contracts/design-tokens.json",
+    "bytes": 755,
+    "sha256": "0019077df3e838c0783983a1f5d48f410d5b14b38b290f4d938bb4fa7ab82664"
+  },
+  {
+    "path": "docs/contracts/domain-event.schema.json",
+    "bytes": 14448,
+    "sha256": "0887360875289887f985642393a9ea719790080d7cf68e30152c8da2951ea27d"
+  },
+  {
+    "path": "docs/contracts/panel-index.json",
+    "bytes": 11546,
+    "sha256": "a21c5237bdcc2240bdd2bdda9a813c760d59c14f708cd216c3b1c4e56fd179c4"
+  },
+  {
+    "path": "docs/contracts/scenario-traceability.json",
+    "bytes": 236286,
+    "sha256": "88b036d1974d857ab3330abfcfd680a7e24532e0a1e8a090ca738b1b53a46e29"
+  },
+  {
+    "path": "docs/contracts/screen-index.json",
+    "bytes": 22313,
+    "sha256": "517fefb0e4229c496e71c9d146e805e7a1d19637ee4b77062c716c8c3e986415"
+  },
+  {
+    "path": "docs/contracts/specialist-roster.json",
+    "bytes": 79981,
+    "sha256": "897e0d51c90713df52e9dc741db90f84b12f2ffe5862b598fa7d6d0cdeba665c"
+  },
+  {
+    "path": "docs/contracts/state-machines.json",
+    "bytes": 44693,
+    "sha256": "5088cf45b2bd13951118e47d9a6bdce2286625c360235a5bae980c79f7ea0429"
+  },
+  {
+    "path": "docs/contracts/workflow-analytics.schema.json",
+    "bytes": 3198,
+    "sha256": "89f184a75b8cd041c4f48fb4d97c044f94301cd8e3620e000534b55b83bb95cc"
+  },
+  {
+    "path": "docs/documentation_manifest.json",
+    "bytes": 137350,
+    "sha256": "37ed7b72ec102f1132bdad2282d0afa2175b17e27f51d5be82deadfa0cd3ed8c"
+  },
+  {
+    "path": "docs/review/PROMPT_COVERAGE.md",
+    "bytes": 9559,
+    "sha256": "69e5fdb30e276095a249df2bce685f8a8fafda4b0f421c0fae7ffd54c92376e1"
+  },
+  {
+    "path": "docs/review/contract-fixtures.json",
+    "bytes": 18533,
+    "sha256": "9ac003e5f1c7bb5595fa493c6f11f076736556145634d037d88219760f72e35f"
+  },
+  {
+    "path": "docs/review/contract-validation.json",
+    "bytes": 14741,
+    "sha256": "9071e07ede6ca0e404eca5138b9a711828b5f9bd27e8faa54059d2768d9eef94"
+  },
+  {
+    "path": "docs/review/contrast-validation.json",
+    "bytes": 1842,
+    "sha256": "f7327e724c87fecd9d88d1764555ed00185c1a2416fb29d384073fb34be178bb"
+  },
+  {
+    "path": "docs/review/validation-summary.json",
+    "bytes": 3272,
+    "sha256": "287ee6a3bc09deba08241b912e86b3fa0d8bdc2dd5f99617b575419156e21a61"
+  }
+]

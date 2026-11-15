@@ -1,0 +1,1037 @@
+{
+  "version": "0.3",
+  "operations": [
+    {
+      "id": "API-X-getAuctionSnapshot",
+      "operation_id": "getAuctionSnapshot",
+      "method": "GET",
+      "path": "/auctions/{auctionId}",
+      "authorization": "",
+      "summary": "Get an authorized authoritative auction snapshot"
+    },
+    {
+      "id": "API-X-submitBid",
+      "operation_id": "submitBid",
+      "method": "POST",
+      "path": "/auctions/{auctionId}/bids",
+      "authorization": "Requires an active dealer, bidder grant and CSRF protection for browser session authentication. The same key and payload replays the committed result; a different payload conflicts. A network timeout is an unknown outcome. Eligible dealer access and bid authority are checked for either authentication alternative; success requires committed accepted-bid ledger, audit and outbox. API-10: inspect the authoritative record or retry with the same key after an unknown outcome. Idempotency namespace: principal + operationId + key; recheck current access before returning stored outcome. Same payload replays once; changed payload conflicts.",
+      "summary": "Atomically submit an idempotent dealer bid"
+    },
+    {
+      "id": "API-X-createSession",
+      "operation_id": "createSession",
+      "method": "POST",
+      "path": "/auth/sessions",
+      "authorization": "Anonymous identity-provider assertion flow; generic authentication failures and throttling prevent enumeration. Protect browser login against login CSRF using approved origin and pre-authentication defenses. A session cookie and CSRF token are issued only when authentication and required MFA have completed. Idempotency namespace: principal + operationId + key; recheck current access before returning stored outcome. Same payload replays once; changed payload conflicts.",
+      "summary": "Authenticate with an approved identity provider"
+    },
+    {
+      "id": "API-X-createSellerLead",
+      "operation_id": "createSellerLead",
+      "method": "POST",
+      "path": "/seller-leads",
+      "authorization": "Seller; validate notice and deduplication review. Anonymous submission is permitted under anti-abuse policy; if using browser session cookies, CSRF validation is mandatory, and ownership must not be inferred from anonymous input. If a credential or session cookie is presented, authenticate and apply that scheme including CSRF; reject invalid credentials instead of falling back to anonymous processing. Idempotency namespace: principal + operationId + key; recheck current access before returning stored outcome. Same payload replays once; changed payload conflicts. Initial state is draft; verified owners explicitly submit through transitionSellerLead. Anonymous drafts use requestIntakeClaim and claimIntake before any private read or submit. Anonymous idempotency is namespaced to the server-issued draft-session identity, never one global anonymous principal.",
+      "summary": "Create a seller lead"
+    },
+    {
+      "id": "API-X-listSellerLead",
+      "operation_id": "listSellerLead",
+      "method": "GET",
+      "path": "/seller-leads",
+      "authorization": "Acquisition scoped access; customer must own case, staff must have assigned branch/case and explicit read permission; provider sees assigned minimum only.",
+      "summary": "List permitted SellerLead"
+    },
+    {
+      "id": "API-X-listBranches",
+      "operation_id": "listBranches",
+      "method": "GET",
+      "path": "/branches",
+      "authorization": "Visitor; exclude nonpublic staff and capacity.",
+      "summary": "List public branches"
+    },
+    {
+      "id": "API-X-createAppointment",
+      "operation_id": "createAppointment",
+      "method": "POST",
+      "path": "/appointments",
+      "authorization": "Seller for own lead or authorized staff; atomic capacity check. Idempotency namespace: principal + operationId + key; recheck current access before returning stored outcome. Same payload replays once; changed payload conflicts.",
+      "summary": "Reserve a branch slot"
+    },
+    {
+      "id": "API-X-listAppointment",
+      "operation_id": "listAppointment",
+      "method": "GET",
+      "path": "/appointments",
+      "authorization": "Scheduling scoped access; customer must own case, staff must have assigned branch/case and explicit read permission; provider sees assigned minimum only.",
+      "summary": "List permitted Appointment"
+    },
+    {
+      "id": "API-X-createInspectionRevision",
+      "operation_id": "createInspectionRevision",
+      "method": "POST",
+      "path": "/inspections/{id}/revisions",
+      "authorization": "Assigned inspector; validate template and scanned evidence. Idempotency namespace: principal + operationId + key; recheck current access before returning stored outcome. Same payload replays once; changed payload conflicts.",
+      "summary": "Create inspection revision"
+    },
+    {
+      "id": "API-X-publishInspection",
+      "operation_id": "publishInspection",
+      "method": "POST",
+      "path": "/inspections/{id}/publish",
+      "authorization": "Independent authorized supervisor; prior versions retained. Idempotency namespace: principal + operationId + key; recheck current access before returning stored outcome. Same payload replays once; changed payload conflicts.",
+      "summary": "Publish reviewed report"
+    },
+    {
+      "id": "API-X-createValuation",
+      "operation_id": "createValuation",
+      "method": "POST",
+      "path": "/valuations",
+      "authorization": "Authorized pricing analyst; reference current released report. Idempotency namespace: principal + operationId + key; recheck current access before returning stored outcome. Same payload replays once; changed payload conflicts.",
+      "summary": "Create valuation for review"
+    },
+    {
+      "id": "API-X-listValuation",
+      "operation_id": "listValuation",
+      "method": "GET",
+      "path": "/valuations",
+      "authorization": "Pricing scoped access; customer must own case, staff must have assigned branch/case and explicit read permission; provider sees assigned minimum only.",
+      "summary": "List permitted Valuation"
+    },
+    {
+      "id": "API-X-createAuction",
+      "operation_id": "createAuction",
+      "method": "POST",
+      "path": "/auctions",
+      "authorization": "Auction manager; require approved pinned policy and report. Idempotency namespace: principal + operationId + key; recheck current access before returning stored outcome. Same payload replays once; changed payload conflicts.",
+      "summary": "Create draft auction"
+    },
+    {
+      "id": "API-X-listEligibleAuctions",
+      "operation_id": "listEligibleAuctions",
+      "method": "GET",
+      "path": "/auctions",
+      "authorization": "Approved active dealer with current eligibility or authorized auction staff; one organization context, no private bidder identity.",
+      "summary": "listEligibleAuctions"
+    },
+    {
+      "id": "API-X-closeAuction",
+      "operation_id": "closeAuction",
+      "method": "POST",
+      "path": "/auctions/{id}/close",
+      "authorization": "Scheduler or authorized manager; serialize with bid decisions. Idempotency namespace: principal + operationId + key; recheck current access before returning stored outcome. Same payload replays once; changed payload conflicts.",
+      "summary": "Finalize auction"
+    },
+    {
+      "id": "API-X-recordSellerDecision",
+      "operation_id": "recordSellerDecision",
+      "method": "POST",
+      "path": "/auction-results/{id}/seller-decision",
+      "authorization": "Authenticated seller for own current offer; do not infer settlement. Idempotency namespace: principal + operationId + key; recheck current access before returning stored outcome. Same payload replays once; changed payload conflicts. On first accepted current offer, create exactly one TransactionCase and pending OwnershipTransfer linked by result ID; rejected or expired offers create neither. No contract, settled obligation or physical handover is inferred. Transaction creation and decision receipt/outbox are atomic.",
+      "summary": "Record seller offer decision"
+    },
+    {
+      "id": "API-X-decideDealerVerification",
+      "operation_id": "decideDealerVerification",
+      "method": "POST",
+      "path": "/dealer-verifications/{id}/decision",
+      "authorization": "Authorized independent reviewer; record reason and audit. Idempotency namespace: principal + operationId + key; recheck current access before returning stored outcome. Same payload replays once; changed payload conflicts.",
+      "summary": "Approve or reject dealer verification"
+    },
+    {
+      "id": "API-X-listConsumerListings",
+      "operation_id": "listConsumerListings",
+      "method": "GET",
+      "path": "/listings",
+      "authorization": "Visitor; never return dealer-only auctions. Filter bounds must be valid and consistent; invalid filters or cursor return 400. Search is a projection and purchase initiation rechecks authoritative availability. Public filter constraints are defined by ListingFilters. Price bounds require currency; mileage bounds require unit; min cannot exceed max and model must belong to make. Stable sort/cursor keys bind normalized filters.",
+      "summary": "Search consumer-published listings"
+    },
+    {
+      "id": "API-X-createVehicleListing",
+      "operation_id": "createVehicleListing",
+      "method": "POST",
+      "path": "/listings",
+      "authorization": "ROLE-021 inventory publisher; verified publication rights and channel availability; starts draft.",
+      "summary": "Create VehicleListing"
+    },
+    {
+      "id": "API-X-createPurchaseRequest",
+      "operation_id": "createPurchaseRequest",
+      "method": "POST",
+      "path": "/purchase-requests",
+      "authorization": "Buyer or visitor; recheck listing availability authoritatively. Anonymous submission is permitted under anti-abuse policy; if using browser session cookies, CSRF validation is mandatory, and ownership must not be inferred from anonymous input. If a credential or session cookie is presented, authenticate and apply that scheme including CSRF; reject invalid credentials instead of falling back to anonymous processing. Idempotency namespace: principal + operationId + key; recheck current access before returning stored outcome. Same payload replays once; changed payload conflicts. Initial state is submitted for advisor intake; anonymous requester gains no read access until requestIntakeClaim and claimIntake. Anonymous idempotency is namespaced to the server-issued draft-session identity.",
+      "summary": "Submit a buyer inquiry"
+    },
+    {
+      "id": "API-X-listPurchaseRequest",
+      "operation_id": "listPurchaseRequest",
+      "method": "GET",
+      "path": "/purchase-requests",
+      "authorization": "Consumer scoped access; customer must own case, staff must have assigned branch/case and explicit read permission; provider sees assigned minimum only.",
+      "summary": "List permitted PurchaseRequest"
+    },
+    {
+      "id": "API-X-recordSignatureEvidence",
+      "operation_id": "recordSignatureEvidence",
+      "method": "POST",
+      "path": "/contracts/{id}/signatures",
+      "authorization": "Authorized signer or authenticated provider; verify identity and evidence. Idempotency namespace: principal + operationId + key; recheck current access before returning stored outcome. Same payload replays once; changed payload conflicts.",
+      "summary": "Record signature evidence"
+    },
+    {
+      "id": "API-X-submitPaymentEvidence",
+      "operation_id": "submitPaymentEvidence",
+      "method": "POST",
+      "path": "/obligations/{id}/evidence",
+      "authorization": "Authorized finance operator; submission is not settlement. Idempotency namespace: principal + operationId + key; recheck current access before returning stored outcome. Same payload replays once; changed payload conflicts.",
+      "summary": "Submit external payment evidence"
+    },
+    {
+      "id": "API-X-approveReconciliation",
+      "operation_id": "approveReconciliation",
+      "method": "POST",
+      "path": "/reconciliations/{id}/approve",
+      "authorization": "Independent finance approver; reject mismatch and self-approval. Idempotency namespace: principal + operationId + key; recheck current access before returning stored outcome. Same payload replays once; changed payload conflicts.",
+      "summary": "Approve a financial reconciliation"
+    },
+    {
+      "id": "API-X-recordDeliveryHandover",
+      "operation_id": "recordDeliveryHandover",
+      "method": "POST",
+      "path": "/deliveries/{id}/handover",
+      "authorization": "Assigned authorized operator; not proof of title transfer. Idempotency namespace: principal + operationId + key; recheck current access before returning stored outcome. Same payload replays once; changed payload conflicts.",
+      "summary": "Record physical handover"
+    },
+    {
+      "id": "API-X-createSupportTicket",
+      "operation_id": "createSupportTicket",
+      "method": "POST",
+      "path": "/support-tickets",
+      "authorization": "Customer for own case or authorized agent; protect private evidence. Idempotency namespace: principal + operationId + key; recheck current access before returning stored outcome. Same payload replays once; changed payload conflicts.",
+      "summary": "Create support request"
+    },
+    {
+      "id": "API-X-listSupportTicket",
+      "operation_id": "listSupportTicket",
+      "method": "GET",
+      "path": "/support-tickets",
+      "authorization": "Support scoped access; customer must own case, staff must have assigned branch/case and explicit read permission; provider sees assigned minimum only.",
+      "summary": "List permitted SupportTicket"
+    },
+    {
+      "id": "API-X-createPolicyVersion",
+      "operation_id": "createPolicyVersion",
+      "method": "POST",
+      "path": "/admin/policies/{id}/versions",
+      "authorization": "Privileged admin with step-up; critical version needs independent approval. Idempotency namespace: principal + operationId + key; recheck current access before returning stored outcome. Same payload replays once; changed payload conflicts.",
+      "summary": "Create pending policy version"
+    },
+    {
+      "id": "API-X-getMetrics",
+      "operation_id": "getMetrics",
+      "method": "GET",
+      "path": "/analytics/metrics",
+      "authorization": "Authorized analyst; scope and privacy thresholds apply.",
+      "summary": "Get permitted aggregate metrics"
+    },
+    {
+      "id": "API-X-readSellerLead",
+      "operation_id": "readSellerLead",
+      "method": "GET",
+      "path": "/seller-leads/{id}",
+      "authorization": "Acquisition scoped access; customer must own case, staff must have assigned branch/case and explicit read permission; provider sees assigned minimum only.",
+      "summary": "Read SellerLead"
+    },
+    {
+      "id": "API-X-transitionSellerLead",
+      "operation_id": "transitionSellerLead",
+      "method": "POST",
+      "path": "/seller-leads/{id}/transitions",
+      "authorization": "Only the actor specified for the chosen action in SM-01 may act; current object scope, source state and all guards are mandatory. Acquisition scoped access; customer must own case, staff must have assigned branch/case and explicit read permission; provider sees assigned minimum only.",
+      "summary": "Apply a guarded SellerLead transition"
+    },
+    {
+      "id": "API-X-readAppointment",
+      "operation_id": "readAppointment",
+      "method": "GET",
+      "path": "/appointments/{id}",
+      "authorization": "Scheduling scoped access; customer must own case, staff must have assigned branch/case and explicit read permission; provider sees assigned minimum only.",
+      "summary": "Read Appointment"
+    },
+    {
+      "id": "API-X-transitionAppointment",
+      "operation_id": "transitionAppointment",
+      "method": "POST",
+      "path": "/appointments/{id}/transitions",
+      "authorization": "Only the actor specified for the chosen action in SM-02 may act; current object scope, source state and all guards are mandatory. Scheduling scoped access; customer must own case, staff must have assigned branch/case and explicit read permission; provider sees assigned minimum only.",
+      "summary": "Apply a guarded Appointment transition"
+    },
+    {
+      "id": "API-X-readInspection",
+      "operation_id": "readInspection",
+      "method": "GET",
+      "path": "/inspections/{id}",
+      "authorization": "Inspection scoped access; customer must own case, staff must have assigned branch/case and explicit read permission; provider sees assigned minimum only.",
+      "summary": "Read Inspection"
+    },
+    {
+      "id": "API-X-listInspection",
+      "operation_id": "listInspection",
+      "method": "GET",
+      "path": "/inspections",
+      "authorization": "Inspection scoped access; customer must own case, staff must have assigned branch/case and explicit read permission; provider sees assigned minimum only.",
+      "summary": "List permitted Inspection"
+    },
+    {
+      "id": "API-X-createInspection",
+      "operation_id": "createInspection",
+      "method": "POST",
+      "path": "/inspections",
+      "authorization": "ROLE-006 scoped branch coordinator; checked-in visit, verified vehicle and qualified assigned inspector.",
+      "summary": "Create Inspection"
+    },
+    {
+      "id": "API-X-transitionInspection",
+      "operation_id": "transitionInspection",
+      "method": "POST",
+      "path": "/inspections/{id}/transitions",
+      "authorization": "Only the actor specified for the chosen action in SM-03 may act; current object scope, source state and all guards are mandatory. Inspection scoped access; customer must own case, staff must have assigned branch/case and explicit read permission; provider sees assigned minimum only.",
+      "summary": "Apply a guarded Inspection transition"
+    },
+    {
+      "id": "API-X-readVehicleListing",
+      "operation_id": "readVehicleListing",
+      "method": "GET",
+      "path": "/listings/{id}",
+      "authorization": "Public consumer-published projection only; draft/withdrawn returns opaque 404. Never include seller identity, raw report, dealer auction or unapproved images.",
+      "summary": "Read VehicleListing"
+    },
+    {
+      "id": "API-X-transitionVehicleListing",
+      "operation_id": "transitionVehicleListing",
+      "method": "POST",
+      "path": "/listings/{id}/transitions",
+      "authorization": "Only the actor specified for the chosen action in SM-04 may act; current object scope, source state and all guards are mandatory. Consumer inventory scoped access; customer must own case, staff must have assigned branch/case and explicit read permission; provider sees assigned minimum only.",
+      "summary": "Apply a guarded VehicleListing transition"
+    },
+    {
+      "id": "API-X-readValuation",
+      "operation_id": "readValuation",
+      "method": "GET",
+      "path": "/valuations/{id}",
+      "authorization": "Pricing scoped access; customer must own case, staff must have assigned branch/case and explicit read permission; provider sees assigned minimum only.",
+      "summary": "Read Valuation"
+    },
+    {
+      "id": "API-X-transitionValuation",
+      "operation_id": "transitionValuation",
+      "method": "POST",
+      "path": "/valuations/{id}/transitions",
+      "authorization": "Only the actor specified for the chosen action in SM-05 may act; current object scope, source state and all guards are mandatory. Pricing scoped access; customer must own case, staff must have assigned branch/case and explicit read permission; provider sees assigned minimum only.",
+      "summary": "Apply a guarded Valuation transition"
+    },
+    {
+      "id": "API-X-transitionAuction",
+      "operation_id": "transitionAuction",
+      "method": "POST",
+      "path": "/auctions/{auctionId}/transitions",
+      "authorization": "Only the actor specified for the chosen action in SM-06 may act; current object scope, source state and all guards are mandatory. Auction scoped access; customer must own case, staff must have assigned branch/case and explicit read permission; provider sees assigned minimum only.",
+      "summary": "Apply a guarded Auction transition"
+    },
+    {
+      "id": "API-X-readBidCommand",
+      "operation_id": "readBidCommand",
+      "method": "GET",
+      "path": "/bid-commands/{id}",
+      "authorization": "Auction scoped access; customer must own case, staff must have assigned branch/case and explicit read permission; provider sees assigned minimum only.",
+      "summary": "Read BidCommand"
+    },
+    {
+      "id": "API-X-listBidCommand",
+      "operation_id": "listBidCommand",
+      "method": "GET",
+      "path": "/bid-commands",
+      "authorization": "Auction scoped access; customer must own case, staff must have assigned branch/case and explicit read permission; provider sees assigned minimum only.",
+      "summary": "List permitted BidCommand"
+    },
+    {
+      "id": "API-X-readDealerVerification",
+      "operation_id": "readDealerVerification",
+      "method": "GET",
+      "path": "/dealer-verifications/{id}",
+      "authorization": "Dealer scoped access; customer must own case, staff must have assigned branch/case and explicit read permission; provider sees assigned minimum only.",
+      "summary": "Read DealerVerification"
+    },
+    {
+      "id": "API-X-listDealerVerification",
+      "operation_id": "listDealerVerification",
+      "method": "GET",
+      "path": "/dealer-verifications",
+      "authorization": "Dealer scoped access; customer must own case, staff must have assigned branch/case and explicit read permission; provider sees assigned minimum only.",
+      "summary": "List permitted DealerVerification"
+    },
+    {
+      "id": "API-X-createDealerVerification",
+      "operation_id": "createDealerVerification",
+      "method": "POST",
+      "path": "/dealer-verifications",
+      "authorization": "ROLE-005 authorized organization representative; clean documents; no self-approval.",
+      "summary": "Create DealerVerification"
+    },
+    {
+      "id": "API-X-transitionDealerVerification",
+      "operation_id": "transitionDealerVerification",
+      "method": "POST",
+      "path": "/dealer-verifications/{id}/transitions",
+      "authorization": "Only the actor specified for the chosen action in SM-08 may act; current object scope, source state and all guards are mandatory. Dealer scoped access; customer must own case, staff must have assigned branch/case and explicit read permission; provider sees assigned minimum only.",
+      "summary": "Apply a guarded DealerVerification transition"
+    },
+    {
+      "id": "API-X-readPurchaseRequest",
+      "operation_id": "readPurchaseRequest",
+      "method": "GET",
+      "path": "/purchase-requests/{id}",
+      "authorization": "Consumer scoped access; customer must own case, staff must have assigned branch/case and explicit read permission; provider sees assigned minimum only.",
+      "summary": "Read PurchaseRequest"
+    },
+    {
+      "id": "API-X-transitionPurchaseRequest",
+      "operation_id": "transitionPurchaseRequest",
+      "method": "POST",
+      "path": "/purchase-requests/{id}/transitions",
+      "authorization": "Only the actor specified for the chosen action in SM-09 may act; current object scope, source state and all guards are mandatory. Consumer scoped access; customer must own case, staff must have assigned branch/case and explicit read permission; provider sees assigned minimum only.",
+      "summary": "Apply a guarded PurchaseRequest transition"
+    },
+    {
+      "id": "API-X-readFinancingApplication",
+      "operation_id": "readFinancingApplication",
+      "method": "GET",
+      "path": "/financing-applications/{id}",
+      "authorization": "Financing scoped access; customer must own case, staff must have assigned branch/case and explicit read permission; provider sees assigned minimum only.",
+      "summary": "Read FinancingApplication"
+    },
+    {
+      "id": "API-X-listFinancingApplication",
+      "operation_id": "listFinancingApplication",
+      "method": "GET",
+      "path": "/financing-applications",
+      "authorization": "Financing scoped access; customer must own case, staff must have assigned branch/case and explicit read permission; provider sees assigned minimum only.",
+      "summary": "List permitted FinancingApplication"
+    },
+    {
+      "id": "API-X-createFinancingApplication",
+      "operation_id": "createFinancingApplication",
+      "method": "POST",
+      "path": "/financing-applications",
+      "authorization": "ROLE-003 own application or ROLE-024 explicitly delegated; approved provider/product and sharing basis required.",
+      "summary": "Create FinancingApplication"
+    },
+    {
+      "id": "API-X-transitionFinancingApplication",
+      "operation_id": "transitionFinancingApplication",
+      "method": "POST",
+      "path": "/financing-applications/{id}/transitions",
+      "authorization": "Only the actor specified for the chosen action in SM-10 may act; current object scope, source state and all guards are mandatory. Financing scoped access; customer must own case, staff must have assigned branch/case and explicit read permission; provider sees assigned minimum only.",
+      "summary": "Apply a guarded FinancingApplication transition"
+    },
+    {
+      "id": "API-X-readContract",
+      "operation_id": "readContract",
+      "method": "GET",
+      "path": "/contracts/{id}",
+      "authorization": "Legal scoped access; customer must own case, staff must have assigned branch/case and explicit read permission; provider sees assigned minimum only.",
+      "summary": "Read Contract"
+    },
+    {
+      "id": "API-X-listContract",
+      "operation_id": "listContract",
+      "method": "GET",
+      "path": "/contracts",
+      "authorization": "Legal scoped access; customer must own case, staff must have assigned branch/case and explicit read permission; provider sees assigned minimum only.",
+      "summary": "List permitted Contract"
+    },
+    {
+      "id": "API-X-createContract",
+      "operation_id": "createContract",
+      "method": "POST",
+      "path": "/contracts",
+      "authorization": "ROLE-012 assigned legal matter; accepted current offer and approved template; begins draft.",
+      "summary": "Create Contract"
+    },
+    {
+      "id": "API-X-transitionContract",
+      "operation_id": "transitionContract",
+      "method": "POST",
+      "path": "/contracts/{id}/transitions",
+      "authorization": "Only the actor specified for the chosen action in SM-11 may act; current object scope, source state and all guards are mandatory. Legal scoped access; customer must own case, staff must have assigned branch/case and explicit read permission; provider sees assigned minimum only.",
+      "summary": "Apply a guarded Contract transition"
+    },
+    {
+      "id": "API-X-readPaymentObligation",
+      "operation_id": "readPaymentObligation",
+      "method": "GET",
+      "path": "/obligations/{id}",
+      "authorization": "Finance scoped access; customer must own case, staff must have assigned branch/case and explicit read permission; provider sees assigned minimum only.",
+      "summary": "Read PaymentObligation"
+    },
+    {
+      "id": "API-X-listPaymentObligation",
+      "operation_id": "listPaymentObligation",
+      "method": "GET",
+      "path": "/obligations",
+      "authorization": "Finance scoped access; customer must own case, staff must have assigned branch/case and explicit read permission; provider sees assigned minimum only.",
+      "summary": "List permitted PaymentObligation"
+    },
+    {
+      "id": "API-X-createPaymentObligation",
+      "operation_id": "createPaymentObligation",
+      "method": "POST",
+      "path": "/obligations",
+      "authorization": "ROLE-013 assigned finance preparer; approved contractual basis and parties; no fund movement.",
+      "summary": "Create PaymentObligation"
+    },
+    {
+      "id": "API-X-transitionPaymentObligation",
+      "operation_id": "transitionPaymentObligation",
+      "method": "POST",
+      "path": "/obligations/{id}/transitions",
+      "authorization": "Only the actor specified for the chosen action in SM-12 may act; current object scope, source state and all guards are mandatory. Finance scoped access; customer must own case, staff must have assigned branch/case and explicit read permission; provider sees assigned minimum only.",
+      "summary": "Apply a guarded PaymentObligation transition"
+    },
+    {
+      "id": "API-X-readDelivery",
+      "operation_id": "readDelivery",
+      "method": "GET",
+      "path": "/deliveries/{id}",
+      "authorization": "Logistics scoped access; customer must own case, staff must have assigned branch/case and explicit read permission; provider sees assigned minimum only.",
+      "summary": "Read Delivery"
+    },
+    {
+      "id": "API-X-listDelivery",
+      "operation_id": "listDelivery",
+      "method": "GET",
+      "path": "/deliveries",
+      "authorization": "Logistics scoped access; customer must own case, staff must have assigned branch/case and explicit read permission; provider sees assigned minimum only.",
+      "summary": "List permitted Delivery"
+    },
+    {
+      "id": "API-X-createDelivery",
+      "operation_id": "createDelivery",
+      "method": "POST",
+      "path": "/deliveries",
+      "authorization": "ROLE-020 assigned dispatcher; approved transfer request and legal custody requirements.",
+      "summary": "Create Delivery"
+    },
+    {
+      "id": "API-X-transitionDelivery",
+      "operation_id": "transitionDelivery",
+      "method": "POST",
+      "path": "/deliveries/{id}/transitions",
+      "authorization": "Only the actor specified for the chosen action in SM-13 may act; current object scope, source state and all guards are mandatory. Logistics scoped access; customer must own case, staff must have assigned branch/case and explicit read permission; provider sees assigned minimum only.",
+      "summary": "Apply a guarded Delivery transition"
+    },
+    {
+      "id": "API-X-readWarrantyClaim",
+      "operation_id": "readWarrantyClaim",
+      "method": "GET",
+      "path": "/claims/{id}",
+      "authorization": "Claims scoped access; customer must own case, staff must have assigned branch/case and explicit read permission; provider sees assigned minimum only.",
+      "summary": "Read WarrantyClaim"
+    },
+    {
+      "id": "API-X-listWarrantyClaim",
+      "operation_id": "listWarrantyClaim",
+      "method": "GET",
+      "path": "/claims",
+      "authorization": "Claims scoped access; customer must own case, staff must have assigned branch/case and explicit read permission; provider sees assigned minimum only.",
+      "summary": "List permitted WarrantyClaim"
+    },
+    {
+      "id": "API-X-createWarrantyClaim",
+      "operation_id": "createWarrantyClaim",
+      "method": "POST",
+      "path": "/claims",
+      "authorization": "Case-owning customer or ROLE-022 delegated claims staff; policy version applicable; no compensation promised.",
+      "summary": "Create WarrantyClaim"
+    },
+    {
+      "id": "API-X-transitionWarrantyClaim",
+      "operation_id": "transitionWarrantyClaim",
+      "method": "POST",
+      "path": "/claims/{id}/transitions",
+      "authorization": "Only the actor specified for the chosen action in SM-14 may act; current object scope, source state and all guards are mandatory. Claims scoped access; customer must own case, staff must have assigned branch/case and explicit read permission; provider sees assigned minimum only.",
+      "summary": "Apply a guarded WarrantyClaim transition"
+    },
+    {
+      "id": "API-X-readSupportTicket",
+      "operation_id": "readSupportTicket",
+      "method": "GET",
+      "path": "/support-tickets/{id}",
+      "authorization": "Support scoped access; customer must own case, staff must have assigned branch/case and explicit read permission; provider sees assigned minimum only.",
+      "summary": "Read SupportTicket"
+    },
+    {
+      "id": "API-X-transitionSupportTicket",
+      "operation_id": "transitionSupportTicket",
+      "method": "POST",
+      "path": "/support-tickets/{id}/transitions",
+      "authorization": "Only the actor specified for the chosen action in SM-15 may act; current object scope, source state and all guards are mandatory. Support scoped access; customer must own case, staff must have assigned branch/case and explicit read permission; provider sees assigned minimum only.",
+      "summary": "Apply a guarded SupportTicket transition"
+    },
+    {
+      "id": "API-X-readResultRecord",
+      "operation_id": "readResultRecord",
+      "method": "GET",
+      "path": "/auction-results/{id}",
+      "authorization": "Seller owns result or dealer owns relevant permitted outcome; no other bidder identity disclosed.",
+      "summary": "Read versioned ResultRecord"
+    },
+    {
+      "id": "API-X-readReconciliationRecord",
+      "operation_id": "readReconciliationRecord",
+      "method": "GET",
+      "path": "/reconciliations/{id}",
+      "authorization": "ROLE-013 or ROLE-014 assigned financial scope; immutable approval trail.",
+      "summary": "Read versioned ReconciliationRecord"
+    },
+    {
+      "id": "API-X-readPolicyRecord",
+      "operation_id": "readPolicyRecord",
+      "method": "GET",
+      "path": "/admin/policies/{id}",
+      "authorization": "ROLE-016 or ROLE-026 with explicit policy scope; read does not grant approval.",
+      "summary": "Read versioned PolicyRecord"
+    },
+    {
+      "id": "API-X-readTransaction",
+      "operation_id": "readTransaction",
+      "method": "GET",
+      "path": "/transactions/{id}",
+      "authorization": "Case participant gets own permitted projection; financial/legal documents separately scoped.",
+      "summary": "Read transaction milestones"
+    },
+    {
+      "id": "API-X-closeTransaction",
+      "operation_id": "closeTransaction",
+      "method": "POST",
+      "path": "/transactions/{id}/closure",
+      "authorization": "ROLE-006 with closure grant; signed exact contract, independently reconciled obligations, verified transfer, permitted handover and no open material hold; lock case and referenced milestone versions; support cannot bypass.",
+      "summary": "Close verified transaction"
+    },
+    {
+      "id": "API-X-readOwnershipTransfer",
+      "operation_id": "readOwnershipTransfer",
+      "method": "GET",
+      "path": "/ownership-transfers/{id}",
+      "authorization": "ROLE-012 assigned matter; participant receives safe status only.",
+      "summary": "Read ownership transfer"
+    },
+    {
+      "id": "API-X-verifyOwnershipTransfer",
+      "operation_id": "verifyOwnershipTransfer",
+      "method": "POST",
+      "path": "/ownership-transfers/{id}/verification",
+      "authorization": "ROLE-012 assigned matter; external authority evidence and independent verification; custody or receipt does not prove title.",
+      "summary": "Verify title evidence"
+    },
+    {
+      "id": "API-X-completeAuthChallenge",
+      "operation_id": "completeAuthChallenge",
+      "method": "POST",
+      "path": "/auth/challenges/complete",
+      "authorization": "Challenge bound to pending login, browser nonce and origin. Maximum 5 failed attempts, 5-minute TTL; no user privileges before successful completion.",
+      "summary": "Complete single-use MFA challenge"
+    },
+    {
+      "id": "API-X-readCurrentSession",
+      "operation_id": "readCurrentSession",
+      "method": "GET",
+      "path": "/auth/session",
+      "authorization": "Current authenticated principal only; never expose another session or private user evidence.",
+      "summary": "Read current session"
+    },
+    {
+      "id": "API-X-revokeCurrentSession",
+      "operation_id": "revokeCurrentSession",
+      "method": "DELETE",
+      "path": "/auth/session",
+      "authorization": "",
+      "summary": "Revoke current session and live subscriptions"
+    },
+    {
+      "id": "API-X-createStepUpChallenge",
+      "operation_id": "createStepUpChallenge",
+      "method": "POST",
+      "path": "/auth/step-up",
+      "authorization": "Current authenticated staff account with required domain grant; challenge completion issues purpose-bound 5-minute elevation, not broader role.",
+      "summary": "Create purpose-bound step-up challenge"
+    },
+    {
+      "id": "API-X-requestAccountRecovery",
+      "operation_id": "requestAccountRecovery",
+      "method": "POST",
+      "path": "/auth/recovery",
+      "authorization": "Uniform 202 and timing; throttled per identifier/network; notification never reveals existence.",
+      "summary": "Request account recovery"
+    },
+    {
+      "id": "API-X-ingestProviderEvent",
+      "operation_id": "ingestProviderEvent",
+      "method": "POST",
+      "path": "/integration-events",
+      "authorization": "Internal provider adapter only. Validate provider/resource correlation and evidence; unique provider_id/provider_event_id. Persist inbox before 202; business updates asynchronous and state-guarded. No payment or title finality from delivery alone.",
+      "summary": "Receive authenticated normalized adapter event"
+    },
+    {
+      "id": "API-X-completeStepUp",
+      "operation_id": "completeStepUp",
+      "method": "POST",
+      "path": "/auth/step-up/complete",
+      "authorization": "Authenticated original session only; challenge is bound to session, actor and purpose; successful factor verification grants 5-minute elevation for that purpose, never a new role.",
+      "summary": "completeStepUp"
+    },
+    {
+      "id": "API-X-listVehicleTaxonomy",
+      "operation_id": "listVehicleTaxonomy",
+      "method": "GET",
+      "path": "/vehicle-taxonomy",
+      "authorization": "Public approved taxonomy; filters must use parent IDs; draft and retired records not offered for new selection.",
+      "summary": "listVehicleTaxonomy"
+    },
+    {
+      "id": "API-X-listBranchSlots",
+      "operation_id": "listBranchSlots",
+      "method": "GET",
+      "path": "/branches/{id}/slots",
+      "authorization": "Public reservable slots only; no employee details. Availability is advisory until atomic booking. Window <=31 days.",
+      "summary": "listBranchSlots"
+    },
+    {
+      "id": "API-X-createUploadGrant",
+      "operation_id": "createUploadGrant",
+      "method": "POST",
+      "path": "/files/upload-grants",
+      "authorization": "Current case document-upload permission; kind-specific rights and cap; URL scoped to one opaque key and 5 minutes; quarantine only.",
+      "summary": "createUploadGrant"
+    },
+    {
+      "id": "API-X-readFileStatus",
+      "operation_id": "readFileStatus",
+      "method": "GET",
+      "path": "/files/{id}",
+      "authorization": "Current case read permission; no direct object key disclosed. Server scan result is authoritative.",
+      "summary": "readFileStatus"
+    },
+    {
+      "id": "API-X-createDownloadGrant",
+      "operation_id": "createDownloadGrant",
+      "method": "POST",
+      "path": "/files/{id}/download-grants",
+      "authorization": "Current case and document-kind read permission; status clean; restricted evidence through revocable proxy, maximum 60 seconds. Access audit required.",
+      "summary": "createDownloadGrant"
+    },
+    {
+      "id": "API-X-prepareReconciliation",
+      "operation_id": "prepareReconciliation",
+      "method": "POST",
+      "path": "/reconciliations",
+      "authorization": "ROLE-013 assigned finance preparer, never same actor as later approver.",
+      "summary": "Prepare a financial match"
+    },
+    {
+      "id": "API-X-readPreferences",
+      "operation_id": "readPreferences",
+      "method": "GET",
+      "path": "/me/preferences",
+      "authorization": "Authenticated self only; never read another subject by query parameter.",
+      "summary": "readPreferences"
+    },
+    {
+      "id": "API-X-changePreference",
+      "operation_id": "changePreference",
+      "method": "POST",
+      "path": "/me/preferences",
+      "authorization": "Authenticated self; record immutable preference fact and notify downstream suppression. Apply current state at dispatch; withdrawal is not blocked by version conflicts. No marketing opt-in inferred from service notice.",
+      "summary": "changePreference"
+    },
+    {
+      "id": "API-X-listSavedVehicles",
+      "operation_id": "listSavedVehicles",
+      "method": "GET",
+      "path": "/me/saved-vehicles",
+      "authorization": "Authenticated self; retain unavailable label, no private unpublished listing fields.",
+      "summary": "listSavedVehicles"
+    },
+    {
+      "id": "API-X-setSavedVehicle",
+      "operation_id": "setSavedVehicle",
+      "method": "POST",
+      "path": "/me/saved-vehicles",
+      "authorization": "Authenticated self; idempotent set-state, unique actor/listing; never toggle blindly.",
+      "summary": "setSavedVehicle"
+    },
+    {
+      "id": "API-X-createProcurement",
+      "operation_id": "createProcurement",
+      "method": "POST",
+      "path": "/procurement-requests",
+      "authorization": "ROLE-003 own request; approved region and valid budget/currency; optional financing is preference, not approval.",
+      "summary": "createProcurement"
+    },
+    {
+      "id": "API-X-readProcurement",
+      "operation_id": "readProcurement",
+      "method": "GET",
+      "path": "/procurement-requests/{id}",
+      "authorization": "Buyer owns request or assigned ROLE-011 advisor.",
+      "summary": "readProcurement"
+    },
+    {
+      "id": "API-X-actOnProcurement",
+      "operation_id": "actOnProcurement",
+      "method": "POST",
+      "path": "/procurement-requests/{id}/actions",
+      "authorization": "Buyer may select a current proposed candidate or cancel own uncontracted request. ROLE-011 assigns within scope, presents current consumer listing with candidate_listing_id, or marks fulfilled only with linked completed transaction evidence. Assign requires advisor_id; illegal source/action 409; signed obligations route to legal review.",
+      "summary": "actOnProcurement"
+    },
+    {
+      "id": "API-X-createPrivacyRequest",
+      "operation_id": "createPrivacyRequest",
+      "method": "POST",
+      "path": "/privacy-requests",
+      "authorization": "Authenticated subject, or verified assisted channel creates restricted request; no new contact becomes trusted until verified. ROLE-023 reviews holds and processors. External deadlines configured by jurisdiction.",
+      "summary": "createPrivacyRequest"
+    },
+    {
+      "id": "API-X-readPrivacyRequest",
+      "operation_id": "readPrivacyRequest",
+      "method": "GET",
+      "path": "/privacy-requests/{id}",
+      "authorization": "Requesting subject or ROLE-023 assigned privacy officer; safe status excludes other subjects and held legal evidence.",
+      "summary": "readPrivacyRequest"
+    },
+    {
+      "id": "API-X-requestExport",
+      "operation_id": "requestExport",
+      "method": "POST",
+      "path": "/exports",
+      "authorization": "Explicit report-specific export grant plus original object/branch scope; MFA for audit/finance, independent approval for restricted data. Period max 366 days. Async snapshot, no broad raw dataset.",
+      "summary": "requestExport"
+    },
+    {
+      "id": "API-X-readExportJob",
+      "operation_id": "readExportJob",
+      "method": "GET",
+      "path": "/exports/{id}",
+      "authorization": "Original requester with still-valid purpose and scope; no data URL until separate grant.",
+      "summary": "readExportJob"
+    },
+    {
+      "id": "API-X-downloadExport",
+      "operation_id": "downloadExport",
+      "method": "POST",
+      "path": "/exports/{id}/download-grants",
+      "authorization": "Requester remains authorized, job ready/not expired and approvals valid; 60-second proxy access, audit download; CSV formula-safe cells.",
+      "summary": "downloadExport"
+    },
+    {
+      "id": "API-X-readInventoryListing",
+      "operation_id": "readInventoryListing",
+      "method": "GET",
+      "path": "/inventory/listings/{id}",
+      "authorization": "Consumer inventory scoped access; customer must own case, staff must have assigned branch/case and explicit read permission; provider sees assigned minimum only.",
+      "summary": "Read VehicleListing"
+    },
+    {
+      "id": "API-X-createContent",
+      "operation_id": "createContent",
+      "method": "POST",
+      "path": "/content-items",
+      "authorization": "ROLE-015 editor; sanitized structured blocks, rights-cleared media, unique normalized slug; no raw scripts or private data. Create draft only.",
+      "summary": "createContent"
+    },
+    {
+      "id": "API-X-readContent",
+      "operation_id": "readContent",
+      "method": "GET",
+      "path": "/content-items/{id}",
+      "authorization": "ROLE-015 with object scope; preview authenticated, noindex and not CDN-shared.",
+      "summary": "readContent"
+    },
+    {
+      "id": "API-X-reviseContent",
+      "operation_id": "reviseContent",
+      "method": "POST",
+      "path": "/content-items/{id}/revisions",
+      "authorization": "ROLE-015 editor; new revision preserves published snapshot; semantic changes invalidate old approval.",
+      "summary": "reviseContent"
+    },
+    {
+      "id": "API-X-actOnContent",
+      "operation_id": "actOnContent",
+      "method": "POST",
+      "path": "/content-items/{id}/actions",
+      "authorization": "ROLE-015 explicit author/reviewer/publisher grants. Reviewer cannot approve own revision; legal/financial claims need legal approval evidence; SEO canonical review required. Schedule requires publish_at. Publish only approved exact revision with unexpired media rights; outbox cache invalidation with retry; retired is nonpublic.",
+      "summary": "actOnContent"
+    },
+    {
+      "id": "API-X-createCampaign",
+      "operation_id": "createCampaign",
+      "method": "POST",
+      "path": "/campaigns",
+      "authorization": "ROLE-025 approved growth operator; start<end, approved template and finite audience allowlist. Never accept arbitrary personal-data query; starts draft.",
+      "summary": "createCampaign"
+    },
+    {
+      "id": "API-X-readCampaign",
+      "operation_id": "readCampaign",
+      "method": "GET",
+      "path": "/campaigns/{id}",
+      "authorization": "ROLE-025 scoped team; aggregate counts only, no raw audience identities.",
+      "summary": "readCampaign"
+    },
+    {
+      "id": "API-X-actOnCampaign",
+      "operation_id": "actOnCampaign",
+      "method": "POST",
+      "path": "/campaigns/{id}/actions",
+      "authorization": "Separate purpose-authorized reviewer approves; ROLE-025 schedules only approved definition and provider activation. Stop prevents future sends. Worker rechecks current consent/suppression at send time; already delivered messages cannot be recalled.",
+      "summary": "actOnCampaign"
+    },
+    {
+      "id": "API-X-approvePolicy",
+      "operation_id": "approvePolicy",
+      "method": "POST",
+      "path": "/admin/policies/{id}/approvals",
+      "authorization": "ROLE-026 purpose-bound step-up, independent of preparer; full domain/schema and jurisdiction approval required. Approval never rewrites pinned historic policies. No generic admin may bypass financial/legal clearance.",
+      "summary": "approvePolicy"
+    },
+    {
+      "id": "API-X-submitDealerApplication",
+      "operation_id": "submitDealerApplication",
+      "method": "POST",
+      "path": "/dealer-applications",
+      "authorization": "Verified applicant only; pending organization member has no bidding grant.",
+      "summary": "Create pending dealer organization and verification"
+    },
+    {
+      "id": "API-X-requestIntakeClaim",
+      "operation_id": "requestIntakeClaim",
+      "method": "POST",
+      "path": "/intake/claim-challenges",
+      "authorization": "Public throttled challenge; no account or resource enumeration.",
+      "summary": "Request ownership proof for an anonymous intake"
+    },
+    {
+      "id": "API-X-claimIntake",
+      "operation_id": "claimIntake",
+      "method": "POST",
+      "path": "/intake/claims",
+      "authorization": "Authenticated verified principal; challenge bound to this principal and intake draft.",
+      "summary": "Claim an intake after contact proof"
+    },
+    {
+      "id": "API-X-completeRecovery",
+      "operation_id": "completeRecovery",
+      "method": "POST",
+      "path": "/auth/recovery/complete",
+      "authorization": "Public throttled challenge; no account or resource enumeration.",
+      "summary": "Complete account recovery"
+    },
+    {
+      "id": "API-X-createConsumerOffer",
+      "operation_id": "createConsumerOffer",
+      "method": "POST",
+      "path": "/consumer-offers",
+      "authorization": "Issue a seller-authorized consumer offer. ROLE-021 scoped publisher or ROLE-011 assigned advisor with explicit offer-create grant verifies seller authority and exact authorized price/terms evidence. Buyer must own the named request and listing must be available without an exclusive auction channel. Currency matches listing; expiry is future and within approved policy. Server derives seller and verifies clean scoped evidence. An offer alone does not reserve the vehicle or create a transaction.",
+      "summary": "Issue a seller-authorized consumer offer"
+    },
+    {
+      "id": "API-X-readConsumerOffer",
+      "operation_id": "readConsumerOffer",
+      "method": "GET",
+      "path": "/consumer-offers/{id}",
+      "authorization": "Read own consumer offer. Named buyer, verified seller or assigned scoped advisor may see permitted terms; internal seller authority evidence remains separately restricted. Expired status is derived from authoritative time and persisted idempotently.",
+      "summary": "Read own consumer offer"
+    },
+    {
+      "id": "API-X-acceptConsumerOffer",
+      "operation_id": "acceptConsumerOffer",
+      "method": "POST",
+      "path": "/consumer-offers/{id}/acceptance",
+      "authorization": "Accept current consumer offer. Only named verified buyer with fresh purpose-bound step-up may accept. Lock idempotency receipt, listing/channel reservation and offer in deterministic order; recheck buyer, current price/terms, seller authority, no auction reservation and trusted time before expiry. Atomically consume one exclusive listing reservation, record consent and accepted offer, create one TransactionCase plus pending OwnershipTransfer, and write audit/outbox. Another buyer wins the reservation at most once; conflicting offer returns 409 listing_unavailable. Replay returns same transaction after current access check. This acceptance does not imply legal contract execution, settled funds or custody.",
+      "summary": "Accept current consumer offer"
+    },
+    {
+      "id": "API-X-withdrawConsumerOffer",
+      "operation_id": "withdrawConsumerOffer",
+      "method": "POST",
+      "path": "/consumer-offers/{id}/withdrawal",
+      "authorization": "Withdraw an unaccepted consumer offer. Verified seller or assigned advisor with recorded seller authority may withdraw issued offer; explicit reason, current version and audit required. Acceptance and withdrawal serialize on the same offer and listing locks; accepted offers cannot be retroactively withdrawn and require a legal transaction case.",
+      "summary": "Withdraw an unaccepted consumer offer"
+    },
+    {
+      "id": "API-X-readPublishedContent",
+      "operation_id": "readPublishedContent",
+      "method": "GET",
+      "path": "/published-content/{slug}",
+      "authorization": "Read approved public editorial or help content. Return only published current revision; ignore preview credentials on this public cache route. Blocks contain typed safe text/media/link references, never executable HTML. Retired content follows approved redirect/tombstone policy.",
+      "summary": "Read approved public editorial or help content"
+    },
+    {
+      "id": "API-X-readListingBySlug",
+      "operation_id": "readListingBySlug",
+      "method": "GET",
+      "path": "/public-listings/{slug}",
+      "authorization": "Resolve an approved public vehicle URL. Same Listing projection and publication checks as readVehicleListing; slug redirects use reviewed persisted mapping. A slug is not an authorization token and never resolves private auction data.",
+      "summary": "Resolve an approved public vehicle URL"
+    },
+    {
+      "id": "API-X-estimatePublicVehicle",
+      "operation_id": "estimatePublicVehicle",
+      "method": "POST",
+      "path": "/valuation-estimates",
+      "authorization": "Request an indicative public valuation range. Anonymous, bounded and rate-limited; source rights and active market policy must exist. Validate taxonomy/year/mileage, currency and enough compatible licensed comparables. Return insufficient_data or unavailable without a fabricated amount when prerequisites fail. No private valuation or identifiable comparable is exposed and no binding offer is created. Service checks low_minor <= high_minor; statement includes data date and nonbinding disclaimer.",
+      "summary": "Request an indicative public valuation range"
+    },
+    {
+      "id": "API-X-readInspectionTemplate",
+      "operation_id": "readInspectionTemplate",
+      "method": "GET",
+      "path": "/inspection-templates/{id}",
+      "authorization": "Read assigned or approved inspection template. ROLE-007/008 sees assigned approved version; template authors require separate configuration grant. Template point ID uniqueness and per-result evidence rules validated by service. Pin version and never silently replace an active checklist.",
+      "summary": "Read assigned or approved inspection template"
+    },
+    {
+      "id": "API-X-readInspectionRevision",
+      "operation_id": "readInspectionRevision",
+      "method": "GET",
+      "path": "/inspection-revisions/{id}",
+      "authorization": "Read an immutable or working inspection revision. Assigned inspector/supervisor may read current work; verified seller or eligible dealer may read only approved permitted report revision for own case/auction. Evidence IDs require separate download authorization, and unpublished findings never leak through dealer access.",
+      "summary": "Read an immutable or working inspection revision"
+    },
+    {
+      "id": "API-X-createSavedSearch",
+      "operation_id": "createSavedSearch",
+      "method": "POST",
+      "path": "/me/saved-searches",
+      "authorization": "Authenticated owner only; no organization-wide access inferred.",
+      "summary": "Save own public listing filters"
+    },
+    {
+      "id": "API-X-listSavedSearches",
+      "operation_id": "listSavedSearches",
+      "method": "GET",
+      "path": "/me/saved-searches",
+      "authorization": "Authenticated owner only; no organization-wide access inferred.",
+      "summary": "List own saved searches"
+    },
+    {
+      "id": "API-X-deleteSavedSearch",
+      "operation_id": "deleteSavedSearch",
+      "method": "DELETE",
+      "path": "/me/saved-searches/{id}",
+      "authorization": "Authenticated owner only; no organization-wide access inferred.",
+      "summary": "Remove own saved search"
+    }
+  ]
+}
